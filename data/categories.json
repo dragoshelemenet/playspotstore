@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ps4",
+    "name": "Jocuri PS4",
+    "subcategories": []
+  },
+  {
+    "id": "ps5",
+    "name": "Jocuri PS5",
+    "subcategories": []
+  },
+  {
+    "id": "console",
+    "name": "Console",
+    "subcategories": []
+  },
+  {
+    "id": "accessories",
+    "name": "Accesorii",
+    "subcategories": []
+  }
+]

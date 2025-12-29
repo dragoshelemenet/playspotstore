@@ -1,0 +1,472 @@
+[
+  {
+    "id": "ps4-1",
+    "title": "Assassin's Creed Odyssey",
+    "image": "https://lcdn.altex.ro/resize/media/catalog/product/A/s/2bd48d28d1c32adea0e55139a4e6434a/Assassins_Creed_Odyssey_PS4_2D_Cover_1b29387d.jpg",
+    "price": "400 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Explorează Grecia Antică în această aventură epică de la Ubisoft.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-2",
+    "title": "Assassin's Creed The Ezio Collection",
+    "image": "https://lcdn.altex.ro/resize/media/catalog/product/a/s/2bd48d28d1c32adea0e55139a4e6434a/assassins-creed-the-ezio-collection-ps4-2d-cover.jpg",
+    "price": "400 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Trăiește saga lui Ezio Auditore cu grafică remasterizată.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-3",
+    "title": "Assassin's Creed Origins",
+    "image": "https://lcdn.altex.ro/resize/media/catalog/product/A/s/2bd48d28d1c32adea0e55139a4e6434a/Assassins-Creed-Origins---PS4_0140a0b6.jpg",
+    "price": "400 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Descoperă originile asasinilor în Egiptul antic.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-4",
+    "title": "Assassin's Creed Unity",
+    "image": "https://m.media-amazon.com/images/I/813mmLCVaPL.jpg",
+    "price": "250 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Plonjează în Revoluția Franceză cu grafică captivantă.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-5",
+    "title": "Assassin's Creed Syndicate",
+    "image": "https://lcdn.altex.ro/resize/media/catalog/product/a/s/2bd48d28d1c32adea0e55139a4e6434a/assassins-creed-syndicate-ps4-2d-cover_600x600.jpg",
+    "price": "350 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Luptă pentru putere în Londra victoriană.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-6",
+    "title": "Horizon Zero Dawn: Complete Edition (Hits)",
+    "image": "https://media.icdn.hu/product/GalleryMod/2019-07/567112/resp/1278212__horizon_zero_dawn_complete_edition_hits_ps4.webp",
+    "price": "250 MDL",
+    "promo": "yes",
+    "new_arrival": "no",
+    "description": "Explorează un viitor post-apocaliptic dominat de mașini.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-7",
+    "title": "Middle-earth: Shadow of Mordor",
+    "image": "https://s13emagst.akamaized.net/products/1029/1028392/images/res_d6bbc8fd76c159dc27f2979388829784.jpg",
+    "price": "250 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Plonjează în lumea lui Tolkien cu o poveste captivantă.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-8",
+    "title": "Middle-earth: Shadow of War",
+    "image": "https://lcdn.mediagalaxy.ro/resize/media/catalog/product/b/u/2bd48d28d1c32adea0e55139a4e6434a/bunamiddle-earth-shadow-of-war-ps4-2d-cover_600x600.jpg",
+    "price": "300 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Continuă aventura în Mordor cu noi inamici și povești.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-9",
+    "title": "Code Vein",
+    "image": "https://s13emagst.akamaized.net/products/13349/13348574/images/res_5a874fb646473907776cb3c042338018.jpg?width=450&height=450&hash=FAC71285CECF13554153CD218494BB8D",
+    "price": "350 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Explorează un RPG cu tematică post-apocaliptică și stil anime.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-10",
+    "title": "Monster Hunter World",
+    "image": "https://s13emagst.akamaized.net/products/10511/10510499/images/res_507fabc1081141db85238ae1019cf369.jpg",
+    "price": "400 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Vânează creaturi uriașe într-o lume deschisă vastă.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-11",
+    "title": "Uncharted 4: A Thief’s End (Hits)",
+    "image": "https://m.media-amazon.com/images/I/81ikuWiWrrL.jpg",
+    "price": "350 MDL",
+    "promo": "yes",
+    "new_arrival": "no",
+    "description": "Ultima aventură a lui Nathan Drake într-o poveste plină de acțiune.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-12",
+    "title": "Uncharted: The Nathan Drake Collection (Hits)",
+    "image": "https://cdn.ozone.ro/media/catalog/product/u/n/uncharted_the_nathan_drake_collection_-_3_ps4_-hits.jpg",
+    "price": "350 MDL",
+    "promo": "yes",
+    "new_arrival": "no",
+    "description": "Colecția completă a aventurilor lui Nathan Drake pe PS4.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-13",
+    "title": "Uncharted: Lost Legacy",
+    "image": "https://usedproducts.ro/image/cache/catalog/dyver/2024-01-07%2014-52-31%20-%20Uncharted%20The%20Lost%20Legacy%20%20Joc%20PS4/image_0-800x800.jpg",
+    "price": "350 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "O nouă aventură cu Chloe Frazer și Nadine Ross.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-14",
+    "title": "FIFA 21",
+    "image": "https://maxi.az/upload/iblock/a7e/a7e24e8f8a1e77a5be7c5e419cf28fec.png",
+    "price": "350 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Experimentează cel mai recent sezon de fotbal cu FIFA 21.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-15",
+    "title": "Battlefield 1",
+    "image": "https://s13emagst.akamaized.net/products/3556/3555387/images/res_c282120a7a1517e0ca58fa24de6ea60e.jpg",
+    "price": "350 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Intră în acțiunea Primului Război Mondial.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-16",
+    "title": "Borderlands 3",
+    "image": "https://s13emagst.akamaized.net/products/21443/21442393/images/res_01a131e0361f33d093ef92bb888d6c2b.jpg?width=450&height=450&hash=6AB6506166729B31783DAD45EEAB314B",
+    "price": "350 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "O nouă aventură plină de acțiune și umor în universul Borderlands.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-17",
+    "title": "The Last of Us: Remastered (Hits)",
+    "image": "https://lcdn.altex.ro/resize/media/catalog/product/T/h/2bd48d28d1c32adea0e55139a4e6434a/The-Last-of-Us-Remastered-PlayStation-Hits-PS4-2D-Coperta.jpg",
+    "price": "300 MDL",
+    "promo": "yes",
+    "new_arrival": "no",
+    "description": "Remasterizarea clasicului emoționant de la Naughty Dog.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-18",
+    "title": "The Last of Us Part II",
+    "image": "https://lcdn.altex.ro/resize/media/catalog/product/T/h/2bd48d28d1c32adea0e55139a4e6434a/The_Last_of_Us_Part_II_PS4_2D_Coperta_update.jpg",
+    "price": "500 MDL",
+    "promo": "no",
+    "new_arrival": "yes",
+    "description": "Continuarea poveștii emoționante a lui Ellie și Joel.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-19",
+    "title": "Mortal Kombat 11",
+    "image": "https://lcdn.altex.ro/resize/media/catalog/product/M/o/2bd48d28d1c32adea0e55139a4e6434a/Mortal_Kombat_11_PS4_2D_Cover_81c55baf.jpg",
+    "price": "450 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Experimentează lupta brutală cu grafică de ultimă generație.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-21",
+    "title": "Rayman Legends",
+    "image": "https://lcdn.altex.ro/resize/media/catalog/product/R/a/2bd48d28d1c32adea0e55139a4e6434a/Rayman_Legends_PlayStation_Hits_PS4_2D_Cover_b605d290.jpg",
+    "price": "400 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Un platformer vibrant și plin de viață cu Rayman.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-22",
+    "title": "Rayman Legends (Hits)",
+    "image": "https://lcdn.altex.ro/resize/media/catalog/product/R/a/2bd48d28d1c32adea0e55139a4e6434a/Rayman_Legends_PlayStation_Hits_PS4_2D_Cover_b605d290.jpg",
+    "price": "400 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Ediție specială a Rayman Legends cu conținut suplimentar.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-23",
+    "title": "Tropico 5",
+    "image": "https://m.media-amazon.com/images/I/81+6BYPeypL._AC_UF894,1000_QL80_.jpg",
+    "price": "450 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Dezvoltă-ți propria insulă tropicală și guvernează cu înțelepciune.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-24",
+    "title": "Ni no Kuni II: Revenant Kingdom",
+    "image": "https://lcdn.mediagalaxy.ro/resize/media/catalog/product/n/i/2bd48d28d1c32adea0e55139a4e6434a/ni-no-kuni-ii-revenant-kingdom-ps4-2d-cover_1.jpg",
+    "price": "400 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Un RPG captivant cu o poveste emoționantă și grafică uimitoare.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-26",
+    "title": "God of War (Hits)",
+    "image": "https://s13emagst.akamaized.net/products/26022/26021509/images/res_b3ef70ec266095b3b04932431c49e4bc.jpg?width=720&height=720&hash=CCC23B513EEBCD8A7BFCC2A963DB1C74",
+    "price": "350 MDL",
+    "promo": "yes",
+    "new_arrival": "no",
+    "description": "Revino în mitologia nordică alături de Kratos și Atreus.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-27",
+    "title": "Dishonored: Definitive Edition",
+    "image": "https://s13emagst.akamaized.net/products/1952/1951286/images/res_7a336e35b79a859559fb98a38eb63581.jpg?width=450&height=450&hash=0DE8739EDFAEA694B659F8AFE946AD10",
+    "price": "350 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Un joc de acțiune-aventură cu elemente stealth și poveste captivantă.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-28",
+    "title": "Dishonored 2",
+    "image": "https://s13emagst.akamaized.net/products/3614/3613419/images/res_1d90f845f5fb8408458af548eaf14d95.jpg?width=720&height=720&hash=EBB10E585D17482AD010E3E5492A411E",
+    "price": "350 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Continuă aventura în orașul Dunwall cu noi abilități și povești.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-29",
+    "title": "Hidden Agenda",
+    "image": "https://cdn.ozone.ro/media/catalog/product/h/i/hidden_agenda_ps4_cover.jpg",
+    "price": "350 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Un thriller interactiv unde alegerile tale contează.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-30",
+    "title": "Ghost Recon Breakpoint",
+    "image": "https://s13emagst.akamaized.net/products/22514/22513290/images/res_d52ce64bd5ad369e70f5eb4a47b279c1.jpg",
+    "price": "400 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "O misiune tactică în sălbăticia insulelor Breakpoint.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-31",
+    "title": "Bloodborne",
+    "image": "https://s13emagst.akamaized.net/products/1081/1080897/images/res_a9ba4bb2970c5c3432be71ce11e5d1ac.jpg",
+    "price": "450 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Un RPG de acțiune cu atmosferă sumbră și provocări intense.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-32",
+    "title": "Dissidia Final Fantasy NT",
+    "image": "https://www.albagame.al/cdn/shop/files/138235_69b28a8a-4abd-42bf-a11b-04c8c6766cfb.jpg?v=1722329350",
+    "price": "550 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Bătălii epice între eroii din universul Final Fantasy.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-33",
+    "title": "Daymare 1998",
+    "image": "https://s13emagst.akamaized.net/products/36732/36731805/images/res_0540823cb1d00975e42e863ce63c643b.jpg",
+    "price": "650 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Un joc de groază și supraviețuire inspirat de anii '90.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-34",
+    "title": "Doom Eternal",
+    "image": "https://s13emagst.akamaized.net/products/15689/15688481/images/res_ce40256171d38d30f2e8022b533723c4.jpg",
+    "price": "400 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Acționează rapid și distruge demonii în Doom Eternal.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-35",
+    "title": "Detroit: Become Human",
+    "image": "https://s13emagst.akamaized.net/products/10511/10510504/images/res_35c783f2c512b742b5837d7606a640df.jpg?width=720&height=720&hash=F65ED54F43286E91090C12438F2D0123",
+    "price": "350 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "O poveste interactivă despre inteligența artificială și umanitate.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-36",
+    "title": "Hitman",
+    "image": "https://psxbox.ro/wp-content/uploads/2022/09/hitman59.jpg",
+    "price": "400 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Intră în pielea Agentului 47 și finalizează-ți misiunile cu precizie.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-37",
+    "title": "Hitman 2",
+    "image": "https://s13emagst.akamaized.net/products/15852/15851400/images/res_95d1760c1d2a096374a59b5aced1d932.jpg?width=720&height=720&hash=A1A1223D6A555497883E81BEBC6E103D",
+    "price": "500 MDL",
+    "promo": "no",
+    "new_arrival": "yes",
+    "description": "Continuă aventura Agentului 47 cu misiuni mai complexe și medii noi.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-38",
+    "title": "Hitman III (VR Compatible)",
+    "image": "https://www.jocurinoi.ro/image/data/imported/hitman-iii-3-psvr-compatible-ps4-25065/main.png",
+    "price": "700 MDL",
+    "promo": "yes",
+    "new_arrival": "yes",
+    "description": "Ultima parte a trilogiei Hitman, compatibilă cu realitatea virtuală.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-39",
+    "title": "Far Cry Primal",
+    "image": "https://lcdn.altex.ro/resize/media/catalog/product/u/b/2bd48d28d1c32adea0e55139a4e6434a/ubi4080045.jpg",
+    "price": "400 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Supraviețuiește în epoca de piatră și explorează un mediu vast.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-40",
+    "title": "Far Cry 6",
+    "image": "https://s13emagst.akamaized.net/products/31811/31810800/images/res_d3b6b62fe202c1e126f8772df981c64a.jpg?width=720&height=720&hash=D40FD16B0F94472547D61FE6A679DBEE",
+    "price": "500 MDL",
+    "promo": "no",
+    "new_arrival": "yes",
+    "description": "Luptă împotriva tiraniei într-o insulă fictivă plină de acțiune.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-41",
+    "title": "Project CARS 2",
+    "image": "https://lcdn.altex.ro/resize/media/catalog/product/p/r/2bd48d28d1c32adea0e55139a4e6434a/project-cars-2-ps4-2d-cover.png",
+    "price": "450 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Experimentează curse autentice cu o gamă largă de mașini și piste.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-42",
+    "title": "Little Nightmares",
+    "image": "https://www.gooplaystation4.nl/images/thumbnails/600/600/detailed/21/little-nightmares-ps4-day-one-edition.jpg",
+    "price": "450 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Un joc de aventură și groază cu o atmosferă sumbră.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-43",
+    "title": "The Crew 2",
+    "image": "https://m.media-amazon.com/images/I/815E5c8BmdL.jpg",
+    "price": "400 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Explorează Statele Unite într-o lume deschisă plină de vehicule diverse.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-44",
+    "title": "Pure Farming 2018",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNF3U8SSI8BbPZEUQ4YLliZHImSIJsLKKS-A&s",
+    "price": "350 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Administrează ferme în diferite culturi și țări.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-45",
+    "title": "Call of Duty: Modern Warfare",
+    "image": "https://lcdn.mediagalaxy.ro/resize/media/catalog/product/C/a/2bd48d28d1c32adea0e55139a4e6434a/Call_of_Duty_Modern_Warfare_2019_PS4_2D_Coperta_7b52a534.jpg",
+    "price": "350 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Un shooter intens cu campanii captivante și moduri multiplayer variate.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-46",
+    "title": "Call of Duty: Black Ops III",
+    "image": "https://s13emagst.akamaized.net/products/2635/2634096/images/res_6bad1e342ac086baaf29567646940f69.jpg?width=720&height=720&hash=F3D951830B81AB6ECCFCAD22CC2DB7D3",
+    "price": "350 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Continuă seria Black Ops cu noi arme și misiuni.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-47",
+    "title": "Call of Duty: Black Ops IV",
+    "image": "https://s13emagst.akamaized.net/products/14124/14123948/images/res_d197c2bc1f46130335493900d0121818.jpg",
+    "price": "400 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Un shooter multiplayer cu moduri variate și campanii interactive.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-48",
+    "title": "NBA Live 19",
+    "image": "https://usedproducts.ro/image/cache/catalog/dyver/2024-11-12%2012-56-53%20-%20NBA%20Live%2019%20%20The%20ONE%20Edition/image_0-800x800.jpg",
+    "price": "150 MDL",
+    "promo": "yes",
+    "new_arrival": "no",
+    "description": "Experimentează sezonul NBA cu grafică realistă și gameplay dinamic.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "ps4-49",
+    "title": "Evolve",
+    "image": "https://www.jocurinoi.ro/image/cache/data/imported/evolve-ps4-13389/main-500x500.jpg",
+    "price": "300 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Un joc de acțiune cooperativ unde echipa ta luptă împotriva monstrului.",
+    "link": "https://instagram.com/PlaySpotStore"
+  }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "id": "ps4",
+        "name": "Игры PS4",
+        "subcategories": []
+    },
+    {
+        "id": "ps5",
+        "name": "Игры PS5",
+        "subcategories": []
+    },
+    {
+        "id": "console",
+        "name": "Консоли",
+        "subcategories": []
+    },
+    {
+        "id": "accessories",
+        "name": "Аксессуары",
+        "subcategories": []
+    }
+]

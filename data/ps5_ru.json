@@ -1,0 +1,222 @@
+[
+    {
+        "id": "ps5-1",
+        "title": "Gotham Knights",
+        "image": "https://s13emagst.akamaized.net/products/35254/35253160/images/res_9ff2374b426fbc39b7fd70512735c048.jpg",
+        "price": "550 MDL",
+        "promo": "no",
+        "new_arrival": "yes",
+        "description": "Защитите Готэм-Сити после исчезновения Бэтмена.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-2",
+        "title": "Suicide Squad: Kill the Justice League",
+        "image": "https://lcdn.altex.ro/media/catalog/product/s/u/suicide_squad_ps5_2d_coperta_621343f9.jpg",
+        "price": "550 MDL",
+        "promo": "no",
+        "new_arrival": "yes",
+        "description": "Играйте за членов Suicide Squad в опасной миссии.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-3",
+        "title": "Back 4 Blood",
+        "image": "https://m.media-amazon.com/images/I/81W2iY7oQlL.jpg",
+        "price": "500 MDL",
+        "promo": "no",
+        "new_arrival": "no",
+        "description": "Кооперативный шутер против орд зомби.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-4",
+        "title": "LEGO Star Wars: The Skywalker Saga",
+        "image": "https://cdn.ozone.ro/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/l/e/b9539c4383bea7161f16385269cce716/lego-star-wars--the-skywalker-saga-ps5-30.jpg",
+        "price": "550 MDL",
+        "promo": "no",
+        "new_arrival": "yes",
+        "description": "Испытайте все девять фильмов Star Wars в увлекательной LEGO-игре.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-5",
+        "title": "Marvel's Midnight Suns",
+        "image": "https://lcdn.altex.ro/resize/media/catalog/product/m/a/2bd48d28d1c32adea0e55139a4e6434a/marvels-midnight-suns-enhanced-edition-ps5-2d-coperta_aece9dc2.jpg",
+        "price": "550 MDL",
+        "promo": "no",
+        "new_arrival": "yes",
+        "description": "Стратегическая игра с героями Marvel в борьбе с силами тьмы.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-6",
+        "title": "Immortals Fenyx Rising",
+        "image": "https://s13emagst.akamaized.net/products/32501/32500316/images/res_56a797792758e0db60d7b6f41958da68.jpg?width=720&height=720&hash=FA96E5CF0E8A33B66359004793C9A372",
+        "price": "400 MDL",
+        "promo": "no",
+        "new_arrival": "no",
+        "description": "Мифологическое приключение в стиле open-world, полное головоломок и боя.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-7",
+        "title": "Wild Hearts",
+        "image": "https://lcdn.altex.ro/resize/media/catalog/product/w/i/2bd48d28d1c32adea0e55139a4e6434a/wild_hearts_ps5_2d_coperta_4c4cca58.jpg",
+        "price": "450 MDL",
+        "promo": "no",
+        "new_arrival": "yes",
+        "description": "Экшен-приключенческая игра, в которой вы охотитесь на мифических существ.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-8",
+        "title": "EA Sports UFC 4",
+        "image": "https://i5.walmartimages.com/seo/EA-Sports-UFC-4-PS4-PS5_388dd040-aded-45aa-a36e-509d51a5035b.75d6413c584df3a82ac88bc497fe6140.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+        "price": "600 MDL",
+        "promo": "no",
+        "new_arrival": "no",
+        "description": "Испытайте самые интенсивные бои смешанных боевых искусств.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-9",
+        "title": "EA Sports UFC 5",
+        "image": "https://lcdn.altex.ro/resize/media/catalog/product/e/a/2bd48d28d1c32adea0e55139a4e6434a/ea_sports_ufc_5_ps5_2d_coperta_406b40fd.jpg",
+        "price": "900 MDL",
+        "promo": "no",
+        "new_arrival": "yes",
+        "description": "UFC 5 приносит новые режимы игры и улучшенную графику.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-10",
+        "title": "Street Fighter 6",
+        "image": "https://lcdn.altex.ro/media/catalog/product/s/t/street_fighter_6_ps5_2d_coperta_c1599041.jpg",
+        "price": "500 MDL",
+        "promo": "no",
+        "new_arrival": "no",
+        "description": "Классическая файтинг-игра с новыми персонажами и механиками игры.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-11",
+        "title": "Resident Evil 4",
+        "image": "https://lcdn.altex.ro/media/catalog/product/r/e/resident_evil_4_remake_ps5_2d_coperta_update_5b437a22.jpg",
+        "price": "650 MDL",
+        "promo": "no",
+        "new_arrival": "no",
+        "description": "Классический хоррор Resident Evil с современной графикой.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-12",
+        "title": "Resident Evil Village",
+        "image": "https://lcdn.altex.ro/media/catalog/product/r/e/resident_evil_village_gold_edition_ps5_2d_coperta_be6a4f33.jpg",
+        "price": "550 MDL",
+        "promo": "no",
+        "new_arrival": "yes",
+        "description": "Продолжение приключения Итена Уинтерса в страшном селении.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-13",
+        "title": "Saints Row: Criminal Customs Edition",
+        "image": "https://www.jocurinoi.ro/image/data/imported/saints-row-criminal-customs-edition-ps5-30164/main.jpg",
+        "price": "450 MDL",
+        "promo": "no",
+        "new_arrival": "no",
+        "description": "Персонализируйте своего персонажа и транспортные средства в мире Saints Row.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-14",
+        "title": "Assassin's Creed Mirage",
+        "image": "https://lcdn.altex.ro/media/catalog/product/a/s/assassins-creed-mirage-ps5-2d-coperta_998a060b.jpg",
+        "price": "600 MDL",
+        "promo": "no",
+        "new_arrival": "yes",
+        "description": "Новая глава в саге Assassin's Creed, действие которой происходит в Багдаде.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-15",
+        "title": "The Nioh Collection",
+        "image": "https://cdn.ozone.ro/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/t/h/e1a42ed23e03017c51ab8fb6040f4b04/the-nioh-collection-ps5-30.jpg",
+        "price": "700 MDL",
+        "promo": "no",
+        "new_arrival": "yes",
+        "description": "Полная коллекция игр Nioh с бонусным контентом.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-16",
+        "title": "Lords of the Fallen",
+        "image": "https://lcdn.altex.ro/resize/media/catalog/product/l/o/2bd48d28d1c32adea0e55139a4e6434a/lords_of_the_fallen_ps5_2d_coperta_17bb8dbd.jpg",
+        "price": "700 MDL",
+        "promo": "no",
+        "new_arrival": "yes",
+        "description": "Интенсивная экшен-RPG, в которой сражаются герои и могущественные враги.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-17",
+        "title": "Ghostrunner",
+        "image": "https://lcdn.altex.ro/resize/media/catalog/product/g/h/2bd48d28d1c32adea0e55139a4e6434a/ghostrunner_2_ps5_2d_coperta_51b0d6fd.jpg",
+        "price": "600 MDL",
+        "promo": "no",
+        "new_arrival": "no",
+        "description": "Быстрая экшен-игра с элементами паркура и интенсивными боями.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-18",
+        "title": "Scarlet Nexus",
+        "image": "https://cdn.ozone.ro/media/catalog/product/cache/1/image/400x498/a4e40ebdc3e371adff845072e1c73f37/8/0/aa5c3f9a72d913a274679b7192dd00fe/scarlet-nexus-ps5-30.jpg",
+        "price": "500 MDL",
+        "promo": "no",
+        "new_arrival": "no",
+        "description": "Футуристическая RPG с психическими способностями и стратегическими боями.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-19",
+        "title": "Tekken 8",
+        "image": "https://lcdn.altex.ro/media/catalog/product/t/e/tekken_8_launch_edition_ps5_2d_coperta_4a5e3b30.jpg",
+        "price": "800 MDL",
+        "promo": "no",
+        "new_arrival": "yes",
+        "description": "Последняя версия знаменитой серии файтингов Tekken.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-20",
+        "title": "Dark Souls Trilogy",
+        "image": "https://m.media-amazon.com/images/I/81anemGoWqL.jpg",
+        "price": "950 MDL",
+        "promo": "no",
+        "new_arrival": "yes",
+        "description": "Полная трилогия Dark Souls со всеми дополнениями.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-21",
+        "title": "No More Heroes 3",
+        "image": "https://p1.akcdn.net/full/1008627072.marvelous-no-more-heroes-iii-ps5.jpg",
+        "price": "550 MDL",
+        "promo": "no",
+        "new_arrival": "no",
+        "description": "Следите за Трэвисом Тачдауном в его новом абсурдном приключении.",
+        "link": "https://instagram.com/PlaySpotStore"
+    },
+    {
+        "id": "ps5-22",
+        "title": "Still Wakes the Deep",
+        "image": "https://cdn.ozone.ro/media/catalog/product/s/t/still_wakes_the_deep_ps5_1714034301_0.jpg",
+        "price": "650 MDL",
+        "promo": "no",
+        "new_arrival": "no",
+        "description": "Хоррор-триллер, действие которого происходит на заброшенной рыболовной лодке.",
+        "link": "https://instagram.com/PlaySpotStore"
+    }
+]

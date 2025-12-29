@@ -1,0 +1,142 @@
+[
+  {
+    "id": "t1",
+    "author": "Andrei Maksimilian",
+    "image": "/images/testimonials/andrei.jpg",
+    "text": "Super fain serviciu! Jocurile au venit rapid și impecabile.",
+    "role": "Client fidel"
+  },
+  {
+    "id": "t2",
+    "author": "Maria Ivanova",
+    "image": "/images/testimonials/maria.jpg",
+    "text": "Reparația PS4 a fost rapidă și la un preț bun. Recomand cu încredere!",
+    "role": "Gamer profesionist"
+  },
+  {
+    "id": "t3",
+    "author": "Ion Moraru",
+    "image": "/images/testimonials/ion.jpg",
+    "text": "Serviciul de suport clienți este excelent! M-au ajutat rapid cu întrebările mele.",
+    "role": "Client satisfăcut"
+  },
+  {
+    "id": "t4",
+    "author": "Elena Petrov",
+    "image": "/images/testimonials/elena.jpg",
+    "text": "Produsele comandate sunt de o calitate foarte bună. Mulțumesc!",
+    "role": "Client nou"
+  },
+  {
+    "id": "t5",
+    "author": "Victor Kuznetsov",
+    "image": "/images/testimonials/victor.jpg",
+    "text": "Foarte mulțumit de achiziție. Recomand tuturor pasionaților de gaming din Republica Moldova!",
+    "role": "Pasionat de gaming"
+  },
+  {
+    "id": "t6",
+    "author": "Natalia Cristea",
+    "image": "/images/testimonials/natalia.jpg",
+    "text": "Un magazin online de încredere. Livrare rapidă și produse originale.",
+    "role": "Mamă de gamer"
+  },
+  {
+    "id": "t7",
+    "author": "Alexandru Smirnov",
+    "image": "/images/testimonials/alexandru.jpg",
+    "text": "Mi-am cumpărat un controller nou și funcționează perfect. Recomand cu drag!",
+    "role": "Gamer pasionat"
+  },
+  {
+    "id": "t8",
+    "author": "Cristina Sârbu",
+    "image": "/images/testimonials/cristina.jpg",
+    "text": "Reparația consolei a durat mai puțin de o zi. Excelent!",
+    "role": "Utilizator de console"
+  },
+  {
+    "id": "t9",
+    "author": "Oleg Ciobanu",
+    "image": "/images/testimonials/oleg.jpg",
+    "text": "Prețurile sunt accesibile, iar serviciul este de calitate. Mulțumesc!",
+    "role": "Client fericit"
+  },
+  {
+    "id": "t10",
+    "author": "Irina Andrei",
+    "image": "/images/testimonials/irina.jpg",
+    "text": "Foarte mulțumită de selecția de jocuri disponibile pe site.",
+    "role": "Jucător ocazional"
+  },
+  {
+    "id": "t11",
+    "author": "Sergiu Petrov",
+    "image": "/images/testimonials/sergiu.jpg",
+    "text": "Serviciile sunt rapide și de încredere. Cu siguranță voi reveni!",
+    "role": "Fan al tehnologiei"
+  },
+  {
+    "id": "t12",
+    "author": "Mihai Costin",
+    "image": "/images/testimonials/mihai.jpg",
+    "text": "Am găsit exact ce căutam. Procesul de comandă este foarte simplu.",
+    "role": "Gamer"
+  },
+  {
+    "id": "t13",
+    "author": "Ana Pîrvu",
+    "image": "/images/testimonials/ana.jpg",
+    "text": "Calitate la prețuri bune. Livrarea în Republica Moldova a fost rapidă.",
+    "role": "Clientă mulțumită"
+  },
+  {
+    "id": "t14",
+    "author": "Dan Ivanov",
+    "image": "/images/testimonials/dan.jpg",
+    "text": "O echipă de profesioniști care își fac treaba bine. Bravo!",
+    "role": "Client loial"
+  },
+  {
+    "id": "t15",
+    "author": "Roxana Gheorghe",
+    "image": "/images/testimonials/roxana.jpg",
+    "text": "Mulțumită de suportul tehnic oferit. Problema mea s-a rezolvat imediat.",
+    "role": "Utilizator de tehnologie"
+  },
+  {
+    "id": "t16",
+    "author": "Valentin Lukașin",
+    "image": "/images/testimonials/valentin.jpg",
+    "text": "Recomand acest site pentru toți gamerii din Republica Moldova!",
+    "role": "Jucător profesionist"
+  },
+  {
+    "id": "t17",
+    "author": "Iulia Dancu",
+    "image": "/images/testimonials/iulia.jpg",
+    "text": "Comand rapid și fără probleme. Livrarea mereu la timp.",
+    "role": "Clientă fidelă"
+  },
+  {
+    "id": "t18",
+    "author": "Nicolae Popa",
+    "image": "/images/testimonials/nicolae.jpg",
+    "text": "Super experiență de cumpărare. Voi recomanda și prietenilor!",
+    "role": "Client entuziast"
+  },
+  {
+    "id": "t19",
+    "author": "Veronica Munteanu",
+    "image": "/images/testimonials/veronica.jpg",
+    "text": "Sunt foarte mulțumită de calitatea produselor. Recomand!",
+    "role": "Mamă de gamer"
+  },
+  {
+    "id": "t20",
+    "author": "Dumitru Sava",
+    "image": "/images/testimonials/dumitru.jpg",
+    "text": "Cel mai bun magazin pentru console și accesorii din Republica Moldova!",
+    "role": "Pasionat de tehnologie"
+  }
+]

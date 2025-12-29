@@ -1,0 +1,142 @@
+[
+    {
+        "id": "t1",
+        "author": "Andrei Maksimilian",
+        "image": "/images/testimonials/andrei.jpg",
+        "text": "Отличный сервис! Игры пришли быстро и безупречно.",
+        "role": "Преданный клиент"
+    },
+    {
+        "id": "t2",
+        "author": "Maria Ivanova",
+        "image": "/images/testimonials/maria.jpg",
+        "text": "Ремонт PS4 был быстрым и по хорошей цене. Рекомендую с уверенностью!",
+        "role": "Профессиональный геймер"
+    },
+    {
+        "id": "t3",
+        "author": "Ion Moraru",
+        "image": "/images/testimonials/ion.jpg",
+        "text": "Служба поддержки клиентов отличная! Мне быстро помогли с моими вопросами.",
+        "role": "Удовлетворенный клиент"
+    },
+    {
+        "id": "t4",
+        "author": "Elena Petrov",
+        "image": "/images/testimonials/elena.jpg",
+        "text": "Заказанные продукты очень качественные. Спасибо!",
+        "role": "Новый клиент"
+    },
+    {
+        "id": "t5",
+        "author": "Victor Kuznetsov",
+        "image": "/images/testimonials/victor.jpg",
+        "text": "Очень доволен покупкой. Рекомендую всем увлеченным геймерам из Молдовы!",
+        "role": "Увлеченный геймер"
+    },
+    {
+        "id": "t6",
+        "author": "Natalia Cristea",
+        "image": "/images/testimonials/natalia.jpg",
+        "text": "Надежный интернет-магазин. Быстрая доставка и оригинальные продукты.",
+        "role": "Мама геймера"
+    },
+    {
+        "id": "t7",
+        "author": "Alexandru Smirnov",
+        "image": "/images/testimonials/alexandru.jpg",
+        "text": "Купил новый контроллер, и он работает отлично. Рекомендую с удовольствием!",
+        "role": "Увлеченный геймер"
+    },
+    {
+        "id": "t8",
+        "author": "Cristina Sârbu",
+        "image": "/images/testimonials/cristina.jpg",
+        "text": "Ремонт консоли занял менее дня. Отлично!",
+        "role": "Пользователь консолей"
+    },
+    {
+        "id": "t9",
+        "author": "Oleg Ciobanu",
+        "image": "/images/testimonials/oleg.jpg",
+        "text": "Цены доступны, а сервис качественный. Спасибо!",
+        "role": "Счастливый клиент"
+    },
+    {
+        "id": "t10",
+        "author": "Irina Andrei",
+        "image": "/images/testimonials/irina.jpg",
+        "text": "Очень довольна ассортиментом игр, доступных на сайте.",
+        "role": "Случайный игрок"
+    },
+    {
+        "id": "t11",
+        "author": "Sergiu Petrov",
+        "image": "/images/testimonials/sergiu.jpg",
+        "text": "Сервисы быстрые и надежные. Определенно вернусь!",
+        "role": "Фанат технологий"
+    },
+    {
+        "id": "t12",
+        "author": "Mihai Costin",
+        "image": "/images/testimonials/mihai.jpg",
+        "text": "Нашел именно то, что искал. Процесс заказа очень простой.",
+        "role": "Геймер"
+    },
+    {
+        "id": "t13",
+        "author": "Ana Pîrvu",
+        "image": "/images/testimonials/ana.jpg",
+        "text": "Качество по хорошей цене. Доставка в Молдову была быстрой.",
+        "role": "Довольная клиентка"
+    },
+    {
+        "id": "t14",
+        "author": "Dan Ivanov",
+        "image": "/images/testimonials/dan.jpg",
+        "text": "Профессиональная команда, которая хорошо выполняет свою работу. Браво!",
+        "role": "Лояльный клиент"
+    },
+    {
+        "id": "t15",
+        "author": "Roxana Gheorghe",
+        "image": "/images/testimonials/roxana.jpg",
+        "text": "Довольна технической поддержкой. Моя проблема была решена сразу.",
+        "role": "Пользователь технологий"
+    },
+    {
+        "id": "t16",
+        "author": "Valentin Lukașin",
+        "image": "/images/testimonials/valentin.jpg",
+        "text": "Рекомендую этот сайт всем геймерам из Молдовы!",
+        "role": "Профессиональный игрок"
+    },
+    {
+        "id": "t17",
+        "author": "Iulia Dancu",
+        "image": "/images/testimonials/iulia.jpg",
+        "text": "Быстрый и беспроблемный заказ. Доставка всегда вовремя.",
+        "role": "Преданная клиентка"
+    },
+    {
+        "id": "t18",
+        "author": "Nicolae Popa",
+        "image": "/images/testimonials/nicolae.jpg",
+        "text": "Отличный опыт покупки. Буду рекомендовать друзьям!",
+        "role": "Энтузиаст-клиент"
+    },
+    {
+        "id": "t19",
+        "author": "Veronica Munteanu",
+        "image": "/images/testimonials/veronica.jpg",
+        "text": "Очень довольна качеством продуктов. Рекомендую!",
+        "role": "Мама геймера"
+    },
+    {
+        "id": "t20",
+        "author": "Dumitru Sava",
+        "image": "/images/testimonials/dumitru.jpg",
+        "text": "Лучший магазин для консолей и аксессуаров в Молдове!",
+        "role": "Увлеченный технологиями"
+    }
+]

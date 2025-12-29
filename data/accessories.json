@@ -1,0 +1,64 @@
+[
+  {
+    "id": "accessory-1",
+    "title": "Red DualShock 4 Controller (PS4)",
+    "image": "https://s13emagst.akamaized.net/products/4816/4815256/images/res_58ec7454d64e6d7025b60e311d83e5e1.jpg?width=720&height=720&hash=5C635679B236BECBC66959B2EC9E3616",
+    "price": "750 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Controller DualShock 4 roșu pentru PlayStation 4.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "accessory-2",
+    "title": "White DualShock 4 Controller (PS4)",
+    "image": "https://lcdn.altex.ro/resize/media/catalog/product/w/h/2bd48d28d1c32adea0e55139a4e6434a/white_v2_600x600.jpg",
+    "price": "750 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Controller DualShock 4 alb pentru PlayStation 4.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "accessory-3",
+    "title": "Black DualShock 4 Controller (PS4)",
+    "image": "https://s13emagst.akamaized.net/products/4483/4482918/images/res_c700e90bf165e1384cbfab25329919be.jpg?width=720&height=720&hash=D1520B5B529A577D37CBCEF32F0B2A1D",
+    "price": "700 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Controller DualShock 4 negru pentru PlayStation 4.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "accessory-4",
+    "title": "White DualSense Controller (PS5)",
+    "image": "https://cdn.forit.ro/images/products/img_202402231645/499942/full/gamepad-sony-dualsense-wireless-controller-ps5-white-863430.jpg",
+    "price": "950 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Controller DualSense alb pentru PlayStation 5.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "accessory-5",
+    "title": "Razer Tournament Edition Controller",
+    "image": "https://lcdn.altex.ro/media/catalog/product/r/a/raiju_faa18039.jpg",
+    "price": "1,200 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Controller de performanță ridicată de la Razer pentru gaming competitiv.",
+    "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "accessory-6",
+    "title": "Sony PlayStation VR Aim Controller",
+    "image": "https://s13emagst.akamaized.net/products/37339/37338441/images/res_4c7cc232bd144d7c8905cdff92c3f869.jpg?width=720&height=720&hash=51AF35AABBFD2B3649851AEA1F6FBAB9",
+        "image1": "11.jpeg",
+    "image2": "https://i.ytimg.com/vi/cJYGGLTMj7w/mqdefault.jpg",
+    "price": "600 MDL",
+    "promo": "no",
+    "new_arrival": "no",
+    "description": "Controller de precizie pentru experiențe VR immersive pe PlayStation.",
+    "link": "https://instagram.com/PlaySpotStore"
+  }
+]
