@@ -1,0 +1,2733 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Title and Description -->
+  <title>PlaySpotStore - Joacă. Descoperă. Câștigă!</title>
+  <meta name="description" content="PlaySpotStore - Cel mai popular magazin de jocuri și accesorii PlayStation din Moldova. Oferim jocuri PS4/PS5, console și accesorii la prețuri de rămâi gură-cască">
+  
+  <!-- Keywords -->
+  <meta name="keywords" content="PlaySpotStore, jocuri PS4, jocuri PS5, console PlayStation, accesorii gaming, reparație console, Moldova, Chișinău">
+  
+  <!-- Author -->
+  <meta name="author" content="PlaySpotStore Team">
+  
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph (Facebook and Social Media) -->
+  <meta property="og:title" content="PlaySpotStore - Joacă. Descoperă. Câștigă!">
+  <meta property="og:description" content="Descoperă PlaySpotStore pentru cele mai bune oferte la jocuri PS4/PS5, console și accesorii în Moldova.">
+  <meta property="og:image" content="https://playstationspot.store/YOUR_LOGO.png">
+  <meta property="og:url" content="https://playstationspot.store/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ro_RO">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PlaySpotStore - Joacă. Descoperă. Câștigă!">
+  <meta name="twitter:description" content="Cea mai bună experiență de gaming din Moldova! Vizitează PlaySpotStore acum.">
+  <meta name="twitter:image" content="https://playstationspot.store/YOUR_LOGO.png">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://playstationspot.store/">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="https://playstationspot.store/YOUR_LOGO.png" type="image/png">
+  
+  <!-- Alternate Language Links -->
+  <link rel="alternate" hreflang="ro" href="https://playstationspot.store/">
+  <link rel="alternate" hreflang="ru" href="https://playstationspot.store/ru.html">
+  
+  <!-- Verification and Analytics -->
+<meta name="google-site-verification" content="LOrjghPm0EX0oV1Uy5ji2lS7Fs66Y1kFA9qaDQIEHOY" />
+<meta name="msvalidate.01" content="F028E3257BBCFAD4219E3F7710E2498C" />
+  
+  <!-- Structured Data (JSON-LD for Business Info) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PlaySpotStore",
+    "url": "https://playstationspot.store/",
+    "logo": "https://playstationspot.store/YOUR_LOGO.png",
+    "sameAs": [
+      "https://www.instagram.com/PlaySpotStore",
+      "https://www.facebook.com/PlaySpotStore",
+      "https://t.me/PlaySpotStore"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+37378890580",
+      "contactType": "Customer Service"
+    }
+  }
+  </script>
+</head>
+
+
+  <!-- ROBOTO MONO (Existing) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- BOXICONS -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <!-- Favicon as an emoji -->
+  <link rel="icon" href="YOUR_LOGO.png">
+
+  <style>
+
+
+    :root {
+      --bg-color: #000;
+      --text-color: #10ffeb;
+      --primary-neon: #f105e8;
+      --secondary-neon: #10ffeb;
+      --font-family: 'Roboto Mono', monospace; /* Base for body text */
+      --speed: 0.3s;
+      --radius: 0;
+      --box-shadow-neon: 0 0 10px rgba(241,5,232,0.5), 0 0 20px rgba(16,255,235,0.4);
+      --header-height: 70px;
+      --extra-neon-1: #ff1f1f;
+      --extra-neon-2: #ffb100;
+      --extra-neon-3: #1fff40;
+      --extra-neon-4: #1f99ff;
+
+      --bg-gradient: linear-gradient(135deg, #000 0%, #111 100%);
+      --btn-hover-scale: 1.05;
+
+      --transition-fast: 0.15s;
+      --transition-slow: 0.5s;
+      --glitch-text-shadow-1: 2px 0 #ff00c1;
+      --glitch-text-shadow-2: -2px 0 #00fff0;
+      --pulse-scale: 1.03;
+      --tilt-rotate: 2deg;
+    }
+
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background: var(--bg-gradient);
+      color: var(--text-color);
+      line-height: 1.5;
+      overflow-x: hidden;
+      animation: fadeInBody 1.2s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInBody {
+      to {
+        opacity: 1;
+      }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color var(--speed);
+    }
+    a:hover {
+      color: var(--primary-neon);
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      border-radius: var(--radius);
+      transition: all var(--speed);
+    }
+
+    h1, h2, h3 {
+      color: var(--secondary-neon);
+      text-shadow: 0 0 3px var(--secondary-neon);
+    }
+    p, span, li, div {
+      color: var(--text-color);
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    /* NEW ADDITION: Smooth Loading Animation */
+    @keyframes smoothFadeIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    .smooth-load {
+      opacity: 0;
+      animation: smoothFadeIn 0.7s ease forwards;
+    }
+
+
+
+    /* Header & Navigation */
+    header {
+      width: 100%;
+      height: var(--header-height);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      padding: 0 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img {
+      width: 40px;
+      height: auto;
+      border-radius: 50%;
+    }
+    .logo span {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--primary-neon);
+      /* Keep default font for brand name */
+      font-family: var(--font-family) !important;
+    }
+
+    nav {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li a {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      padding: 0.5rem;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 2rem;
+      color: var(--secondary-neon);
+      margin-left: 1rem;
+      cursor: pointer;
+      transition: transform var(--speed);
+    }
+    .hamburger.active i::before {
+      content: "\eb99" !important; /* If using boxicons */
+      font-family: "boxicons" !important;
+    }
+
+    /* Search Bars */
+    .search-bar {
+      position: relative;
+      margin-left: 1rem;
+    }
+    .search-bar input {
+      padding: 6px 28px 6px 8px;
+      background: #000;
+      border: 2px solid var(--primary-neon);
+      border-radius: var(--radius);
+      color: var(--secondary-neon);
+      font-size: 0.85rem;
+      transition: border-color var(--speed), box-shadow var(--speed);
+    }
+    .search-bar input::placeholder {
+      color: var(--secondary-neon);
+    }
+    .search-bar input:focus {
+      border-color: var(--secondary-neon);
+      outline: none;
+      box-shadow: 0 0 10px var(--secondary-neon);
+    }
+    .search-suggestions {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #000;
+      border: 2px solid var(--primary-neon);
+      border-radius: var(--radius);
+      width: 200px;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 999;
+      padding: 0.5rem 0;
+    }
+    .search-suggestions.active {
+      display: block;
+    }
+    .suggestion-item {
+      padding: 6px 10px;
+      font-size: 0.85rem;
+      color: var(--secondary-neon);
+      cursor: pointer;
+      transition: background var(--speed);
+    }
+    .suggestion-item:hover {
+      background: #111;
+    }
+
+    .mobile-search-bar {
+      display: none;
+      position: relative;
+      width: 100%;
+      padding: 1rem;
+    }
+    .mobile-search-bar input {
+      width: 100%;
+      background: #000;
+      border: 2px solid var(--primary-neon);
+      border-radius: var(--radius);
+      color: var(--secondary-neon);
+      font-size: 0.85rem;
+      padding: 8px;
+      transition: border-color var(--speed), box-shadow var(--speed);
+    }
+    .mobile-search-bar input::placeholder {
+      color: var(--secondary-neon);
+    }
+    .mobile-search-bar input:focus {
+      border-color: var(--secondary-neon);
+      outline: none;
+      box-shadow: 0 0 10px var(--secondary-neon);
+    }
+    .mobile-search-suggestions {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #000;
+      border: 2px solid var(--primary-neon);
+      border-radius: var(--radius);
+      width: 90%;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 999;
+      padding: 0.5rem 0;
+    }
+    .mobile-search-suggestions.active {
+      display: block;
+    }
+
+    /* -------------------------------- */
+    /*       HERO SECTION - GLITCH      */
+    /* -------------------------------- */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      position: relative;
+      margin-top: var(--header-height);
+      background: url("YOUR_HERO_IMAGE.jpg") center/cover no-repeat;
+      overflow: hidden;
+      padding-bottom: 8rem; /* Larger padding for big screens */
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; 
+      left: 0;
+      width: 100%; 
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    /* Faster, more frequent glitch overlay */
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; 
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("YOUR_HERO_IMAGE.jpg") center/cover no-repeat;
+      mix-blend-mode: screen;
+      z-index: 2;
+      opacity: 0.07;
+      animation: glitchHeroBG 2.5s infinite; /* <-- shortened duration */
+    }
+
+    .hero > * {
+      position: relative;
+      z-index: 3;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 1.7rem;
+      animation: glowTitle 2s infinite alternate ease-in-out;
+    }
+    .hero p {
+      font-size: 1rem;
+      max-width: 600px;
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+
+    /* Keyframes: Faster, more frequent glitch frames */
+    @keyframes glitchHeroBG {
+      0% {
+        opacity: 0.07;
+        transform: translate(0, 0);
+        clip-path: none;
+      }
+      3% {
+        opacity: 0.2;
+        transform: translate(4px, -2px);
+        clip-path: inset(25% 0 12% 0);
+      }
+      5% {
+        opacity: 0.07;
+        transform: translate(0, 0);
+        clip-path: none;
+      }
+      8% {
+        opacity: 0.15;
+        transform: translate(-5px, 3px);
+        clip-path: inset(10% 0 35% 0);
+      }
+      10% {
+        opacity: 0.07;
+        transform: translate(0, 0);
+        clip-path: none;
+      }
+      15% {
+        opacity: 0.2;
+        transform: translate(6px, -4px);
+        clip-path: inset(15% 0 45% 0);
+      }
+      17% {
+        opacity: 0.07;
+        transform: translate(0, 0);
+        clip-path: none;
+      }
+      25% {
+        opacity: 0.1;
+        transform: translate(-3px, 2px);
+        clip-path: inset(5% 0 20% 0);
+      }
+      27% {
+        opacity: 0.07;
+        transform: translate(0, 0);
+        clip-path: none;
+      }
+      100% {
+        opacity: 0.07;
+        transform: translate(0, 0);
+        clip-path: none;
+      }
+    }
+
+    @keyframes glowTitle {
+      0% {
+        text-shadow: 0 0 5px var(--secondary-neon), 0 0 10px var(--secondary-neon);
+      }
+      100% {
+        text-shadow: 0 0 10px var(--primary-neon), 0 0 20px var(--primary-neon);
+      }
+    }
+
+    /* CTA Buttons */
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+    .cta-buttons a,
+    .cta-buttons button {
+      padding: 0.8rem 1.3rem;
+      background: var(--primary-neon);
+      color: #000;
+      font-size: 1rem;
+      text-transform: uppercase;
+      box-shadow: var(--box-shadow-neon);
+      transition: transform 0.2s, box-shadow 0.2s;
+      border-radius: var(--radius);
+      border: none;
+    }
+    .cta-buttons a:hover,
+    .cta-buttons button:hover {
+      background: var(--secondary-neon);
+      transform: scale(var(--btn-hover-scale));
+      box-shadow: 0 0 15px var(--secondary-neon);
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 20px;
+      cursor: pointer;
+      animation: bounce 2s infinite;
+      z-index: 3;
+    }
+    .scroll-indicator i {
+      font-size: 1.8rem;
+      color: var(--secondary-neon);
+    }
+    @keyframes bounce {
+      0%,20%,50%,80%,100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+
+    .gallery-slide img {
+      width: 100%;
+      height: 300px;       /* FIXED HEIGHT => all images same vertical size */
+      object-fit: cover;   /* crops edges but maintains fill for uniform look */
+      display: block;
+    }
+
+    /* Floating shapes */
+    .ps-floating-shape {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      opacity: 0.1;
+      animation: float-shape 8s infinite alternate ease-in-out;
+    }
+    .ps-floating-shape.square {
+      background: var(--secondary-neon);
+    }
+    .ps-floating-shape.circle {
+      background: var(--primary-neon);
+      border-radius: 50%;
+    }
+    .ps-floating-shape.triangle {
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-bottom: 60px solid var(--secondary-neon);
+      opacity: 0.15;
+      animation: float-shape 10s infinite alternate ease-in-out;
+    }
+    .ps-shape-1 {
+      top: 70%;
+      left: 5%;
+    }
+    .ps-shape-2 {
+      top: 40%;
+      left: 80%;
+      animation-delay: 2s;
+    }
+    .ps-shape-3 {
+      top: 60%;
+      left: 50%;
+      animation-delay: 4s;
+    }
+    @keyframes float-shape {
+      0% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+      100% {
+        transform: translate(50px, -100px) rotate(360deg);
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Features */
+    .features {
+      padding: 40px 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .feature {
+      background: #000;
+      border: 2px solid var(--primary-neon);
+      border-radius: var(--radius);
+      box-shadow: 0 0 10px rgba(241,5,232,0.2);
+      width: 300px;
+      text-align: center;
+      padding: 1.5rem;
+      transition: transform var(--speed), box-shadow var(--speed);
+      position: relative;
+    }
+    .feature i {
+      font-size: 2rem;
+      color: var(--secondary-neon);
+      margin-bottom: 1rem;
+      animation: neonPulse 3s infinite;
+    }
+    .feature h3 {
+      margin-bottom: 0.5rem;
+    }
+    .feature:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--box-shadow-neon);
+    }
+    @keyframes neonPulse {
+      0% {
+        text-shadow: 0 0 5px var(--secondary-neon), 0 0 10px var(--secondary-neon);
+      }
+      50% {
+        text-shadow: 0 0 15px var(--primary-neon), 0 0 30px var(--primary-neon);
+      }
+      100% {
+        text-shadow: 0 0 5px var(--secondary-neon), 0 0 10px var(--secondary-neon);
+      }
+    }
+
+    /* Seasonal Promotions */
+    .season-promotions {
+      padding: 40px 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    #countdown-timer {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--primary-neon);
+    }
+
+    /* Product Promotions */
+    .product-promotions {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    .product-promotions button {
+      padding: 0.8rem 1.3rem;
+      background: var(--secondary-neon);
+      color: #000;
+      box-shadow: var(--box-shadow-neon);
+      text-transform: uppercase;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      border-radius: var(--radius);
+    }
+    .product-promotions button:hover {
+      background: var(--primary-neon);
+      transform: scale(var(--btn-hover-scale));
+    }
+    .featured-products {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    /* New Arrival */
+    .new-arrival {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    .new-arrival .featured-products {
+      margin-top: 2rem;
+    }
+
+    /* Product Cards */
+    .product-card {
+      background: #000;
+      border: 2px solid var(--secondary-neon);
+      border-radius: var(--radius);
+      width: 220px;
+      text-align: center;
+      padding: 1.5rem;
+      transition: transform var(--speed), box-shadow var(--speed);
+      position: relative;
+      box-shadow: 0 0 10px rgba(16,255,235,0.2);
+      animation: fadeIn 1s;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    .product-card:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: var(--box-shadow-neon);
+    }
+    .product-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+      opacity: 0;
+      transform: scale(0.9) translateY(10px);
+    }
+    .product-card img.loaded {
+      animation: fadeInUp 0.8s forwards;
+    }
+    .product-card h4 {
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+      color: var(--primary-neon);
+    }
+    .product-card p {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    .shop-now-button {
+      padding: 0.5rem 1rem;
+      background: var(--primary-neon);
+      color: #000;
+      text-transform: uppercase;
+      transition: transform 0.2s;
+    }
+    .shop-now-button:hover {
+      background: var(--secondary-neon);
+      transform: scale(var(--btn-hover-scale));
+    }
+
+    /* Stickers */
+    .sale-sticker,
+    .new-sticker {
+      position: absolute;
+      top: 10px;
+      font-size: 0.6rem;
+      font-weight: bold;
+      padding: 4px 6px;
+      border-radius: var(--radius);
+      text-transform: uppercase;
+      color: #000;
+      z-index: 100;
+    }
+    .sale-sticker {
+      left: 10px;
+      background: var(--primary-neon);
+      box-shadow: 0 0 6px rgba(241,5,232,0.5);
+    }
+    .new-sticker {
+      right: 10px;
+      background: var(--secondary-neon);
+      box-shadow: 0 0 6px rgba(16,255,235,0.7);
+    }
+
+    /* Testimonials */
+    .testimonials {
+      padding: 40px 1rem;
+      background: var(--bg-color);
+      color: #000;
+      text-align: center;
+      position: relative;
+    }
+    .testimonials h2 {
+      margin-bottom: 1rem;
+      color: var(--primary-neon);
+      text-shadow: none;
+    }
+    .testimonials-slideshow {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #000;
+      color: var(--secondary-neon);
+      border-radius: var(--radius);
+      padding: 40px;
+      overflow: hidden;
+    }
+    .testimonials-slideshow .testimonial {
+      display: none;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity var(--speed);
+    }
+    .testimonials-slideshow .testimonial.active {
+      display: block;
+      opacity: 1;
+      position: relative;
+    }
+    .testimonials-slideshow .testimonial p {
+      font-size: 1rem;
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+    .testimonials-slideshow .testimonial span {
+      display: block;
+      font-weight: bold;
+      margin-top: 0.5rem;
+      color: var(--primary-neon);
+    }
+    .testimonials-slideshow button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #000;
+      color: var(--secondary-neon);
+      font-size: 1rem;
+      opacity: 0.7;
+      transition: all var(--speed);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      cursor: pointer;
+    }
+    .testimonials-slideshow button:hover {
+      opacity: 1;
+      background: var(--secondary-neon);
+      color: #000;
+    }
+    .prev-testimonial {
+      left: 10px;
+    }
+    .next-testimonial {
+      right: 10px;
+    }
+
+    /* NEW ADDITION: Carousel Buttons (Neon Style) */
+    .carousel-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: linear-gradient(135deg, var(--primary-neon), var(--secondary-neon));
+      border: none;
+      color: #000;
+      font-size: 1.3rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      opacity: 0.8;
+      transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--box-shadow-neon);
+      z-index: 5;
+    }
+    .carousel-button:hover {
+      transform: scale(1.1);
+      opacity: 1;
+      box-shadow: 0 0 15px var(--primary-neon);
+    }
+    .prev-button {
+      left: 10px;
+    }
+    .next-button {
+      right: 10px;
+    }
+
+    /* Social Media */
+    .social-media {
+      padding: 40px 1rem;
+      background: #000;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .social-card {
+      background: #000;
+      border: 2px solid var(--primary-neon);
+      border-radius: var(--radius);
+      width: 250px;
+      text-align: center;
+      padding: 1rem;
+      transition: transform var(--speed), box-shadow var(--speed);
+    }
+    .social-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--box-shadow-neon);
+    }
+    .social-card i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: var(--secondary-neon);
+    }
+    .social-card h3 {
+      margin-bottom: 0.3rem;
+      color: var(--primary-neon);
+    }
+    .social-card p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .social-card a.btn {
+      background: var(--primary-neon);
+      color: #000;
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      border-radius: var(--radius);
+    }
+    .social-card a.btn:hover {
+      background: var(--secondary-neon);
+    }
+
+    /* How to Order */
+    .how-to-order {
+      padding: 40px 1rem;
+      background: #000;
+      text-align: center;
+    }
+    .how-to-order h2 {
+      color: var(--secondary-neon);
+    }
+    .order-steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    .step {
+      background: #000;
+      border: 2px solid var(--primary-neon);
+      border-radius: var(--radius);
+      box-shadow: 0 0 10px rgba(241,5,232,0.2);
+      width: 260px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform var(--speed), box-shadow var(--speed);
+      cursor: pointer;
+      position: relative;
+      outline: none;
+    }
+    .step:hover,
+    .step:focus {
+      transform: translateY(-4px);
+      box-shadow: var(--box-shadow-neon);
+    }
+    .step i {
+      font-size: 2rem;
+      color: var(--secondary-neon);
+      margin-bottom: 0.5rem;
+    }
+    .step h3 {
+      color: var(--primary-neon);
+      margin-bottom: 0.3rem;
+    }
+    .step p {
+      font-size: 0.9rem;
+      color: var(--secondary-neon);
+    }
+    .modal-button {
+      margin-top: 1rem;
+      background: var(--primary-neon);
+      color: #000;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      padding: 0.5rem 1rem;
+      transition: transform 0.2s;
+      cursor: pointer;
+      border-radius: var(--radius);
+    }
+    .modal-button:hover {
+      background: var(--secondary-neon);
+      transform: scale(var(--btn-hover-scale));
+    }
+    .modal-button#btn-unavailable {
+      background: linear-gradient(45deg, var(--primary-neon), var(--secondary-neon));
+      color: #000;
+      font-weight: bold;
+      text-shadow: 0 0 2px #000;
+      border: 2px solid var(--secondary-neon);
+    }
+    .modal-button#btn-unavailable:hover {
+      box-shadow: 0 0 15px rgba(16,255,235,0.5);
+      transform: rotate(1deg) scale(1.07);
+    }
+
+    /* Modal */
+    .modal {
+      display: none; /* Initially hidden */
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      z-index: 2000; /* Base z-index for category modals */
+      overflow-y: auto;
+      align-items: center;
+      padding: 2rem;
+    }
+    .modal.active {
+      display: flex; /* Show modal when active */
+    }
+    .modal-content {
+      background: #000;
+      border: 2px solid var(--primary-neon);
+      border-radius: var(--radius);
+      width: 90%;
+      max-width: 700px;
+      margin: auto;
+      padding: 2rem;
+      position: relative;
+      box-shadow: var(--box-shadow-neon);
+      animation: fadeInModal 0.5s forwards;
+      opacity: 0;
+      transform: translateY(40px);
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @keyframes fadeInModal {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .modal .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 1.5rem;
+      background: transparent;
+      color: var(--secondary-neon);
+      cursor: pointer;
+      transition: transform var(--speed);
+      border: none;
+    }
+    .modal .close:hover {
+      transform: scale(1.2);
+      color: var(--primary-neon);
+    }
+    .modal-products {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 40px 1rem;
+      background: #000;
+      text-align: center;
+    }
+    .contact h2 {
+      margin-bottom: 1.5rem;
+      color: var(--secondary-neon);
+    }
+    .contact p {
+      margin-bottom: 1rem;
+    }
+    .contact-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .contact-buttons a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--primary-neon);
+      color: #000;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius);
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      transition: transform 0.2s;
+    }
+    .contact-buttons a:hover {
+      background: var(--secondary-neon);
+      transform: scale(var(--btn-hover-scale));
+    }
+
+    /* Footer */
+    footer {
+      padding: 1rem;
+      text-align: center;
+      background: #000;
+      color: var(--secondary-neon);
+      font-size: 0.8rem;
+      margin-top: 2rem;
+      border-top: 2px solid var(--primary-neon);
+    }
+
+    /* ---------- ADDITIONAL ANIMATIONS & VISUAL FX ---------- */
+    /* Glitch Text Effect */
+    .glitch-title {
+      position: relative;
+      font-size: 2rem;
+      animation: glitch 2s infinite;
+    }
+    @keyframes glitch {
+      0% {
+        text-shadow: var(--glitch-text-shadow-1), var(--glitch-text-shadow-2);
+        transform: translate(0);
+      }
+      20% {
+        text-shadow: none;
+        transform: translate(-2px, 2px);
+      }
+      40% {
+        text-shadow: var(--glitch-text-shadow-1), var(--glitch-text-shadow-2);
+        transform: translate(2px, -2px);
+      }
+      60% {
+        text-shadow: none;
+        transform: translate(-1px, 1px);
+      }
+      80% {
+        text-shadow: var(--glitch-text-shadow-1), var(--glitch-text-shadow-2);
+        transform: translate(1px, -1px);
+      }
+      100% {
+        text-shadow: var(--glitch-text-shadow-1), var(--glitch-text-shadow-2);
+        transform: translate(0);
+      }
+    }
+
+    /* Neon Flicker */
+    @keyframes neonFlicker {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.8;
+      }
+      60% {
+        opacity: 0.9;
+      }
+      70% {
+        opacity: 0.7;
+      }
+      80% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .flicker {
+      animation: neonFlicker 3s infinite;
+    }
+
+    /* Tilt on Hover (mild 3D effect) */
+    .tilt-on-hover {
+      transition: transform var(--speed) ease-in-out;
+    }
+    .tilt-on-hover:hover {
+      transform: rotate(var(--tilt-rotate)) scale(var(--pulse-scale));
+    }
+
+    /* Parallax-ish background effect */
+    .parallax-section {
+      position: relative;
+      background: url("YOUR_PARALLAX_IMAGE.jpg") center/cover no-repeat fixed;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-neon);
+      text-shadow: 0 0 10px var(--secondary-neon);
+      margin: 2rem 0;
+    }
+    .parallax-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    /* ---------- GALLERY SECTION ---------- */
+    .gallery {
+      padding: 40px 1rem;
+      text-align: center;
+      background: #000;
+    }
+    .gallery h2 {
+      color: var(--secondary-neon);
+      margin-bottom: 1rem;
+    }
+    .gallery-slideshow {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      background: #111;
+      border: 2px solid var(--primary-neon);
+      border-radius: var(--radius);
+      padding: 1rem;
+      overflow: hidden;
+    }
+    .gallery-slide {
+      display: none;
+    }
+    .gallery-slide.active {
+      display: block;
+    }
+    .gallery-slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .prev-gallery,
+    .next-gallery {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #000;
+      color: var(--secondary-neon);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      opacity: 0.7;
+      transition: opacity var(--speed), background var(--speed);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+    .prev-gallery:hover,
+    .next-gallery:hover {
+      opacity: 1;
+      background: var(--secondary-neon);
+      color: #000;
+    }
+    .prev-gallery {
+      left: 10px;
+    }
+    .next-gallery {
+      right: 10px;
+    }
+
+    /* Center section headings */
+    .console-section,
+    .accessories-section {
+      text-align: center; /* Center headings and text inside these sections */
+      margin: 2rem auto;
+    }
+
+    /* (Optional) style the H2 title for each section */
+    .console-section h2,
+    .accessories-section h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+/* Floating Language Switch Button */
+.floating-language-button {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 40px; /* Square width */
+  height: 40px; /* Square height */
+  background: rgba(0, 255, 128, 0.6); /* Dark neon green with transparency */
+  color: #fff; /* White text for contrast */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 255, 128, 0.4); /* Neon green glow */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  z-index: 1000; /* Ensures the button stays on top */
+  cursor: pointer;
+}
+
+/* Hover and Focus Effects */
+.floating-language-button:hover,
+.floating-language-button:focus {
+  background: rgba(0, 255, 128, 0.8); /* Brighter neon green on hover */
+  transform: scale(1.1); /* Slightly larger on hover */
+  box-shadow: 0 0 15px rgba(0, 255, 128, 0.7); /* Glow effect */
+  color: #fff;
+  outline: none;
+}
+
+/* Icon Styling (if using SVG or icon fonts) */
+.floating-language-button i {
+  font-size: 1.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .floating-language-button {
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    right: 15px;
+    font-size: 0.9rem;
+  }
+
+  .floating-language-button i {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .floating-language-button {
+    width: 25px;
+    height: 25px;
+    bottom: 15px;
+    right: 10px;
+    font-size: 0.8rem;
+  }
+
+  .floating-language-button i {
+    font-size: 0.9rem;
+  }
+}
+
+    /* Responsive Styles */
+    @media (max-width: 1150px) {
+      .logo img {
+        width: 36px;
+        height: auto;
+        border-radius: 50%;
+      }
+      .logo span {
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: var(--primary-neon);
+        /* Keep default font for brand name */
+        font-family: var(--font-family) !important;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      .hamburger {
+        display: block;
+        position: fixed;
+        top: 0.5rem;
+        right: 1rem;
+        z-index: 2001;
+      }
+      header {
+        z-index: 2000;
+      }
+      nav ul {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        height: calc(100% - var(--header-height));
+        background: #000;
+        flex-direction: column;
+        gap: 1rem;
+        transform: translateY(-100%);
+        transition: transform var(--speed);
+        padding-top: 2rem;
+        z-index: 2000;
+      }
+      nav ul.active {
+        transform: translateY(0);
+      }
+
+      .search-bar.desktop-search-bar {
+        display: none;
+      }
+      .mobile-search-bar {
+        display: block;
+      }
+      .mobile-search-suggestions {
+        width: 90%;
+      }
+
+      .hero h1 {
+        font-size: 1.4rem;
+      }
+      .hero p {
+        font-size: 0.9rem;
+      }
+
+      .feature {
+        width: 100%;
+        max-width: 320px;
+      }
+      .product-card {
+        width: 180px;
+      }
+    }
+
+    /* For iPhone SE & small phones (max-width: 375px and below) */
+    @media (max-width: 375px) {
+      :root {
+        --header-height: 60px;
+      }
+      header {
+        height: var(--header-height);
+      }
+
+      .hero {
+        background-position: center top;
+        padding-bottom: 5rem; /* Reduced so CTA is visible sooner */
+      }
+      .hero h1 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+      .hero p {
+        font-size: 0.75rem;
+        max-width: 280px;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+      }
+
+      .cta-buttons a,
+      .cta-buttons button {
+        font-size: 0.85rem;
+        padding: 0.6rem 1rem;
+      }
+
+      .product-card {
+        width: 150px;
+        padding: 1rem;
+      }
+      .product-card img {
+        height: 110px;
+      }
+
+      .feature {
+        width: 90%;
+        max-width: none;
+        margin: 0 auto;
+      }
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .scroll-indicator {
+        bottom: 10px;
+      }
+    }
+
+    /* 2-in-a-row arrangement for CTA Buttons on phones */
+    @media (max-width: 600px) {
+      .cta-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        justify-items: center;
+        margin-bottom: 3rem;
+      }
+      .cta-buttons a,
+      .cta-buttons button {
+        width: 90%;
+      }
+    }
+
+    /* Slightly bigger phone (e.g. iPhone XR ~414px wide) */
+    @media (max-width: 414px) and (min-width: 376px) {
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+      .hero p {
+        font-size: 0.9rem;
+        max-width: 320px;
+      }
+      .cta-buttons a,
+      .cta-buttons button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
+      }
+    }
+
+    /* Extra small devices (just in case) */
+    @media (max-width: 320px) {
+      .hero {
+        padding-bottom: 4rem;
+      }
+      .hero h1 {
+        font-size: 0.9rem;
+      }
+      .hero p {
+        font-size: 0.6rem;
+      }
+      .product-card {
+        width: 140px;
+      }
+      .product-card img {
+        height: 100px;
+      }
+      .step {
+        width: 220px;
+      }
+      nav ul li a {
+        font-size: 0.8rem;
+      }
+    }
+    
+    /* ===================== FIX: Product Modal Above Category Modals ======================= */
+    #product-modal {
+      z-index: 2100; /* Higher than category modals */
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="YOUR_LOGO.png" alt="PlaySpotStore Logo">
+    <span>PlaySpotStore</span>
+  </div>
+  <nav>
+    <ul id="main-menu">  
+      <li><a href="#contact">Contact</a></li>
+      <!-- For mobile -->
+      <li class="mobile-search-bar">
+        <input type="text" id="mobile-search-input" placeholder="Caută joc..." aria-label="Caută jocuri (mobil)">
+        <div class="mobile-search-suggestions" id="mobile-search-suggestions"></div>
+      </li>
+    </ul>
+    <div class="search-bar desktop-search-bar">
+      <input type="text" id="search-input" placeholder="Caută joc..." aria-label="Caută jocuri (desktop)">
+      <div class="search-suggestions" id="search-suggestions"></div>
+    </div>
+  </nav>
+  <div class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <i class="bx bx-menu"></i>
+  </div>
+</header>
+
+
+<section class="hero" id="acasa">  
+  <div class="ps-floating-shape square ps-shape-1"></div>
+  <div class="ps-floating-shape circle ps-shape-2"></div>
+  <div class="ps-floating-shape triangle ps-shape-3"></div>
+
+  <h1>Joacă. Descoperă. Câștigă.</h1>
+  <p>PlaySpotStore - Cel mai popular magazin de jocuri și accesorii Playstation din Moldova!</p>
+
+  <!-- CTA BUTTONS -->
+  <div class="cta-buttons">
+    <button onclick="openCategoryModal('ps4')">🎮 <br>JOCURI <br> PS4</button>
+    <button onclick="openCategoryModal('ps5')">🎮 <br>JOCURI <br> PS5</button>
+    <!-- "console" so it matches the switch -->
+    <button onclick="openCategoryModal('console')">🔳 <br> CONSOLE</button>
+    <button onclick="openCategoryModal('accessories')">🕹️ <br> ACCESORII</button>
+  </div>
+
+  <div class="scroll-indicator" onclick="document.getElementById('promo-products').scrollIntoView({behavior:'smooth'});">
+    <i class="bx bx-down-arrow-alt"></i>
+  </div>
+</section>
+
+<section class="social-media">
+  <div class="social-card">
+    <i class="bx bxl-instagram"></i>
+    <h3>Instagram</h3>
+    <p>Noutăți &amp; promoții!</p>
+    <a href="https://www.instagram.com/PlaySpotStore" target="_blank" class="btn">Urmărește-ne</a>
+  </div>
+  <div class="social-card">
+    <i class="bx bxl-tiktok"></i>
+    <h3>TikTok</h3>
+    <p>Trenduri noi!</p>
+    <a href="#" target="_blank" class="btn">Urmărește-ne</a>
+  </div>
+  <div class="social-card">
+    <i class="bx bxl-whatsapp"></i>
+    <h3>WhatsApp</h3>
+    <p>Întrebări &amp; suport!</p>
+    <a href="https://wa.me/+37378890580" target="_blank" class="btn">Mesaj WhatsApp</a>
+  </div>
+  <div class="social-card">
+    <i class="bx bxl-telegram"></i>
+    <h3>Telegram</h3>
+    <p>Întrebări &amp; suport!</p>
+    <a href="https://t.me/+37378890580" target="_blank" class="btn">Mesaj Telegram</a>
+  </div>
+  <div class="social-card">
+    <i class="bx bxs-phone"></i>
+    <h3>Sună-ne</h3>
+    <p>Te ajutăm imediat!</p>
+    <a href="tel:+37378890580" class="btn">Apelează acum</a>
+  </div>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <i class="bx bx-money"></i>
+    <h3>Prețuri Accesibile</h3>
+    <p>Alege jocuri la cele mai bune prețuri, fie noi sau second-hand.</p>
+  </div>
+  <div class="feature">
+    <i class="bx bx-shield"></i>
+    <h3>Siguranță Garantată</h3>
+    <p>Colet ambalat profesional, cu livrare în toată țara.</p>
+  </div>
+  <div class="feature">
+    <i class="bx bx-happy-heart-eyes"></i>
+    <h3>Community &amp; Fun</h3>
+    <p>Alătură-te comunității PlaySpotStore pentru recomandări și promoții.</p>
+  </div>
+</section>
+
+<section class="season-promotions">
+  <h2>Sărbători Fericite!</h2>
+  <p style="margin-bottom:1.5rem;">Jocuri atât noi, sigilate, cât și second-hand (B/U). Bucură-te de gaming!</p>
+  <div id="countdown-timer">Loading...</div>
+</section>
+
+<section class="product-promotions">
+  <button id="shop-now" style="font-size:1.1rem;">Sale Now</button>
+  <div class="featured-products" id="promo-products"></div>
+</section>
+
+<section class="new-arrival" id="new-arrivals">
+  <h2>Jocuri Noi</h2>
+  <div class="featured-products" id="new-products"></div>
+</section>
+
+<!-- PS4/PS5 Modals -->
+<div id="modal-ps4" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-ps4-title">
+  <div class="modal-content">
+    <button class="close" aria-label="Close modal">&times;</button>
+    <h2 id="modal-ps4-title">Jocuri PS4</h2>
+    <div class="modal-products" id="modal-products-ps4"></div>
+  </div>
+</div>
+<div id="modal-ps5" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-ps5-title">
+  <div class="modal-content">
+    <button class="close" aria-label="Close modal">&times;</button>
+    <h2 id="modal-ps5-title">Jocuri PS5</h2>
+    <div class="modal-products" id="modal-products-ps5"></div>
+  </div>
+</div>
+
+<!-- Product Detail Modal -->
+<div id="product-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="product-modal-title">
+  <div class="modal-content" id="product-modal-content">
+    <button class="close" aria-label="Close modal">&times;</button>
+    <div id="product-details"></div>
+  </div>
+</div>
+
+<!-- Console & Accessories Modals -->
+<div id="modal-console" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-console-title">
+  <div class="modal-content">
+    <button class="close" aria-label="Close modal">&times;</button>
+    <h2 id="modal-console-title">Console</h2>
+    <div class="modal-products" id="modal-products-console"></div>
+  </div>
+</div>
+<div id="modal-accessories" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-accessories-title">
+  <div class="modal-content">
+    <button class="close" aria-label="Close modal">&times;</button>
+    <h2 id="modal-accessories-title">Accesorii</h2>
+    <div class="modal-products" id="modal-products-accessories"></div>
+  </div>
+</div>
+
+<!-- Example "Recent" sections -->
+<section class="console-section" id="console-section">
+  <h2>Console</h2>
+  <div class="featured-products" id="console-products"></div>
+</section>
+
+<section class="accessories-section" id="accessories-section">
+  <h2>Accesorii</h2>
+  <div class="featured-products" id="accessories-products"></div>
+</section>
+
+<section class="testimonials">
+  <h2>Review-uri</h2>
+  <div class="testimonials-slideshow" id="testimonials-slideshow">
+    <!-- Testimonials will be dynamically injected here -->
+
+    <!-- Navigation Buttons -->
+    <button class="prev-testimonial" aria-label="Previous Testimonial">
+      <i class="bx bx-left-arrow-alt"></i>
+    </button>
+    <button class="next-testimonial" aria-label="Next Testimonial">
+      <i class="bx bx-right-arrow-alt"></i>
+    </button>
+  </div>
+
+<section class="gallery" id="gallery">
+  <h2>Galerie</h2>
+  <div class="gallery-slideshow" id="gallery-slideshow">
+    <button class="prev-gallery" aria-label="Prev">
+      <i class="bx bx-left-arrow-alt"></i>
+    </button>
+    <button class="next-gallery" aria-label="Next">
+      <i class="bx bx-right-arrow-alt"></i>
+    </button>
+  </div>
+</section>
+</section>
+<section class="how-to-order" id="how-to-order">
+  <h2>Cum Se Plasează Comanda</h2>
+  <div class="order-steps">
+    <div class="step" data-modal="order-modal-step-1" tabindex="0">
+      <i class="bx bx-cart-alt"></i>
+      <h3>Pasul 1</h3>
+      <p>Alege jocurile dorite</p>
+    </div>
+    <div class="step" data-modal="order-modal-step-2" tabindex="0">
+      <i class="bx bx-check-circle"></i>
+      <h3>Pasul 2</h3>
+      <p>Confirmă disponibilitatea</p>
+    </div>
+    <div class="step" data-modal="order-modal-step-3" tabindex="0">
+      <i class="bx bx-truck"></i>
+      <h3>Pasul 3</h3>
+      <p>AWB &amp; Livrare</p>
+    </div>
+  </div>
+  <button class="modal-button" id="btn-unavailable" data-modal="order-modal-product-not-found">
+    Dacă jocul nu e disponibil?
+  </button>
+</section>
+
+<!-- Step Modals -->
+<div id="order-modal-step-1" class="modal" aria-hidden="true" role="dialog" aria-labelledby="order-modal-step-1-title">
+  <div class="modal-content">
+    <button class="close" aria-label="Close modal">&times;</button>
+    <h2 id="order-modal-step-1-title">🎮 Pasul 1 🎮</h2>
+    <p>Alege jocurile pe care le dorești din categoria PS4 sau PS5. 🕹️📋 Notează-ți titlurile. 📝</p>
+  </div>
+</div>
+<div id="order-modal-step-2" class="modal" aria-hidden="true" role="dialog" aria-labelledby="order-modal-step-2-title">
+  <div class="modal-content">
+    <button class="close" aria-label="Close modal">&times;</button>
+    <h2 id="order-modal-step-2-title">📲 Pasul 2</h2>
+    <p>Scrie-ne pe Instagram / WhatsApp / Telegram pentru a confirma disponibilitatea și locația unde dorești să primești jocul. 🛍️ 
+      <br><br>
+      Dacă ești din Chișinău, 🏙️ menționează ora și ziua când dorești să stabilim predarea produsului. ⏰ 
+      <br><br> (În Chișinău, predarea se face în față. 🤝) 
+      <br><br> În restul teritoriului Moldovei, în afara Chișinăului, produsele se transmit prin Poșta Moldovei. 📦✉️</p>
+  </div>
+</div>
+<div id="order-modal-step-3" class="modal" aria-hidden="true" role="dialog" aria-labelledby="order-modal-step-3-title">
+  <div class="modal-content">
+    <button class="close" aria-label="Close modal">&times;</button>
+    <h2 id="order-modal-step-3-title">✅ Pasul 3</h2>
+    <p>După ce stabilim adresa și metoda de plată 💳,<br><br> în scurt timp vei primi: <br><br> ***Codul de confirmare pentru colet.*** 🎁📨</p>
+  </div>
+</div>
+<div id="order-modal-product-not-found" class="modal" aria-hidden="true" role="dialog" aria-labelledby="order-modal-product-not-found-title">
+  <div class="modal-content">
+    <button class="close" aria-label="Close modal">&times;</button>
+    <h2 id="order-modal-product-not-found-title">🤔 Joc Indisponibil?</h2>
+    <p>Dacă nu găsești un joc, întreabă-ne direct! 💬 Încercăm să-l aducem cât mai repede în stoc. 🚀</p>
+  </div>
+</div>
+
+
+
+
+
+<section class="contact" id="contact">
+  <h2>Contact</h2>
+  <p>Mai multe detalii și lista completă de jocuri? Scrie-mi în privat sau lasă un mesaj aici în comentarii!</p>
+  <div class="contact-buttons">
+    <a href="https://instagram.com/PlaySpotStore" target="_blank">
+      <i class="bx bxl-instagram"></i> Instagram
+    </a>
+    <a href="https://wa.me/+37378890580" target="_blank">
+      <i class="bx bxl-whatsapp"></i> WhatsApp
+    </a>
+    <a href="https://t.me/+37378890580" target="_blank">
+      <i class="bx bxl-telegram"></i> Telegram
+    </a>
+    <a href="tel:+37378890580">
+      <i class="bx bxs-phone"></i> Apel Direct
+    </a>
+  </div>
+<footer>
+  &copy; 2025 PlaySpotStore | Joacă. Descoperă. Câștigă. All Rights Reserved.  <style> /* Tags Container Styles */
+    #tags {
+      margin: 0;
+      max-height: 0px; /* Adjust the height as needed */
+      max-width: 0px; /* Adjust the width as needed */
+      overflow-y: auto; /* Enable scrolling if content exceeds height */
+      padding: 10px;
+      background: #000;
+      color: var(--secondary-neon);
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin: 20px auto;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      padding: 5px 10px;
+      margin: 5px;
+      font-size: 12px;
+      white-space: nowrap;
+      transition: background-color 0.3s;
+    }
+
+    .tag:hover {
+          background: #000;
+      color: var(--secondary-neon);
+    }
+
+    /* Total Tags Counter */
+    #tag-count {
+      margin: 10px auto;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+            background: #000;
+      color: var(--secondary-neon);
+    }
+
+  </style>
+
+  <!-- Tags Container -->
+  <div id="tags"></div>
+  <p id="tag-count" style="display: none;"><small>Tags: 0</small></p>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      await loadTags();
+    });
+
+    async function loadTags() {
+      try {
+        const response = await fetch('/data/tags.json');
+        const data = await response.json();
+        const { locations, websiteTags } = data;
+
+        const tagsList = document.getElementById('tags');
+        const tagCountDisplay = document.getElementById('tag-count');
+
+        const fragment = document.createDocumentFragment();
+        let tagCount = 0;
+
+        for (const location of locations) {
+          for (const tag of websiteTags) {
+            const tagElement = document.createElement('span');
+            tagElement.className = 'tag';
+            tagElement.textContent = `${location} - ${tag}`;
+            fragment.appendChild(tagElement);
+            tagCount++;
+          }
+        }
+
+        tagsList.innerHTML = '';
+        tagsList.appendChild(fragment);
+        tagCountDisplay.textContent = `${tagCount}`;
+        tagCountDisplay.style.display = tagCount > 0 ? 'block' : 'none';
+      } catch (error) {
+        console.error('Error loading tags:', error);
+      }
+    }
+
+    function refreshTags() {
+      loadTags();
+    }
+  </script>
+
+</footer>
+</section>
+<!-- Floating RU Language Switch Button -->
+<a href="/ru.html" class="floating-language-button" aria-label="Switch to Russian">
+  RU
+</a>
+
+<script>
+/* ========== HAMBURGER & MENU TOGGLE ========== */
+const hamburger = document.getElementById("hamburger");
+const mainMenu = document.getElementById("main-menu");
+
+hamburger.addEventListener("click", () => {
+  mainMenu.classList.toggle("active");
+  hamburger.classList.toggle("active");
+  hamburger.setAttribute('aria-expanded', mainMenu.classList.contains('active'));
+});
+
+document.addEventListener("click", (e) => {
+  if (!mainMenu.contains(e.target) && !hamburger.contains(e.target)) {
+    mainMenu.classList.remove("active");
+    hamburger.classList.remove("active");
+    hamburger.setAttribute('aria-expanded', 'false');
+  }
+});
+
+/* ========== SMOOTH SCROLL FOR INTERNAL LINKS ========== */
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", e => {
+    // Skip if it's data-category link
+    if (link.getAttribute("data-category-id")) return;
+    if (link.getAttribute("href") === "#") return;
+    e.preventDefault();
+    const t = document.querySelector(link.getAttribute("href"));
+    if (t) t.scrollIntoView({ behavior: "smooth" });
+    mainMenu.classList.remove("active");
+    hamburger.classList.remove("active");
+    hamburger.setAttribute('aria-expanded', 'false');
+  });
+});
+
+/* ========== DYNAMIC CATEGORIES (OPTIONAL) ========== */
+fetch("data/categories.json")
+  .then(r => r.ok ? r.json() : [])
+  .then(cats => {
+    cats.forEach(cat => {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.textContent = cat.name;
+      // This ID might be "console", "consoles", etc.
+      a.setAttribute("data-category-id", cat.id);
+      a.href = "#";
+      li.appendChild(a);
+      mainMenu.appendChild(li);
+    });
+    addMenuEvents();
+  })
+  .catch(err => console.error(err));
+
+function addMenuEvents() {
+  document.querySelectorAll("#main-menu a[data-category-id]").forEach(lnk => {
+    lnk.addEventListener("click", e => {
+      e.preventDefault();
+      const cid = lnk.getAttribute("data-category-id");
+      openCategoryModal(cid);
+      mainMenu.classList.remove("active");
+      hamburger.classList.remove("active");
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+/* ========== openCategoryModal ========== */
+function openCategoryModal(id) {
+  // Close any open modals before opening a new one
+  // Commented out to allow multiple modals (category + product)
+  // closeAllModals();
+
+  switch (id) {
+    case "ps4":
+      fetchProducts("ps4", "modal-products-ps4");
+      showModal("modal-ps4");
+      break;
+    case "ps5":
+      fetchProducts("ps5", "modal-products-ps5");
+      showModal("modal-ps5");
+      break;
+    case "console":
+      fetchProducts("console", "modal-products-console");
+      showModal("modal-console");
+      break;
+    case "accessories":
+      fetchProducts("accessories", "modal-products-accessories");
+      showModal("modal-accessories");
+      break;
+    default:
+      console.warn(`Unknown category ID: ${id}`);
+      break;
+  }
+}
+
+function showModal(modalID) {
+  const mod = document.getElementById(modalID);
+  if (mod) {
+    mod.classList.add("active");
+    mod.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = "hidden";
+    // Focus trapping
+    trapFocus(mod);
+  }
+}
+
+function closeAllModals() {
+  document.querySelectorAll(".modal.active").forEach(modal => {
+    modal.classList.remove("active");
+    modal.setAttribute('aria-hidden', 'true');
+  });
+  document.body.style.overflow = "auto";
+}
+
+/* ========== Close Modal Functionality ========== */
+document.querySelectorAll(".modal .close").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const m = btn.closest(".modal");
+    if (m) {
+      m.classList.remove("active");
+      m.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = "auto";
+    }
+  });
+});
+
+window.addEventListener("click", e => {
+  if (e.target.classList && e.target.classList.contains("modal")) {
+    e.target.classList.remove("active");
+    e.target.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = "auto";
+  }
+});
+
+/* ========== Focus Trap for Modals ========== */
+function trapFocus(modal) {
+  const focusableElements = modal.querySelectorAll('a[href], button:not([disabled]), textarea, input, select, [tabindex="0"]');
+  if (focusableElements.length === 0) return;
+
+  const firstElement = focusableElements[0];
+  const lastElement = focusableElements[focusableElements.length -1];
+
+  function handleFocus(e) {
+    const isTabPressed = (e.key === 'Tab' || e.keyCode === 9);
+    if (!isTabPressed) return;
+
+    if (e.shiftKey) { // shift + tab
+      if (document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      }
+    } else { // tab
+      if (document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+    }
+  }
+
+  modal.addEventListener('keydown', handleFocus);
+
+  firstElement.focus();
+
+  // Remove event listener when modal is closed
+  const observer = new MutationObserver(() => {
+    if (!modal.classList.contains("active")) {
+      modal.removeEventListener('keydown', handleFocus);
+      observer.disconnect();
+    }
+  });
+
+  observer.observe(modal, { attributes: true, attributeFilter: ['class'] });
+}
+
+/* ========== fetchProducts ========== */
+function fetchProducts(cat, containerID) {
+  let file = "";
+  switch (cat) {
+    case "ps4":         file = "data/ps4.json";         break;
+    case "ps5":         file = "data/ps5.json";         break;
+    case "console":     file = "data/consoles.json";    break;
+    case "accessories": file = "data/accessories.json"; break;
+    default: return;
+  }
+
+  fetch(file)
+    .then(r => r.ok ? r.json() : [])
+    .then(data => {
+      const container = document.getElementById(containerID);
+      if (!container) return;
+      container.innerHTML = "Loading...";
+
+      // Simulate small delay to show "Loading..."
+      setTimeout(() => {
+        container.innerHTML = "";
+        // Show up to 60 items in reverse order if you want newest first
+        data.slice(-60).reverse().forEach(item => {
+          container.appendChild(createProductCard(item, cat));
+        });
+        initLazyLoad();
+      }, 400);
+    })
+    .catch(err => {
+      console.error(`Error fetching ${cat} products:`, err);
+      const container = document.getElementById(containerID);
+      if (container) {
+        container.innerHTML = "<p>Eroare la încărcarea produselor.</p>";
+      }
+    });
+}
+
+/* ========== createProductCard ========== */
+function createProductCard(game, cat) {
+  const d = document.createElement("div");
+  d.classList.add("product-card");
+
+  // Promo sticker
+  if (game.promo && game.promo.toLowerCase() === "yes") {
+    const s = document.createElement("div");
+    s.classList.add("sale-sticker");
+    s.textContent = "Sale!";
+    d.appendChild(s);
+  }
+
+  // New Arrival sticker
+  if (game.new_arrival && game.new_arrival.toLowerCase() === "yes") {
+    const n = document.createElement("div");
+    n.classList.add("new-sticker");
+    n.textContent = "New!";
+    d.appendChild(n);
+  }
+
+  // Image + link
+  const link = document.createElement("a");
+  link.href = "#";
+  link.classList.add("game-link");
+  link.setAttribute("data-id", game.id);
+  link.setAttribute("data-category", cat);
+  link.setAttribute("aria-label", game.title || "Game Link");
+  link.setAttribute("role", "button");
+  link.tabIndex = 0;
+
+  const img = document.createElement("img");
+  img.alt = game.title || "Game Image";
+  // Lazy loading
+  img.classList.add("lazy");
+  img.setAttribute("data-src", game.image);
+  link.appendChild(img);
+  d.appendChild(link);
+
+  // Title
+  const h4 = document.createElement("h4");
+  const link2 = document.createElement("a");
+  link2.href = "#";
+  link2.classList.add("game-link");
+  link2.setAttribute("data-id", game.id);
+  link2.setAttribute("data-category", cat);
+  link2.textContent = game.title;
+  link2.setAttribute("aria-label", `View details for ${game.title}`);
+  link2.setAttribute("role", "button");
+  link2.tabIndex = 0;
+  h4.appendChild(link2);
+  d.appendChild(h4);
+
+  // Price
+  const p = document.createElement("p");
+  p.textContent = (game.price || "") + " RON";
+  d.appendChild(p);
+
+  // "Comandă Now" button
+  const b = document.createElement("button");
+  b.classList.add("shop-now-button");
+  b.textContent = "Comandă";
+  b.setAttribute("data-link", game.link || "#");
+  b.setAttribute("aria-label", `Order ${game.title}`);
+  d.appendChild(b);
+
+  return d;
+}
+
+/* ========== Single Product (Open Game) ========== */
+document.addEventListener("click", (e) => {
+  const link = e.target.closest(".game-link");
+  if (link) {
+    e.preventDefault();
+    const id = link.getAttribute("data-id");
+    const cat = link.getAttribute("data-category");
+    openGame(id, cat);
+  }
+  // If user clicks the "Comandă Now" button in the product card
+  if (e.target.classList.contains("shop-now-button")) {
+    const url = e.target.getAttribute("data-link");
+    if (url && url !== "#") {
+      window.open(url, "_blank");
+    }
+  }
+});
+
+function openGame(id, cat) {
+  let file = "";
+  switch (cat) {
+    case "ps4":         file = "data/ps4.json";         break;
+    case "ps5":         file = "data/ps5.json";         break;
+    case "console":     file = "data/consoles.json";    break;
+    case "accessories": file = "data/accessories.json"; break;
+    default: return;
+  }
+
+  fetch(file)
+    .then(r => r.ok ? r.json() : [])
+    .then(data => {
+      const game = data.find(item => item.id === id);
+      if (!game) {
+        alert("Produsul nu a fost găsit!");
+        return;
+      }
+      showGameModal(game);
+    })
+    .catch(err => console.error(`Error fetching single ${cat} game:`, err));
+}
+
+function showGameModal(g) {
+  const productModal = document.getElementById("product-modal");
+  const details = document.getElementById("product-details");
+  if (!productModal || !details) return;
+
+  // Build a carousel from image fields
+  const imgs = Object.keys(g).filter(k => k.startsWith("image") && g[k]).map(k => g[k]);
+  let carouselHTML = '<div class="carousel">';
+
+  if (imgs.length > 0) {
+    imgs.forEach((img, i) => {
+      carouselHTML += `
+        <div class="carousel-item ${i === 0 ? 'active' : ''}">
+          <img src="${img}" alt="${g.title || 'Game'}" style="width:100%;" />
+        </div>`;
+    });
+  } else {
+    // Fallback if only g.image
+    carouselHTML += `
+      <div class="carousel-item active">
+        <img src="${g.image}" alt="${g.title || 'Game'}" style="width:100%;" />
+      </div>`;
+  }
+
+  carouselHTML += `
+    <button class="prev-carousel" aria-label="Slide anterior">&lt;</button>
+    <button class="next-carousel" aria-label="Slide următor">&gt;</button>
+  </div>`;
+
+  details.innerHTML = `
+    ${carouselHTML}
+    <h2 style="color: var(--secondary-neon);">${g.title}</h2>
+    <p>${g.description || ""}</p>
+    <p><strong>Preț:</strong> ${g.price || ""} RON</p>
+    <button class="shop-now-button-modal" data-link="${g.link || '#'}" aria-label="Order ${g.title}">
+      Comandă 
+    </button>
+  `;
+
+  productModal.classList.add("active");
+  productModal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = "hidden";
+  trapFocus(productModal);
+  setupCarousel();
+  setupBuyButton();
+}
+
+/* ========== Carousel for Product Modal ========== */
+let currentSlideIndex = 0;
+function setupCarousel() {
+  const carousel = document.querySelector(".carousel");
+  if (!carousel) return;
+
+  const items = carousel.querySelectorAll(".carousel-item");
+  const prevBtn = carousel.querySelector(".prev-carousel");
+  const nextBtn = carousel.querySelector(".next-carousel");
+
+  function showSlide(index) {
+    items.forEach((item, i) => {
+      item.style.display = i === index ? "block" : "none";
+      item.classList.toggle("active", i === index);
+    });
+  }
+
+  showSlide(currentSlideIndex);
+
+  prevBtn.addEventListener("click", () => {
+    currentSlideIndex = (currentSlideIndex - 1 + items.length) % items.length;
+    showSlide(currentSlideIndex);
+  });
+  nextBtn.addEventListener("click", () => {
+    currentSlideIndex = (currentSlideIndex + 1) % items.length;
+    showSlide(currentSlideIndex);
+  });
+}
+
+/* ========== "Comandă Now" Button Inside Modal ========== */
+function setupBuyButton() {
+  const shopNowBtn = document.querySelector(".shop-now-button-modal");
+  if (shopNowBtn) {
+    shopNowBtn.addEventListener("click", () => {
+      const link = shopNowBtn.getAttribute("data-link");
+      if (link && link !== "#") {
+        window.open(link, "_blank");
+      }
+    });
+  }
+}
+
+/* ========== LazyLoad ========== */
+function initLazyLoad() {
+  const lazyImages = document.querySelectorAll("img.lazy");
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.onload = () => img.classList.add("loaded");
+          observer.unobserve(img);
+        }
+      });
+    }, { rootMargin: "0px 0px 100px 0px" });
+    lazyImages.forEach(img => observer.observe(img));
+  } else {
+    // Fallback for older browsers
+    lazyImages.forEach(img => {
+      img.src = img.dataset.src;
+      img.onload = () => img.classList.add("loaded");
+    });
+  }
+}
+
+/* ========== Countdown Timer ========== */
+const timerEl = document.getElementById("countdown-timer");
+if (timerEl) {
+  const endDate = new Date("December 31, 2024 23:59:59").getTime();
+  const timerInterval = setInterval(() => {
+    const now = Date.now();
+    const dist = endDate - now;
+    if (dist < 0) {
+      clearInterval(timerInterval);
+      timerEl.textContent = "EXPIRED";
+      return;
+    }
+    const days = Math.floor(dist / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((dist % (1000 * 60)) / 1000);
+    timerEl.textContent = `${days}d ${hours}h ${mins}m ${secs}s`;
+  }, 1000);
+}
+
+/* ========== Testimonials ========== */
+fetch("data/testimonials.json")
+  .then(r => r.ok ? r.json() : [])
+  .then(data => {
+    const slideshow = document.getElementById("testimonials-slideshow");
+    if (!data.length) {
+      slideshow.innerHTML = "<p>Nicio recenzie disponibilă.</p>";
+      return;
+    }
+    data.forEach((t, i) => {
+      const div = document.createElement("div");
+      div.classList.add("testimonial");
+      if (i === 0) div.classList.add("active");
+      div.innerHTML = `
+        <p>"${t.text}"</p>
+        <span>${t.author} - ${t.role}</span>
+      `;
+      slideshow.appendChild(div);
+    });
+    initTestimonials(data.length);
+  })
+  .catch(e => {
+    console.error("Error fetching testimonials:", e);
+    document.getElementById("testimonials-slideshow").innerHTML = "<p>Eroare la încărcarea testimonialelor.</p>";
+  });
+
+let currentTest = 0;
+function initTestimonials(total) {
+  const slides = document.querySelectorAll(".testimonials-slideshow .testimonial");
+  const prevBtn = document.querySelector(".prev-testimonial");
+  const nextBtn = document.querySelector(".next-testimonial");
+  let intervalId;
+
+  function showSlide(idx) {
+    slides.forEach((slide, i) => {
+      slide.style.opacity = 0;
+      slide.classList.remove("active");
+    });
+    slides[idx].style.opacity = 1;
+    slides[idx].classList.add("active");
+  }
+
+  function nextSlide() {
+    currentTest = (currentTest + 1) % total;
+    showSlide(currentTest);
+  }
+
+  function prevSlideFunc() {
+    currentTest = (currentTest - 1 + total) % total;
+    showSlide(currentTest);
+  }
+
+  function startAuto() {
+    intervalId = setInterval(nextSlide, 5000);
+  }
+  function stopAuto() {
+    clearInterval(intervalId);
+  }
+
+  if (prevBtn && nextBtn) {
+    prevBtn.addEventListener("click", () => {
+      prevSlideFunc();
+      stopAuto();
+      startAuto();
+    });
+    nextBtn.addEventListener("click", () => {
+      nextSlide();
+      stopAuto();
+      startAuto();
+    });
+  }
+
+  const slideshow = document.getElementById("testimonials-slideshow");
+  slideshow.addEventListener("mouseenter", stopAuto);
+  slideshow.addEventListener("mouseleave", startAuto);
+
+  startAuto();
+  showSlide(currentTest);
+}
+
+/* ========== Steps Modals ========== */
+document.querySelectorAll(".step[data-modal]").forEach(step => {
+  step.addEventListener("click", () => {
+    const mid = step.getAttribute("data-modal");
+    const modalEl = document.getElementById(mid);
+    if (modalEl) {
+      // Do not close other modals to allow stacking
+      modalEl.classList.add("active");
+      modalEl.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = "hidden";
+      trapFocus(modalEl);
+    }
+  });
+
+  // Enable keyboard accessibility
+  step.addEventListener("keydown", (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      step.click();
+    }
+  });
+});
+
+document.querySelectorAll(".modal-button[data-modal]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const mid = btn.getAttribute("data-modal");
+    const modalEl = document.getElementById(mid);
+    if (modalEl) {
+      // Do not close other modals to allow stacking
+      modalEl.classList.add("active");
+      modalEl.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = "hidden";
+      trapFocus(modalEl);
+    }
+  });
+});
+
+/* ========== Search Functionality ========== */
+const desktopSearchInput = document.getElementById("search-input");
+const desktopSuggestions = document.getElementById("search-suggestions");
+const mobileSearchInput = document.getElementById("mobile-search-input");
+const mobileSuggestions = document.getElementById("mobile-search-suggestions");
+let debounceTimer;
+
+if (desktopSearchInput && desktopSuggestions) {
+  desktopSearchInput.addEventListener("input", () => {
+    clearTimeout(debounceTimer);
+    const query = desktopSearchInput.value.trim().toLowerCase();
+    if (!query) {
+      desktopSuggestions.classList.remove("active");
+      desktopSuggestions.innerHTML = "";
+      return;
+    }
+    debounceTimer = setTimeout(() => {
+      fetchSearchResults(query).then(results => {
+        showSuggestions(results, desktopSuggestions, desktopSearchInput);
+      });
+    }, 300);
+  });
+}
+
+if (mobileSearchInput && mobileSuggestions) {
+  mobileSearchInput.addEventListener("input", () => {
+    clearTimeout(debounceTimer);
+    const query = mobileSearchInput.value.trim().toLowerCase();
+    if (!query) {
+      mobileSuggestions.classList.remove("active");
+      mobileSuggestions.innerHTML = "";
+      return;
+    }
+    debounceTimer = setTimeout(() => {
+      fetchSearchResults(query).then(results => {
+        showSuggestions(results, mobileSuggestions, mobileSearchInput, true);
+      });
+    }, 300);
+  });
+}
+
+function fetchSearchResults(query) {
+  return Promise.all([
+    fetch("data/ps4.json").then(r => r.ok ? r.json() : []).catch(() => []),
+    fetch("data/ps5.json").then(r => r.ok ? r.json() : []).catch(() => []),
+    fetch("data/consoles.json").then(r => r.ok ? r.json() : []).catch(() => []),
+    fetch("data/accessories.json").then(r => r.ok ? r.json() : []).catch(() => []),
+  ]).then(([ps4, ps5, consoles, accessories]) => {
+    const combined = [...ps4, ...ps5, ...consoles, ...accessories];
+    // Return only items whose title includes the query
+    return combined.filter(item => {
+      return item.title && item.title.toLowerCase().includes(query);
+    });
+  }).catch(err => {
+    console.error("Error searching products:", err);
+    return [];
+  });
+}
+
+function showSuggestions(results, container, inputEl, isMobile = false) {
+  container.innerHTML = "";
+  if (!results.length) {
+    container.innerHTML = '<div class="suggestion-item">Nicio potrivire</div>';
+    container.classList.add("active");
+    return;
+  }
+  const limited = results.slice(0, 5);
+  limited.forEach(r => {
+    const div = document.createElement("div");
+    div.classList.add("suggestion-item");
+    div.textContent = r.title;
+    div.setAttribute("role", "button");
+    div.setAttribute("tabindex", "0");
+    div.addEventListener("click", () => {
+      // Determine category based on ID logic
+      let cat = "ps4";
+      if (r.id.startsWith("ps5")) cat = "ps5";
+      if (r.id.includes("console")) cat = "console";
+      if (r.id.includes("accessorie") || r.id.includes("accessory")) cat = "accessories";
+
+      openGame(r.id, cat);
+
+      container.classList.remove("active");
+      container.innerHTML = "";
+      inputEl.value = "";
+      if (isMobile) {
+        mainMenu.classList.remove("active");
+        hamburger.classList.remove("active");
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Enable keyboard accessibility
+    div.addEventListener("keydown", (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        div.click();
+      }
+    });
+
+    container.appendChild(div);
+  });
+  container.classList.add("active");
+}
+
+/* ========== "Sale Now" SCROLL ========== */
+const shopNowBtn = document.getElementById("shop-now");
+if (shopNowBtn) {
+  shopNowBtn.addEventListener("click", () => {
+    const promoSection = document.getElementById("promo-products");
+    if (promoSection) {
+      promoSection.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+}
+
+/* ========== GALLERY IMAGES ========== */
+const galleryImages = [
+  "6.jpeg", "7.jpeg", "1.jpeg", "2.jpeg",
+  "3.jpeg", "4.jpeg", "5.jpeg", "8.jpeg",
+  "9.jpeg", "10.jpeg", "11.jpeg"
+];
+let currentGalleryIndex = 0;
+
+function initGallery() {
+  const gallerySlideshow = document.getElementById("gallery-slideshow");
+  if (!gallerySlideshow) return;
+
+  // Build gallery slides
+  galleryImages.forEach((imgSrc, i) => {
+    const slide = document.createElement("div");
+    slide.classList.add("gallery-slide");
+    if (i === 0) slide.classList.add("active");
+    slide.innerHTML = `<img src="${imgSrc}" alt="Galerie ${i+1}" style="width:100%; height:300px; object-fit:cover;" />`;
+    gallerySlideshow.appendChild(slide);
+  });
+
+  const slides = document.querySelectorAll(".gallery-slide");
+  const prevGal = document.querySelector(".prev-gallery");
+  const nextGal = document.querySelector(".next-gallery");
+
+  function showGallerySlide(idx) {
+    slides.forEach((s, i) => {
+      s.classList.remove("active");
+      if (i === idx) s.classList.add("active");
+    });
+  }
+
+  prevGal.addEventListener("click", () => {
+    currentGalleryIndex = (currentGalleryIndex - 1 + slides.length) % slides.length;
+    showGallerySlide(currentGalleryIndex);
+  });
+  nextGal.addEventListener("click", () => {
+    currentGalleryIndex = (currentGalleryIndex + 1) % slides.length;
+    showGallerySlide(currentGalleryIndex);
+  });
+}
+
+/* ========== fetchConsoles & fetchAccessories (Optional) ========== */
+function fetchConsoles() {
+  fetch("data/consoles.json")
+    .then(r => r.ok ? r.json() : [])
+    .then(data => {
+      const container = document.getElementById("console-products");
+      container.innerHTML = "";
+      if (!data.length) {
+        container.innerHTML = "<p>Nu există console disponibile momentan.</p>";
+        return;
+      }
+      data.forEach(item => {
+        container.appendChild(createProductCard(item, "console"));
+      });
+      initLazyLoad();
+    })
+    .catch(err => {
+      console.error("Error fetching consoles:", err);
+      document.getElementById("console-products").innerHTML = "<p>Eroare la încărcarea consolelor.</p>";
+    });
+}
+
+function fetchAccessories() {
+  fetch("data/accessories.json")
+    .then(r => r.ok ? r.json() : [])
+    .then(data => {
+      const container = document.getElementById("accessories-products");
+      container.innerHTML = "";
+      if (!data.length) {
+        container.innerHTML = "<p>Nu există accesorii disponibile momentan.</p>";
+        return;
+      }
+      data.forEach(item => {
+        container.appendChild(createProductCard(item, "accessories"));
+      });
+      initLazyLoad();
+    })
+    .catch(err => {
+      console.error("Error fetching accessories:", err);
+      document.getElementById("accessories-products").innerHTML = "<p>Eroare la încărcarea accesoriilor.</p>";
+    });
+}
+
+/* ========== fetchPromos & fetchNew ========== */
+function fetchPromos() {
+  Promise.all([
+    fetch("data/ps4.json").then(r => r.ok ? r.json() : []).catch(() => []),
+    fetch("data/ps5.json").then(r => r.ok ? r.json() : []).catch(() => []),
+  ]).then(([ps4, ps5]) => {
+    const promos = [
+      ...ps4.filter(item => item.promo && item.promo.toLowerCase() === "yes"),
+      ...ps5.filter(item => item.promo && item.promo.toLowerCase() === "yes"),
+    ];
+    const container = document.getElementById("promo-products");
+    container.innerHTML = "";
+    if (!promos.length) {
+      container.innerHTML = "<p>Nu există promoții momentan.</p>";
+      return;
+    }
+    promos.forEach(prod => {
+      const cat = prod.id && prod.id.startsWith("ps4") ? "ps4" : "ps5";
+      container.appendChild(createProductCard(prod, cat));
+    });
+    initLazyLoad();
+  }).catch(err => {
+    console.error("Error fetching promos:", err);
+    document.getElementById("promo-products").innerHTML = "<p>Eroare la încărcarea promoțiilor.</p>";
+  });
+}
+
+function fetchNew() {
+  Promise.all([
+    fetch("data/ps4.json").then(r => r.ok ? r.json() : []).catch(() => []),
+    fetch("data/ps5.json").then(r => r.ok ? r.json() : []).catch(() => []),
+  ]).then(([ps4, ps5]) => {
+    const arrivals = [
+      ...ps4.filter(i => i.new_arrival && i.new_arrival.toLowerCase() === "yes"),
+      ...ps5.filter(j => j.new_arrival && j.new_arrival.toLowerCase() === "yes"),
+    ];
+    const container = document.getElementById("new-products");
+    container.innerHTML = "";
+    if (!arrivals.length) {
+      container.innerHTML = "<p>Nu există jocuri noi momentan.</p>";
+      return;
+    }
+    arrivals.forEach(prod => {
+      const cat = prod.id && prod.id.startsWith("ps4") ? "ps4" : "ps5";
+      container.appendChild(createProductCard(prod, cat));
+    });
+    initLazyLoad();
+  }).catch(err => {
+    console.error("Error fetching new arrivals:", err);
+    document.getElementById("new-products").innerHTML = "<p>Eroare la încărcarea jocurilor noi.</p>";
+  });
+}
+
+/* ========== On DOM Ready ========== */
+document.addEventListener("DOMContentLoaded", () => {
+  // "Sale Now" data
+  fetchPromos();
+
+  // "Jocuri Noi"
+  fetchNew();
+
+  // Initialize gallery
+  initGallery();
+
+  // Optionally fetch console/accessories data for their sections
+  fetchConsoles();
+  fetchAccessories();
+});
+</script>
+
+</body>
+</html>
