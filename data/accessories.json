@@ -53,12 +53,67 @@
     "id": "accessory-6",
     "title": "Sony PlayStation VR Aim Controller",
     "image": "https://s13emagst.akamaized.net/products/37339/37338441/images/res_4c7cc232bd144d7c8905cdff92c3f869.jpg?width=720&height=720&hash=51AF35AABBFD2B3649851AEA1F6FBAB9",
-        "image1": "11.jpeg",
+    "image1": "11.jpeg",
     "image2": "https://i.ytimg.com/vi/cJYGGLTMj7w/mqdefault.jpg",
     "price": "600 MDL",
     "promo": "no",
     "new_arrival": "no",
     "description": "Controller de precizie pentru experiențe VR immersive pe PlayStation.",
     "link": "https://instagram.com/PlaySpotStore"
+  },
+  {
+    "id": "accessories-new-dualsense-limited-edition-helldivers-2",
+    "title": "DualSense Limited Edition (Helldivers 2)",
+    "image": "media/covers/accessories-dualsense-limited-edition-helldivers-2.webp",
+    "price": "Concretizează prin contact",
+    "promo": "no",
+    "new_arrival": "yes",
+    "description": "Adăugat recent. Confirmă starea, prețul și disponibilitatea prin contact.",
+    "link": "https://www.instagram.com/PlaySpotStore",
+    "availability": "confirm_by_contact"
+  },
+  {
+    "id": "accessories-new-dualsense-limited-edition-ghost-of-tsushima",
+    "title": "DualSense Limited Edition (Ghost of Tsushima)",
+    "image": "media/covers/accessories-dualsense-limited-edition-ghost-of-tsushima.webp",
+    "price": "Concretizează prin contact",
+    "promo": "no",
+    "new_arrival": "yes",
+    "description": "Adăugat recent. Confirmă starea, prețul și disponibilitatea prin contact.",
+    "link": "https://www.instagram.com/PlaySpotStore",
+    "availability": "confirm_by_contact"
+  },
+  {
+    "id": "accessories-new-dualsense-midnight-black",
+    "title": "DualSense Midnight Black",
+    "image": "media/covers/accessories-dualsense-midnight-black.webp",
+    "price": "Concretizează prin contact",
+    "promo": "no",
+    "new_arrival": "yes",
+    "description": "Adăugat recent. Confirmă starea, prețul și disponibilitatea prin contact.",
+    "link": "https://www.instagram.com/PlaySpotStore",
+    "availability": "confirm_by_contact"
+  },
+  {
+    "id": "accessories-new-playstation-5-camera",
+    "title": "PlayStation 5 Camera",
+    "image": "media/covers/accessories-playstation-5-camera.webp",
+    "price": "Concretizează prin contact",
+    "promo": "no",
+    "new_arrival": "yes",
+    "description": "Adăugat recent. Confirmă starea, prețul și disponibilitatea prin contact.",
+    "link": "https://www.instagram.com/PlaySpotStore",
+    "availability": "confirm_by_contact"
+  },
+  {
+    "id": "accessory-new-psvr2-bundle",
+    "title": "PlayStation VR2 + controllere și accesorii",
+    "image": "media/covers/accessories-psvr2-bundle.webp",
+    "price": "Concretizează prin contact",
+    "promo": "no",
+    "new_arrival": "yes",
+    "description": "Adăugat recent. Confirmă starea, prețul și disponibilitatea prin contact.",
+    "link": "https://www.instagram.com/PlaySpotStore",
+    "availability": "confirm_by_contact"
   }
 ]

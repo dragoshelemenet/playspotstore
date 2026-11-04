@@ -1522,16 +1522,32 @@
   <link rel="stylesheet" href="neon-redesign.css?v=20261104">
   <link rel="stylesheet" href="neon-v2.css?v=20261104b">
   <link rel="preload" as="image" type="image/webp" href="neon-assets/neon-hero-v2.webp?v=hq-20261104">
+  <link rel="stylesheet" href="neon-v3.css?v=20261104-v3">
 </head>
 <body>
 
 <header>
-<a class="logo" href="#acasa" aria-label="PlaySpotStore homepage"><svg class="neon-logo-icon" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17 16C12 15 8 18 6 25L2 35C0 44 8 48 14 42L21 35H43L50 42C56 48 64 44 62 35L58 25C56 18 52 15 47 16L42 18H22L17 16Z" stroke="currentColor" stroke-width="2.5"/><path d="M17 23V34M11.5 28.5H22.5" stroke="#7bfcb7" stroke-width="3" stroke-linecap="round"/><circle cx="45" cy="25" r="2.5" fill="#b47cff"/><circle cx="51" cy="30" r="2.5" fill="#b47cff"/><circle cx="39" cy="30" r="2.5" fill="#b47cff"/><circle cx="45" cy="35" r="2.5" fill="#b47cff"/><path d="M26 16l-1-6 6 2 5-6 5 7" stroke="#70fba4" stroke-width="2" stroke-linecap="round"/></svg><span>PlaySpotStore</span></a>
+<a class="logo" href="#acasa" aria-label="PlaySpotStore"><img class="brand-logo" src="media/play-spot-logo.webp" alt="PlaySpot Store" width="240" height="65" decoding="async"></a>
 <nav><ul id="main-menu"><li><a href="#contact">КОНТАКТЫ</a></li><li><a href="#" data-category-id="ps4">ИГРЫ PS4</a></li><li><a href="#" data-category-id="ps5">ИГРЫ PS5</a></li><li><a href="#" onclick="event.preventDefault();showPlatformNotice('nintendo')">NINTENDO</a></li><li><a href="#" onclick="event.preventDefault();showPlatformNotice('xbox')">XBOX</a></li><li><a href="#" data-category-id="console">КОНСОЛИ</a></li><li><a href="#" data-category-id="accessories">АКСЕССУАРЫ</a></li><li class="mobile-search-bar"><input type="text" id="mobile-search-input" placeholder="Искать игру..." aria-label="Искать игры"><div class="mobile-search-suggestions" id="mobile-search-suggestions"></div></li></ul><div class="search-bar desktop-search-bar"><input type="text" id="search-input" placeholder="Искать игру..." aria-label="Искать игры"><div class="search-suggestions" id="search-suggestions"></div></div></nav><div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Open navigation menu" aria-expanded="false"><i class="bx bx-menu"></i></div></header>
 
 
 <section class="hero" id="acasa"><div class="hero-ambient" aria-hidden="true"><span class="amb-green"></span><span class="amb-purple"></span></div><div class="hero-art"><img src="neon-assets/neon-hero-v2.webp?v=hq-20261104" width="1500" height="612" alt="PlaySpot Store gaming console and neon controllers" fetchpriority="high"></div><div class="hero-copy"><h1>Играй. Открывай. Побеждай.</h1><p>PlaySpotStore — Магазин игр и аксессуаров<br>PlayStation, Xbox и Nintendo в Молдове!</p></div><div class="category-deck"><button type="button" class="category-tile ps4" onclick="openCategoryModal('ps4')" aria-label="ИГРЫ PS4"><img src="neon-assets/ps4.webp?v=hq-20261104" alt="" loading="eager"><span>ИГРЫ PS4</span></button><button type="button" class="category-tile ps5" onclick="openCategoryModal('ps5')" aria-label="ИГРЫ PS5"><img src="neon-assets/ps5.webp?v=hq-20261104" alt="" loading="eager"><span>ИГРЫ PS5</span></button><button type="button" class="category-tile nintendo" onclick="showPlatformNotice('nintendo')" aria-label="NINTENDO"><img src="neon-assets/nintendo.webp?v=hq-20261104" alt="" loading="eager"><span>NINTENDO</span></button><button type="button" class="category-tile xbox" onclick="showPlatformNotice('xbox')" aria-label="XBOX"><img src="neon-assets/xbox.webp?v=hq-20261104" alt="" loading="eager"><span>XBOX</span></button><button type="button" class="category-tile console" onclick="openCategoryModal('console')" aria-label="КОНСОЛИ"><img src="neon-assets/console.webp?v=hq-20261104" alt="" loading="eager"><span>КОНСОЛИ</span></button><button type="button" class="category-tile accessories" onclick="openCategoryModal('accessories')" aria-label="АКСЕССУАРЫ"><img src="neon-assets/accessories.webp?v=hq-20261104" alt="" loading="eager"><span>АКСЕССУАРЫ</span></button></div></section>
 
+
+<!-- PlaySpot V3: verified-stock request, user photographs, and their VR2 footage -->
+<section class="p3-collection" id="produse-noi"><div>
+  <div class="p3-collection-heading"><div><span class="p3-label">Уточняйте цену и наличие</span><h2>Новые поступления</h2><p>Реальные фотографии товаров. Уточняйте наличие и состояние перед заказом.</p></div></div>
+  <div class="p3-photo-grid"><figure><img src="media/gallery/inventory-214526.webp" loading="lazy" decoding="async" alt="PS5 · Приключения"><figcaption>PS5 · Приключения</figcaption></figure><figure><img src="media/gallery/inventory-214523.webp" loading="lazy" decoding="async" alt="PS5 · Экшен"><figcaption>PS5 · Экшен</figcaption></figure><figure><img src="media/gallery/inventory-214520.webp" loading="lazy" decoding="async" alt="PS4 · Коллекция"><figcaption>PS4 · Коллекция</figcaption></figure><figure><img src="media/gallery/inventory-214518.webp" loading="lazy" decoding="async" alt="PS4 · Игры"><figcaption>PS4 · Игры</figcaption></figure><figure><img src="media/gallery/inventory-214426.webp" loading="lazy" decoding="async" alt="Nintendo / Xbox"><figcaption>Nintendo / Xbox</figcaption></figure><figure><img src="media/gallery/inventory-214336.webp" loading="lazy" decoding="async" alt="Коллекция PS2"><figcaption>Коллекция PS2</figcaption></figure><figure><img src="media/gallery/vr2-stock.webp" loading="lazy" decoding="async" alt="PlayStation VR2"><figcaption>PlayStation VR2</figcaption></figure></div>
+  <div class="p3-links"><button type="button" onclick="openCategoryModal('ps5')">Игры PS5</button><button type="button" onclick="showPlatformNotice('ps2')">Игры PS2</button><button type="button" onclick="showPlatformNotice('nintendo')">Nintendo</button><button type="button" onclick="showPlatformNotice('xbox')">Xbox</button></div>
+</div></section>
+<section class="p3-launch" id="gta6"><div class="p3-inner">
+  <div class="p3-copy"><span class="p3-label">Предзаказ по запросу</span><h2>Grand Theft Auto <em>VI</em></h2><p>Хотите заказать GTA VI? Уточните цену, версию и возможность оформления заказа через WhatsApp или Instagram. Наличие и сроки подтверждаются перед оплатой.</p>
+  <div class="p3-actions"><a class="p3-btn" href="https://wa.me/37378890580?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20GTA%206" target="_blank" rel="noopener noreferrer">Уточнить возможность заказа</a><a class="p3-btn secondary" href="https://www.instagram.com/PlaySpotStore" target="_blank" rel="noopener noreferrer">Instagram</a></div></div>
+  <img class="p3-art" src="media/gta-vi-showcase.webp" loading="lazy" alt="PlaySpotStore: GTA VI — заказ по запросу" width="1000" height="550"></div></section>
+<section class="p3-film" id="psvr2-video"><div class="p3-inner">
+  <div class="p3-video-wrap"><video controls preload="none" playsinline poster="media/vr2-poster.webp" aria-label="PlayStation VR2 video"><source src="media/psvr2-showcase.mp4" type="video/mp4">PlayStation <em>VR2</em></video></div>
+  <div class="p3-copy"><span class="p3-label">Видеообзор</span><h2>PlayStation <em>VR2</em></h2><p>Посмотрите короткое видео PlayStation VR2 и уточните комплектацию, состояние и наличие у PlaySpotStore.</p><div class="p3-actions"><a class="p3-btn" href="https://www.instagram.com/PlaySpotStore" target="_blank" rel="noopener noreferrer">Связаться</a></div></div>
+</div></section>
 <section class="social-media">
   <div class="social-card">
     <i class="bx bxl-instagram"></i>
@@ -2094,6 +2110,9 @@ function createProductCard(game, cat) {
   // Lazy loading
   img.classList.add("lazy");
   img.setAttribute("data-src", game.image);
+  if (game.fallback_image) {
+    img.onerror = () => { if (!img.src.endsWith(game.fallback_image)) img.src = game.fallback_image; };
+  }
   link.appendChild(img);
   d.appendChild(link);
 
@@ -2113,7 +2132,7 @@ function createProductCard(game, cat) {
 
   // Price
   const p = document.createElement("p");
-  p.textContent = (game.price || "") + " RON";
+  p.textContent = game.price || "Уточняйте при обращении";
   d.appendChild(p);
 
   // "Командировать Сейчас" button
@@ -2201,7 +2220,7 @@ function showGameModal(g) {
     ${carouselHTML}
     <h2 style="color: var(--secondary-neon);">${g.title}</h2>
     <p>${g.description || ""}</p>
-    <p><strong>Цена:</strong> ${g.price || ""} RON</p>
+    <p><strong>Цена:</strong> ${g.price || "Уточняйте при обращении"}</p>
     <button class="shop-now-button-modal" data-link="${g.link || '#'}" aria-label="Заказать ${g.title}">
       Заказать 
     </button>
@@ -2461,20 +2480,14 @@ if (mobileSearchInput && mobileSuggestions) {
 
 function fetchSearchResults(query) {
   return Promise.all([
-    fetch("data/ps4_ru.json").then(r => r.ok ? r.json() : []).catch(() => []),
-    fetch("data/ps5_ru.json").then(r => r.ok ? r.json() : []).catch(() => []),
-    fetch("data/consoles_ru.json").then(r => r.ok ? r.json() : []).catch(() => []),
-    fetch("data/accessories_ru.json").then(r => r.ok ? r.json() : []).catch(() => []),
-  ]).then(([ps4, ps5, consoles, accessories]) => {
-    const combined = [...ps4, ...ps5, ...consoles, ...accessories];
-    // Return only items whose title includes the query
-    return combined.filter(item => {
-      return item.title && item.title.toLowerCase().includes(query);
-    });
-  }).catch(err => {
-    console.error("Error searching products:", err);
-    return [];
-  });
+    fetch("data/ps4_ru.json").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/ps5_ru.json").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/consoles_ru.json").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/accessories_ru.json").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/ps2_ru.json").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/nintendo_ru.json").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/xbox_ru.json").then(r=>r.ok?r.json():[]).catch(()=>[])
+  ]).then(groups=>groups.flat().filter(item=>item.title && item.title.toLowerCase().includes(query))).catch(()=>[]);
 }
 
 function showSuggestions(results, container, inputEl, isMobile = false) {
@@ -2495,6 +2508,9 @@ function showSuggestions(results, container, inputEl, isMobile = false) {
       // Determine category based on ID logic
       let cat = "ps4";
       if (r.id.startsWith("ps5")) cat = "ps5";
+      if (r.id.startsWith("ps2")) cat = "ps2";
+      if (r.id.startsWith("nintendo")) cat = "nintendo";
+      if (r.id.startsWith("xbox")) cat = "xbox";
       if (r.id.includes("console")) cat = "console";
       if (r.id.includes("accessorie") || r.id.includes("accessory")) cat = "accessories";
 
@@ -2661,7 +2677,7 @@ function fetchNew() {
       container.innerHTML = "<p>Нет новых игр на данный момент.</p>";
       return;
     }
-    arrivals.forEach(prod => {
+    arrivals.sort((a,b) => Number(String(b.id).includes("-new-")) - Number(String(a.id).includes("-new-"))).slice(0, 28).forEach(prod => {
       const cat = prod.id && prod.id.startsWith("ps4") ? "ps4" : "ps5";
       container.appendChild(createProductCard(prod, cat));
     });
@@ -2718,6 +2734,48 @@ function showPlatformNotice(platform) {
 document.getElementById('hamburger')?.addEventListener('keydown',event=>{
   if(event.key==='Enter'||event.key===' '){event.preventDefault();event.currentTarget.click();}
 });
+</script>
+
+<script id="p3-catalogue">
+(function(){
+  const isRu = document.documentElement.lang.toLowerCase().startsWith('ru');
+  const suffix = isRu ? '_ru' : '';
+  const categories = ['ps2','nintendo','xbox'];
+  const originalOpenGame = window.openGame;
+  window.openGame = function(id,cat){
+    if(!categories.includes(cat)) return originalOpenGame(id,cat);
+    fetch('data/'+cat+suffix+'.json').then(r=>r.ok?r.json():[]).then(data=>{
+      const game=data.find(item=>String(item.id)===String(id));
+      if(game) window.showGameModal(game);
+    }).catch(console.error);
+  };
+  function closePlatform(modal){
+    modal.remove();
+    if(!document.querySelector('.modal.active')) document.body.style.overflow='';
+  }
+  window.showPlatformNotice=function(platform){
+    if(!categories.includes(platform)) return;
+    document.getElementById('p3-platform-dialog')?.remove();
+    const modal=document.createElement('div');
+    modal.id='p3-platform-dialog';modal.className='modal active p3-modal';
+    modal.setAttribute('role','dialog');modal.setAttribute('aria-modal','true');
+    const content=document.createElement('div');content.className='modal-content';
+    const close=document.createElement('button');close.className='close';close.type='button';close.textContent='×';close.setAttribute('aria-label',isRu?'Закрыть':'Închide');
+    const title=document.createElement('h2');title.textContent=platform.toUpperCase()+(platform==='ps2'?' • PlayStation 2':'');
+    const description=document.createElement('p');description.textContent=isRu?'Цена и наличие уточняются при обращении.':'Preț și disponibilitate prin contact.';
+    const products=document.createElement('div');products.className='modal-products';
+    content.append(close,title,description,products);modal.append(content);document.body.append(modal);
+    close.onclick=()=>closePlatform(modal);
+    modal.addEventListener('click',event=>{if(event.target===modal)closePlatform(modal);});
+    modal.addEventListener('keydown',event=>{if(event.key==='Escape')closePlatform(modal);});
+    document.body.style.overflow='hidden';close.focus();
+    fetch('data/'+platform+suffix+'.json').then(r=>r.ok?r.json():[]).then(items=>{
+      if(!items.length){products.textContent=isRu?'Сейчас нет товаров в каталоге.':'Momentan nu sunt produse în catalog.';return;}
+      items.forEach(item=>products.appendChild(createProductCard(item,platform)));
+      initLazyLoad();
+    }).catch(()=>{products.textContent=isRu?'Ошибка загрузки каталога.':'Eroare la încărcarea catalogului.';});
+  };
+})();
 </script>
 </body>
 </html>

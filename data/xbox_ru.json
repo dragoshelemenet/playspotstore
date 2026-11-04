@@ -1,0 +1,35 @@
+[
+  {
+    "id": "xbox-new-cyberpunk-2077",
+    "title": "Cyberpunk 2077",
+    "image": "media/covers/xbox-cyberpunk-2077.webp",
+    "price": "Уточняйте при обращении",
+    "promo": "no",
+    "new_arrival": "yes",
+    "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
+    "link": "https://www.instagram.com/PlaySpotStore",
+    "availability": "confirm_by_contact"
+  },
+  {
+    "id": "xbox-new-mortal-kombat-1",
+    "title": "Mortal Kombat 1",
+    "image": "media/covers/xbox-mortal-kombat-1.webp",
+    "price": "Уточняйте при обращении",
+    "promo": "no",
+    "new_arrival": "yes",
+    "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
+    "link": "https://www.instagram.com/PlaySpotStore",
+    "availability": "confirm_by_contact"
+  },
+  {
+    "id": "xbox-new-dragon-s-dogma-2",
+    "title": "Dragon’s Dogma 2",
+    "image": "media/covers/xbox-dragon-s-dogma-2.webp",
+    "price": "Уточняйте при обращении",
+    "promo": "no",
+    "new_arrival": "yes",
+    "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
+    "link": "https://www.instagram.com/PlaySpotStore",
+    "availability": "confirm_by_contact"
+  }
+]
