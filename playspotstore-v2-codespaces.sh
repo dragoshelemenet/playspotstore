@@ -294,6 +294,8 @@ for filename in ('index.html', 'ru.html'):
     html = re.sub(r'\s*<link\s+rel="stylesheet"\s+href="neon-redesign\.css\?v=[^"]+"\s*/?>', '', html)
     html = re.sub(r'\s*<link\s+rel="stylesheet"\s+href="neon-v2\.css\?v=[^"]+"\s*/?>', '', html)
     html = re.sub(r'\s*<link\s+rel="preload"\s+as="image"\s+type="image/webp"\s+href="neon-assets/neon-hero-v2\.webp"\s*/?>', '', html)
+    if html.count('</head>') > 1:
+        html = html.replace('</head>', '', html.count('</head>') - 1)
     if html.count('</head>') != 1:
         raise SystemExit(f'Unexpected HTML head in {filename}; no files changed.')
     html = html.replace('</head>', links+'</head>', 1)
