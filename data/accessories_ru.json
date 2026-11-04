@@ -97,23 +97,28 @@
   {
     "id": "accessories-new-playstation-5-camera",
     "title": "PlayStation 5 Camera",
-    "image": "media/covers/accessories-playstation-5-camera.webp",
+    "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523167_bd.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Bing image search",
+    "image_source_page": "https://androidsetting.com/playstation-5-playstation®5-ソフト/"
   },
   {
     "id": "accessory-new-psvr2-bundle",
     "title": "PlayStation VR2 + controllere și accesorii",
-    "image": "media/covers/accessories-psvr2-bundle.webp",
+    "image": "https://www.tsoto.net/media/shop/products/14000/14299.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Individually researched image"
   }
 ]

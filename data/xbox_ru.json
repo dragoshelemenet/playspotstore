@@ -2,34 +2,40 @@
   {
     "id": "xbox-new-cyberpunk-2077",
     "title": "Cyberpunk 2077",
-    "image": "media/covers/xbox-cyberpunk-2077.webp",
+    "image": "https://videogamesplus.ca/cdn/shop/files/VGP0019019_1024x1024.png?v=1700587981",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Individually researched image"
   },
   {
     "id": "xbox-new-mortal-kombat-1",
     "title": "Mortal Kombat 1",
-    "image": "media/covers/xbox-mortal-kombat-1.webp",
+    "image": "https://i5.walmartimages.com/seo/Mortal-Kombat-1-Xbox-Series-X_e787da9b-e0d1-4ac8-a1bd-a179d987761a.e717e2ab1283b585921372f71df46667.png",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Individually researched image"
   },
   {
     "id": "xbox-new-dragon-s-dogma-2",
     "title": "Dragon’s Dogma 2",
-    "image": "media/covers/xbox-dragon-s-dogma-2.webp",
+    "image": "https://media.gamestop.com/i/gamestop/20009921-3f0862c8",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Individually researched image"
   }
 ]

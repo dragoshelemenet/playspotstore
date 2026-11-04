@@ -1,0 +1,9 @@
+/* Exact user-provided PlaySpotStore logo, no replacement wordmark. */
+header .logo{display:flex;align-items:center;flex:0 0 auto;min-width:0;gap:0!important;text-decoration:none;}
+header .logo img.brand-logo{display:block!important;width:76px!important;min-width:76px;height:76px!important;max-height:76px;object-fit:contain!important;object-position:center;filter:drop-shadow(0 0 9px rgba(74,255,210,.16));border-radius:50%;}
+header{min-height:84px!important;}
+:root{--header-height:84px;}
+header nav ul li a{font-size:clamp(13px,1vw,15px)!important;}
+@media(max-width:1050px){header nav ul{gap:10px!important;} header nav ul li a{font-size:12px!important;}}
+@media(max-width:950px){header .logo img.brand-logo{width:68px!important;min-width:68px;height:68px!important;max-height:68px;} :root{--header-height:76px;}}
+@media(max-width:550px){header .logo img.brand-logo{width:56px!important;min-width:56px;height:56px!important;max-height:56px;} :root{--header-height:64px;}}

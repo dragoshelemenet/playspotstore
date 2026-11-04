@@ -2,90 +2,113 @@
   {
     "id": "ps2-new-spongebob-squarepants-the-movie",
     "title": "SpongeBob SquarePants: The Movie",
-    "image": "media/covers/ps2-spongebob-squarepants-the-movie.webp",
+    "image": "https://coverproject.sfo2.cdn.digitaloceanspaces.com/playstation_2/ps2_thespongebobsquarepantsmovie_thumb.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "DuckDuckGo image search",
+    "image_source_page": "https://thecoverproject.net/view.php?game_id=3619"
   },
   {
     "id": "ps2-new-spongebob-squarepants-lights-camera-pants",
     "title": "SpongeBob SquarePants: Lights, Camera, Pants!",
-    "image": "media/covers/ps2-spongebob-squarepants-lights-camera-pants.webp",
+    "image": "https://i.ebayimg.com/images/g/IdgAAOSw~QRliPfn/s-l1600.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "DuckDuckGo image search",
+    "image_source_page": "https://www.ebay.com/itm/256353935580"
   },
   {
     "id": "ps2-new-madagascar",
     "title": "Madagascar",
-    "image": "media/covers/ps2-madagascar.webp",
+    "image": "https://cdn.awsli.com.br/800x800/138/138431/produto/15766175/7d2483b237.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Individually researched image"
   },
   {
     "id": "ps2-new-wwe-smackdown-vs-raw-2006",
     "title": "WWE SmackDown! vs. Raw 2006",
-    "image": "media/covers/ps2-wwe-smackdown-vs-raw-2006.webp",
+    "image": "https://cdn1.spong.com/pack/w/w/wwesmackdo171341l/_-WWE-SmackDown-Vs-RAW-2006-PS2-_.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "DuckDuckGo image search",
+    "image_source_page": "https://spong.com/game/covers-box-art/11039516/wwe-smackdown-vs-raw-2006-ps2/171341"
   },
   {
     "id": "ps2-new-the-incredibles",
     "title": "The Incredibles",
-    "image": "media/covers/ps2-the-incredibles.webp",
+    "image": "https://coverproject.sfo2.cdn.digitaloceanspaces.com/playstation_2/playstation_2.incrediblesthe_EU.16373499141106123460_thumb.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "DuckDuckGo image search",
+    "image_source_page": "http://www.thecoverproject.net/view.php?game_id=14467"
   },
   {
     "id": "ps2-new-crash-of-the-titans",
     "title": "Crash of the Titans",
-    "image": "media/covers/ps2-crash-of-the-titans.webp",
+    "image": "https://www.covercentury.com/covers/ps2/c/crash_of_the_titans_d.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "DuckDuckGo image search",
+    "image_source_page": "https://www.covercentury.com/index.php?p=ps2&l=c&f=crash_of_the_titans_d.jpg"
   },
   {
     "id": "ps2-new-fantastic-four-rise-of-the-silver-surfer",
     "title": "Fantastic Four: Rise of the Silver Surfer",
-    "image": "media/covers/ps2-fantastic-four-rise-of-the-silver-surfer.webp",
+    "image": "https://coverproject.sfo2.cdn.digitaloceanspaces.com/playstation_2/ps2_fantasticfourriseofthesilversurfer_thumb.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "DuckDuckGo image search",
+    "image_source_page": "http://www.thecoverproject.net/view.php?game_id=7055"
   },
   {
     "id": "ps2-new-the-incredible-hulk",
     "title": "The Incredible Hulk",
-    "image": "media/covers/ps2-the-incredible-hulk.webp",
+    "image": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Incredible%20Hulk,%20The%20(USA).png",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Libretro online box art",
+    "image_source_page": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/"
   },
   {
     "id": "ps2-new-wrc-3",
@@ -101,46 +124,57 @@
   {
     "id": "ps2-new-ratchet-clank",
     "title": "Ratchet & Clank",
-    "image": "media/covers/ps2-ratchet-clank.webp",
+    "image": "https://nosco.fra1.digitaloceanspaces.com/listings/2025/02/21/15/1176%2021022025%20201944%20%5BpIXj%5D.jpeg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Individually researched image"
   },
   {
     "id": "ps2-new-road-trip-adventure",
     "title": "Road Trip Adventure",
-    "image": "media/covers/ps2-road-trip-adventure.webp",
+    "image": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Road%20Trip%20Adventure%20(Europe,%20Australia)%20(En,Fr,De).png",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Libretro online box art",
+    "image_source_page": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/"
   },
   {
     "id": "ps2-new-fifa-street",
     "title": "FIFA Street",
-    "image": "media/covers/ps2-fifa-street.webp",
+    "image": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/FIFA%20Street%20(USA).png",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Libretro online box art",
+    "image_source_page": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/"
   },
   {
     "id": "ps2-new-torino-2006",
     "title": "Torino 2006",
-    "image": "media/covers/ps2-torino-2006.webp",
+    "image": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Torino%202006%20(USA).png",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Libretro online box art",
+    "image_source_page": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/"
   },
   {
     "id": "ps2-new-tony-hawk-s-project-8",
@@ -156,12 +190,15 @@
   {
     "id": "ps2-new-the-simpsons-game",
     "title": "The Simpsons Game",
-    "image": "media/covers/ps2-the-simpsons-game.webp",
+    "image": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/Simpsons%20Game,%20The%20(USA).png",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Libretro online box art",
+    "image_source_page": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/"
   }
 ]

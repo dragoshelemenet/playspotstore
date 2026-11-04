@@ -472,24 +472,29 @@
   {
     "id": "ps4-new-grand-theft-auto-v",
     "title": "Grand Theft Auto V",
-    "image": "media/covers/ps4-grand-theft-auto-v.webp",
+    "image": "https://i5-mx.walmartimages.com/samsmx/images/product-images/img_large/000214194l.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Individually researched image"
   },
   {
     "id": "ps4-new-on-the-road-truck-simulator",
     "title": "On the Road: Truck Simulator",
-    "image": "media/covers/ps4-on-the-road-truck-simulator.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/285380/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/285380/"
   },
   {
     "id": "ps4-new-minecraft",
@@ -516,156 +521,198 @@
   {
     "id": "ps4-new-sonic-colors-ultimate",
     "title": "Sonic Colors: Ultimate",
-    "image": "media/covers/ps4-sonic-colors-ultimate.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2055290/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/2055290/"
   },
   {
     "id": "ps4-new-sonic-frontiers",
     "title": "Sonic Frontiers",
-    "image": "media/covers/ps4-sonic-frontiers.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1237320/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/1237320/"
   },
   {
     "id": "ps4-new-final-fantasy-vii-remake",
     "title": "Final Fantasy VII Remake",
-    "image": "media/covers/ps4-final-fantasy-vii-remake.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1462040/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/1462040/"
   },
   {
     "id": "ps4-new-final-fantasy-xv",
     "title": "Final Fantasy XV",
-    "image": "media/covers/ps4-final-fantasy-xv.webp",
+    "image": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%204/Named_Boxarts/Final%20Fantasy%20XV%20(Japan).png",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Libretro online box art",
+    "image_source_page": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%204/Named_Boxarts/"
   },
   {
     "id": "ps4-new-final-fantasy-xiv-a-realm-reborn",
     "title": "Final Fantasy XIV: A Realm Reborn",
-    "image": "media/covers/ps4-final-fantasy-xiv-a-realm-reborn.webp",
+    "image": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%204/Named_Boxarts/Final%20Fantasy%20XIV%20Online%20-%20A%20Realm%20Reborn%20(Europe).png",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Libretro online box art",
+    "image_source_page": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%204/Named_Boxarts/"
   },
   {
     "id": "ps4-new-marvel-s-spider-man-miles-morales",
     "title": "Marvel’s Spider-Man: Miles Morales",
-    "image": "media/covers/ps4-marvel-s-spider-man-miles-morales.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1817190/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/1817190/"
   },
   {
     "id": "ps4-new-little-nightmares-iii",
     "title": "Little Nightmares III",
-    "image": "media/covers/ps4-little-nightmares-iii.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1392860/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/1392860/"
   },
   {
     "id": "ps4-new-lords-of-the-fallen",
     "title": "Lords of the Fallen",
-    "image": "media/covers/ps4-lords-of-the-fallen.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1501750/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/1501750/"
   },
   {
     "id": "ps4-new-the-technomancer",
     "title": "The Technomancer",
-    "image": "media/covers/ps4-the-technomancer.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/338390/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/338390/"
   },
   {
     "id": "ps4-new-greedfall",
     "title": "GreedFall",
-    "image": "media/covers/ps4-greedfall.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/606880/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/606880/"
   },
   {
     "id": "ps4-new-vikings-wolves-of-midgard",
     "title": "Vikings: Wolves of Midgard",
-    "image": "media/covers/ps4-vikings-wolves-of-midgard.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/404590/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/404590/"
   },
   {
     "id": "ps4-new-kingdoms-of-amalur-re-reckoning",
     "title": "Kingdoms of Amalur: Re-Reckoning",
-    "image": "media/covers/ps4-kingdoms-of-amalur-re-reckoning.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1041720/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/1041720/"
   },
   {
     "id": "ps4-new-the-elder-scrolls-online",
     "title": "The Elder Scrolls Online",
-    "image": "media/covers/ps4-the-elder-scrolls-online.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/306130/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/306130/"
   },
   {
     "id": "ps4-new-naruto-to-boruto-shinobi-striker",
     "title": "Naruto to Boruto: Shinobi Striker",
-    "image": "media/covers/ps4-naruto-to-boruto-shinobi-striker.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/633230/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/633230/"
   },
   {
     "id": "ps4-new-crayola-scoot",
@@ -703,13 +750,16 @@
   {
     "id": "ps4-new-the-outer-worlds",
     "title": "The Outer Worlds",
-    "image": "media/covers/ps4-the-outer-worlds.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1449110/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/1449110/"
   },
   {
     "id": "ps4-new-robinson-the-journey-ps-vr",
@@ -725,13 +775,16 @@
   {
     "id": "ps4-new-fruit-ninja-vr",
     "title": "Fruit Ninja VR",
-    "image": "media/covers/ps4-fruit-ninja-vr.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/486780/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/486780/"
   },
   {
     "id": "ps4-new-arashi-castles-of-sin-ps-vr",
@@ -747,13 +800,16 @@
   {
     "id": "ps4-new-adventure-time-pirates-of-the-enchiridion",
     "title": "Adventure Time: Pirates of the Enchiridion",
-    "image": "media/covers/ps4-adventure-time-pirates-of-the-enchiridion.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/728240/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/728240/"
   },
   {
     "id": "ps4-new-tiny-tina-s-wonderlands",
@@ -780,24 +836,30 @@
   {
     "id": "ps4-new-sniper-elite-4",
     "title": "Sniper Elite 4",
-    "image": "media/covers/ps4-sniper-elite-4.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/312660/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/312660/"
   },
   {
     "id": "ps4-new-back-4-blood",
     "title": "Back 4 Blood",
-    "image": "media/covers/ps4-back-4-blood.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/924970/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/924970/"
   },
   {
     "id": "ps4-new-for-honor",
@@ -813,13 +875,16 @@
   {
     "id": "ps4-new-grip-combat-racing",
     "title": "GRIP: Combat Racing",
-    "image": "media/covers/ps4-grip-combat-racing.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/396900/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/396900/"
   },
   {
     "id": "ps4-new-ea-sports-ufc-4",
@@ -846,13 +911,16 @@
   {
     "id": "ps4-new-tekken-7",
     "title": "Tekken 7",
-    "image": "media/covers/ps4-tekken-7.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/389730/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/389730/"
   },
   {
     "id": "ps4-new-the-yakuza-remastered-collection",
@@ -868,24 +936,30 @@
   {
     "id": "ps4-new-road-rage",
     "title": "Road Rage",
-    "image": "media/covers/ps4-road-rage.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/499210/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/499210/"
   },
   {
     "id": "ps4-new-it-takes-two",
     "title": "It Takes Two",
-    "image": "media/covers/ps4-it-takes-two.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1426210/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/1426210/"
   },
   {
     "id": "ps4-new-need-for-speed-payback",
@@ -956,13 +1030,16 @@
   {
     "id": "ps4-new-tomb-raider-definitive-edition",
     "title": "Tomb Raider: Definitive Edition",
-    "image": "media/covers/ps4-tomb-raider-definitive-edition.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/750920/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/750920/"
   },
   {
     "id": "ps4-new-rise-of-the-tomb-raider",
@@ -978,24 +1055,30 @@
   {
     "id": "ps4-new-watch-dogs-legion",
     "title": "Watch Dogs: Legion",
-    "image": "media/covers/ps4-watch-dogs-legion.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2239550/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/2239550/"
   },
   {
     "id": "ps4-new-watch-dogs",
     "title": "Watch Dogs",
-    "image": "media/covers/ps4-watch-dogs.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447040/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/447040/"
   },
   {
     "id": "ps4-new-call-of-duty-advanced-warfare",
@@ -1011,13 +1094,16 @@
   {
     "id": "ps4-new-call-of-duty-infinite-warfare",
     "title": "Call of Duty: Infinite Warfare",
-    "image": "media/covers/ps4-call-of-duty-infinite-warfare.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292730/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/292730/"
   },
   {
     "id": "ps4-new-god-of-war-iii-remastered",
@@ -1066,13 +1152,16 @@
   {
     "id": "ps4-new-star-wars-jedi-fallen-order",
     "title": "Star Wars Jedi: Fallen Order",
-    "image": "media/covers/ps4-star-wars-jedi-fallen-order.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172380/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/1172380/"
   },
   {
     "id": "ps4-new-assassin-s-creed-valhalla",
@@ -1099,46 +1188,58 @@
   {
     "id": "ps4-new-red-dead-redemption-2",
     "title": "Red Dead Redemption 2",
-    "image": "media/covers/ps4-red-dead-redemption-2.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/1174180/"
   },
   {
     "id": "ps4-new-mad-max",
     "title": "Mad Max",
-    "image": "media/covers/ps4-mad-max.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/234140/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/234140/"
   },
   {
     "id": "ps4-new-warhammer-vermintide",
     "title": "Warhammer: Vermintide",
-    "image": "media/covers/ps4-warhammer-vermintide.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/552500/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/552500/"
   },
   {
     "id": "ps4-new-warhammer-vermintide-2",
     "title": "Warhammer: Vermintide 2",
-    "image": "media/covers/ps4-warhammer-vermintide-2.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/552500/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/552500/"
   },
   {
     "id": "ps4-new-shaq-fu-a-legend-reborn",
@@ -1176,35 +1277,44 @@
   {
     "id": "ps4-new-sleeping-dogs-definitive-edition",
     "title": "Sleeping Dogs: Definitive Edition",
-    "image": "media/covers/ps4-sleeping-dogs-definitive-edition.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/307690/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/307690/"
   },
   {
     "id": "ps4-new-predator-hunting-grounds",
     "title": "Predator: Hunting Grounds",
-    "image": "media/covers/ps4-predator-hunting-grounds.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1556200/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/1556200/"
   },
   {
     "id": "ps4-new-vampyr",
     "title": "Vampyr",
-    "image": "media/covers/ps4-vampyr.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/427290/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/427290/"
   },
   {
     "id": "ps4-new-mirror-s-edge-catalyst",
@@ -1220,13 +1330,16 @@
   {
     "id": "ps4-new-homefront-the-revolution",
     "title": "Homefront: The Revolution",
-    "image": "media/covers/ps4-homefront-the-revolution.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/223100/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/223100/"
   },
   {
     "id": "ps4-new-destiny-2-forsaken",
@@ -1242,45 +1355,57 @@
   {
     "id": "ps4-new-verdun",
     "title": "Verdun",
-    "image": "media/covers/ps4-verdun.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/242860/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/242860/"
   },
   {
     "id": "ps4-new-days-gone",
     "title": "Days Gone",
-    "image": "media/covers/ps4-days-gone.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1259420/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/1259420/"
   },
   {
     "id": "ps4-new-tom-clancy-s-ghost-recon-wildlands",
     "title": "Tom Clancy’s Ghost Recon Wildlands",
-    "image": "media/covers/ps4-tom-clancy-s-ghost-recon-wildlands.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/460930/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/460930/"
   },
   {
     "id": "ps4-new-tom-clancy-s-rainbow-six-siege",
     "title": "Tom Clancy’s Rainbow Six Siege",
-    "image": "media/covers/ps4-tom-clancy-s-rainbow-six-siege.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/359550/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Новое поступление. Уточняйте состояние, цену и наличие при обращении.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/359550/"
   }
 ]

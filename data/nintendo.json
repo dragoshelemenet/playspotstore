@@ -2,24 +2,28 @@
   {
     "id": "nintendo-new-little-nightmares-iii",
     "title": "Little Nightmares III",
-    "image": "media/covers/nintendo-little-nightmares-iii.webp",
+    "image": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/193/19370/19370833.jpg",
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Adăugat recent. Confirmă starea, prețul și disponibilitatea prin contact.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Individually researched image"
   },
   {
     "id": "nintendo-new-sonic-racing-crossworlds",
     "title": "Sonic Racing: CrossWorlds",
-    "image": "media/covers/nintendo-sonic-racing-crossworlds.webp",
+    "image": "https://toyorgame.com.sg/cdn/shop/files/CoverNS2_85e595c7-6930-47a5-b46a-41cccb61ae79.png?v=1768789386",
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Adăugat recent. Confirmă starea, prețul și disponibilitatea prin contact.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Individually researched image"
   },
   {
     "id": "nintendo-new-hyrule-warriors-age-of-imprisonment",
@@ -35,67 +39,80 @@
   {
     "id": "nintendo-new-street-fighter-6",
     "title": "Street Fighter 6",
-    "image": "media/covers/nintendo-street-fighter-6.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2154900/library_600x900.jpg",
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Adăugat recent. Confirmă starea, prețul și disponibilitatea prin contact.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Steam official cover artwork",
+    "image_source_page": "https://store.steampowered.com/app/2154900/"
   },
   {
     "id": "nintendo-new-two-point-museum",
     "title": "Two Point Museum",
-    "image": "media/covers/nintendo-two-point-museum.webp",
+    "image": "https://toyorgame.com.sg/cdn/shop/files/CoverNS2_9f098eac-2d6f-498e-babe-6e1bb50192f3.png?v=1758512900",
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Adăugat recent. Confirmă starea, prețul și disponibilitatea prin contact.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Individually researched image"
   },
   {
     "id": "nintendo-new-raidou-remastered-the-mystery-of-the-soulless-army",
     "title": "RAIDOU Remastered: The Mystery of the Soulless Army",
-    "image": "media/covers/nintendo-raidou-remastered-the-mystery-of-the-soulless-army.webp",
+    "image": "https://static.gamesmen.com.au/media/catalog/product/cache/57ddbad6affa8d28869fa47188b75842/r/a/raidou_packshot_nsw_front_anz.jpg",
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Adăugat recent. Confirmă starea, prețul și disponibilitatea prin contact.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Individually researched image"
   },
   {
     "id": "nintendo-new-super-mario-maker-2",
     "title": "Super Mario Maker 2",
-    "image": "media/covers/nintendo-super-mario-maker-2.webp",
+    "image": "https://gorilagames.com/img/public/e4de21.jpg",
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Adăugat recent. Confirmă starea, prețul și disponibilitatea prin contact.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Individually researched image"
   },
   {
     "id": "nintendo-new-kirby-star-allies",
     "title": "Kirby Star Allies",
-    "image": "media/covers/nintendo-kirby-star-allies.webp",
+    "image": "https://i5.walmartimages.com/asr/65be7e3c-a95f-4681-b33f-606743b81161_1.39741f163f474d0205b0f9df9c808f42.jpeg?odnBg=FFFFFF&odnHeight=2000&odnWidth=2000",
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Adăugat recent. Confirmă starea, prețul și disponibilitatea prin contact.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Individually researched image"
   },
   {
     "id": "nintendo-new-cronos-the-new-dawn",
     "title": "Cronos: The New Dawn",
-    "image": "media/covers/nintendo-cronos-the-new-dawn.webp",
+    "image": "https://retromtl.com/cdn/shop/files/Switch2-CronosNewDawnNew.jpg?v=1761139187&width=1500",
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
     "description": "Adăugat recent. Confirmă starea, prețul și disponibilitatea prin contact.",
     "link": "https://www.instagram.com/PlaySpotStore",
-    "availability": "confirm_by_contact"
+    "availability": "confirm_by_contact",
+    "fallback_image": "media/play-spot-logo-v4.webp",
+    "image_source": "Individually researched image"
   }
 ]
