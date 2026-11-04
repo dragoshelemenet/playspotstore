@@ -1521,54 +1521,15 @@
     }
   </style>
 </head>
+<link rel="stylesheet" href="neon-redesign.css?v=20261104">
 <body>
 
 <header>
-  <div class="logo">
-    <img src="YOUR_LOGO.png" alt="PlaySpotStore Logo">
-    <span>PlaySpotStore</span>
-  </div>
-  <nav>
-    <ul id="main-menu">  
-      <li><a href="#contact">Contact</a></li>
-      <!-- For mobile -->
-      <li class="mobile-search-bar">
-        <input type="text" id="mobile-search-input" placeholder="Caută joc..." aria-label="Caută jocuri (mobil)">
-        <div class="mobile-search-suggestions" id="mobile-search-suggestions"></div>
-      </li>
-    </ul>
-    <div class="search-bar desktop-search-bar">
-      <input type="text" id="search-input" placeholder="Caută joc..." aria-label="Caută jocuri (desktop)">
-      <div class="search-suggestions" id="search-suggestions"></div>
-    </div>
-  </nav>
-  <div class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-    <i class="bx bx-menu"></i>
-  </div>
-</header>
+<a class="logo" href="#acasa" aria-label="PlaySpotStore homepage"><svg class="neon-logo-icon" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17 16C12 15 8 18 6 25L2 35C0 44 8 48 14 42L21 35H43L50 42C56 48 64 44 62 35L58 25C56 18 52 15 47 16L42 18H22L17 16Z" stroke="currentColor" stroke-width="2.5"/><path d="M17 23V34M11.5 28.5H22.5" stroke="#7bfcb7" stroke-width="3" stroke-linecap="round"/><circle cx="45" cy="25" r="2.5" fill="#b47cff"/><circle cx="51" cy="30" r="2.5" fill="#b47cff"/><circle cx="39" cy="30" r="2.5" fill="#b47cff"/><circle cx="45" cy="35" r="2.5" fill="#b47cff"/><path d="M26 16l-1-6 6 2 5-6 5 7" stroke="#70fba4" stroke-width="2" stroke-linecap="round"/></svg><span>PlaySpotStore</span></a>
+<nav><ul id="main-menu"><li><a href="#contact">CONTACT</a></li><li><a href="#" data-category-id="ps4">JOCURI PS4</a></li><li><a href="#" data-category-id="ps5">JOCURI PS5</a></li><li><a href="#" onclick="event.preventDefault();showPlatformNotice('nintendo')">NINTENDO</a></li><li><a href="#" onclick="event.preventDefault();showPlatformNotice('xbox')">XBOX</a></li><li><a href="#" data-category-id="console">CONSOLE</a></li><li><a href="#" data-category-id="accessories">ACCESORII</a></li><li class="mobile-search-bar"><input type="text" id="mobile-search-input" placeholder="Caută joc..." aria-label="Caută jocuri"><div class="mobile-search-suggestions" id="mobile-search-suggestions"></div></li></ul><div class="search-bar desktop-search-bar"><input type="text" id="search-input" placeholder="Caută joc..." aria-label="Caută jocuri"><div class="search-suggestions" id="search-suggestions"></div></div></nav><div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Toggle menu" aria-expanded="false"><i class="bx bx-menu"></i></div></header>
 
 
-<section class="hero" id="acasa">  
-  <div class="ps-floating-shape square ps-shape-1"></div>
-  <div class="ps-floating-shape circle ps-shape-2"></div>
-  <div class="ps-floating-shape triangle ps-shape-3"></div>
-
-  <h1>Joacă. Descoperă. Câștigă.</h1>
-  <p>PlaySpotStore - Cel mai popular magazin de jocuri și accesorii Playstation din Moldova!</p>
-
-  <!-- CTA BUTTONS -->
-  <div class="cta-buttons">
-    <button onclick="openCategoryModal('ps4')">🎮 <br>JOCURI <br> PS4</button>
-    <button onclick="openCategoryModal('ps5')">🎮 <br>JOCURI <br> PS5</button>
-    <!-- "console" so it matches the switch -->
-    <button onclick="openCategoryModal('console')">🔳 <br> CONSOLE</button>
-    <button onclick="openCategoryModal('accessories')">🕹️ <br> ACCESORII</button>
-  </div>
-
-  <div class="scroll-indicator" onclick="document.getElementById('promo-products').scrollIntoView({behavior:'smooth'});">
-    <i class="bx bx-down-arrow-alt"></i>
-  </div>
-</section>
+<section class="hero" id="acasa"><div class="hero-art"><img src="neon-assets/neon-hero.webp" width="890" height="365" alt="PlaySpot Store gaming console and neon controllers" fetchpriority="high"></div><div class="hero-copy"><h1>Joacă. Descoperă. Câștigă.</h1><p>PlaySpotStore – Cel mai popular magazin de jocuri și accesorii<br>PlayStation, Xbox și Nintendo din Moldova!</p></div><div class="category-deck"><button type="button" class="category-tile ps4" onclick="openCategoryModal('ps4')" aria-label="JOCURI PS4"><img src="neon-assets/ps4.webp" alt="" loading="eager"><span>JOCURI PS4</span></button><button type="button" class="category-tile ps5" onclick="openCategoryModal('ps5')" aria-label="JOCURI PS5"><img src="neon-assets/ps5.webp" alt="" loading="eager"><span>JOCURI PS5</span></button><button type="button" class="category-tile nintendo" onclick="showPlatformNotice('nintendo')" aria-label="NINTENDO"><img src="neon-assets/nintendo.webp" alt="" loading="eager"><span>NINTENDO</span></button><button type="button" class="category-tile xbox" onclick="showPlatformNotice('xbox')" aria-label="XBOX"><img src="neon-assets/xbox.webp" alt="" loading="eager"><span>XBOX</span></button><button type="button" class="category-tile console" onclick="openCategoryModal('console')" aria-label="CONSOLE"><img src="neon-assets/console.webp" alt="" loading="eager"><span>CONSOLE</span></button><button type="button" class="category-tile accessories" onclick="openCategoryModal('accessories')" aria-label="ACCESORII"><img src="neon-assets/accessories.webp" alt="" loading="eager"><span>ACCESORII</span></button></div></section>
 
 <section class="social-media">
   <div class="social-card">
@@ -1927,6 +1888,7 @@ fetch("data/categories.json")
   .then(r => r.ok ? r.json() : [])
   .then(cats => {
     cats.forEach(cat => {
+      if (mainMenu.querySelector('[data-category-id="' + cat.id + '"]')) return;
       const li = document.createElement("li");
       const a = document.createElement("a");
       a.textContent = cat.name;
@@ -2729,5 +2691,35 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+
+<script>
+function showPlatformNotice(platform) {
+  const ru = document.documentElement.lang === 'ru';
+  const name = platform === 'nintendo' ? 'Nintendo' : 'Xbox';
+  const message = ru ? 'Каталог ' + name + ' пока не добавлен. Напишите нам, чтобы узнать о наличии.' : 'Catalogul ' + name + ' nu este încă disponibil online. Contactează-ne pentru disponibilitate.';
+  const existing = document.getElementById('platform-notice');
+  if (existing) existing.remove();
+  const modal = document.createElement('div');
+  modal.id = 'platform-notice';
+  modal.className = 'modal active';
+  modal.setAttribute('role','dialog');
+  modal.setAttribute('aria-modal','true');
+  modal.innerHTML = '<div class="modal-content" style="max-width:450px;margin:12vh auto;padding:32px;position:relative">' +
+    '<button class="close" type="button" aria-label="Close" style="position:absolute;right:16px;top:8px;font-size:28px">&times;</button>' +
+    '<h2>' + name + '</h2><p style="margin:18px 0 25px">' + message + '</p>' +
+    '<a class="modal-button" style="display:inline-block;padding:12px 18px" href="https://www.instagram.com/PlaySpotStore" target="_blank" rel="noopener">Instagram</a></div>';
+  document.body.appendChild(modal);
+  const close = () => {modal.remove(); if (!document.querySelector('.modal.active')) document.body.style.overflow = '';};
+  modal.querySelector('.close').addEventListener('click',close);
+  modal.addEventListener('click',event=>{if(event.target===modal)close();});
+  modal.addEventListener('keydown',event=>{if(event.key==='Escape')close();});
+  document.body.style.overflow = 'hidden';
+  modal.querySelector('.close').focus();
+}
+// Existing hamburger remains functional; add Enter/Space keyboard activation.
+document.getElementById('hamburger')?.addEventListener('keydown',event=>{
+  if(event.key==='Enter'||event.key===' '){event.preventDefault();event.currentTarget.click();}
+});
+</script>
 </body>
 </html>
