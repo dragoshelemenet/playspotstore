@@ -1,0 +1,240 @@
+/* PlaySpotStore V5 — mobile navigation + responsive catalog modal grids.
+   Loaded after V2/V3. Deliberately scoped: leaves product data and product-detail dialogs untouched. */
+@media (max-width: 950px) {
+  /* menu is moved to <body> by neon-v5-fixes.js so the fixed/blurred header
+     cannot trap or crop the overlay */
+  body #main-menu {
+    display: none !important;
+    position: fixed !important;
+    top: var(--header-height, 66px) !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: calc(100dvh - var(--header-height, 66px)) !important;
+    max-height: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    margin: 0 !important;
+    padding: 17px max(18px, env(safe-area-inset-left)) calc(24px + env(safe-area-inset-bottom)) !important;
+    list-style: none !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+    gap: 6px !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    border: 0 !important;
+    border-top: 1px solid rgba(89,255,183,.45) !important;
+    border-radius: 0 !important;
+    background: linear-gradient(158deg, rgba(4,31,29,.985), rgba(10,20,39,.99) 78%) !important;
+    box-shadow: 0 26px 55px rgba(0,0,0,.78) !important;
+    z-index: 10002 !important;
+  }
+  body #main-menu.active { display: flex !important; }
+  body #main-menu > li { display: block !important; width: 100% !important; flex: none !important; color: #eafff5 !important; }
+  body #main-menu > li > a {
+    display: block !important;
+    width: 100% !important;
+    padding: 14px 16px !important;
+    border: 1px solid rgba(95,240,186,.15);
+    border-radius: 11px;
+    background: rgba(45,141,129,.075);
+    color: #dff9f0 !important;
+    font: 650 clamp(17px, 4.8vw, 21px)/1.35 Inter, Arial, sans-serif !important;
+    letter-spacing: .02em !important;
+    text-align: left !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    white-space: normal !important;
+  }
+  body #main-menu > li > a:hover,
+  body #main-menu > li > a:focus-visible {
+    color: #66ffc0 !important;
+    border-color: rgba(95,240,186,.56) !important;
+    background: rgba(60,255,179,.13) !important;
+  }
+  body #main-menu li.mobile-search-bar {
+    display: block !important; width: 100% !important; padding: 10px 0 18px !important;
+    position: relative !important; margin-top: 6px;
+  }
+  body #main-menu .mobile-search-bar input {
+    width: 100% !important; min-height: 46px !important; padding: 12px 14px !important;
+    border: 1px solid rgba(100,255,194,.65) !important; border-radius: 10px !important;
+    background: #092829 !important; color: #eafffa !important; font-size: 16px !important;
+  }
+  body #main-menu .mobile-search-suggestions {
+    width: 100% !important; position: relative !important; top: 0 !important;
+    max-height: 30dvh !important; overflow-y: auto !important; z-index: 10 !important;
+  }
+  body.p5-menu-open { overflow: hidden !important; }
+  header .hamburger { z-index: 10010 !important; touch-action: manipulation; }
+}
+/* Keep all catalog modals above the header and mobile overlay. */
+body .modal.active { z-index: 12000 !important; }
+body #product-modal.active { z-index: 12100 !important; }
+/* Make category modals nearly full-width without crushing cards into a single column. */
+body #modal-ps4,
+body #modal-ps5,
+body #modal-console,
+body #modal-accessories,
+body .p3-modal {
+  padding: clamp(7px, 1.2vw, 18px) !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+body #modal-ps4 .modal-content,
+body #modal-ps5 .modal-content,
+body #modal-console .modal-content,
+body #modal-accessories .modal-content,
+body .p3-modal .modal-content {
+  box-sizing: border-box !important;
+  display: block !important;
+  width: min(calc(100vw - 22px), 1180px) !important;
+  max-width: 1180px !important;
+  min-width: 0 !important;
+  max-height: min(92dvh, 980px) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding: clamp(12px, 2.2vw, 26px) !important;
+  margin: auto !important;
+  gap: 0 !important;
+}
+body .modal .modal-products {
+  box-sizing: border-box !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: clamp(11px, 1.5vw, 19px) !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  flex: none !important;
+  align-items: stretch !important;
+  justify-items: stretch !important;
+  margin: 10px 0 2px !important;
+}
+body .modal .modal-products > .product-card {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: clamp(9px, 1.2vw, 15px) !important;
+  min-height: 0 !important;
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 7px !important;
+  overflow: hidden !important;
+  border-radius: 13px !important;
+  position: relative;
+}
+body .modal .modal-products .product-card .game-link {
+  display: block !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+body .modal .modal-products .product-card img {
+  box-sizing: border-box !important;
+  display: block !important;
+  width: 100% !important;
+  height: clamp(130px, 16vw, 194px) !important;
+  max-height: 200px !important;
+  min-height: 0 !important;
+  object-fit: contain !important;
+  padding: 4px !important;
+  margin: 0 !important;
+}
+body .modal .modal-products .product-card h4 {
+  margin: 2px 0 0 !important;
+  min-height: 0 !important;
+  overflow-wrap: anywhere !important;
+  font-size: clamp(12px, 1.16vw, 16px) !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+  flex-grow: 1;
+}
+body .modal .modal-products .product-card p {
+  margin: 3px 0 0 !important;
+  font-size: clamp(11px, 1vw, 14px) !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+  overflow-wrap: anywhere !important;
+}
+body .modal .modal-products .product-card .shop-now-button {
+  width: 100% !important;
+  min-width: 0 !important;
+  padding: 10px 6px !important;
+  border-radius: 9px !important;
+  font-size: clamp(12px, 1.08vw, 14px) !important;
+  font-weight: 750 !important;
+  line-height: 1.25 !important;
+  white-space: normal !important;
+}
+body .modal .modal-products .new-sticker,
+body .modal .modal-products .sale-sticker {
+  top: 8px !important;
+  right: 7px !important;
+  left: auto !important;
+  z-index: 2 !important;
+  font-size: 10px !important;
+  padding: 4px 6px !important;
+  max-width: calc(100% - 14px);
+}
+body .modal .modal-content > h2 {
+  padding-right: 42px !important;
+  margin: 6px 0 14px !important;
+  font-size: clamp(24px, 3vw, 36px) !important;
+  line-height: 1.2 !important;
+  text-align: left !important;
+}
+body #modal-ps4 .modal-content > .close,
+body #modal-ps5 .modal-content > .close,
+body #modal-console .modal-content > .close,
+body #modal-accessories .modal-content > .close,
+body .p3-modal .modal-content > .close {
+  position: sticky !important;
+  top: 4px !important;
+  float: right !important;
+  right: 0 !important;
+  z-index: 4 !important;
+  display: grid !important;
+  place-items: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  line-height: 1 !important;
+  border-radius: 10px !important;
+  background: #123b38 !important;
+  border: 1px solid rgba(106,255,207,.55) !important;
+  color: #c9ffed !important;
+  font-size: 28px !important;
+  margin: 0 !important;
+}
+@media (max-width: 940px) {
+  body .modal .modal-products { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+}
+@media (max-width: 670px) {
+  body .modal .modal-products { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px !important; }
+  body .modal .modal-content > h2 { font-size: 24px !important; }
+  body #modal-ps4 .modal-content,
+  body #modal-ps5 .modal-content,
+  body #modal-console .modal-content,
+  body #modal-accessories .modal-content,
+  body .p3-modal .modal-content { padding: 12px !important; width: calc(100vw - 16px) !important; }
+  body .modal .modal-products .product-card img { height: clamp(125px, 37vw, 175px) !important; }
+  body .modal .modal-products .product-card h4 { font-size: 12px !important; }
+  body .modal .modal-products .product-card p { font-size: 11px !important; }
+  body .modal .modal-products .product-card .shop-now-button { font-size: 12px !important; }
+}
+@media (max-width: 355px) {
+  body .modal .modal-products {gap:7px!important}
+  body .modal .modal-products > .product-card {padding:7px!important}
+  body .modal .modal-products .product-card img {height:117px!important}
+}
