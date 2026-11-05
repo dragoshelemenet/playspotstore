@@ -1527,6 +1527,7 @@
   <link rel="stylesheet" href="neon-v5-fixes.css?v=20261105a">
   <link rel="stylesheet" href="playspot-v6.css?v=20261105a">
   <link rel="stylesheet" href="playspot-v7.css?v=20261105a">
+  <link rel="stylesheet" href="playspot-v8.css?v=20261105">
 </head>
 <body>
 
@@ -1771,97 +1772,32 @@
       <i class="bx bxs-phone"></i> Позвонить напрямую
     </a>
   </div>
-<footer>
-  &copy; 2025 PlaySpotStore | Играйте. Открывайте. Побеждайте. Все права защищены.
- <style> /* Tags Container Styles */
-    #tags {
-      margin: 0;
-      max-height: 0px; /* Adjust the height as needed */
-      max-width: 0px; /* Adjust the width as needed */
-      overflow-y: auto; /* Enable scrolling if content exceeds height */
-      padding: 10px;
-      background: #000;
-      color: var(--secondary-neon);
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      margin: 20px auto;
-    }
-
-    .tag {
-      display: inline-block;
-      background-color: #f0f0f0;
-      border-radius: 4px;
-      padding: 5px 10px;
-      margin: 5px;
-      font-size: 12px;
-      white-space: nowrap;
-      transition: background-color 0.3s;
-    }
-
-    .tag:hover {
-          background: #000;
-      color: var(--secondary-neon);
-    }
-
-    /* Total Tags Counter */
-    #tag-count {
-      margin: 10px auto;
-      font-size: 12px;
-      font-weight: bold;
-      text-align: center;
-            background: #000;
-      color: var(--secondary-neon);
-    }
-
-  </style>
-
-  <!-- Tags Container -->
-  <div id="tags"></div>
-  <p id="tag-count" style="display: none;"><small>Tags: 0</small></p>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', async () => {
-      await loadTags();
-    });
-
-    async function loadTags() {
-      try {
-        const response = await fetch('/data/tags_ru.json');
-        const data = await response.json();
-        const { locations, websiteTags } = data;
-
-        const tagsList = document.getElementById('tags');
-        const tagCountDisplay = document.getElementById('tag-count');
-
-        const fragment = document.createDocumentFragment();
-        let tagCount = 0;
-
-        for (const location of locations) {
-          for (const tag of websiteTags) {
-            const tagElement = document.createElement('span');
-            tagElement.className = 'tag';
-            tagElement.textContent = `${location} - ${tag}`;
-            fragment.appendChild(tagElement);
-            tagCount++;
-          }
-        }
-
-        tagsList.innerHTML = '';
-        tagsList.appendChild(fragment);
-        tagCountDisplay.textContent = `${tagCount}`;
-        tagCountDisplay.style.display = tagCount > 0 ? 'block' : 'none';
-      } catch (error) {
-        console.error('Error loading tags:', error);
-      }
-    }
-
-    function refreshTags() {
-      loadTags();
-    }
-  </script>
-
-</footer>
 </section>
+<footer class="p8-footer" aria-label="Нижняя навигация">
+  <div class="p8-wrap">
+    <div class="p8-main">
+      <div class="p8-brand">
+        <img src="media/play-spot-logo-v4.webp" width="67" height="67" alt="" loading="lazy" decoding="async">
+        <div><strong>PlaySpotStore</strong><p>Игры, консоли и аксессуары для игроков в Молдове.</p></div>
+      </div>
+      <nav class="p8-links" aria-label="Ссылки внизу сайта"><a href="#acasa">Главная</a><a href="#produse-noi">Новинки</a><a href="#gta6">GTA 6</a><a href="#contact">Контакты</a></nav>
+    </div>
+    <div class="p8-bottom">
+      <small>© 2026 PlaySpotStore · Joacă. Descoperă. Câștigă. · Все права защищены.</small>
+      <button id="p8-tags-open" class="p8-tag-trigger" type="button" aria-haspopup="dialog" aria-controls="p8-tags-dialog" aria-label="Метки" title="Метки">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3.5 11V5a1.5 1.5 0 0 1 1.5-1.5h6L21 13.5l-7.5 7.5L3.5 11Z"/><circle cx="8" cy="8" r="1.3"/></svg>
+      </button>
+    </div>
+  </div>
+</footer>
+<dialog class="p8-tags-dialog" id="p8-tags-dialog" aria-labelledby="p8-tags-title">
+  <div class="p8-tags-content">
+    <div class="p8-dialog-head"><h2 id="p8-tags-title">Метки</h2><button type="button" class="p8-dialog-close" id="p8-tags-close" aria-label="Закрыть">×</button></div>
+    <p class="p8-dialog-subtitle">Поиск по меткам и городам. Первые результаты появляются ниже.</p>
+    <input class="p8-search" type="search" id="p8-tags-search" placeholder="Поиск по меткам..." autocomplete="off" aria-label="Поиск по меткам...">
+    <div class="p8-tags-results" id="p8-tags-results" aria-live="polite"></div>
+  </div>
+</dialog>
 <!-- Floating RO Language Switch Button -->
 <a href="/" class="floating-language-button" aria-label="Переключиться на румынский">
   RO
@@ -2783,5 +2719,6 @@ document.getElementById('hamburger')?.addEventListener('keydown',event=>{
 </script>
 <script defer src="neon-v5-fixes.js?v=20261105a"></script>
   <script defer src="playspot-v6.js?v=20261105a"></script>
+  <script defer src="playspot-v8.js?v=20261105"></script>
 </body>
 </html>

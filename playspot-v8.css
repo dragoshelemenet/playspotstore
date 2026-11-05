@@ -1,0 +1,166 @@
+/* PlaySpotStore V8 — flowing footer, polished checkout steps, optional tag dialog.
+   Load after V7. Leaves contact actions, products, modals and navigation intact. */
+:root{--p8-mint:#77f8c1;--p8-text:#d9f8eb;--p8-muted:#a3babd}
+/* Eliminate the solid black horizontal bands between ordering, contact and footer. */
+body section.how-to-order,
+body section#contact.contact{
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+body section.how-to-order{
+  padding:clamp(43px,5.4vw,80px) 18px clamp(38px,4.5vw,60px)!important;
+  margin:0 auto!important;
+  position:relative;
+}
+body section.how-to-order h2,
+body section#contact h2{
+  color:#b9ffe7!important;
+  font-weight:790!important;
+  letter-spacing:-.045em;
+  text-shadow:none!important;
+}
+body section.how-to-order .order-steps{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:clamp(12px,2vw,23px)!important;
+  width:min(100%,940px)!important;
+  margin:27px auto 22px!important;
+  padding:0!important;
+}
+body section.how-to-order .order-steps>.step{
+  box-sizing:border-box!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:8px!important;
+  width:100%!important;
+  min-width:0!important;
+  min-height:146px!important;
+  margin:0!important;
+  padding:24px 15px!important;
+  border:1px solid rgba(104,250,195,.25)!important;
+  border-radius:17px!important;
+  background:linear-gradient(155deg,rgba(23,64,62,.38),rgba(16,27,49,.37))!important;
+  box-shadow:inset 0 1px 0 rgba(198,255,234,.06),0 15px 37px rgba(0,0,0,.10)!important;
+  position:relative;
+  transition:border-color .2s,background .2s,transform .2s,box-shadow .2s;
+}
+body section.how-to-order .order-steps>.step:hover,
+body section.how-to-order .order-steps>.step:focus-visible{
+  transform:translateY(-3px)!important;
+  background:linear-gradient(155deg,rgba(29,82,75,.48),rgba(23,40,57,.44))!important;
+  border-color:rgba(108,253,199,.7)!important;
+  box-shadow:0 16px 40px rgba(0,0,0,.16),0 0 25px rgba(77,246,189,.09)!important;
+}
+body section.how-to-order .order-steps>.step:after{
+  position:absolute;
+  top:13px;
+  right:14px;
+  color:rgba(140,253,207,.52);
+  font:750 12px/1 Inter,Arial,sans-serif;
+  letter-spacing:.11em;
+}
+body section.how-to-order .order-steps>.step:nth-child(1):after{content:'01'}
+body section.how-to-order .order-steps>.step:nth-child(2):after{content:'02'}
+body section.how-to-order .order-steps>.step:nth-child(3):after{content:'03'}
+body section.how-to-order .order-steps>.step i{font-size:27px!important;margin:0 0 2px!important;color:#79ffd0!important;text-shadow:0 0 16px rgba(81,255,184,.22)}
+body section.how-to-order .order-steps>.step h3{color:#e1fff1!important;font-weight:750!important;font-size:17px!important;line-height:1.25!important;margin:0!important}
+body section.how-to-order .order-steps>.step p{color:#b6cbce!important;font-size:13px!important;line-height:1.45!important;margin:0!important}
+body section.how-to-order #btn-unavailable{
+  margin:2px auto 0!important;
+  border-radius:11px!important;
+  min-height:43px!important;
+  padding:11px 18px!important;
+  font:750 12px/1.3 Inter,Arial,sans-serif!important;
+  text-shadow:none!important;
+}
+body section#contact.contact{
+  padding:clamp(34px,5vw,68px) 18px 39px!important;
+  margin:0!important;
+}
+body section#contact.contact h2{font-size:clamp(26px,3.1vw,37px)!important;margin:0 0 13px!important}
+body section#contact.contact>p{max-width:690px;margin:0 auto 20px!important;line-height:1.7;color:#c1d5d5!important}
+/* Existing four contact buttons are intentionally untouched. */
+/* Footer is a continuation of the teal/purple page — no black container or rule. */
+body footer.p8-footer{
+  box-sizing:border-box!important;
+  display:block!important;
+  position:relative;
+  width:100%!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:34px clamp(18px,5vw,78px) 27px!important;
+  background:transparent!important;
+  border:0!important;
+  border-top:0!important;
+  outline:0!important;
+  box-shadow:none!important;
+  color:var(--p8-text)!important;
+  text-align:left!important;
+  font:400 14px/1.6 Inter,Arial,sans-serif!important;
+  isolation:isolate;
+}
+body footer.p8-footer:before{
+  content:'';
+  position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse 47% 95% at 16% 70%,rgba(37,215,155,.06),transparent 94%),radial-gradient(ellipse 42% 90% at 90% 65%,rgba(128,73,218,.06),transparent 95%);
+}
+.p8-footer .p8-wrap{max-width:1260px;margin:0 auto;display:grid;gap:35px}
+.p8-footer .p8-main{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:35px}
+.p8-footer .p8-brand{display:flex;align-items:center;gap:15px;min-width:0}
+.p8-footer .p8-brand img{display:block;width:67px;height:67px;max-width:67px;border-radius:50%;flex:none;object-fit:contain;filter:drop-shadow(0 0 14px rgba(49,243,177,.13))}
+.p8-footer .p8-brand strong{display:block;font-size:clamp(18px,1.6vw,23px);line-height:1.23;font-weight:820;letter-spacing:-.055em;background:linear-gradient(110deg,#a5ffdb 5%,#50e9b1 55%,#b9a2ff 95%);color:transparent;-webkit-background-clip:text;background-clip:text}
+.p8-footer .p8-brand p{color:var(--p8-muted)!important;font-size:12px;line-height:1.45;margin:6px 0 0!important}
+.p8-footer .p8-links{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:10px 25px}
+.p8-footer .p8-links a{color:#c6dedc!important;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap;padding:7px 0;transition:color .2s}
+.p8-footer .p8-links a:hover,.p8-footer .p8-links a:focus-visible{color:#68ffc3!important}
+.p8-footer .p8-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px 22px;flex-wrap:wrap;color:#8daaaa!important;font-size:12px}
+.p8-footer .p8-bottom small{font-size:12px;line-height:1.6;color:#8daaaa!important}
+.p8-footer .p8-tag-trigger{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  min-height:35px;min-width:35px;padding:6px 8px;
+  border:1px solid rgba(121,250,202,.20);border-radius:10px;
+  background:rgba(24,67,65,.11);color:#9dcac2!important;
+  font:600 11px Inter,Arial,sans-serif;cursor:pointer;transition:color .2s,border-color .2s,background .2s
+}
+.p8-footer .p8-tag-trigger:hover,.p8-footer .p8-tag-trigger:focus-visible{color:#80ffd0!important;border-color:rgba(107,252,197,.65);background:rgba(55,174,129,.18)}
+.p8-footer .p8-tag-trigger svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+/* Only a small tag icon is present in the footer; the count and tag list live in an optional dialog. */
+body dialog.p8-tags-dialog{
+  box-sizing:border-box;width:min(620px,calc(100vw - 24px));max-width:620px;
+  max-height:min(85dvh,720px);border:1px solid rgba(110,244,197,.42);border-radius:18px;
+  padding:0;background:linear-gradient(150deg,#0c2d2e,#101b2f 80%);color:#dcfaee;
+  box-shadow:0 35px 90px rgba(0,0,0,.7),0 0 50px rgba(49,247,159,.06)
+}
+body dialog.p8-tags-dialog::backdrop{background:rgba(0,6,14,.76);backdrop-filter:blur(6px)}
+body dialog.p8-tags-dialog .p8-tags-content{display:flex;flex-direction:column;gap:13px;padding:clamp(18px,3vw,28px);max-height:min(85dvh,720px)}
+.p8-tags-dialog .p8-dialog-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.p8-tags-dialog .p8-dialog-head h2{color:#c2ffeb!important;font-size:23px!important;margin:0!important}
+.p8-tags-dialog .p8-dialog-close{border:1px solid rgba(149,255,217,.34);background:rgba(46,105,88,.27);color:#e6fff1;border-radius:10px;width:40px;height:40px;font-size:24px;cursor:pointer}
+.p8-tags-dialog .p8-dialog-subtitle{color:#bad1cf!important;font-size:13px!important;line-height:1.55;margin:0}
+.p8-tags-dialog .p8-search{box-sizing:border-box;width:100%;min-height:43px;border:1px solid rgba(110,245,188,.35);border-radius:10px;background:#092329;color:#e6fff6;padding:11px 13px;font:400 15px Inter,Arial,sans-serif}
+.p8-tags-dialog .p8-search:focus-visible{outline:2px solid #76f8bd;outline-offset:2px}
+.p8-tags-dialog .p8-tags-results{display:flex;flex-wrap:wrap;align-content:flex-start;gap:9px;min-height:90px;max-height:360px;overflow:auto;padding:5px 2px 9px}
+.p8-tags-dialog .p8-tags-results .p8-tag-pill{display:inline-flex;max-width:100%;color:#bdfbe0;background:rgba(70,177,142,.11);border:1px solid rgba(106,235,180,.18);border-radius:9px;padding:7px 10px;font:500 12px/1.4 Inter,Arial,sans-serif;overflow-wrap:anywhere}
+.p8-tags-dialog .p8-tags-results .p8-state{color:#b9d8d0;font-size:13px;line-height:1.5}
+@media(max-width:740px){
+  body section.how-to-order .order-steps{grid-template-columns:1fr!important;max-width:480px!important;gap:11px!important}
+  body section.how-to-order .order-steps>.step{min-height:96px!important;padding:16px 22px!important}
+  body footer.p8-footer{padding:20px 20px 26px!important}
+  .p8-footer .p8-wrap{gap:25px}
+  .p8-footer .p8-main{grid-template-columns:1fr;gap:21px}
+  .p8-footer .p8-links{justify-content:flex-start;gap:0 21px}
+  .p8-footer .p8-bottom{align-items:center;justify-content:flex-start;gap:13px}
+  .p8-footer .p8-bottom small{flex:1;min-width:0;max-width:none!important}
+  .p8-footer .p8-tag-trigger{order:-1;flex:none}
+}
+@media(max-width:440px){
+ body section#contact.contact{padding-bottom:25px!important}
+ .p8-footer .p8-brand img{width:53px;height:53px}
+ .p8-footer .p8-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 13px}
+ .p8-footer .p8-links a{font-size:12px;padding:6px 0}
+ .p8-footer .p8-bottom small{max-width:none!important}
+}
+@media(prefers-reduced-motion:reduce){.p8-footer .p8-links a,.p8-footer .p8-tag-trigger,body section.how-to-order .order-steps>.step{transition:none!important}}
