@@ -1,0 +1,124 @@
+/* PlaySpotStore V10 — sale-only, scroll-aware promotional banner carousel.
+   Loaded after V9. Entirely scoped to the Sale area; catalog, modal and footer untouched. */
+:root { --p10-green:#63ffbb; --p10-white:#eafff7; --p10-border:rgba(94,249,199,.35); }
+body section.season-promotions.p10-sale-wrap {
+  box-sizing:border-box!important;
+  position:relative!important;
+  isolation:isolate!important;
+  width:100%!important;
+  max-width:none!important;
+  margin:0 auto!important;
+  padding:clamp(39px,4.5vw,66px) clamp(10px,2.8vw,40px) 22px!important;
+  overflow:hidden!important;
+  text-align:center!important;
+  background:linear-gradient(120deg,rgba(4,20,29,.6),rgba(4,32,27,.24) 54%,rgba(13,17,44,.48))!important;
+  border-top:1px solid rgba(83,239,178,.10)!important;
+}
+body section.season-promotions.p10-sale-wrap::before {
+  content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 40% 70% at 53% 32%,rgba(17,228,148,.12),transparent 75%),
+             radial-gradient(ellipse 38% 70% at 1% 38%,rgba(31,111,179,.13),transparent 80%),
+             radial-gradient(ellipse 37% 80% at 97% 68%,rgba(98,44,192,.12),transparent 85%);
+}
+body section.season-promotions.p10-sale-wrap>.p10-sr-only {
+  position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;
+  padding:0!important;margin:-1px!important;border:0!important;white-space:nowrap!important;
+  clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;
+}
+.p10-sale-shell {max-width:1320px;margin:0 auto;position:relative;}
+.p10-sale-eyebrow {
+  display:inline-flex;align-items:center;gap:9px;margin:0 0 15px;
+  font:800 11px/1.3 Inter,system-ui,Arial,sans-serif;letter-spacing:.19em;text-transform:uppercase;
+  color:#88ffcd!important;
+}
+.p10-sale-eyebrow::before {content:"";height:7px;width:7px;border-radius:50%;background:#5affa9;box-shadow:0 0 10px #5affa9;}
+.p10-sale-kicker {display:block;font:500 13px/1.5 Inter,system-ui,Arial,sans-serif;color:#afc9c9!important;margin-bottom:14px;}
+.p10-carousel {position:relative;margin:0 auto;max-width:1320px;}
+.p10-stage {position:relative;height:clamp(195px,21vw,280px);width:100%;overflow:hidden;touch-action:pan-y;outline:none;}
+.p10-stage:focus-visible {border-radius:16px;outline:2px solid #76ffc9;outline-offset:-2px;}
+.p10-slide {
+  position:absolute;top:50%;left:50%;width:50%;height:auto;aspect-ratio:3/1;
+  transform:translate(-50%,-50%) scale(.97);
+  display:block;overflow:hidden;border:1px solid rgba(109,250,209,.35);border-radius:15px;
+  text-decoration:none!important;background:#071b27;color:#edfff6;
+  box-shadow:0 10px 26px rgba(0,0,0,.32),0 0 21px rgba(45,252,178,.07);
+  opacity:.32;filter:saturate(.82) brightness(.72);
+  transition:left .65s cubic-bezier(.23,.78,.2,1),transform .65s cubic-bezier(.23,.78,.2,1),opacity .55s ease,filter .55s ease,border-color .35s ease,box-shadow .35s ease;
+  z-index:1;will-change:left,transform,opacity;
+}
+.p10-slide img {display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
+.p10-slide[data-position="active"] {left:50%;width:50%;opacity:1;filter:none;transform:translate(-50%,-50%) scale(1);z-index:4;
+  border-color:rgba(93,249,191,.5);box-shadow:0 16px 45px rgba(0,0,0,.38),0 0 30px rgba(41,232,177,.14);}
+.p10-slide[data-position="prev"] {left:16%;width:43%;transform:translate(-50%,-50%) scale(.8);z-index:2;}
+.p10-slide[data-position="next"] {left:84%;width:43%;transform:translate(-50%,-50%) scale(.8);z-index:2;}
+.p10-slide[data-position="prev"]:hover,.p10-slide[data-position="next"]:hover{filter:saturate(.92) brightness(.88);opacity:.62;}
+.p10-slide[data-position="active"]:hover {transform:translate(-50%,-50%) scale(1.016);box-shadow:0 18px 49px rgba(0,0,0,.38),0 0 33px rgba(61,249,173,.23);}
+.p10-mobile-caption {display:none;}
+.p10-nav {
+  position:absolute;z-index:8;top:50%;transform:translateY(-50%);display:grid;place-items:center;
+  width:39px;height:39px;padding:0;border:1px solid rgba(150,255,222,.25);border-radius:12px;
+  background:rgba(6,27,34,.77);color:#91ffce;font:400 32px/1 Arial,sans-serif;
+  box-shadow:0 5px 16px rgba(0,0,0,.18);cursor:pointer;
+  transition:background .2s,border-color .2s,box-shadow .2s;
+  -webkit-tap-highlight-color:transparent;
+}
+.p10-nav:hover,.p10-nav:focus-visible {background:rgba(25,80,69,.89);border-color:#70ffbf;box-shadow:0 0 14px rgba(56,255,186,.24);}
+.p10-nav.p10-previous {left:8px;}.p10-nav.p10-next {right:8px;}
+.p10-pagination {display:flex;align-items:center;justify-content:center;gap:10px;margin:8px auto 24px;padding:5px;}
+.p10-dot {width:9px;height:9px;padding:0;border:0;border-radius:99px;background:rgba(161,220,210,.32);cursor:pointer;transition:width .32s,background .32s,box-shadow .32s;}
+.p10-dot[aria-current="true"] {width:30px;background:#5cffb5;box-shadow:0 0 10px rgba(65,255,171,.5);}
+.p10-dot:focus-visible {outline:2px solid #b5ffe5;outline-offset:4px;}
+/* Sale timer remains the original working countdown, with a refined visual rhythm. */
+body section.season-promotions.p10-sale-wrap #countdown-timer {
+  display:block;margin:12px auto 9px!important;color:#60f9a9!important;
+  font:800 clamp(29px,3.5vw,52px)/1.15 Inter,system-ui,Arial,sans-serif!important;
+  letter-spacing:-.05em!important;text-shadow:0 0 24px rgba(67,255,175,.29)!important;
+  font-variant-numeric:tabular-nums;
+}
+.p10-timer-bars {display:flex;gap:4px;align-items:center;justify-content:center;width:min(345px,86%);height:14px;margin:0 auto 18px;}
+.p10-timer-bars span {height:9px;flex:1 1 4px;max-width:5px;border-radius:99px;background:rgba(109,244,201,.16);}
+.p10-timer-bars span:nth-child(-n+25) {background:linear-gradient(#9bffd0,#4ae69e);box-shadow:0 0 7px rgba(45,252,178,.3);}
+body section.product-promotions:has(#promo-products) {scroll-margin-top:calc(var(--header-height,74px) + 18px);}
+body #shop-now {margin:0 auto 16px!important;min-height:46px;padding:12px 24px!important;border-radius:10px!important;
+  font:800 13px/1.2 Inter,system-ui,Arial,sans-serif!important;letter-spacing:.03em;
+  color:#061d18!important;background:linear-gradient(105deg,#4cf3a1,#92ffce)!important;
+  box-shadow:0 4px 16px rgba(31,247,169,.16)!important;}
+body #shop-now:hover {transform:translateY(-2px);box-shadow:0 9px 24px rgba(31,247,169,.23)!important;}
+@media(max-width:950px){
+  .p10-stage{height:clamp(170px,24vw,230px)}
+  .p10-slide[data-position="active"]{width:60%}
+  .p10-slide[data-position="prev"],.p10-slide[data-position="next"]{width:48%}
+  .p10-slide[data-position="prev"]{left:14%}
+  .p10-slide[data-position="next"]{left:86%}
+}
+@media(max-width:700px){
+ body section.season-promotions.p10-sale-wrap {padding:35px 12px 16px!important;}
+ .p10-sale-eyebrow{font-size:10px;letter-spacing:.16em;margin-bottom:9px;}
+ .p10-sale-kicker{margin-bottom:10px;font-size:12px;}
+ .p10-stage{height:clamp(340px,96vw,416px);overflow:hidden;border-radius:18px;}
+ .p10-slide {width:calc(100% - 24px)!important;height:calc(100% - 6px)!important;aspect-ratio:auto!important;
+   left:50%;top:50%;border-radius:16px;display:flex;flex-direction:column;
+   transition:left .6s cubic-bezier(.2,.75,.2,1),opacity .35s ease,filter .3s ease!important;
+ }
+ .p10-slide[data-position="active"] {left:50%;opacity:1;filter:none;transform:translate(-50%,-50%)!important;z-index:4;}
+ .p10-slide[data-position="prev"] {left:-56%;opacity:0;filter:none;transform:translate(-50%,-50%)!important;pointer-events:none;}
+ .p10-slide[data-position="next"] {left:156%;opacity:0;filter:none;transform:translate(-50%,-50%)!important;pointer-events:none;}
+ .p10-slide picture {display:block;flex:0 0 52%;min-height:0;overflow:hidden;position:relative;}
+ .p10-slide picture::after {content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#071824);pointer-events:none;}
+ .p10-slide img {width:100%;height:100%;object-fit:cover;object-position:78% center;}
+ .p10-slide .p10-mobile-caption {box-sizing:border-box;display:flex;flex:1;flex-direction:column;align-items:flex-start;
+  justify-content:center;gap:9px;min-width:0;padding:12px clamp(19px,5vw,29px) 16px;
+  background:linear-gradient(130deg,#092732 0%,#071a27 56%,#0a1530 100%);text-align:left;}
+ .p10-mobile-caption strong {font:850 clamp(22px,6.1vw,32px)/1.08 Inter,system-ui,Arial,sans-serif;letter-spacing:-.045em;color:#ecfff7!important;}
+ .p10-mobile-caption strong em {font-style:normal;color:#5effb4!important;}
+ .p10-mobile-caption small {font:500 clamp(12px,3.3vw,14px)/1.4 Inter,system-ui,Arial,sans-serif;color:#b4d2d0!important;}
+ .p10-mobile-cta {display:inline-flex;align-items:center;justify-content:center;gap:9px;margin-top:5px;min-height:40px;
+    padding:9px 16px;border-radius:10px;color:#081f1a!important;background:linear-gradient(100deg,#4cf19a,#95ffd1);
+    box-shadow:0 0 15px rgba(66,246,172,.18);font:800 12px/1.1 Inter,system-ui,Arial,sans-serif;letter-spacing:.035em;}
+ .p10-nav {width:34px;height:34px;top:26%;background:rgba(7,20,34,.8);border-radius:10px;}
+ .p10-nav.p10-previous{left:14px}.p10-nav.p10-next{right:14px}
+ .p10-pagination{margin:4px auto 16px;}
+ .p10-sale-shell #countdown-timer {font-size:clamp(29px,8.2vw,39px)!important;}
+}
+@media(max-width:360px){.p10-stage{height:344px}.p10-mobile-caption{gap:6px!important}.p10-mobile-caption strong{font-size:22px!important}.p10-mobile-caption small{font-size:12px!important}}
+@media(prefers-reduced-motion:reduce){.p10-slide,.p10-nav,.p10-dot{transition:none!important;animation:none!important}}

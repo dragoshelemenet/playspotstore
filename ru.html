@@ -1529,6 +1529,7 @@
   <link rel="stylesheet" href="playspot-v7.css?v=20261105a">
   <link rel="stylesheet" href="playspot-v8.css?v=20261105">
   <link rel="stylesheet" href="playspot-v9.css?v=20261105p">
+  <link rel="stylesheet" href="playspot-v10.css?v=20261105b">
 </head>
 <body>
 
@@ -1605,10 +1606,30 @@
   </div>
 </section>
 
-<section class="season-promotions">
-  <h2>Счастливых праздников!</h2>
-  <p style="margin-bottom:1.5rem;">Игры как новые, запечатанные, так и б/у (B/U). Наслаждайтесь геймерством!</p>
-  <div id="countdown-timer">Загрузка...</div>
+<section class="season-promotions p10-sale-wrap" id="sale">
+  <h2 class="p10-sr-only">Скидки на игры</h2>
+  <div class="p10-sale-shell">
+    <div class="p10-sale-eyebrow">АКЦИИ PLAYSPOTSTORE</div>
+    <div class="p10-carousel" id="p10-sale-carousel" role="region" aria-roledescription="carousel" aria-label="Акционные баннеры">
+      <div class="p10-stage" tabindex="0">
+        <a class="p10-slide" href="#promo-products" data-index="0" data-position="active" aria-label="BIG GAME SALE IS LIVE!. Скидки на игры PS4, PS5, Nintendo и Xbox" aria-current="true">
+          <picture><source media="(max-width: 700px)" srcset="media/sale/sale-live-mobile.webp"><img src="media/sale/sale-live.webp" width="1800" height="600" loading="lazy" decoding="async" alt="BIG GAME SALE IS LIVE!"></picture>
+          <span class="p10-mobile-caption" aria-hidden="true"><strong>BIG GAME SALE <em>IS LIVE!</em></strong><small>Скидки на игры PS4, PS5, Nintendo и Xbox</small><span class="p10-mobile-cta">ПОСМОТРЕТЬ СКИДКИ &rsaquo;</span></span>
+        </a><a class="p10-slide" href="#promo-products" data-index="1" data-position="next" aria-label="HOT DEALS THIS WEEK. Выгодные предложения и популярные игры" >
+          <picture><source media="(max-width: 700px)" srcset="media/sale/hot-deals-mobile.webp"><img src="media/sale/hot-deals.webp" width="1800" height="600" loading="lazy" decoding="async" alt="HOT DEALS THIS WEEK"></picture>
+          <span class="p10-mobile-caption" aria-hidden="true"><strong>HOT DEALS <em>THIS WEEK</em></strong><small>Выгодные предложения и популярные игры</small><span class="p10-mobile-cta">ПОСМОТРЕТЬ СКИДКИ &rsaquo;</span></span>
+        </a><a class="p10-slide" href="#promo-products" data-index="2" data-position="prev" aria-label="LIMITED TIME OFFERS. Количество ограничено. Выбирайте любимые игры" >
+          <picture><source media="(max-width: 700px)" srcset="media/sale/limited-offers-mobile.webp"><img src="media/sale/limited-offers.webp" width="1800" height="600" loading="lazy" decoding="async" alt="LIMITED TIME OFFERS"></picture>
+          <span class="p10-mobile-caption" aria-hidden="true"><strong>LIMITED TIME <em>OFFERS</em></strong><small>Количество ограничено. Выбирайте любимые игры</small><span class="p10-mobile-cta">СМОТРЕТЬ СЕЙЧАС &rsaquo;</span></span>
+        </a>
+        <button type="button" class="p10-nav p10-previous" aria-label="Предыдущий баннер">&#8249;</button>
+        <button type="button" class="p10-nav p10-next" aria-label="Следующий баннер">&#8250;</button>
+      </div>
+      <div class="p10-pagination" role="group" aria-label="Выбрать баннер"><button type="button" class="p10-dot" data-label="Слайд" aria-label="Слайд 1" aria-current="true"></button><button type="button" class="p10-dot" data-label="Слайд" aria-label="Слайд 2" aria-current="false"></button><button type="button" class="p10-dot" data-label="Слайд" aria-label="Слайд 3" aria-current="false"></button></div>
+    </div>
+    <div id="countdown-timer">Загрузка...</div>
+    <div class="p10-timer-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  </div>
 </section>
 
 <section class="product-promotions">
@@ -2721,5 +2742,6 @@ document.getElementById('hamburger')?.addEventListener('keydown',event=>{
 <script defer src="neon-v5-fixes.js?v=20261105a"></script>
   <script defer src="playspot-v6.js?v=20261105a"></script>
   <script defer src="playspot-v8.js?v=20261105"></script>
+  <script defer src="playspot-v10.js?v=20261105b"></script>
 </body>
 </html>
