@@ -1,0 +1,358 @@
+/* PlaySpotStore V9 — premium spacing, hierarchy and visual refinement.
+   Additive stylesheet, loaded AFTER V8. Keeps gameplay catalogue, nav, contact
+   links, gallery lightbox, product modals, and responsive V7 grids unchanged. */
+:root {
+  --p9-mint: #76ffd0;
+  --p9-cyan: #78e9e9;
+  --p9-purple: #b59bff;
+  --p9-white: #eafff7;
+  --p9-muted: #afc9c9;
+  --p9-stroke: rgba(120, 250, 201, .22);
+  --p9-stroke-strong: rgba(116, 255, 208, .44);
+  --p9-glass: linear-gradient(145deg, rgba(28, 65, 69, .67), rgba(12, 24, 41, .72));
+  --p9-radius: 19px;
+  --p9-ease: cubic-bezier(.2, .75, .2, 1);
+}
+html {scroll-padding-top: calc(var(--header-height, 74px) + 18px);}
+body {font-synthesis: none; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
+/* Use generous but controlled content widths: no more edge-to-edge typography. */
+body section:not(.hero) > h2 {
+  font-family: Inter, system-ui, Arial, sans-serif !important;
+  font-weight: 820 !important;
+  letter-spacing: -.045em !important;
+  line-height: 1.12 !important;
+  font-size: clamp(27px, 2.85vw, 42px) !important;
+  color: #c3ffed !important;
+  margin-top: 0 !important;
+}
+body section:not(.hero) > p {line-height: 1.7; color: var(--p9-muted);}
+/* The floating neon language switch stays usable, but less visually dominant. */
+a.floating-language-button {
+  border: 1px solid rgba(172, 255, 215, .42) !important;
+  box-shadow: 0 6px 22px rgba(12, 229, 141, .2) !important;
+  border-radius: 12px !important;
+  font-weight: 780 !important;
+  backdrop-filter: blur(10px);
+}
+/* Top-level categories: premium glass rather than thick boxy outlines. */
+.hero .category-deck {column-gap: clamp(10px, 1.4vw, 22px) !important; row-gap: 14px !important;}
+.hero .category-tile {
+  border-radius: 15px !important;
+  transition: transform .25s var(--p9-ease), box-shadow .25s var(--p9-ease), border-color .25s var(--p9-ease) !important;
+  will-change: auto;
+}
+.hero .category-tile:hover {transform: translateY(-4px) !important;}
+.hero .hero-copy {padding-inline: 14px;}
+.hero .hero-copy h1 {letter-spacing: -.055em !important;}
+.hero .hero-copy p {max-width: 680px; line-height: 1.65 !important;}
+/* Consistent section spacing while preserving explicit mobile GTA treatment. */
+body section.p3-collection,
+body section.p3-launch,
+body section.p3-film {
+  padding: clamp(54px, 6.4vw, 95px) clamp(17px, 4.1vw, 70px) !important;
+}
+.p3-inner, .p3-collection > div {max-width: 1280px !important;}
+.p3-inner {column-gap: clamp(24px, 5.1vw, 80px) !important;}
+.p3-copy {gap: clamp(12px, 1.5vw, 19px) !important;}
+.p3-copy h2 {line-height: 1.1 !important;}
+.p3-copy p {line-height: 1.78 !important;}
+.p3-label {
+  padding: 8px 14px !important;
+  border-color: rgba(114, 255, 193, .36) !important;
+  background: rgba(47, 218, 149, .075) !important;
+  letter-spacing: .115em !important;
+}
+.p3-actions {gap: 13px !important; margin-top: 6px !important;}
+.p3-actions .p3-btn {
+  border-radius: 12px !important;
+  min-height: 47px;
+  padding: 12px 20px !important;
+  transition: transform .25s var(--p9-ease), box-shadow .25s var(--p9-ease) !important;
+}
+.p3-art, .p3-video-wrap {border-radius: var(--p9-radius) !important;}
+.p3-collection-heading {margin-bottom: 32px !important;}
+.p3-collection-heading h2 {margin: 14px 0 10px !important;}
+.p3-collection-heading p {max-width: 720px; line-height: 1.65 !important;}
+.p3-photo-grid {gap: clamp(11px, 1.35vw, 21px) !important;}
+.p3-photo-grid figure {
+  border: 1px solid rgba(118, 238, 194, .24) !important;
+  border-radius: 17px !important;
+  background: var(--p9-glass) !important;
+  box-shadow: 0 12px 30px rgba(0,0,0,.11) !important;
+  transition: transform .25s var(--p9-ease), border-color .25s var(--p9-ease), box-shadow .25s var(--p9-ease) !important;
+}
+.p3-photo-grid figure:hover,
+.p3-photo-grid figure:focus-visible {
+  transform: translateY(-4px) !important;
+  border-color: rgba(112,255,196,.55) !important;
+  box-shadow: 0 18px 34px rgba(0,0,0,.20), 0 0 22px rgba(64,255,180,.11) !important;
+}
+.p3-photo-grid img {height: clamp(190px, 19vw, 270px) !important;}
+.p3-photo-grid figcaption {padding: 15px 17px !important; line-height: 1.42 !important;}
+/* Features + social cards: consistent internal white space and surface finish. */
+body section.features {
+  width: min(100%, 1360px) !important;
+  max-width: 1360px !important;
+  margin: 0 auto !important;
+  gap: clamp(14px, 1.6vw, 24px) !important;
+  padding: clamp(45px, 5.1vw, 77px) clamp(18px, 3vw, 35px) !important;
+}
+body section.features > .feature {
+  box-sizing: border-box !important;
+  flex: 1 1 250px;
+  width: auto !important;
+  min-width: 0 !important;
+  min-height: 215px;
+  max-width: 410px !important;
+  padding: 31px clamp(18px, 2vw, 30px) !important;
+  border-radius: 20px !important;
+}
+body section.features .feature i {font-size: 32px !important; margin-bottom: 15px !important;}
+body section.features .feature h3 {font-size: 19px !important; letter-spacing: -.025em !important;}
+body section.features .feature p {font-size: 14px !important; line-height: 1.65 !important;}
+body section.social-media {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  padding: clamp(42px, 5.1vw, 77px) clamp(16px, 3vw, 44px) !important;
+  gap: clamp(12px, 1.35vw, 22px) !important;
+  background: transparent !important;
+}
+body section.social-media > .social-card {
+  box-sizing: border-box !important;
+  border-radius: 19px !important;
+  padding-top: 26px !important;
+  padding-bottom: 26px !important;
+  border-color: rgba(90, 249, 185, .24) !important;
+}
+body section.social-media .social-card h3 {font-size: 21px !important; letter-spacing: -.025em !important;}
+/* Product cards: consistent card height and balanced rhythm between title,
+   cover, price and CTA. Does not change the existing 2/3/4-column rules. */
+body .featured-products > .product-card {
+  border-radius: 18px !important;
+  border-color: rgba(113,245,194,.23) !important;
+  box-shadow: 0 13px 33px rgba(0,0,0,.15), inset 0 1px rgba(225,255,241,.05) !important;
+  transition: transform .25s var(--p9-ease), border-color .25s var(--p9-ease), box-shadow .25s var(--p9-ease) !important;
+}
+body .featured-products > .product-card:hover {
+  border-color: rgba(129,255,209,.55) !important;
+  box-shadow: 0 18px 35px rgba(0,0,0,.23), 0 0 20px rgba(76,240,170,.10) !important;
+}
+body .featured-products > .product-card h4 {letter-spacing: -.012em !important;}
+body .featured-products > .product-card .shop-now-button {
+  border-radius: 11px !important;
+  margin-top: auto !important;
+}
+body section.new-arrival, body section.product-promotions,
+body section.console-section, body section.accessories-section {
+  padding-top: clamp(50px, 6vw, 88px) !important;
+  padding-bottom: clamp(48px, 5.5vw, 82px) !important;
+  padding-inline: clamp(16px, 3vw, 46px) !important;
+  box-sizing: border-box !important;
+}
+body section.season-promotions {padding: 45px 18px 38px !important;}
+body section.season-promotions h2 {font-size: clamp(25px, 3vw, 38px) !important;}
+/* Reviews and gallery: same content grid and measured top/bottom spacing. */
+body section.testimonials, body section.gallery {
+  padding: clamp(52px, 6vw, 82px) clamp(16px, 4vw, 52px) !important;
+  box-sizing: border-box !important;
+}
+body .testimonials-slideshow, body .gallery-slideshow {max-width: 1120px !important; margin-inline: auto !important;}
+body .testimonials-slideshow {border-radius: 19px !important;}
+body .gallery-slideshow {border-radius: 18px !important;}
+/* Order steps: align icons, numbers, labels, card heights and click targets. */
+body section.how-to-order {
+  padding-top: clamp(66px, 6.4vw, 105px) !important;
+  padding-bottom: clamp(40px, 4.6vw, 75px) !important;
+}
+body section.how-to-order > h2 {font-size: clamp(29px, 3.05vw, 42px) !important;}
+body section.how-to-order .order-steps {
+  width: min(100%, 1080px) !important;
+  gap: clamp(14px, 1.55vw, 22px) !important;
+  margin: 34px auto 27px !important;
+}
+body section.how-to-order .order-steps > .step {
+  gap: 9px !important;
+  min-height: 194px !important;
+  padding: 28px 23px !important;
+  border-radius: 20px !important;
+  background: var(--p9-glass) !important;
+  border-color: var(--p9-stroke) !important;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, .12), inset 0 1px 0 rgba(205, 255, 239, .075) !important;
+}
+body section.how-to-order .order-steps > .step i {
+  box-sizing: border-box !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 53px !important;
+  height: 53px !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(92,244,178,.20) !important;
+  background: linear-gradient(145deg,rgba(54,205,143,.12),rgba(23,89,80,.06)) !important;
+  font-size: 28px !important;
+  margin: 0 0 5px !important;
+}
+body section.how-to-order .order-steps > .step h3 {font-size: 19px !important;}
+body section.how-to-order .order-steps > .step p {font-size: 14px !important;}
+body section.how-to-order .order-steps > .step:after {top:17px !important;right:18px !important;font-size:12px !important;}
+body section.how-to-order #btn-unavailable {
+  padding: 12px 20px !important;
+  border-radius: 12px !important;
+  min-height: 45px !important;
+}
+/* Contact section: soft halo, no box, no bands. Buttons deliberately unchanged. */
+body section#contact.contact {
+  isolation: isolate;
+  padding-top: clamp(50px, 5.5vw, 85px) !important;
+  padding-bottom: clamp(50px, 5.5vw, 82px) !important;
+}
+body section#contact.contact:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  inset: -10% 0 -12%;
+  background: radial-gradient(ellipse 54% 75% at 50% 55%,rgba(20,180,143,.064),transparent 75%);
+}
+body section#contact.contact > h2 {font-size:clamp(30px, 3.15vw, 43px) !important; margin-bottom: 18px !important;}
+body section#contact.contact > p {max-width: 630px !important; line-height: 1.75 !important; margin-bottom: 25px !important;}
+/* Contact links remain in exactly their previous button style. */
+/* Footer: spacious two-tier composition with a fine INTERNAL separator, not
+   a dark strip. Brand is anchored to nav and tag icon remains unobtrusive. */
+body footer.p8-footer {
+  padding: clamp(23px, 3.1vw, 46px) clamp(18px, 4.5vw, 68px) clamp(24px, 3vw, 43px) !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+body footer.p8-footer::before {
+  background: radial-gradient(ellipse 45% 95% at 8% 90%,rgba(38,219,154,.075),transparent 95%), radial-gradient(ellipse 47% 90% at 95% 34%,rgba(118,63,217,.07),transparent 97%) !important;
+}
+.p8-footer .p8-wrap {max-width: 1290px !important; gap: 0 !important;}
+.p8-footer .p8-main {
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  align-items: center !important;
+  gap: clamp(30px, 4vw, 70px) !important;
+  padding-bottom: clamp(26px, 3vw, 39px) !important;
+  position: relative;
+}
+.p8-footer .p8-main:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg,rgba(128,255,211,.14),rgba(118,255,209,.24) 35%,rgba(163,135,251,.16) 80%,transparent);
+  pointer-events: none;
+}
+.p8-footer .p8-brand {gap: 18px !important;}
+.p8-footer .p8-brand img {
+  width: 73px !important;
+  height: 73px !important;
+  max-width: 73px !important;
+  border-radius: 50% !important;
+  filter: drop-shadow(0 0 13px rgba(80,243,195,.12)) !important;
+}
+.p8-footer .p8-brand strong {font-size: clamp(21px,1.8vw,27px) !important; letter-spacing: -.055em !important;}
+.p8-footer .p8-brand p {font-size: 13px !important; line-height: 1.6 !important; margin-top: 8px !important;}
+.p8-footer .p8-links {gap: 8px 11px !important;}
+.p8-footer .p8-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 9px 13px !important;
+  border-radius: 10px;
+  font-size: 13px !important;
+  letter-spacing: .005em;
+  transition: color .2s ease, background .2s ease !important;
+}
+.p8-footer .p8-links a:hover,
+.p8-footer .p8-links a:focus-visible {background: rgba(82,245,181,.065) !important;}
+.p8-footer .p8-bottom {
+  padding-top: 24px !important;
+  gap: 15px !important;
+  min-height: 53px;
+}
+.p8-footer .p8-bottom small {font-size: 12px !important; line-height: 1.6 !important; letter-spacing: .015em;}
+.p8-footer .p8-tag-trigger {min-width: 39px !important; min-height: 39px !important; border-radius: 11px !important;}
+/* Logical tab focus; no bright rings on mouse/touch clicks. */
+:where(a, button, [role='button']):focus-visible {outline:2px solid #a5ffe1; outline-offset:3px;}
+@media(max-width: 950px) {
+  body section.p3-collection, body section.p3-launch, body section.p3-film {
+    padding: clamp(43px, 6.6vw, 60px) clamp(16px, 3vw, 30px) !important;
+  }
+  .p3-inner {gap: 28px !important;}
+  .p3-photo-grid img {height: clamp(180px, 26vw, 225px) !important;}
+}
+@media(max-width: 740px) {
+  body section.how-to-order {padding-top:58px!important;padding-bottom:42px!important;}
+  body section.how-to-order .order-steps {max-width: 490px !important; margin: 25px auto 22px !important; gap: 12px !important;}
+  body section.how-to-order .order-steps>.step {
+    display: grid !important;
+    grid-template-columns: 52px 1fr !important;
+    grid-template-rows: auto auto !important;
+    column-gap: 16px !important;
+    row-gap: 5px !important;
+    align-items: center !important;
+    justify-items: start !important;
+    min-height: 100px !important;
+    padding: 16px 48px 16px 17px !important;
+    text-align: left !important;
+  }
+  body section.how-to-order .order-steps>.step i {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 48px !important;
+    height: 48px !important;
+    font-size: 26px !important;
+    margin: 0 !important;
+  }
+  body section.how-to-order .order-steps>.step h3 {grid-column:2;grid-row:1;font-size:17px!important;}
+  body section.how-to-order .order-steps>.step p {grid-column:2;grid-row:2;font-size:13px!important;}
+  .p8-footer .p8-main {grid-template-columns: 1fr !important; gap: 23px !important; padding-bottom: 24px !important;}
+  .p8-footer .p8-links {justify-content:flex-start!important;gap:3px 9px!important;}
+  .p8-footer .p8-links a {padding:8px 10px!important;min-height:37px;}
+  .p8-footer .p8-bottom {padding-top:20px!important;min-height:0;}
+  body section#contact.contact {padding-bottom: 53px !important;}
+}
+@media(max-width: 540px) {
+  .hero .hero-copy {padding-inline:4px;}
+  .hero .category-deck {gap:12px !important;}
+  body section.p3-collection,body section.p3-launch,body section.p3-film {padding:43px 14px !important;}
+  .p3-photo-grid {gap:10px !important;}
+  .p3-photo-grid img {height:clamp(155px, 43vw, 205px) !important;}
+  .p3-photo-grid figcaption {padding:12px 11px !important; font-size: 11px !important;}
+  .p3-collection-heading {margin-bottom:23px !important;}
+  .p3-copy {gap:13px !important;}
+  /* V6 mobile GTA ordering remains artwork-after-title and two CTAs. */
+  #gta6.p3-launch {padding:34px 15px 46px !important;}
+  #gta6 .p3-inner {gap:15px !important;}
+  #gta6 .p3-copy > p {line-height:1.6 !important;}
+  body section.social-media {padding:40px 12px !important;gap:12px !important;}
+  body section.social-media > .social-card {padding:18px 9px !important;}
+  body section.features {padding:36px 13px!important; gap:13px!important;}
+  body section.features > .feature {max-width:none!important;min-height:0;padding:24px 20px!important;}
+  body section.new-arrival,body section.product-promotions,body section.console-section,body section.accessories-section {
+    padding-block: 43px !important;
+    padding-inline: 12px !important;
+  }
+  body section.testimonials,body section.gallery {padding:42px 14px!important;}
+  body section.how-to-order {padding:51px 13px 34px!important;}
+  body section#contact.contact {padding:46px 14px 50px!important;}
+  body footer.p8-footer {padding:10px 18px 28px!important;}
+  .p8-footer .p8-brand {gap:13px!important;}
+  .p8-footer .p8-brand img {width:57px!important;height:57px!important;max-width:57px!important;}
+  .p8-footer .p8-brand strong {font-size:20px!important;}
+  .p8-footer .p8-brand p {font-size:12px!important;}
+  .p8-footer .p8-main {gap:21px!important;}
+  .p8-footer .p8-links {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:4px 10px!important;}
+  .p8-footer .p8-links a {padding:10px 9px!important;}
+  .p8-footer .p8-bottom {display:flex;flex-wrap:nowrap!important;align-items:center!important;gap:13px!important;}
+  .p8-footer .p8-bottom small {font-size:11px!important;}
+  .p8-footer .p8-tag-trigger {flex:none;}
+}
+@media(prefers-reduced-motion:reduce) {
+  .hero .category-tile, .p3-photo-grid figure, .p3-actions .p3-btn,
+  .p8-footer .p8-links a, body .featured-products>.product-card {transition:none!important;}
+}
