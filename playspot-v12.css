@@ -1,0 +1,80 @@
+/* PlaySpotStore V12 — TikTok refresh + resilient image presentation + delivery icon */
+body section.social-media > .social-card.p12-tiktok-card {
+  position: relative !important;
+  isolation: isolate;
+  overflow: hidden !important;
+  border-color: rgba(78, 248, 209, .52) !important;
+  background: radial-gradient(ellipse 90% 75% at 50% -12%, rgba(57, 254, 207, .16), transparent 78%),
+    linear-gradient(150deg, rgba(16, 52, 57, .94), rgba(9, 22, 41, .97)) !important;
+  box-shadow: inset 0 1px 0 rgba(155, 255, 239, .10), 0 10px 28px rgba(0, 0, 0, .20), 0 0 14px rgba(78, 251, 203, .065) !important;
+  transition: transform .24s ease, box-shadow .24s ease;
+}
+body section.social-media > .social-card.p12-tiktok-card:hover {
+  transform: translateY(-4px);
+  box-shadow: inset 0 1px 0 rgba(155,255,239,.12), 0 13px 32px rgba(0,0,0,.3), 0 0 22px rgba(81,252,204,.18) !important;
+}
+body .p12-tiktok-icon {
+  flex: 0 0 auto;
+  width: 37px;
+  height: 37px;
+  display: block;
+  margin: 0 auto 3px;
+  color: #81ffe1;
+  filter: drop-shadow(-2px 1px 0 rgba(253,60,190,.55)) drop-shadow(2px -1px 0 rgba(56,244,250,.45));
+}
+body section.social-media .p12-tiktok-card .p12-tiktok-handle {
+  display: block;
+  color: #82f8d7 !important;
+  font: 650 12px/1.3 Inter, Arial, sans-serif;
+  letter-spacing: .015em;
+  text-align: center;
+  white-space: nowrap;
+}
+body section.social-media .p12-tiktok-card p {margin-bottom: 5px !important;}
+body section.social-media > .p12-tiktok-card a.btn {
+  background: linear-gradient(115deg, #45edac, #85fbd0) !important;
+  color: #061b20 !important;
+  border: 1px solid rgba(169, 255, 231, .48) !important;
+  box-shadow: 0 4px 18px rgba(47, 243, 187, .2) !important;
+  text-decoration: none !important;
+}
+/* Do not depend on a third-party icon font for the AWB step. */
+body section.how-to-order .order-steps > .step svg.p12-awb-icon {
+  box-sizing: border-box !important;
+  display: block !important;
+  width: 53px !important;
+  height: 53px !important;
+  border-radius: 16px !important;
+  padding: 10px !important;
+  border: 1px solid rgba(92,244,178,.25) !important;
+  background: linear-gradient(145deg, rgba(54,205,143,.12), rgba(23,89,80,.06)) !important;
+  color: #79ffd0;
+  filter: drop-shadow(0 0 7px rgba(80,246,189,.14));
+  margin: 0 0 5px !important;
+  overflow: visible;
+}
+@media(max-width:740px) {
+  body section.how-to-order .order-steps>.step svg.p12-awb-icon {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 48px !important;
+    height: 48px !important;
+    padding: 9px !important;
+    margin: 0 !important;
+  }
+}
+@media(max-width:540px) {
+  body .p12-tiktok-icon {width: 33px;height:33px;}
+  body section.social-media .p12-tiktok-card .p12-tiktok-handle {font-size:11px;}
+  body section.social-media > .p12-tiktok-card a.btn {padding: 11px 5px !important;}
+}
+/* Consistent image frame for remote URLs, including browser fallback. */
+body .product-card img.p12-cover-unavailable,
+body #product-modal img.p12-cover-unavailable {
+  object-fit: contain !important;
+  background: linear-gradient(150deg, #103134, #0b162a) !important;
+  border-radius: 10px;
+}
+@media(prefers-reduced-motion:reduce){
+  body section.social-media > .social-card.p12-tiktok-card {transition:none!important}
+}

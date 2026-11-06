@@ -1530,6 +1530,7 @@
   <link rel="stylesheet" href="playspot-v8.css?v=20261105">
   <link rel="stylesheet" href="playspot-v9.css?v=20261105p">
   <link rel="stylesheet" href="playspot-v10.css?v=20261105b">
+  <link rel="stylesheet" href="playspot-v12.css?v=20261106">
 </head>
 <body>
 
@@ -1562,11 +1563,12 @@
     <p>Новости &amp; акции!</p>
     <a href="https://www.instagram.com/PlaySpotStore" target="_blank" class="btn">Подписаться</a>
   </div>
-  <div class="social-card">
-    <i class="bx bxl-tiktok"></i>
+  <div class="social-card p12-tiktok-card">
+    <svg class="p12-tiktok-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" role="img" aria-label="TikTok"><path d="M16.7 2h-3.3v12.45a3.08 3.08 0 1 1-2.48-3.02V8.1a6.5 6.5 0 1 0 5.78 6.45V7.55A8.8 8.8 0 0 0 21 8.6V5.3A5.1 5.1 0 0 1 16.7 2Z"/></svg>
     <h3>TikTok</h3>
-    <p>Новые тренды!</p>
-    <a href="#" target="_blank" class="btn">Подписаться</a>
+    <span class="p12-tiktok-handle">@playspotstore</span>
+    <p>Видео, акции и новинки!</p>
+    <a href="https://www.tiktok.com/@playspotstore/" target="_blank" rel="noopener noreferrer" class="btn">Подписаться</a>
   </div>
   <div class="social-card">
     <i class="bx bxl-whatsapp"></i>
@@ -1733,7 +1735,7 @@
       <p>Подтвердите доступность</p>
     </div>
     <div class="step" data-modal="order-modal-step-3" tabindex="0">
-      <i class="bx bx-truck"></i>
+      <svg class="p12-awb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 7.5h11.2v9H2.5z"/><path d="M13.7 10h3.2l3.5 3.6v2.9h-2"/><path d="M2.5 16.5h2.2m5 0h6"/><circle cx="7.2" cy="17.1" r="1.9"/><circle cx="17.7" cy="17.1" r="1.9"/><path d="M1.5 5h8M1.5 8.9H1"/></svg>
       <h3>Шаг 3</h3>
       <p>AWB &amp; Доставка</p>
     </div>
@@ -2072,6 +2074,7 @@ function createProductCard(game, cat) {
   // Lazy loading
   img.classList.add("lazy");
   img.setAttribute("data-src", game.image);
+  if (game.fallback_image) img.setAttribute("data-p12-fallback", game.fallback_image);
   if (game.fallback_image) {
     img.onerror = () => { if (!img.src.endsWith(game.fallback_image)) img.src = game.fallback_image; };
   }
@@ -2743,5 +2746,6 @@ document.getElementById('hamburger')?.addEventListener('keydown',event=>{
   <script defer src="playspot-v6.js?v=20261105a"></script>
   <script defer src="playspot-v8.js?v=20261105"></script>
   <script defer src="playspot-v10.js?v=20261105b"></script>
+  <script defer src="playspot-v12.js?v=20261106"></script>
 </body>
 </html>
