@@ -35,9 +35,6 @@
     today:'Astăzi', plays:'rotiri', spinLabel:'Încearcă-ți norocul'
   };
   const maxSpins = 3;
-  const p15ExpiresAt = Date.parse('2026-12-08T14:16:42+02:00');
-  const p15CampaignExpired = () => Date.now() >= p15ExpiresAt;
-  const p15ExpiryLabel = new Intl.DateTimeFormat(ru ? 'ru-RU' : 'ro-RO',{timeZone:'Europe/Chisinau', day:'numeric',month:'long',year:'numeric'}).format(p15ExpiresAt);
   const catalogPaths = [
     ['PS4','data/ps4.json'],['PS5','data/ps5.json'],['PS2','data/ps2.json'],
     ['Nintendo','data/nintendo.json'],['Xbox','data/xbox.json']
@@ -108,9 +105,8 @@
   let pool=null, poolPromise=null, activeCandidates=[],currentWin=null,spinning=false,focusFrom=null,lastOverflow='', animationTimer=0;
   const remaining=()=>Math.max(0,maxSpins-getState().wins.length);
   const refreshCounter=()=>{const left=remaining();leftText.textContent=`${left} / ${maxSpins}`;invite.querySelector('.p14-invite-count').textContent=`${left}/${maxSpins}`;
-    spinBtn.disabled=spinning || left===0 || !pool || p15CampaignExpired();
-    if(p15CampaignExpired())status.textContent=ru?'Акция завершилась.':'Campania a expirat.';
-    else if(left===0 && !spinning)status.textContent=t.complete;
+    spinBtn.disabled=spinning || left===0 || !pool;
+    if(left===0 && !spinning)status.textContent=t.complete;
   };
   const textLabel=(value)=>String(value||'').replace(/\s+/g,' ').trim();
   const buildWheel=(list)=>{
@@ -142,9 +138,33 @@
     const bytes=new Uint8Array(5);if(window.crypto?.getRandomValues)window.crypto.getRandomValues(bytes);else for(let i=0;i<bytes.length;i++)bytes[i]=rnd(256);
     return 'PSS-'+dateParts().replace(/-/g,'')+'-'+Array.from(bytes,x=>x.toString(16).padStart(2,'0')).join('').toUpperCase();
   };
+  const prizeMs=30*24*60*60*1000;
+  const prizeExpiryTime=(win)=>{
+    const explicit=Date.parse(win.expiresAt||'');if(Number.isFinite(explicit))return explicit;
+    const historic=Date.parse(String(win.date||'')+'T12:00:00Z');
+    return Number.isFinite(historic)?historic+prizeMs:Date.now()+prizeMs;
+  };
+  const printDate=(millis)=>new Intl.DateTimeFormat(ru?'ru-RU':'ro-RO',{
+    timeZone:'Europe/Chisinau',day:'numeric',month:'long',year:'numeric'
+  }).format(new Date(millis));
+  const prizeValidity=(win)=>{
+    const expires=prizeExpiryTime(win);
+    return Date.now()>=expires ? (ru?'Код просрочен':'Cod expirat') :
+      (ru?'Код действителен 30 дней, до ':'Cod valabil 30 zile, până la ')+printDate(expires);
+  };
   const showResult=(win)=>{
     currentWin=win;result.hidden=false;titleEl.textContent=win.title;platformEl.textContent=win.platform+(win.price?' · '+win.price:'');
-    codeEl.textContent=win.code;claim.href='https://wa.me/'+cashPhone+'?text='+encodeURIComponent(t.message(win)+(ru?' Срок акции: до ':' Campanie valabilă până la ')+p15ExpiryLabel+'.');
+    codeEl.textContent=win.code;
+    let validityEl=result.querySelector('.p14-win-validity');
+    if(!validityEl){validityEl=document.createElement('p');validityEl.className='p14-win-validity';codeEl.insertAdjacentElement('afterend',validityEl);}
+    validityEl.textContent=prizeValidity(win);
+    if(Date.now()>=prizeExpiryTime(win)){
+      claim.removeAttribute('href');claim.setAttribute('aria-disabled','true');
+    }else{
+      claim.removeAttribute('aria-disabled');
+      claim.href='https://wa.me/'+cashPhone+'?text='+encodeURIComponent(t.message(win)+' '+
+        (ru?'Код действует 30 дней, до ':'Codul este valabil 30 de zile, până la ')+printDate(prizeExpiryTime(win))+'.');
+    }
   };
   const renderHistory=()=>{
     const s=getState();histList.innerHTML='';histNum.textContent=`(${s.wins.length}/${maxSpins})`;
@@ -157,7 +177,6 @@
     });
   };
   const open=()=>{
-    if(p15CampaignExpired())return;
     focusFrom=document.activeElement;lastOverflow=document.body.style.overflow;document.body.style.overflow='hidden';
     backdrop.hidden=false;panel.focus({preventScroll:true});status.textContent=t.loading;
     result.hidden=true;currentWin=null;refreshCounter();renderHistory();const last=getState().wins.at(-1);if(last)showResult(last);
@@ -179,14 +198,14 @@
     }
   });
   spinBtn.addEventListener('click',async()=>{
-    if(spinning || p15CampaignExpired())return;
+    if(spinning)return;
     if(!pool){status.textContent=t.loading;try{await loadGames();}catch{return;}}
-    if(p15CampaignExpired()){refreshCounter();return;}
     const state=getState();if(state.wins.length>=maxSpins){refreshCounter();return;}
     // Refresh the eight candidates for every spin; all catalogue entries have the same chance.
     const sample=candidatesFrom(pool);if(sample.length<8)return;
     const index=rnd(8),game=sample[index];
-    const win={id:game.id,platform:game.platform,title:game.title,price:game.price,date:dateParts(),dateLabel:prettyDate(),code:codeFor()};
+    const wonAt=Date.now();
+    const win={id:game.id,platform:game.platform,title:game.title,price:game.price,date:dateParts(),dateLabel:prettyDate(),code:codeFor(),wonAt:new Date(wonAt).toISOString(),expiresAt:new Date(wonAt+prizeMs).toISOString()};
     state.wins.push(win);putState(state); // Reserve immediately, preventing free rerolls on refresh.
     spinning=true;result.hidden=true;currentWin=null;status.textContent=t.wait;
     disc.style.transition='none';disc.style.transform='rotate(0deg)';buildWheel(sample);
@@ -221,8 +240,9 @@
     let pos=463;
     c.fillStyle='#a2dacf';c.font='500 24px Arial';c.fillText(win.platform+'  •  '+t.receiptDate+': '+win.dateLabel,95,pos);
     c.fillStyle='#86ffe2';c.font='700 26px monospace';c.fillText(t.receiptCode+': '+win.code,95,pos+44);
-    c.fillStyle='#afc9cb';c.font='500 20px Arial';c.fillText(t.receiptCondition,95,565);
-    c.font='600 20px Arial';c.fillText(t.receiptFooter+' · '+p15ExpiryLabel,95,596);
+    c.fillStyle='#afc9cb';c.font='500 20px Arial';c.fillText((ru?'Код действует до: ':'Cod valabil până la: ')+printDate(prizeExpiryTime(win)),95,548);
+    c.font='500 20px Arial';c.fillText(t.receiptCondition,95,576);
+    c.font='600 20px Arial';c.fillText(t.receiptFooter,95,605);
     return new Promise((resolve,reject)=>canvas.toBlob(blob=>blob?resolve(blob):reject(new Error('PNG conversion failed')),'image/png'));
   };
   saveBtn.addEventListener('click',async()=>{
