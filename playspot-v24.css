@@ -1,0 +1,90 @@
+/* PlaySpotStore V24: menu-first search + scoped floating catalogue search.
+   No global overrides to the product catalog or purchase actions. */
+@media (max-width:950px) {
+  body #main-menu > li.mobile-search-bar:first-child {
+    position:sticky!important;top:0!important;z-index:24!important;
+    padding:9px 5px 13px!important;margin:0 0 5px!important;
+    box-sizing:border-box!important;min-width:0!important;max-width:100%!important;
+    width:100%!important;flex:0 0 auto!important;
+    background:linear-gradient(180deg,#092622 73%,rgba(9,38,34,.9) 92%,transparent)!important;
+    border-bottom:1px solid rgba(110,255,210,.17);
+  }
+  body #main-menu > li.mobile-search-bar:first-child input {
+    box-sizing:border-box;width:100%!important;min-height:44px!important;
+    border:1px solid rgba(118,250,215,.44)!important;border-radius:12px!important;
+    background:rgba(9,31,40,.94)!important;color:#effff9!important;
+    box-shadow:0 0 17px rgba(64,255,178,.11)!important;
+    padding:10px 15px!important;
+  }
+  body #main-menu > li.mobile-search-bar:first-child input:focus {outline:2px solid #6bffca;outline-offset:2px;}
+  body #main-menu > li.mobile-search-bar:first-child .mobile-search-suggestions {z-index:60!important;}
+}
+#p24-search-dock,#p24-search-dock *{box-sizing:border-box;}
+#p24-search-dock[hidden] {display:none!important;}
+#p24-search-dock {
+  --p24-glow:rgba(81,255,193,.25);
+  position:fixed!important;z-index:12045!important;
+  left:50%;right:auto;top:auto;
+  bottom:calc(104px + env(safe-area-inset-bottom,0px));
+  transform:translateX(-50%);
+  width:min(520px,calc(100vw - 24px));
+  color:#edfff7;background:rgba(9,34,41,.64);
+  border:1px solid rgba(102,255,207,.36);border-radius:17px;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  box-shadow:0 10px 35px rgba(0,0,0,.37),0 0 18px rgba(62,239,167,.08);
+  opacity:.77;transition:opacity .24s ease,background .24s,border-color .24s,box-shadow .24s;
+  font-family:Inter,Arial,sans-serif;isolation:isolate;
+}
+#p24-search-dock:hover {opacity:.94;}
+#p24-search-dock.p24-expanded,#p24-search-dock:focus-within {
+  opacity:1;background:rgba(7,29,38,.97);border-color:rgba(117,255,204,.7);
+  box-shadow:0 13px 43px rgba(0,0,0,.55),0 0 25px rgba(64,242,178,.14);
+}
+#p24-search-dock .p24-search-row {display:flex;align-items:center;gap:9px;padding:9px 11px;min-height:49px;}
+#p24-search-dock .p24-search-icon {color:#70ffbd;width:20px;height:20px;flex-shrink:0;}
+#p24-search-dock .p24-input {min-width:0;flex:1 1 auto;border:0!important;outline:0!important;background:transparent!important;
+ color:#eafff4!important;padding:4px 0!important;font:600 14px/1.3 Inter,Arial,sans-serif!important;box-shadow:none!important;width:100%;}
+#p24-search-dock .p24-input::placeholder{color:#b5d9cf;opacity:.9;}
+#p24-search-dock .p24-current {flex:0 0 auto;font:800 10px/1.2 Inter,Arial,sans-serif;letter-spacing:.045em;color:#7fffd0;
+ background:rgba(75,255,178,.1);border:1px solid rgba(109,255,205,.2);padding:6px 8px;border-radius:8px;white-space:nowrap;}
+#p24-search-dock .p24-close {display:none;flex:0 0 auto;width:29px;height:29px;border-radius:8px;color:#c3ffeb;
+ border:1px solid rgba(106,255,202,.27);background:rgba(92,255,182,.09);font-size:19px;cursor:pointer;line-height:1;}
+#p24-search-dock.p24-expanded .p24-close{display:grid;place-items:center;}
+#p24-search-dock .p24-detail {display:none;padding:0 13px 12px;}
+#p24-search-dock.p24-expanded .p24-detail {display:block;}
+#p24-search-dock .p24-status {font:750 12px/1.45 Inter,Arial,sans-serif;color:#aafcdb;margin:2px 0 5px;}
+#p24-search-dock .p24-hint {font:500 11px/1.45 Inter,Arial,sans-serif;color:#a4c8c4;margin:4px 0 10px;}
+#p24-search-dock .p24-results {max-height:min(42svh,310px);overflow-y:auto;overscroll-behavior:contain;
+ display:flex;flex-direction:column;gap:5px;scrollbar-width:thin;scrollbar-color:rgba(106,255,209,.45) transparent;}
+#p24-search-dock .p24-item {display:flex;align-items:center;gap:11px;min-height:59px;width:100%;text-align:left;
+ padding:7px 9px;border-radius:11px;border:1px solid rgba(130,255,217,.12);background:rgba(21,66,69,.45);
+ color:#edfff8;cursor:pointer;transition:background .15s,border-color .15s;}
+#p24-search-dock .p24-item:hover,#p24-search-dock .p24-item:focus-visible {background:rgba(41,105,91,.68);border-color:rgba(116,253,207,.54);outline:0;}
+#p24-search-dock .p24-item img {width:40px;height:45px;object-fit:contain;flex:none;border-radius:5px;background:#0b2026;}
+#p24-search-dock .p24-item-copy {flex:1;min-width:0;display:flex;flex-direction:column;gap:4px;}
+#p24-search-dock .p24-item-copy strong {font:700 12px/1.3 Inter,Arial,sans-serif;color:#f2fff8;overflow-wrap:anywhere;}
+#p24-search-dock .p24-item-copy small {font:650 11px/1.2 Inter,Arial,sans-serif;color:#8fffd0;}
+#p24-search-dock .p24-item-arrow {font-size:18px;color:#83ffcc;}
+#p24-search-dock .p24-empty {padding:14px 9px;text-align:center;color:#b9d5d1;font:600 12px/1.5 Inter,Arial,sans-serif;}
+#p24-search-dock .p24-category-label {margin:13px 0 8px;color:#b4d3cf;font:700 10px/1.4 Inter,Arial,sans-serif;letter-spacing:.035em;}
+#p24-search-dock .p24-categories {display:flex;flex-wrap:wrap;gap:6px;max-height:100px;overflow-y:auto;}
+#p24-search-dock .p24-cat {border:1px solid rgba(114,246,201,.25);border-radius:999px;padding:7px 10px;
+ background:rgba(58,189,146,.07);color:#d2fff0;cursor:pointer;font:700 11px/1.2 Inter,Arial,sans-serif;white-space:nowrap;}
+#p24-search-dock .p24-cat[aria-current="true"] {border-color:#72ffca;color:#082724;background:#74efbd;}
+#p24-search-dock .p24-cat:hover {background:rgba(90,238,180,.24);}
+#p24-search-dock .p24-input:focus-visible,#p24-search-dock button:focus-visible {outline:2px solid #97ffda!important;outline-offset:2px!important;}
+@media(max-width:600px){
+ #p24-search-dock{bottom:calc(88px + env(safe-area-inset-bottom,0px));width:calc(100vw - 20px);border-radius:14px;}
+ #p24-search-dock .p24-search-row{min-height:45px;padding:8px 9px;gap:7px;}
+ #p24-search-dock .p24-input{font-size:13px!important;}
+ #p24-search-dock .p24-current{font-size:9px;padding:5px 6px;}
+ #p24-search-dock .p24-results{max-height:min(37svh,270px);}
+ #p24-search-dock .p24-detail{padding:0 10px 10px;}
+}
+@media (max-width:350px){#p24-search-dock .p24-current{font-size:8px;padding:5px 4px;}}
+@media (prefers-reduced-motion:reduce){#p24-search-dock,#p24-search-dock .p24-item{transition:none!important;}}
+
+/* Keep the last row reachable above the stationary compact search bar. */
+#modal-ps4.active>.modal-content,#modal-ps5.active>.modal-content,
+#modal-console.active>.modal-content,#modal-accessories.active>.modal-content,
+#p3-platform-dialog.active>.modal-content{padding-bottom:115px!important;}
