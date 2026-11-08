@@ -42,7 +42,7 @@
   const compact = bar.querySelector('.p15-compact');
   // Never insert a campaign renewal notice in the public Spin & Win dialog.
   document.querySelectorAll('#p14-spin-overlay .p15-campaign-note').forEach(node => node.remove());
-  label.textContent = words.label;
+  label.textContent = '';
   function minimized(value) {
     bar.classList.toggle('is-minimized', value);
     document.body.classList.toggle('p15-bar-expanded', !value);
@@ -55,10 +55,10 @@
   function update() {
     const data = currentCycle();
     // Never show hours; day count resets to 30 at the next cycle.
-    countdown.textContent = data.remaining + words.unit;
+    countdown.textContent = isRu ? 'ОГРАНИЧЕННАЯ АКЦИЯ' : 'OFERTĂ LIMITATĂ';
     const endDate = formatDate(data.end);
-    countdown.title = endDate;
-    countdown.setAttribute('aria-label', words.label + ' ' + data.remaining + (isRu ? ' дней' : ' zile'));
+    countdown.removeAttribute('title');
+    countdown.setAttribute('aria-label', countdown.textContent);
     // The 30-day date is shown on each individual prize, not as a campaign notice.
   }
   update();

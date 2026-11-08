@@ -1,0 +1,53 @@
+/* PlaySpotStore V21 — minimal TikTok gallery and restrained Spin & Win attention pulse. */
+/* Removed the five numbered badges from the TikTok cards (HTML removed at install). */
+body .p20-tiktok-gallery .p20-number {display:none!important;}
+body .p20-tiktok-gallery .p20-copy > p {display:none!important;}
+body .p20-tiktok-gallery .p20-heading {align-items:center;}
+/* Offer status replaces cycle countdown; actual 30-day validity remains on each prize. */
+#p15-spin-bar .p15-expiry {
+  min-width:135px!important;
+  padding:5px 10px!important;
+}
+#p15-spin-bar .p15-expiry-label {display:none!important;}
+#p15-spin-bar .p15-expiry-time {
+  display:block!important;
+  max-width:138px!important;
+  white-space:normal!important;
+  text-align:center!important;
+  color:#8dffdb!important;
+  font:850 12px/1.2 Inter,Arial,sans-serif!important;
+  letter-spacing:.035em!important;
+  text-shadow:0 0 8px rgba(103,255,188,.16)!important;
+}
+/* 11s loop: ~1.6s gentle glow/scale, followed by a long still period. */
+@keyframes p21-bar-breathe {
+  0%,78%,96%,100% { box-shadow:0 13px 45px rgba(0,0,0,.52),0 0 29px rgba(77,255,183,.22),inset 0 1px 0 rgba(202,255,242,.13); }
+  85% { box-shadow:0 14px 46px rgba(0,0,0,.53),0 0 35px rgba(77,255,183,.28),inset 0 1px 0 rgba(202,255,242,.17); }
+  91% { box-shadow:0 13px 45px rgba(0,0,0,.52),0 0 31px rgba(77,255,183,.24),inset 0 1px 0 rgba(202,255,242,.14); }
+}
+@keyframes p21-text-breathe {
+  0%,78%,96%,100% { transform:scale(1); }
+  85% { transform:scale(1.012); }
+  91% { transform:scale(1.006); }
+}
+@keyframes p21-mini-breathe {
+  0%,78%,96%,100% {box-shadow:0 0 15px rgba(73,255,175,.20);transform:scale(1)}
+  85% {box-shadow:0 0 23px rgba(73,255,175,.28);transform:scale(1.012)}
+  91% {box-shadow:0 0 18px rgba(73,255,175,.22);transform:scale(1.005)}
+}
+#p15-spin-bar:not(.is-minimized) {animation:p21-bar-breathe 11s linear infinite!important;}
+#p15-spin-bar:not(.is-minimized) .p15-primary {animation:p21-text-breathe 11s linear infinite!important;transform-origin:center;}
+#p15-spin-bar.is-minimized .p15-compact {animation:p21-mini-breathe 11s linear infinite!important;}
+/* Remove the existing repeating icon animation so attention stays quiet. */
+#p15-spin-bar #p14-invite .p14-invite-icon {animation:none!important;}
+@media(max-width:600px){
+  #p15-spin-bar .p15-expiry {min-width:106px!important;padding:4px 4px!important;}
+  #p15-spin-bar .p15-expiry-time {font-size:10px!important;letter-spacing:.012em!important;max-width:106px!important;}
+}
+@media(max-width:360px){
+  #p15-spin-bar .p15-expiry {min-width:93px!important;padding:3px 3px!important;}
+  #p15-spin-bar .p15-expiry-time {font-size:9.5px!important;max-width:94px!important;letter-spacing:0!important;}
+}
+@media(prefers-reduced-motion:reduce){
+  #p15-spin-bar,#p15-spin-bar .p15-primary,#p15-spin-bar .p15-compact,#p15-spin-bar #p14-invite .p14-invite-icon {animation:none!important;transition:none!important;}
+}
