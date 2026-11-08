@@ -1,0 +1,2 @@
+/* V18: even with an older cached script, never display the campaign renewal notice. */
+#p14-spin-overlay .p15-campaign-note { display:none !important; visibility:hidden !important; }

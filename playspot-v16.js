@@ -9,11 +9,11 @@
   const cycleMs = 30 * 24 * 60 * 60 * 1000;
   const words = isRu ? {
     label: 'До обновления', unit: 'д', hide: 'Свернуть предложение', show: 'Открыть предложение',
-    button: '-10% · Крути!',note: 'Акция ограничена по времени. Каждый полученный код действителен 30 дней с момента выигрыша.',
+    button: '-10% · Крути!',
     prize: 'Каждый выигранный код действителен 30 дней с момента выигрыша.'
   } : {
     label: 'Expiră în', unit: 'z', hide: 'Minimizează oferta', show: 'Arată oferta',
-    button: 'Spin -10%',note: 'Promoție cu durată limitată. Fiecare cod câștigat este valabil 30 de zile de la rotire.',
+    button: 'Spin -10%',
     prize: 'Fiecare cod câștigat este valabil 30 de zile de la rotire.'
   };
   const formatDate = ms => new Intl.DateTimeFormat(isRu ? 'ru-RU' : 'ro-RO', {
@@ -40,10 +40,8 @@
   const label = bar.querySelector('.p15-expiry-label');
   const minimize = bar.querySelector('.p15-minimize');
   const compact = bar.querySelector('.p15-compact');
-  const note = document.createElement('p');
-  note.className = 'p15-campaign-note';
-  const terms = document.querySelector('#p14-spin-overlay .p14-terms');
-  if (terms) terms.insertAdjacentElement('beforebegin', note);
+  // Never insert a campaign renewal notice in the public Spin & Win dialog.
+  document.querySelectorAll('#p14-spin-overlay .p15-campaign-note').forEach(node => node.remove());
   label.textContent = words.label;
   function minimized(value) {
     bar.classList.toggle('is-minimized', value);
@@ -61,7 +59,7 @@
     const endDate = formatDate(data.end);
     countdown.title = endDate;
     countdown.setAttribute('aria-label', words.label + ' ' + data.remaining + (isRu ? ' дней' : ' zile'));
-    note.textContent = words.note;
+    // The 30-day date is shown on each individual prize, not as a campaign notice.
   }
   update();
   window.setInterval(update, 60_000);
