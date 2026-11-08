@@ -1,0 +1,56 @@
+/* PlaySpotStore V27 - manual baseline + recorded visits below the footer.
+   The manually supplied 2026 baseline is visibly identified as such. */
+body section.p26-visitor-counter {
+  box-sizing:border-box;position:relative;z-index:1;
+  display:block!important;width:100%;max-width:none!important;
+  margin:0!important;padding:15px 18px 22px!important;
+  border-top:1px solid rgba(106,255,198,.15);
+  background:linear-gradient(110deg,#061a1c,#0a1c25 55%,#11152a)!important;
+  color:#eafff5!important;
+}
+body .p26-visitor-counter *,body .p26-visitor-counter *:before,body .p26-visitor-counter *:after{box-sizing:border-box}
+.p26-visitor-counter .p26-inner{
+  width:min(100%,1020px);margin:0 auto;display:flex;align-items:center;
+  justify-content:center;gap:13px;min-width:0;
+}
+.p26-visitor-counter .p26-icon{
+  display:grid;place-items:center;flex:0 0 39px;width:39px;height:39px;
+  border-radius:12px;background:rgba(69,218,164,.10);
+  border:1px solid rgba(118,255,210,.23);color:#83fbd1;
+  box-shadow:inset 0 1px rgba(255,255,255,.05);
+}
+.p26-visitor-counter .p26-icon svg{height:21px;width:21px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.p26-visitor-counter .p26-copy{display:flex;flex-direction:column;gap:3px;min-width:0}
+.p26-visitor-counter .p26-copy strong{
+  color:#e3fff4!important;font:760 13px/1.25 Inter,Arial,sans-serif!important;
+  letter-spacing:.01em;
+}
+.p26-visitor-counter .p26-copy small{
+  color:#93bdb3!important;font:450 10px/1.35 Inter,Arial,sans-serif!important;
+  letter-spacing:0;
+}
+.p26-visitor-counter .p26-number{
+  flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+  min-width:60px;max-width:220px;padding:7px 14px;margin:0 0 0 5px;
+  border-radius:11px;border:1px solid rgba(96,247,192,.28);
+  background:linear-gradient(125deg,rgba(43,158,117,.2),rgba(38,74,86,.17));
+  color:#78ffcb!important;
+  font:850 20px/1.2 Inter,Arial,sans-serif!important;
+  font-variant-numeric:tabular-nums;overflow-wrap:anywhere;
+  text-shadow:0 0 11px rgba(108,255,186,.16);
+}
+.p26-visitor-counter .p26-number[data-state="error"]{opacity:.68;text-shadow:none}
+body.p15-bar-expanded section.p26-visitor-counter {padding-bottom:115px!important}
+@media(max-width:550px){
+  body section.p26-visitor-counter{padding:14px 12px 18px!important}
+  .p26-visitor-counter .p26-inner{justify-content:flex-start;gap:9px}
+  .p26-visitor-counter .p26-icon{flex-basis:34px;width:34px;height:34px}
+  .p26-visitor-counter .p26-copy strong{font-size:11px!important}
+  .p26-visitor-counter .p26-copy small{font-size:9px!important}
+  .p26-visitor-counter .p26-number{font-size:17px!important;padding:6px 9px;min-width:47px;margin-left:auto}
+  body.p15-bar-expanded section.p26-visitor-counter{padding-bottom:105px!important}
+}
+
+.p26-visitor-counter .p26-copy small#p27-status{max-width:420px;line-height:1.35!important;}
+.p26-visitor-counter .p26-number[data-state="baseline"]{opacity:.82;border-style:dashed;text-shadow:none;}
+@media(max-width:550px){.p26-visitor-counter .p26-copy small#p27-status{font-size:9px!important;}}
