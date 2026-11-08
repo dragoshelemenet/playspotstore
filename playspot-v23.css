@@ -1,0 +1,48 @@
+/* PlaySpotStore V23 — navigation shortcuts, desktop Spin CTA, gentle perimeter lights. */
+/* The unavailable-game shortcut is ONLY in the opened mobile/tablet hamburger menu. */
+#main-menu > li.p23-mobile-only { display:none!important; }
+@media (max-width:950px) {
+  #main-menu > li.p23-mobile-only { display:list-item!important; }
+  #main-menu > li.p23-menu-how a, #main-menu > li.p23-mobile-only a {color:#baffdf!important;}
+  #main-menu > li.p23-mobile-only a {border-top:1px solid rgba(130,255,213,.14);margin-top:5px;padding-top:16px!important;}
+  #main-menu > li.p23-menu-how a:hover,#main-menu > li.p23-mobile-only a:hover {color:#75ffc7!important;}
+}
+@media (min-width:951px) {
+  header .p22-header-spin {
+    display:flex!important;align-items:center!important;justify-content:center!important;
+    position:absolute!important;z-index:10010!important;left:clamp(150px,21.6vw,425px)!important;
+    top:50%!important;right:auto!important;bottom:auto!important;
+    transform:translateY(-50%)!important;
+    width:clamp(154px,11.6vw,190px)!important;height:56px!important;
+    padding:0!important;margin:0!important;border:0!important;border-radius:99px!important;
+    background:transparent!important;box-shadow:none!important;cursor:pointer!important;
+    line-height:0!important;filter:drop-shadow(0 0 6px rgba(77,249,205,.18));
+    transition:filter .2s ease!important;
+  }
+  header .p22-header-spin img {display:block!important;width:100%!important;height:auto!important;object-fit:contain!important;max-height:56px!important;pointer-events:none!important;}
+  header .p22-header-spin:hover,header .p22-header-spin:focus-visible {filter:drop-shadow(0 0 10px rgba(92,255,211,.38)) brightness(1.06)!important;}
+  header .p22-header-spin:focus-visible {outline:2px solid #a3ffe3!important;outline-offset:3px!important;}
+  header nav ul {gap:clamp(8px,.92vw,16px)!important;}
+}
+/* Between 951 and 1430 px the desktop nav is two rows; reserve the top row center for Spin. */
+@media (min-width:951px) and (max-width:1430px) {
+  header .p22-header-spin {left:50%!important;top:28px!important;transform:translate(-50%,-50%)!important;width:190px!important;height:49px!important;}
+  header nav ul {gap:clamp(11px,1.65vw,25px)!important;}
+}
+/* The offer badge on the floating bar is a real keyboard-accessible trigger. */
+#p15-spin-bar .p15-expiry.p23-clickable {cursor:pointer!important;border-radius:11px;transition:background .2s ease!important;}
+#p15-spin-bar .p15-expiry.p23-clickable:hover,
+#p15-spin-bar .p15-expiry.p23-clickable:focus-visible {background:rgba(95,255,192,.10)!important;}
+#p15-spin-bar .p15-expiry.p23-clickable:focus-visible {outline:2px solid #acffe1!important;outline-offset:2px!important;}
+/* Two tiny light particles travel along the banner outline on a 26s loop, without rapid flashing. */
+#p15-spin-bar .p23-edge-lights {position:absolute;inset:0;width:100%;height:100%;z-index:4;overflow:visible;pointer-events:none;border-radius:inherit;}
+#p15-spin-bar .p23-edge-lights rect {fill:none;stroke-width:1.7;stroke-linecap:round;stroke-dasharray:3 997;opacity:.74;filter:drop-shadow(0 0 3px currentColor);}
+#p15-spin-bar .p23-edge-lights .p23-light-a {color:#6cfbd0;stroke:#78ffe1;animation:p23-edge-a 26s linear infinite;}
+#p15-spin-bar .p23-edge-lights .p23-light-b {color:#af90ff;stroke:#cbb3ff;animation:p23-edge-b 26s linear infinite;opacity:.55;}
+@keyframes p23-edge-a {from{stroke-dashoffset:0}to{stroke-dashoffset:-1000}}
+@keyframes p23-edge-b {from{stroke-dashoffset:-500}to{stroke-dashoffset:-1500}}
+#p15-spin-bar.is-minimized .p23-edge-lights {display:none!important;}
+@media (prefers-reduced-motion:reduce) {
+  #p15-spin-bar .p23-edge-lights rect {animation:none!important;stroke-dasharray:none!important;opacity:0!important;}
+  header .p22-header-spin, #p15-spin-bar .p15-expiry.p23-clickable {transition:none!important;}
+}
