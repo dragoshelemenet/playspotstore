@@ -1536,6 +1536,7 @@
   <link rel="stylesheet" href="playspot-v15.css?v=20261108">
   <link rel="stylesheet" href="playspot-v16.css?v=20261108-v16">
   <link rel="stylesheet" href="playspot-v18.css?v=20261108-fix1">
+  <link rel="stylesheet" href="playspot-v19.css?v=20261108-tiktok19">
 </head>
 <body>
 
@@ -1594,6 +1595,27 @@
     <a href="tel:+37378890580" class="btn">Позвонить сейчас</a>
   </div>
 </section>
+<!-- PlaySpotStore V19: TikTok native recent-videos creator feed -->
+<section class="p19-tiktok-feed" id="p19-tiktok-feed" aria-labelledby="p19-tiktok-title">
+  <div class="p19-heading">
+    <div class="p19-title-group">
+      <span class="p19-kicker"><svg viewBox="0 0 32 32" aria-hidden="true" fill="currentColor"><path d="M20.8 3.5h-4.3v17a4.5 4.5 0 1 1-4-4.47v-4.3a8.8 8.8 0 1 0 8.3 8.77v-8.6a11.1 11.1 0 0 0 6.4 2v-4.3a6.6 6.6 0 0 1-6.4-6.1Z"/></svg>ПОСЛЕДНИЕ ВИДЕО · TIKTOK</span>
+      <h2 id="p19-tiktok-title">Смотри нас в <em>TikTok</em></h2>
+      <p>Короткие видео, игровые новинки, предложения и закулисье PlaySpotStore. Листай подборку ниже.</p>
+    </div>
+    <a class="p19-more" href="https://www.tiktok.com/@playspotstore/" target="_blank" rel="noopener noreferrer">Смотреть больше в TikTok<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+  </div>
+  <div class="p19-embed-shell">
+    <div class="p19-state" role="status" aria-live="polite">
+      <div class="p19-state-icon" aria-hidden="true">♫</div>
+      <strong>Загружаем последние видео…</strong>
+      <p>Видео загружаются напрямую из TikTok. Доступность зависит от браузера.</p>
+    </div>
+    <div id="p19-embed-root" aria-label="TikTok @playspotstore"></div>
+  </div>
+  <p class="p19-foot"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3" width="17" height="18" rx="4"/><path d="m9 12 2 2 4-4"/></svg>Видео загружаются напрямую из TikTok. Доступность зависит от браузера.</p>
+</section>
+
 
 <section class="features">
   <div class="feature">
@@ -2756,5 +2778,6 @@ document.getElementById('hamburger')?.addEventListener('keydown',event=>{
   <script defer src="playspot-v14.js?v=20261108-v17"></script>
   <script defer src="playspot-v16.js?v=20261108-v18"></script>
   <script defer src="playspot-v18.js?v=20261108-fix1"></script>
+  <script defer src="playspot-v19.js?v=20261108-tiktok19"></script>
 </body>
 </html>
