@@ -1,0 +1,61 @@
+/* PlaySpotStore V22 — exact supplied Spin & Win reference artwork in mobile header.
+   No desktop changes; the floating bar and prize rules remain unchanged. */
+header .p22-header-spin {display:none!important;}
+@media (max-width:950px) {
+  header {position:fixed;}
+  header .p22-header-spin {
+    box-sizing:border-box!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    position:absolute!important;
+    left:50%!important;
+    top:50%!important;
+    right:auto!important;
+    bottom:auto!important;
+    transform:translate(-50%,-50%)!important;
+    width:min(210px,46vw,calc(100vw - 158px))!important;
+    min-width:0!important;
+    height:auto!important;
+    min-height:43px!important;
+    max-height:55px!important;
+    padding:2px!important;
+    margin:0!important;
+    border:0!important;
+    border-radius:999px!important;
+    background:transparent!important;
+    box-shadow:none!important;
+    outline-offset:3px!important;
+    line-height:0!important;
+    cursor:pointer!important;
+    z-index:10011!important;
+    touch-action:manipulation;
+    -webkit-tap-highlight-color:transparent;
+    filter:drop-shadow(0 0 5px rgba(82,255,213,.15));
+    transition:filter .24s ease,opacity .24s ease;
+  }
+  header .p22-header-spin img {
+    box-sizing:border-box;
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    max-width:100%!important;
+    max-height:none!important;
+    border:0!important;
+    border-radius:999px!important;
+    object-fit:contain!important;
+    pointer-events:none!important;
+    filter:none!important;
+  }
+  header .p22-header-spin:hover,header .p22-header-spin:focus-visible {
+    filter:drop-shadow(0 0 10px rgba(85,255,219,.35)) brightness(1.05);
+  }
+  header .p22-header-spin:active {filter:brightness(1.17);}
+  header .p22-header-spin:focus-visible {outline:2px solid #baffeb!important;}
+}
+@media (max-width:360px) {
+  header .p22-header-spin {min-height:34px!important;padding:1px!important;}
+}
+@media (prefers-reduced-motion:reduce) {
+  header .p22-header-spin {transition:none!important;}
+}
