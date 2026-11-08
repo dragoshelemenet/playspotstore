@@ -1537,6 +1537,7 @@
   <link rel="stylesheet" href="playspot-v16.css?v=20261108-v16">
   <link rel="stylesheet" href="playspot-v18.css?v=20261108-fix1">
   <link rel="stylesheet" href="playspot-v19.css?v=20261108-tiktok19">
+  <link rel="stylesheet" href="playspot-v20.css?v=20261108-v20">
 </head>
 <body>
 
@@ -1595,27 +1596,83 @@
     <a href="tel:+37378890580" class="btn">Позвонить сейчас</a>
   </div>
 </section>
-<!-- PlaySpotStore V19: TikTok native recent-videos creator feed -->
-<section class="p19-tiktok-feed" id="p19-tiktok-feed" aria-labelledby="p19-tiktok-title">
-  <div class="p19-heading">
-    <div class="p19-title-group">
-      <span class="p19-kicker"><svg viewBox="0 0 32 32" aria-hidden="true" fill="currentColor"><path d="M20.8 3.5h-4.3v17a4.5 4.5 0 1 1-4-4.47v-4.3a8.8 8.8 0 1 0 8.3 8.77v-8.6a11.1 11.1 0 0 0 6.4 2v-4.3a6.6 6.6 0 0 1-6.4-6.1Z"/></svg>ПОСЛЕДНИЕ ВИДЕО · TIKTOK</span>
-      <h2 id="p19-tiktok-title">Смотри нас в <em>TikTok</em></h2>
-      <p>Короткие видео, игровые новинки, предложения и закулисье PlaySpotStore. Листай подборку ниже.</p>
+<!-- PlaySpotStore V20 — locally hosted looping TikTok previews. Five actual user-provided recordings. -->
+<section class="p20-tiktok-gallery" id="p20-tiktok-gallery" aria-labelledby="p20-gallery-title">
+  <div class="p20-heading">
+    <div class="p20-copy"><span class="p20-eyebrow"><span class="p20-dot"></span>ИЗ TIKTOK · @PLAYSPOTSTORE</span>
+      <h2 id="p20-gallery-title">Мир <em>PlaySpotStore</em></h2>
+      <p>5 видео из магазина. Нажми на карточку, чтобы посмотреть полное видео в TikTok.</p>
     </div>
-    <a class="p19-more" href="https://www.tiktok.com/@playspotstore/" target="_blank" rel="noopener noreferrer">Смотреть больше в TikTok<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+    <a href="https://www.tiktok.com/@playspotstore/" target="_blank" rel="noopener noreferrer" class="p20-more">Больше видео в TikTok <span aria-hidden="true">↗</span></a>
   </div>
-  <div class="p19-embed-shell">
-    <div class="p19-state" role="status" aria-live="polite">
-      <div class="p19-state-icon" aria-hidden="true">♫</div>
-      <strong>Загружаем последние видео…</strong>
-      <p>Видео загружаются напрямую из TikTok. Доступность зависит от браузера.</p>
-    </div>
-    <div id="p19-embed-root" aria-label="TikTok @playspotstore"></div>
+  <div class="p20-rail" tabindex="0" aria-label="TikTok PlaySpotStore — 5 video-uri">
+    <a class="p20-tile" href="https://www.tiktok.com/@playspotstore/video/7653158018569358612" target="_blank" rel="noopener noreferrer" aria-label="Mortal Kombat Collection — TikTok">
+      <div class="p20-frame">
+        <picture>
+          <source media="(prefers-reduced-motion: reduce)" srcset="media/tiktok/clip-01.jpg" type="image/jpeg">
+          <source srcset="media/tiktok/clip-01.webp" type="image/webp">
+          <img src="media/tiktok/clip-01.gif" alt="Mortal Kombat Collection" loading="lazy" decoding="async" width="228" height="276">
+        </picture>
+        <span class="p20-number">01 <span> / 05</span></span>
+        <span class="p20-play-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m9 6 10 6-10 6V6Z"/></svg></span>
+        <span class="p20-tile-bottom"><strong>Mortal Kombat Collection</strong><small>Смотреть полное видео <span aria-hidden="true">↗</span></small></span>
+      </div>
+    </a>
+    <a class="p20-tile" href="https://www.tiktok.com/@playspotstore/video/7668263357702704404" target="_blank" rel="noopener noreferrer" aria-label="Assassin’s Creed Black Flag — TikTok">
+      <div class="p20-frame">
+        <picture>
+          <source media="(prefers-reduced-motion: reduce)" srcset="media/tiktok/clip-02.jpg" type="image/jpeg">
+          <source srcset="media/tiktok/clip-02.webp" type="image/webp">
+          <img src="media/tiktok/clip-02.gif" alt="Assassin’s Creed Black Flag" loading="lazy" decoding="async" width="228" height="276">
+        </picture>
+        <span class="p20-number">02 <span> / 05</span></span>
+        <span class="p20-play-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m9 6 10 6-10 6V6Z"/></svg></span>
+        <span class="p20-tile-bottom"><strong>Assassin’s Creed Black Flag</strong><small>Смотреть полное видео <span aria-hidden="true">↗</span></small></span>
+      </div>
+    </a>
+    <a class="p20-tile" href="https://www.tiktok.com/@playspotstore/video/7667484717582699797" target="_blank" rel="noopener noreferrer" aria-label="Игры для PS4 — TikTok">
+      <div class="p20-frame">
+        <picture>
+          <source media="(prefers-reduced-motion: reduce)" srcset="media/tiktok/clip-03.jpg" type="image/jpeg">
+          <source srcset="media/tiktok/clip-03.webp" type="image/webp">
+          <img src="media/tiktok/clip-03.gif" alt="Игры для PS4" loading="lazy" decoding="async" width="228" height="276">
+        </picture>
+        <span class="p20-number">03 <span> / 05</span></span>
+        <span class="p20-play-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m9 6 10 6-10 6V6Z"/></svg></span>
+        <span class="p20-tile-bottom"><strong>Игры для PS4</strong><small>Смотреть полное видео <span aria-hidden="true">↗</span></small></span>
+      </div>
+    </a>
+    <a class="p20-tile" href="https://www.tiktok.com/@playspotstore/video/7587563654959090956" target="_blank" rel="noopener noreferrer" aria-label="Геймпады PlayStation — TikTok">
+      <div class="p20-frame">
+        <picture>
+          <source media="(prefers-reduced-motion: reduce)" srcset="media/tiktok/clip-04.jpg" type="image/jpeg">
+          <source srcset="media/tiktok/clip-04.webp" type="image/webp">
+          <img src="media/tiktok/clip-04.gif" alt="Геймпады PlayStation" loading="lazy" decoding="async" width="228" height="276">
+        </picture>
+        <span class="p20-number">04 <span> / 05</span></span>
+        <span class="p20-play-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m9 6 10 6-10 6V6Z"/></svg></span>
+        <span class="p20-tile-bottom"><strong>Геймпады PlayStation</strong><small>Смотреть полное видео <span aria-hidden="true">↗</span></small></span>
+      </div>
+    </a>
+    <a class="p20-tile" href="https://www.tiktok.com/@playspotstore/video/7624159978617572628" target="_blank" rel="noopener noreferrer" aria-label="Игры на любой вкус — TikTok">
+      <div class="p20-frame">
+        <picture>
+          <source media="(prefers-reduced-motion: reduce)" srcset="media/tiktok/clip-05.jpg" type="image/jpeg">
+          <source srcset="media/tiktok/clip-05.webp" type="image/webp">
+          <img src="media/tiktok/clip-05.gif" alt="Игры на любой вкус" loading="lazy" decoding="async" width="228" height="276">
+        </picture>
+        <span class="p20-number">05 <span> / 05</span></span>
+        <span class="p20-play-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m9 6 10 6-10 6V6Z"/></svg></span>
+        <span class="p20-tile-bottom"><strong>Игры на любой вкус</strong><small>Смотреть полное видео <span aria-hidden="true">↗</span></small></span>
+      </div>
+    </a>
   </div>
-  <p class="p19-foot"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3" width="17" height="18" rx="4"/><path d="m9 12 2 2 4-4"/></svg>Видео загружаются напрямую из TikTok. Доступность зависит от браузера.</p>
+  <div class="p20-controls">
+    <button class="p20-prev" type="button" aria-label="Предыдущее видео"><span aria-hidden="true">←</span></button>
+    <span class="p20-rail-progress"><i></i></span>
+    <button class="p20-next" type="button" aria-label="Следующее видео"><span aria-hidden="true">→</span></button>
+  </div>
 </section>
-
 
 <section class="features">
   <div class="feature">
@@ -2778,6 +2835,6 @@ document.getElementById('hamburger')?.addEventListener('keydown',event=>{
   <script defer src="playspot-v14.js?v=20261108-v17"></script>
   <script defer src="playspot-v16.js?v=20261108-v18"></script>
   <script defer src="playspot-v18.js?v=20261108-fix1"></script>
-  <script defer src="playspot-v19.js?v=20261108-tiktok19"></script>
+  <script defer src="playspot-v20.js?v=20261108-v20"></script>
 </body>
 </html>
