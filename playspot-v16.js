@@ -9,11 +9,11 @@
   const cycleMs = 30 * 24 * 60 * 60 * 1000;
   const words = isRu ? {
     label: 'До обновления', unit: 'д', hide: 'Свернуть предложение', show: 'Открыть предложение',
-    button: '-10% · Крути!',note: 'Предложение обновляется каждые 30 дней. Следующее обновление:',
+    button: '-10% · Крути!',note: 'Акция ограничена по времени. Каждый полученный код действителен 30 дней с момента выигрыша.',
     prize: 'Каждый выигранный код действителен 30 дней с момента выигрыша.'
   } : {
     label: 'Expiră în', unit: 'z', hide: 'Minimizează oferta', show: 'Arată oferta',
-    button: 'Spin -10%',note: 'Promoția se reînnoiește la fiecare 30 de zile. Următoarea reînnoire:',
+    button: 'Spin -10%',note: 'Promoție cu durată limitată. Fiecare cod câștigat este valabil 30 de zile de la rotire.',
     prize: 'Fiecare cod câștigat este valabil 30 de zile de la rotire.'
   };
   const formatDate = ms => new Intl.DateTimeFormat(isRu ? 'ru-RU' : 'ro-RO', {
@@ -61,7 +61,7 @@
     const endDate = formatDate(data.end);
     countdown.title = endDate;
     countdown.setAttribute('aria-label', words.label + ' ' + data.remaining + (isRu ? ' дней' : ' zile'));
-    note.textContent = words.note + ' ' + endDate + '. ' + words.prize;
+    note.textContent = words.note;
   }
   update();
   window.setInterval(update, 60_000);

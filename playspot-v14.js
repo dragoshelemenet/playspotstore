@@ -150,7 +150,7 @@
   const prizeValidity=(win)=>{
     const expires=prizeExpiryTime(win);
     return Date.now()>=expires ? (ru?'Код просрочен':'Cod expirat') :
-      (ru?'Код действителен 30 дней, до ':'Cod valabil 30 zile, până la ')+printDate(expires);
+      (ru?'Действителен до: ':'Valabil până la: ')+printDate(expires);
   };
   const showResult=(win)=>{
     currentWin=win;result.hidden=false;titleEl.textContent=win.title;platformEl.textContent=win.platform+(win.price?' · '+win.price:'');
@@ -163,7 +163,7 @@
     }else{
       claim.removeAttribute('aria-disabled');
       claim.href='https://wa.me/'+cashPhone+'?text='+encodeURIComponent(t.message(win)+' '+
-        (ru?'Код действует 30 дней, до ':'Codul este valabil 30 de zile, până la ')+printDate(prizeExpiryTime(win))+'.');
+        (ru?'Действителен до: ':'Valabil până la: ')+printDate(prizeExpiryTime(win))+(ru?' (30 дней с момента выигрыша).':' (30 de zile de la câștig).'));
     }
   };
   const renderHistory=()=>{
@@ -240,7 +240,8 @@
     let pos=463;
     c.fillStyle='#a2dacf';c.font='500 24px Arial';c.fillText(win.platform+'  •  '+t.receiptDate+': '+win.dateLabel,95,pos);
     c.fillStyle='#86ffe2';c.font='700 26px monospace';c.fillText(t.receiptCode+': '+win.code,95,pos+44);
-    c.fillStyle='#afc9cb';c.font='500 20px Arial';c.fillText((ru?'Код действует до: ':'Cod valabil până la: ')+printDate(prizeExpiryTime(win)),95,548);
+    c.fillStyle='rgba(57,151,119,.27)';drawRound(c,87,517,888,44,12);c.fill();
+    c.fillStyle='#adffda';c.font='700 27px Arial';c.fillText((ru?'Действителен до: ':'Valabil până la: ')+printDate(prizeExpiryTime(win)),102,547);
     c.font='500 20px Arial';c.fillText(t.receiptCondition,95,576);
     c.font='600 20px Arial';c.fillText(t.receiptFooter,95,605);
     return new Promise((resolve,reject)=>canvas.toBlob(blob=>blob?resolve(blob):reject(new Error('PNG conversion failed')),'image/png'));
