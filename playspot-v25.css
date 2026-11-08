@@ -1,0 +1,228 @@
+/* PlaySpotStore V25 — large tablets and smart displays.
+   951–1430 CSS px: replace crowded two-row desktop header with one-row tablet navigation.
+   1431–1535 CSS px: apply only to touch-enabled devices (e.g. Surface Pro landscape).
+   iPad mini / phones <=950px and non-touch desktop >1430px retain their current layout.
+*/
+@media (min-width:951px) and (max-width:1430px),
+       (min-width:1431px) and (max-width:1535px) and (any-pointer:coarse) {
+  :root {--header-height:84px!important;}
+  html {scroll-padding-top:104px!important;}
+  body header {
+    box-sizing:border-box!important;
+    height:84px!important;
+    min-height:84px!important;
+    max-height:84px!important;
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    flex-direction:row!important;
+    justify-content:space-between!important;
+    align-content:center!important;
+    align-items:center!important;
+    gap:12px!important;
+    padding:0 clamp(17px,2.5vw,32px)!important;
+    position:fixed!important;
+    inset:0 0 auto 0!important;
+    width:100%!important;
+    z-index:9999!important;
+  }
+  body header .logo {
+    box-sizing:border-box!important;
+    display:flex!important;
+    flex:0 0 72px!important;
+    width:72px!important;
+    min-width:72px!important;
+    max-width:72px!important;
+    height:72px!important;
+    min-height:0!important;
+    justify-content:flex-start!important;
+    align-items:center!important;
+    padding:0!important;
+    margin:0!important;
+  }
+  body header .logo img.brand-logo {
+    width:68px!important; min-width:68px!important;
+    height:68px!important; max-height:68px!important;
+    object-fit:contain!important;
+  }
+  body header nav {
+    display:flex!important;
+    flex:1 1 auto!important;
+    justify-content:flex-end!important;
+    align-items:center!important;
+    width:auto!important;
+    min-width:0!important;
+    margin:0!important;
+    padding:0!important;
+  }
+  /* No squeezed desktop search or unreadable 2-row nav on tablets. */
+  body header nav .desktop-search-bar {display:none!important;}
+  body header nav ul#main-menu {display:none!important;}
+  body header .hamburger {
+    box-sizing:border-box!important;
+    display:grid!important;
+    place-items:center!important;
+    position:relative!important;
+    flex:0 0 50px!important;
+    width:50px!important;
+    height:50px!important;
+    line-height:50px!important;
+    min-height:50px!important;
+    top:auto!important;right:auto!important;left:auto!important;bottom:auto!important;
+    margin:0 0 0 auto!important;
+    padding:0!important;
+    z-index:10010!important;
+    cursor:pointer!important;
+    touch-action:manipulation;
+  }
+  body header .hamburger::before {line-height:1!important;font-size:31px!important;}
+  /* Preserve the actual Spin & Win artwork and position it between logo and hamburger. */
+  body header .p22-header-spin {
+    display:flex!important;
+    justify-content:center!important;
+    align-items:center!important;
+    position:absolute!important;
+    left:50%!important;
+    right:auto!important;
+    top:50%!important;
+    bottom:auto!important;
+    transform:translate(-50%,-50%)!important;
+    width:clamp(184px,21vw,226px)!important;
+    height:auto!important;
+    max-height:58px!important;
+    padding:0!important;
+    margin:0!important;
+    z-index:10010!important;
+  }
+  body header .p22-header-spin img {
+    width:100%!important;
+    height:auto!important;
+    max-height:58px!important;
+    object-fit:contain!important;
+    pointer-events:none!important;
+  }
+  /* V5 moves the *same* menu element to <body> at this breakpoint, so it
+     never gets clipped by the glass-blurred fixed header. */
+  body #main-menu {
+    box-sizing:border-box!important;
+    display:none!important;
+    position:fixed!important;
+    top:84px!important;
+    bottom:0!important;
+    left:0!important;
+    right:0!important;
+    width:100%!important;
+    height:calc(100dvh - 84px)!important;
+    max-height:none!important;
+    min-height:0!important;
+    transform:none!important;
+    opacity:1!important;
+    visibility:visible!important;
+    margin:0!important;
+    padding:18px clamp(24px,7vw,90px) calc(32px + env(safe-area-inset-bottom,0px))!important;
+    list-style:none!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    justify-content:flex-start!important;
+    flex-wrap:nowrap!important;
+    gap:6px!important;
+    overflow-y:auto!important;
+    overflow-x:hidden!important;
+    overscroll-behavior:contain;
+    -webkit-overflow-scrolling:touch;
+    background:linear-gradient(160deg,rgba(6,39,35,.99),rgba(9,18,36,.995))!important;
+    border:0!important;
+    border-top:1px solid rgba(95,255,202,.25)!important;
+    box-shadow:0 20px 45px rgba(0,0,0,.56)!important;
+    border-radius:0!important;
+    z-index:10002!important;
+  }
+  body #main-menu.active {display:flex!important;}
+  body #main-menu > li {display:block!important;width:100%!important;flex:0 0 auto!important;min-width:0!important;}
+  body #main-menu > li.p23-mobile-only {display:block!important;}
+  body #main-menu > li > a {
+    display:block!important;
+    box-sizing:border-box!important;
+    padding:13px 16px!important;
+    border-radius:11px!important;
+    color:#e1fff1!important;
+    font:750 16px/1.4 Inter,Arial,sans-serif!important;
+    text-align:left!important;
+    text-decoration:none!important;
+    white-space:normal!important;
+  }
+  body #main-menu > li > a:hover,
+  body #main-menu > li > a:focus-visible {
+    color:#85ffd3!important;background:rgba(103,255,190,.1)!important;
+  }
+  body #main-menu > li.mobile-search-bar:first-child {
+    position:sticky!important;
+    top:0!important;
+    z-index:25!important;
+    display:block!important;
+    width:100%!important;
+    padding:10px 6px 15px!important;
+    margin-bottom:9px!important;
+    background:linear-gradient(180deg,#082b29 75%,rgba(8,43,41,.9) 92%,transparent)!important;
+    border-bottom:1px solid rgba(97,254,191,.18)!important;
+  }
+  body #main-menu > li.mobile-search-bar input {
+    box-sizing:border-box!important;
+    display:block!important;
+    width:100%!important;
+    min-height:47px!important;
+    padding:10px 16px!important;
+    border:1px solid rgba(107,255,204,.43)!important;
+    border-radius:12px!important;
+    background:rgba(7,31,40,.98)!important;
+    color:#ecfff5!important;
+    font-size:16px!important;
+  }
+  body #main-menu .mobile-search-suggestions {z-index:60!important;max-width:100%!important;}
+  body.p5-menu-open {overflow:hidden!important;}
+  body .hero {margin-top:84px!important;min-height:calc(100svh - 84px)!important;}
+  /* Product tiles: 6 tiny columns looked cramped on iPad Pro portrait / Nest Hub. */
+  body .hero .category-deck {
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    width:min(96%,900px)!important;
+    max-width:900px!important;
+    column-gap:clamp(12px,2vw,20px)!important;
+    row-gap:16px!important;
+    margin:0 auto 16px!important;
+  }
+  body .hero .category-tile {height:clamp(153px,15vw,181px)!important;}
+  body .hero .category-tile img {height:clamp(100px,11vw,129px)!important;max-width:100%!important;object-fit:contain!important;}
+  body .hero .category-tile span {font-size:clamp(14px,1.5vw,18px)!important;}
+  body .hero .hero-art {height:clamp(265px,28vh,345px)!important;max-width:100%!important;}
+  body .hero .hero-copy h1 {font-size:clamp(34px,3.4vw,48px)!important;}
+  /* Side-by-side media sections should not squash text on tablet portrait. */
+  body #gta6 .p3-inner,body #psvr2-video .p3-inner {
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:clamp(16px,3vw,38px)!important;
+  }
+  body #gta6 .p3-copy h2,body #psvr2-video .p3-copy h2 {font-size:clamp(29px,3.5vw,44px)!important;}
+  /* Prevent product modals from running off the shorter smart-display viewport. */
+  body #modal-ps4 .modal-content,body #modal-ps5 .modal-content,
+  body #modal-console .modal-content,body #modal-accessories .modal-content,
+  body .p3-modal .modal-content {
+    box-sizing:border-box!important;
+    max-width:min(calc(100vw - 24px),1140px)!important;
+    max-height:calc(100dvh - 30px)!important;
+    overflow-y:auto!important;
+  }
+  body #p24-search-dock {width:min(490px,calc(100vw - 24px))!important;}
+}
+@media (min-width:951px) and (max-width:1430px) and (max-height:850px),
+       (min-width:1431px) and (max-width:1535px) and (any-pointer:coarse) and (max-height:850px) {
+  body .hero .hero-art {height:clamp(210px,28vh,272px)!important;}
+  body .hero .hero-copy {margin-bottom:12px!important;}
+  body .hero .category-tile {height:clamp(144px,19vh,162px)!important;}
+  body .hero .category-tile img {height:clamp(92px,12vh,115px)!important;}
+  body #p24-search-dock .p24-results {max-height:min(28svh,220px)!important;}
+}
+@media (min-width:951px) and (max-width:1150px) {
+  body #gta6 .p3-inner,body #psvr2-video .p3-inner {grid-template-columns:1fr!important;}
+  body #gta6 .p3-art {max-width:650px!important;}
+  body #psvr2-video .p3-video-wrap {max-width:390px!important;}
+}
+/* The mobile layout <=950px remains untouched, including iPad mini portrait. */

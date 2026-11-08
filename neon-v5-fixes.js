@@ -8,7 +8,7 @@
   if (!menu || !toggle || !window.matchMedia) return;
   const initialParent = menu.parentNode;
   const initialNextSibling = menu.nextSibling;
-  const mq = window.matchMedia('(max-width: 950px)');
+  const mq = window.matchMedia('(max-width: 1430px), (min-width: 1431px) and (max-width: 1535px) and (any-pointer: coarse)');
 
   const close = () => {
     menu.classList.remove('active');
