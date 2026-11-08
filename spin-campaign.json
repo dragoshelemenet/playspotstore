@@ -1,0 +1,10 @@
+{
+  "campaign": "PlaySpotStore Spin & Win — 10% discount",
+  "start_at": "2026-11-08T14:16:42+02:00",
+  "expires_at": "2026-12-08T14:16:42+02:00",
+  "timezone": "Europe/Chisinau",
+  "duration_days": 30,
+  "max_daily_spins_per_browser": 3,
+  "discount_percent": 10,
+  "note": "Browser-only limit; prizes require manual shop verification."
+}

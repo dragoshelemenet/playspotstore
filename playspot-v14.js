@@ -35,6 +35,9 @@
     today:'Astăzi', plays:'rotiri', spinLabel:'Încearcă-ți norocul'
   };
   const maxSpins = 3;
+  const p15ExpiresAt = Date.parse('2026-12-08T14:16:42+02:00');
+  const p15CampaignExpired = () => Date.now() >= p15ExpiresAt;
+  const p15ExpiryLabel = new Intl.DateTimeFormat(ru ? 'ru-RU' : 'ro-RO',{timeZone:'Europe/Chisinau', day:'numeric',month:'long',year:'numeric'}).format(p15ExpiresAt);
   const catalogPaths = [
     ['PS4','data/ps4.json'],['PS5','data/ps5.json'],['PS2','data/ps2.json'],
     ['Nintendo','data/nintendo.json'],['Xbox','data/xbox.json']
@@ -105,8 +108,9 @@
   let pool=null, poolPromise=null, activeCandidates=[],currentWin=null,spinning=false,focusFrom=null,lastOverflow='', animationTimer=0;
   const remaining=()=>Math.max(0,maxSpins-getState().wins.length);
   const refreshCounter=()=>{const left=remaining();leftText.textContent=`${left} / ${maxSpins}`;invite.querySelector('.p14-invite-count').textContent=`${left}/${maxSpins}`;
-    spinBtn.disabled=spinning || left===0 || !pool;
-    if(left===0 && !spinning)status.textContent=t.complete;
+    spinBtn.disabled=spinning || left===0 || !pool || p15CampaignExpired();
+    if(p15CampaignExpired())status.textContent=ru?'Акция завершилась.':'Campania a expirat.';
+    else if(left===0 && !spinning)status.textContent=t.complete;
   };
   const textLabel=(value)=>String(value||'').replace(/\s+/g,' ').trim();
   const buildWheel=(list)=>{
@@ -140,7 +144,7 @@
   };
   const showResult=(win)=>{
     currentWin=win;result.hidden=false;titleEl.textContent=win.title;platformEl.textContent=win.platform+(win.price?' · '+win.price:'');
-    codeEl.textContent=win.code;claim.href='https://wa.me/'+cashPhone+'?text='+encodeURIComponent(t.message(win));
+    codeEl.textContent=win.code;claim.href='https://wa.me/'+cashPhone+'?text='+encodeURIComponent(t.message(win)+(ru?' Срок акции: до ':' Campanie valabilă până la ')+p15ExpiryLabel+'.');
   };
   const renderHistory=()=>{
     const s=getState();histList.innerHTML='';histNum.textContent=`(${s.wins.length}/${maxSpins})`;
@@ -153,6 +157,7 @@
     });
   };
   const open=()=>{
+    if(p15CampaignExpired())return;
     focusFrom=document.activeElement;lastOverflow=document.body.style.overflow;document.body.style.overflow='hidden';
     backdrop.hidden=false;panel.focus({preventScroll:true});status.textContent=t.loading;
     result.hidden=true;currentWin=null;refreshCounter();renderHistory();const last=getState().wins.at(-1);if(last)showResult(last);
@@ -174,8 +179,9 @@
     }
   });
   spinBtn.addEventListener('click',async()=>{
-    if(spinning)return;
+    if(spinning || p15CampaignExpired())return;
     if(!pool){status.textContent=t.loading;try{await loadGames();}catch{return;}}
+    if(p15CampaignExpired()){refreshCounter();return;}
     const state=getState();if(state.wins.length>=maxSpins){refreshCounter();return;}
     // Refresh the eight candidates for every spin; all catalogue entries have the same chance.
     const sample=candidatesFrom(pool);if(sample.length<8)return;
@@ -216,7 +222,7 @@
     c.fillStyle='#a2dacf';c.font='500 24px Arial';c.fillText(win.platform+'  •  '+t.receiptDate+': '+win.dateLabel,95,pos);
     c.fillStyle='#86ffe2';c.font='700 26px monospace';c.fillText(t.receiptCode+': '+win.code,95,pos+44);
     c.fillStyle='#afc9cb';c.font='500 20px Arial';c.fillText(t.receiptCondition,95,565);
-    c.font='600 20px Arial';c.fillText(t.receiptFooter,95,596);
+    c.font='600 20px Arial';c.fillText(t.receiptFooter+' · '+p15ExpiryLabel,95,596);
     return new Promise((resolve,reject)=>canvas.toBlob(blob=>blob?resolve(blob):reject(new Error('PNG conversion failed')),'image/png'));
   };
   saveBtn.addEventListener('click',async()=>{
