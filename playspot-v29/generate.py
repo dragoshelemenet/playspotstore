@@ -392,6 +392,14 @@ def generate(root,check=False):
     tree=ET.ElementTree(rootxml)
     ET.indent(tree, space='  ', level=0)  # Human-readable XML; same URL entries for crawlers.
     tree.write(root/'sitemap.xml',encoding='utf-8',xml_declaration=True)
+    # V31 FIX: Retain the sitemap XSL viewer after regenerating the SEO pages.
+    xml_file = root/'sitemap.xml'
+    xml_text = xml_file.read_text(encoding='utf-8')
+    xml_text = re.sub(r'<\?xml-stylesheet\b[^>]*\?>\s*', '', xml_text)
+    xml_text = re.sub(r'^(<\?xml\b[^>]*\?>)',
+                      r'\1\n<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>',
+                      xml_text, count=1)
+    xml_file.write_text(xml_text, encoding='utf-8')
     # Simple local checks; comprehensive tests in test-build script.
     for path in urls:
         if path and not (root/path).is_file():raise ValueError('Missing generated page '+path)
