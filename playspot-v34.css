@@ -1,0 +1,86 @@
+/* PlaySpotStore V34: full-resolution layered, CSS-animated hero.
+   All three assets share an identical 1500 x 612 transparent canvas and are
+   independently composited by the browser; no GIF, video or JavaScript needed. */
+.hero .hero-art.p34-hero-art {
+  position: relative !important;
+  isolation: isolate;
+  overflow: visible;
+}
+.hero .p34-layers {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  pointer-events: none;
+  --p34-up: -5px;
+  --p34-spark-x: -3px;
+  --p34-spark-y: 4px;
+  --p34-symbol-x: 7px;
+  --p34-symbol-y: -4px;
+}
+.hero .p34-layers > img.p34-layer {
+  position: absolute !important;
+  display: block !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  transform-origin: 50% 50%;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  backface-visibility: hidden;
+}
+/* Main layer: controller, console, branded wordmark and energy ring stay together.
+   Movement is tiny enough that the logo remains easy to read. */
+.hero .p34-layer.p34-main {
+  z-index: 1;
+  animation: p34-main-hover 9.2s ease-in-out infinite !important;
+}
+/* Particle layer: a softer, longer, independent breathing/drift cycle. */
+.hero .p34-layer.p34-sparks {
+  z-index: 2;
+  animation: p34-particle-drift 13.6s ease-in-out infinite !important;
+}
+/* Individual outer PS symbols on the third image have their own slow motion. */
+.hero .p34-layer.p34-symbols {
+  z-index: 3;
+  animation: p34-symbol-drift 16.8s ease-in-out infinite !important;
+}
+@keyframes p34-main-hover {
+  0%,100% {transform: translate3d(0, 0, 0);}
+  50% {transform: translate3d(0, var(--p34-up), 0);}
+}
+@keyframes p34-particle-drift {
+  0%,100% {transform: translate3d(0,0,0) scale(1);opacity:.90;}
+  50% {transform: translate3d(var(--p34-spark-x),var(--p34-spark-y),0) scale(1.006);opacity:1;}
+}
+@keyframes p34-symbol-drift {
+  0%,100% {transform: translate3d(0,0,0) rotate(0deg);}
+  50% {transform: translate3d(var(--p34-symbol-x),var(--p34-symbol-y),0) rotate(.28deg);}
+}
+@media (max-width: 950px) {
+  .hero .p34-layers {--p34-up:-4px;--p34-spark-x:-2.5px;--p34-spark-y:3px;--p34-symbol-x:5px;--p34-symbol-y:-3px;}
+}
+@media (max-width: 540px) {
+  .hero .p34-layers {--p34-up:-2.6px;--p34-spark-x:-1.4px;--p34-spark-y:2px;--p34-symbol-x:3.5px;--p34-symbol-y:-2px;}
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero .p34-layer.p34-main,
+  .hero .p34-layer.p34-sparks,
+  .hero .p34-layer.p34-symbols {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
