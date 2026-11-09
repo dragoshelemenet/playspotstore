@@ -9,6 +9,7 @@ import html
 import json
 import re
 import shutil
+import subprocess
 import sys
 import unicodedata
 from pathlib import Path
@@ -126,10 +127,11 @@ def nav(cat,lang):
 
 def footer(lang):
     t=LABEL[lang];home='/ru.html' if lang=='ru' else '/'
+    sitemap_link='<a href="/ru/sitemap.html">Карта сайта</a>' if lang=='ru' else '<a href="/sitemap.html">Harta site-ului</a>'
     count_title='Посетители · 2026' if lang=='ru' else 'Vizitatori · 2026'
     return f'''<footer class="seo-footer"><div class="seo-footer-inner">
 <a href="{home}">PlaySpotStore</a> <span>·</span> <a href="{home}#contact">{esc(t['call'])}</a>
-<span>·</span> <span>{esc(t['legal'])}</span></div></footer>
+<span>·</span> {sitemap_link} <span>·</span> <span>{esc(t['legal'])}</span></div></footer>
 <section class="p26-visitor-counter" aria-label="{esc(count_title)}"><div class="p26-inner"><span class="p26-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6M17 14a5 5 0 0 1 4 5v2"/></svg></span><div class="p26-copy"><strong>{esc(count_title)}</strong></div><strong class="p26-number" id="p26-total" aria-live="polite">—</strong></div></section>
 <script defer src="/playspot-v27.js?v=seo29"></script>'''
 
@@ -392,14 +394,8 @@ def generate(root,check=False):
     tree=ET.ElementTree(rootxml)
     ET.indent(tree, space='  ', level=0)  # Human-readable XML; same URL entries for crawlers.
     tree.write(root/'sitemap.xml',encoding='utf-8',xml_declaration=True)
-    # V31 FIX: Retain the sitemap XSL viewer after regenerating the SEO pages.
-    xml_file = root/'sitemap.xml'
-    xml_text = xml_file.read_text(encoding='utf-8')
-    xml_text = re.sub(r'<\?xml-stylesheet\b[^>]*\?>\s*', '', xml_text)
-    xml_text = re.sub(r'^(<\?xml\b[^>]*\?>)',
-                      r'\1\n<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>',
-                      xml_text, count=1)
-    xml_file.write_text(xml_text, encoding='utf-8')
+    # V32: separate crawlable HTML sitemap for people; XML stays plain for search bots.
+    subprocess.run([sys.executable, str(root/'playspot-v32'/'human_sitemap.py'), '--root', str(root)], check=True)
     # Simple local checks; comprehensive tests in test-build script.
     for path in urls:
         if path and not (root/path).is_file():raise ValueError('Missing generated page '+path)
