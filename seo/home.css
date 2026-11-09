@@ -1,0 +1,17 @@
+/* PlaySpotStore V29 — crawlable category navigation on existing homepages. */
+body .hero a.category-tile{display:flex!important;flex-direction:column;justify-content:center;align-items:center;text-align:center;cursor:pointer;text-decoration:none!important;line-height:1.2}
+body .p29-seo-discovery,body .p29-seo-discovery *{box-sizing:border-box}
+body section.p29-seo-discovery{position:relative;display:block!important;max-width:100%!important;width:100%;margin:0!important;padding:clamp(35px,4.6vw,62px) 18px!important;background:linear-gradient(145deg,#071f21,#091924 65%,#15152c)!important;border-top:1px solid rgba(100,244,185,.17);border-bottom:1px solid rgba(100,244,185,.17);color:#edfff6!important}
+body .p29-seo-wrap{width:min(100%,1300px);margin:0 auto}
+body .p29-seo-wrap h2{font:850 clamp(25px,3.5vw,41px)/1.2 Inter,Arial,sans-serif!important;letter-spacing:-.035em;margin:0 0 10px!important;color:#dfffee!important;text-shadow:none!important}
+body .p29-seo-wrap>p{font:430 clamp(13px,1.25vw,16px)/1.5 Inter,Arial,sans-serif!important;color:#a5cfc3!important;margin:0 0 25px!important}
+body .p29-seo-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+body .p29-seo-links a{display:flex;align-items:center;justify-content:space-between;min-width:0;gap:8px;background:linear-gradient(130deg,rgba(36,87,77,.55),rgba(15,35,55,.65));color:#d1fff1!important;border:1px solid rgba(118,254,201,.29);border-radius:13px;min-height:66px;padding:16px;transition:border-color .2s,transform .2s;text-decoration:none!important;font:800 14px/1.3 Inter,Arial,sans-serif!important}
+body .p29-seo-links a:hover{transform:translateY(-3px);border-color:#6dffd0!important}
+body .p29-seo-links a strong{color:inherit!important}body .p29-seo-links a span{color:#75ffcb!important;font-size:22px}
+@media(max-width:980px){body .p29-seo-links{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){body .p29-seo-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}body .p29-seo-links a{padding:13px;min-height:57px;font-size:12px!important}}
+@media(prefers-reduced-motion:reduce){body .p29-seo-links a{transition:none!important}body .p29-seo-links a:hover{transform:none!important}}
+
+/* Existing "recent inventory" shortcuts now use semantic links instead of onclick buttons. */
+body .p3-links a{display:inline-flex;align-items:center;justify-content:center;font:650 14px Inter,Arial,sans-serif;border:1px solid rgba(73,247,168,.4);background:#153334!important;border-radius:9px;padding:11px 18px;color:#a8ffdd!important;text-decoration:none!important;cursor:pointer}body .p3-links a:hover{background:#21584b!important}

@@ -92,7 +92,7 @@
     const arrow=document.createElement('span');arrow.className='p24-item-arrow';arrow.textContent='›';arrow.setAttribute('aria-hidden','true');
     btn.append(img,copy,arrow);
     btn.addEventListener('click',()=>{
-      collapse();if(typeof window.openGame==='function')window.openGame(String(item.id),cat);
+      collapse();const href=(window.p29ProductSlugs?.[cat]||{})[String(item.id)];if(href)window.location.assign('/'+(ru?'ru/':'')+'produse/'+cat+'/'+href);else if(typeof window.openGame==='function')window.openGame(String(item.id),cat);
     });results.appendChild(btn);
   }
   async function render(){

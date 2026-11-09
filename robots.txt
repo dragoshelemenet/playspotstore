@@ -1,6 +1,4 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /private/
 Allow: /
 
-Sitemap: https://www.playstationspot.store/sitemap.xml
+Sitemap: https://playspotstore.online/sitemap.xml
