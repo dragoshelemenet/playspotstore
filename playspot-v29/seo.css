@@ -49,3 +49,109 @@ a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outlin
 @media(max-width:730px){.seo-header-inner{padding:9px 12px}.seo-brand b{font-size:16px}.seo-brand img{width:39px;height:39px}.seo-header-contact{font-size:11px;padding:8px 12px}.seo-main-nav a{font-size:12px;padding:9px 10px}.seo-wrap{width:calc(100% - 26px);padding-bottom:48px}.seo-breadcrumb{font-size:12px;padding:18px 0}.seo-category-hero{padding:26px 20px;margin-bottom:24px}.seo-category-hero h1{font-size:32px}.seo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.seo-product-art{height:190px;padding:12px}.seo-product-body{padding:12px 12px 15px}.seo-product-body h3{font-size:14px}.seo-product-price{font-size:13px}.seo-detail{grid-template-columns:1fr;gap:24px;margin-bottom:44px}.seo-detail-image{min-height:290px;max-height:470px;padding:18px}.seo-detail-image img{max-height:420px}.seo-detail-info h1{font-size:clamp(31px,7.5vw,46px)}.seo-detail-description{font-size:15px}.seo-ctas>a{flex:1 1 auto}.seo-related{margin-bottom:37px}}
 @media(max-width:370px){.seo-product-art{height:158px}.seo-product-body h3{font-size:13px}.seo-brand b{font-size:15px}.seo-category-hero h1{font-size:29px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.seo-product-card{transition:none}.seo-product-card:hover{transform:none}}
+
+/* PlaySpotStore V30: fixed-image SEO cards — reserve separate, non-overlapping media and copy areas.
+   Covers with different aspect ratios stay fully visible via object-fit:contain.
+   The fallback logo is constrained exactly like other catalog images. */
+.seo-grid .seo-product-card {
+  display:flex!important;
+  flex-direction:column!important;
+  min-width:0!important;
+  overflow:hidden!important;
+}
+.seo-grid .seo-product-card > a {
+  display:flex!important;
+  flex-direction:column!important;
+  width:100%!important;
+  height:100%!important;
+  min-width:0!important;
+  min-height:0!important;
+  overflow:hidden!important;
+}
+.seo-grid .seo-product-card .seo-product-art {
+  box-sizing:border-box!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  flex:0 0 240px!important;
+  width:100%!important;
+  height:240px!important;
+  min-height:0!important;
+  max-height:240px!important;
+  padding:14px!important;
+  overflow:hidden!important;
+  position:relative!important;
+  isolation:isolate;
+}
+.seo-grid .seo-product-card .seo-product-art img {
+  display:block!important;
+  box-sizing:border-box!important;
+  width:100%!important;
+  height:100%!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-width:100%!important;
+  max-height:100%!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  aspect-ratio:auto!important;
+  position:static!important;
+  inset:auto!important;
+  margin:0!important;
+  transform:none!important;
+  flex:0 0 auto!important;
+}
+.seo-grid .seo-product-card .seo-product-body {
+  box-sizing:border-box!important;
+  position:relative!important;
+  z-index:2!important;
+  display:flex!important;
+  flex-direction:column!important;
+  gap:8px!important;
+  flex:1 1 auto!important;
+  min-width:0!important;
+  min-height:145px!important;
+  width:100%!important;
+  padding:16px 17px 18px!important;
+  background:linear-gradient(160deg,rgba(10,34,38,.99),rgba(8,23,37,.99))!important;
+  overflow:hidden!important;
+}
+.seo-grid .seo-product-card .seo-product-body h3 {
+  display:-webkit-box!important;
+  -webkit-box-orient:vertical!important;
+  -webkit-line-clamp:3!important;
+  line-clamp:3!important;
+  overflow:hidden!important;
+  max-height:4.15em!important;
+  line-height:1.37!important;
+  min-height:2.74em!important;
+  margin:0!important;
+  overflow-wrap:anywhere!important;
+}
+.seo-grid .seo-product-card .seo-product-price {margin:0!important;}
+.seo-grid .seo-product-card .seo-product-details {
+  flex:0 0 auto!important;
+  margin-top:auto!important;
+  align-self:flex-start!important;
+}
+@media(max-width:1100px){
+  .seo-grid .seo-product-card .seo-product-art {
+    flex-basis:220px!important;height:220px!important;max-height:220px!important;
+  }
+}
+@media(max-width:730px){
+  .seo-grid .seo-product-card .seo-product-art {
+    flex-basis:176px!important;height:176px!important;max-height:176px!important;padding:10px!important;
+  }
+  .seo-grid .seo-product-card .seo-product-body {
+    padding:13px 12px 15px!important;min-height:138px!important;
+  }
+}
+@media(max-width:370px){
+  .seo-grid .seo-product-card .seo-product-art {
+    flex-basis:145px!important;height:145px!important;max-height:145px!important;padding:8px!important;
+  }
+  .seo-grid .seo-product-card .seo-product-body {
+    padding:12px 10px 13px!important;min-height:136px!important;
+  }
+}

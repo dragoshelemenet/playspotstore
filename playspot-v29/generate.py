@@ -109,7 +109,7 @@ def head(title,description,canonical,alternate,lang,img,extra_schema,ogtype='web
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{esc(title)}">
 <meta name="twitter:description" content="{esc(description[:190])}">
-<link rel="stylesheet" href="/seo/site.css">
+<link rel="stylesheet" href="/seo/site.css?v=20261109-v30">
 <link rel="stylesheet" href="/playspot-v27.css?v=seo29">
 <script type="application/ld+json">{jsdata(extra_schema)}</script>
 </head>'''
@@ -389,7 +389,9 @@ def generate(root,check=False):
             ro_url=SITE+'/'+path;ru_url=SITE+'/ru/'+path
         for code,href in [('ro',ro_url),('ru',ru_url),('x-default',ro_url)]:
             ET.SubElement(node,f'{{{xns}}}link',{'rel':'alternate','hreflang':code,'href':href})
-    ET.ElementTree(rootxml).write(root/'sitemap.xml',encoding='utf-8',xml_declaration=True)
+    tree=ET.ElementTree(rootxml)
+    ET.indent(tree, space='  ', level=0)  # Human-readable XML; same URL entries for crawlers.
+    tree.write(root/'sitemap.xml',encoding='utf-8',xml_declaration=True)
     # Simple local checks; comprehensive tests in test-build script.
     for path in urls:
         if path and not (root/path).is_file():raise ValueError('Missing generated page '+path)
