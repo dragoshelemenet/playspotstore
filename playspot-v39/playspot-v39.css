@@ -1,0 +1,111 @@
+/* PlaySpotStore V39 — V34/V38 floating, precisely ~10% more visible.
+   Preserves independent timing, mouse hover, mobile layout, and V35 scroll depth. */
+
+/* V34 hero's existing floating animations already use these custom properties.
+   Multiplying the translation amplitudes by 1.1 avoids replacing animations or artwork. */
+.hero .p34-layers {
+  --p34-up: -5.5px;
+  --p34-spark-x: -3.3px;
+  --p34-spark-y: 4.4px;
+  --p34-symbol-x: 7.7px;
+  --p34-symbol-y: -4.4px;
+}
+
+/* V38 artwork continues to float independently; increase each amplitude by 10%.
+   The card border and label do not float, so the UI stays legible/clickable. */
+.hero .category-deck > .category-tile:nth-child(1) > img {
+  --p38-float-x: 1.65px;
+  --p38-float-y: -5.5px;
+  --p38-tilt: .308deg;
+  --p38-scale: 1.0132;
+}
+.hero .category-deck > .category-tile:nth-child(2) > img {
+  --p38-float-x: -1.98px;
+  --p38-float-y: -4.4px;
+  --p38-tilt: -.242deg;
+  --p38-scale: 1.0132;
+}
+.hero .category-deck > .category-tile:nth-child(3) > img {
+  --p38-float-x: 1.1px;
+  --p38-float-y: -6.16px;
+  --p38-tilt: .198deg;
+  --p38-scale: 1.0132;
+}
+.hero .category-deck > .category-tile:nth-child(4) > img {
+  --p38-float-x: -1.32px;
+  --p38-float-y: -4.95px;
+  --p38-tilt: -.275deg;
+  --p38-scale: 1.0132;
+}
+.hero .category-deck > .category-tile:nth-child(5) > img {
+  --p38-float-x: 1.87px;
+  --p38-float-y: -5.28px;
+  --p38-tilt: .33deg;
+  --p38-scale: 1.0132;
+}
+.hero .category-deck > .category-tile:nth-child(6) > img {
+  --p38-float-x: -1.1px;
+  --p38-float-y: -5.72px;
+  --p38-tilt: -.176deg;
+  --p38-scale: 1.0132;
+}
+
+@media (max-width: 950px) {
+  .hero .p34-layers {
+    --p34-up: -4.4px;
+    --p34-spark-x: -2.75px;
+    --p34-spark-y: 3.3px;
+    --p34-symbol-x: 5.5px;
+    --p34-symbol-y: -3.3px;
+  }
+}
+@media (max-width: 540px) {
+  .hero .p34-layers {
+    --p34-up: -2.86px;
+    --p34-spark-x: -1.54px;
+    --p34-spark-y: 2.2px;
+    --p34-symbol-x: 3.85px;
+    --p34-symbol-y: -2.2px;
+  }
+}
+@media (max-width: 600px) {
+  /* V38 uses matching x/y for all six items on narrow screens. */
+  .hero .category-deck > .category-tile:nth-child(n) > img {
+    --p38-float-x: .88px;
+    --p38-float-y: -3.08px;
+    --p38-scale: 1.0066;
+  }
+}
+
+/* Click-to-open feedback. The six category links remain normal <a href> links. */
+.hero .category-deck > .category-tile.p39-opening {
+  position: relative;
+  z-index: 2;
+  transform: translateY(-2px) scale(.982) !important;
+  transition: transform .23s cubic-bezier(.2,.75,.2,1) !important;
+  animation: p39-tile-flash .24s ease-out both !important;
+  border-color: #b0ffe1 !important;
+}
+.hero .category-deck > .category-tile.p39-opening > img {
+  animation: p39-select-image .24s cubic-bezier(.22,.8,.3,1) both !important;
+  filter: brightness(1.12) drop-shadow(0 0 17px var(--glow,rgba(82,245,174,.3))) !important;
+}
+@keyframes p39-select-image {
+  0% { transform: translate3d(0,0,0) scale(1); }
+  46% { transform: translate3d(0,-5px,0) scale(1.075) rotate(-.65deg); }
+  100% { transform: translate3d(0,-2px,0) scale(1.028) rotate(0deg); }
+}
+@keyframes p39-tile-flash {
+  0% { box-shadow: 0 0 8px var(--glow,rgba(82,245,174,.3)); }
+  50% { box-shadow: 0 0 29px var(--accent,#5cffa8), 0 9px 29px var(--glow,rgba(82,245,174,.3)); }
+  100% { box-shadow: 0 0 16px var(--accent,#5cffa8), 0 8px 21px var(--glow,rgba(82,245,174,.3)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero .category-deck > .category-tile.p39-opening,
+  .hero .category-deck > .category-tile.p39-opening > img {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}

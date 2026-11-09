@@ -405,6 +405,9 @@ def generate(root,check=False):
     # P37: restore single-border category filters after V36 generator hook
     addon37 = root / "playspot-v37" / "patch.py"
     if addon37.is_file(): subprocess.run([sys.executable, str(addon37), "--root", str(root)], check=True)
+    # P39: keep V39 hero float boost and category click feedback on regeneration
+    addon39 = root / "playspot-v39" / "patch.py"
+    if addon39.is_file(): subprocess.run([sys.executable, str(addon39), "--root", str(root)], check=True)
     print(f'✅ Generated {total*2} product pages, {len(CATEGORIES)*2} category pages, 2 homepages; sitemap URLs: {len(urls)}')
     print('✅ Fixed canonical domain, crawlable category links, RO/RU hreflang, Product JSON-LD, robots and sitemap')
     print('✅ All prices and product details are read from data/*.json; no fake review, stock or rating')
