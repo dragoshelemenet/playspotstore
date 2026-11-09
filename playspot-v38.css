@@ -1,0 +1,77 @@
+/* PlaySpotStore V38 — slow, independent floating artwork in the six homepage
+   category tiles. Links, tile borders, text, and existing hover effects stay fixed. */
+.hero .category-deck > .category-tile > img {
+  --p38-float-x: 1.5px;
+  --p38-float-y: -5px;
+  --p38-tilt: 0.28deg;
+  --p38-scale: 1.012;
+  --p38-duration: 10.4s;
+  --p38-delay: -1.7s;
+  animation: p38-category-art-float var(--p38-duration) ease-in-out var(--p38-delay) infinite both;
+  transform-origin: 50% 50%;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+/* Staggered phase, speed and direction: not six synchronized animations. */
+.hero .category-deck > .category-tile:nth-child(2) > img {
+  --p38-float-x: -1.8px;
+  --p38-float-y: -4px;
+  --p38-tilt: -0.22deg;
+  --p38-duration: 11.8s;
+  --p38-delay: -7.3s;
+}
+.hero .category-deck > .category-tile:nth-child(3) > img {
+  --p38-float-x: 1px;
+  --p38-float-y: -5.6px;
+  --p38-tilt: 0.18deg;
+  --p38-duration: 9.9s;
+  --p38-delay: -4.8s;
+}
+.hero .category-deck > .category-tile:nth-child(4) > img {
+  --p38-float-x: -1.2px;
+  --p38-float-y: -4.5px;
+  --p38-tilt: -0.25deg;
+  --p38-duration: 12.3s;
+  --p38-delay: -9.1s;
+}
+.hero .category-deck > .category-tile:nth-child(5) > img {
+  --p38-float-x: 1.7px;
+  --p38-float-y: -4.8px;
+  --p38-tilt: 0.3deg;
+  --p38-duration: 10.9s;
+  --p38-delay: -6.2s;
+}
+.hero .category-deck > .category-tile:nth-child(6) > img {
+  --p38-float-x: -1px;
+  --p38-float-y: -5.2px;
+  --p38-tilt: -0.16deg;
+  --p38-duration: 11.5s;
+  --p38-delay: -2.6s;
+}
+@keyframes p38-category-art-float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate3d(var(--p38-float-x), var(--p38-float-y), 0)
+      rotate(var(--p38-tilt)) scale(var(--p38-scale));
+  }
+}
+@media (max-width: 600px) {
+  .hero .category-deck > .category-tile > img {
+    --p38-float-y: -2.8px;
+    --p38-float-x: 0.8px;
+    --p38-scale: 1.006;
+  }
+  .hero .category-deck > .category-tile:nth-child(n) > img {
+    --p38-float-y: -2.8px;
+    --p38-float-x: 0.8px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero .category-deck > .category-tile > img {
+    animation: none !important;
+    transform: none !important;
+    will-change: auto;
+  }
+}
