@@ -1,0 +1,25 @@
+/* PlaySpotStore V35 — scroll-responsive depth for the existing V34 three-layer hero.
+   CSS 'translate' composes independently with V34's animated 'transform',
+   preserving the floating effect and the original lossless WebP artwork. */
+@supports (translate: 0px 0px) {
+  .hero .p34-layers > .p34-layer.p34-main {
+    translate: var(--p35-main-x, 0px) var(--p35-main-y, 0px);
+    will-change: translate, transform;
+  }
+  .hero .p34-layers > .p34-layer.p34-sparks {
+    translate: var(--p35-sparks-x, 0px) var(--p35-sparks-y, 0px);
+    will-change: translate, transform;
+  }
+  .hero .p34-layers > .p34-layer.p34-symbols {
+    translate: var(--p35-symbols-x, 0px) var(--p35-symbols-y, 0px);
+    will-change: translate, transform;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero .p34-layers > .p34-layer.p34-main,
+  .hero .p34-layers > .p34-layer.p34-sparks,
+  .hero .p34-layers > .p34-layer.p34-symbols {
+    translate: none !important;
+    will-change: auto !important;
+  }
+}
