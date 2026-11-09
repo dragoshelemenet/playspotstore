@@ -399,6 +399,9 @@ def generate(root,check=False):
     # Simple local checks; comprehensive tests in test-build script.
     for path in urls:
         if path and not (root/path).is_file():raise ValueError('Missing generated page '+path)
+    # P36: keep search filters after each catalog regeneration
+    addon = root / "playspot-v36" / "apply.py"
+    if addon.is_file(): subprocess.run([sys.executable, str(addon), "--root", str(root)], check=True)
     print(f'✅ Generated {total*2} product pages, {len(CATEGORIES)*2} category pages, 2 homepages; sitemap URLs: {len(urls)}')
     print('✅ Fixed canonical domain, crawlable category links, RO/RU hreflang, Product JSON-LD, robots and sitemap')
     print('✅ All prices and product details are read from data/*.json; no fake review, stock or rating')
