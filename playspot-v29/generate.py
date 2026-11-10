@@ -187,9 +187,9 @@ def product_html(cat,lang,product,ro_item,related):
     if not desc:desc=t['single_desc'].format(title=product['title'],category=catname)
     # Keep catalog descriptions as-is; no generated/fake technical specifications.
     # Unique metadata even where source descriptions are generic placeholders.
-    meta=t['single_desc'].format(title=product['title'],category=catname)+' '+desc
+    meta=f'{product["title"]} | {catname}: {desc}'
     img=product_image(product.get('image'))
-    product_schema={'@type':'Product','name':product['title'],'url':SITE+'/'+path,'description':desc,
+    product_schema={'@type':'Product','name':product['title'],'sku':str(ro_item['id']),'url':SITE+'/'+path,'description':desc,
                     'image':[img],'category':catname}
     price=price_value(product.get('price'))
     if price is not None:
@@ -203,11 +203,16 @@ def product_html(cat,lang,product,ro_item,related):
     instagram='https://www.instagram.com/PlaySpotStore/'
     from_catalog=t['new'] if product.get('new_arrival')=='yes' else 'PlaySpotStore'
     page=head(title,meta,path,alt,lang,img,schema,ogtype="product")
+    page=page.replace('</head>', '<link rel="stylesheet" href="/playspot-v40.css?v=20261110-v40">\n</head>', 1)
     return f'''{page}<body>{nav(cat,lang)}
 <main class="seo-wrap">{crumb(cat,lang,product['title'])}
 <article class="seo-detail"><div class="seo-detail-image"><img src="{esc(img)}" alt="{esc(product['title'])}" width="550" height="650" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='/media/play-spot-logo-v4.webp'"></div>
 <div class="seo-detail-info"><p class="seo-eyebrow">{esc(from_catalog)} · {esc(catname)}</p><h1>{esc(product['title'])}</h1>
 <p class="seo-detail-description">{esc(desc)}</p>
+<dl class="p40-product-facts" aria-label="{"Информация о товаре" if lang == "ru" else "Informatii despre produs"}">
+<div><dt>{"Платформа / категория" if lang == "ru" else "Platforma / categoria"}</dt><dd>{esc(catname)}</dd></div>
+<div><dt>{"Код в каталоге" if lang == "ru" else "Cod in catalog"}</dt><dd>{esc(str(ro_item['id']))}</dd></div>
+</dl>
 <div class="seo-pricebox"><span>{esc(t['price'])}</span><strong>{esc(price_text)}</strong>
 <p>{esc(t['confirm'])}</p></div>
 <div class="seo-ctas"><a class="seo-cta-primary" href="{esc(whatsapp)}" target="_blank" rel="noopener noreferrer">{esc(t['whatsapp'])}</a>
