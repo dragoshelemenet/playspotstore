@@ -6,13 +6,15 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Aventura lui SpongeBob inspirată de filmul animat, cu niveluri pline de umor, obstacole și personaje din Bikini Bottom. Aventura inspirata de film se desfasoara in universul Bikini Bottom, cu personaje si situatii comice. Experiența alternează descoperirea mediilor cu secvențe în care reacția și alegerea momentului de acțiune sunt importante. Accentul rămâne pe ceea ce faci efectiv în joc. Potrivit pentru cei atrași de aventuri dinamice, personaje memorabile și schimbarea frecventă a situațiilor. Tema și decorurile sunt cele care dau jocului identitate.",
+    "description": "Aventura lui SpongeBob inspirată de filmul animat, cu niveluri pline de umor, obstacole și personaje din Bikini Bottom.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "DuckDuckGo image search",
     "image_source_page": "https://thecoverproject.net/view.php?game_id=3619",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Aventura inspirata de film se desfasoara in universul Bikini Bottom, cu personaje si situatii comice. Când obstacolele sunt bine construite, progresul pare să vină dintr-o mișcare învățată la momentul potrivit, nu din noroc. Este o plăcere pentru cei care apreciază precizia.",
+    "seo_meta_description": "SpongeBob SquarePants: The Movie | Jocuri PS2: Aventura lui SpongeBob inspirată de filmul animat, cu niveluri pline de umor, obstacole și personaje din Bikini"
   },
   {
     "id": "ps2-new-spongebob-squarepants-lights-camera-pants",
@@ -21,13 +23,15 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Participă la probe și minijocuri din universul SpongeBob, într-o competiție colorată cu personajele din Bikini Bottom. Personajele concureaza in mini-jocuri inspirate de o emisiune fictiva, cu probe ce schimba rapid ritmul. Acest tip de experiență pune accent pe divertismentul accesibil și pe diferențele dintre provocări. Fiecare rundă este o ocazie de a încerca altă strategie sau alt ritm. Pentru sesiuni relaxate, varietatea probelor și claritatea regulilor sunt esențiale. Tonul și stilul vizual contribuie la modul în care se simte fiecare rundă.",
+    "description": "Participă la probe și minijocuri din universul SpongeBob, într-o competiție colorată cu personajele din Bikini Bottom.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "DuckDuckGo image search",
     "image_source_page": "https://www.ebay.com/itm/256353935580",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Personajele concureaza in mini-jocuri inspirate de o emisiune fictiva, cu probe ce schimba rapid ritmul. Când obstacolele sunt bine construite, progresul pare să vină dintr-o mișcare învățată la momentul potrivit, nu din noroc. Este o plăcere pentru cei care apreciază precizia.",
+    "seo_meta_description": "SpongeBob SquarePants: Lights, Camera, Pants! | Jocuri PS2: Participă la probe și minijocuri din universul SpongeBob, într-o competiție colorată cu personajele"
   },
   {
     "id": "ps2-new-madagascar",
@@ -36,12 +40,14 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Joc de aventură inspirat de filmul Madagascar: explorezi niveluri cu Alex, Marty și prietenii lor, combinând acțiunea cu umorul. Alex, Marty, Melman si Gloria intalnesc provocari inspirate de calatoria din filmul animat. Pe parcurs, povestea și momentele intense se completează cu explorarea decorurilor. Merită să urmărești cum fiecare confruntare sau obstacol schimbă ritmul aventurii. Potrivit pentru cei atrași de aventuri dinamice, personaje memorabile și schimbarea frecventă a situațiilor. Tema și decorurile sunt cele care dau jocului identitate. Experiența alternează descoperirea mediilor cu secvențe în care reacția și alegerea momentului de acțiune sunt importante. Accentul rămâne pe ceea ce faci efectiv în joc.",
+    "description": "Joc de aventură inspirat de filmul Madagascar: explorezi niveluri cu Alex, Marty și prietenii lor, combinând acțiunea cu umorul.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "Individually researched image",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Alex, Marty, Melman si Gloria intalnesc provocari inspirate de calatoria din filmul animat. Farmecul vine din alternanța dintre momentele spectaculoase și perioadele în care descoperi lumea. Este potrivit dacă vrei să faci mai mult decât să urmărești o poveste.",
+    "seo_meta_description": "Madagascar | Jocuri PS2: Joc de aventură inspirat de filmul Madagascar: explorezi niveluri cu Alex, Marty și prietenii lor, combinând acțiunea cu umorul."
   },
   {
     "id": "ps2-new-wwe-smackdown-vs-raw-2006",
@@ -50,13 +56,15 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Simulează spectacolul wrestlingului WWE cu superstaruri, meciuri în ring și moduri dedicate rivalităților dintre luptători. Rivalitatile dintre superstaruri sunt puse in scena prin meciuri cu reguli si stiluri diferite. Acțiunea se decide prin timing, poziționare și înțelegerea mișcărilor personajelor. Nu este suficient să ataci continuu: blocajele și reacțiile rapide contează mult. Dacă preferi competițiile în care înveți stiluri diferite de luptă și reacționezi la tactica rivalului, urmărește personajele și ritmul duelurilor. Fiecare luptă devine un exercițiu de anticipare. Observarea adversarului, alegerea tehnicilor și controlul ritmului sunt mai importante decât apăsarea repetată a butoanelor.",
+    "description": "Simulează spectacolul wrestlingului WWE cu superstaruri, meciuri în ring și moduri dedicate rivalităților dintre luptători.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "DuckDuckGo image search",
     "image_source_page": "https://spong.com/game/covers-box-art/11039516/wwe-smackdown-vs-raw-2006-ps2/171341",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Rivalitatile dintre superstaruri sunt puse in scena prin meciuri cu reguli si stiluri diferite. Spectacolul vizual atrage atenția, dar satisfacția de durată vine din înțelegerea distanței și a momentului potrivit pentru o tehnică.",
+    "seo_meta_description": "WWE SmackDown! vs. Raw 2006 | Jocuri PS2: Simulează spectacolul wrestlingului WWE cu superstaruri, meciuri în ring și moduri dedicate rivalităților dintre"
   },
   {
     "id": "ps2-new-the-incredibles",
@@ -65,13 +73,15 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Acțiune bazată pe filmul Pixar, cu familia de supereroi Parr, misiuni de echipă și abilități diferite pentru fiecare erou. Familia Parr foloseste abilitati diferite pentru a depasi obstacole si pentru a invinge adversari inspirati de filmul Pixar. Provocările devin mai interesante atunci când împarți responsabilitățile și alegi o strategie comună. Coordonarea și reacția la situații neașteptate au un rol central. Dacă îți place să rezolvi provocări alături de alți jucători, urmărește felul în care cooperarea este integrată în mecanici și în ritmul misiunilor.",
+    "description": "Acțiune bazată pe filmul Pixar, cu familia de supereroi Parr, misiuni de echipă și abilități diferite pentru fiecare erou.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "DuckDuckGo image search",
     "image_source_page": "http://www.thecoverproject.net/view.php?game_id=14467",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Familia Parr foloseste abilitati diferite pentru a depasi obstacole si pentru a invinge adversari inspirati de filmul Pixar. Farmecul vine din alternanța dintre momentele spectaculoase și perioadele în care descoperi lumea. Este potrivit dacă vrei să faci mai mult decât să urmărești o poveste.",
+    "seo_meta_description": "The Incredibles | Jocuri PS2: Acțiune bazată pe filmul Pixar, cu familia de supereroi Parr, misiuni de echipă și abilități diferite pentru fiecare erou."
   },
   {
     "id": "ps2-new-crash-of-the-titans",
@@ -80,13 +90,15 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Crash Bandicoot revine într-un platformer de acțiune, înfruntând creaturi și folosind puterile titanilor capturați. Crash poate folosi puterile titanilor pentru a depasi adversari care altfel ar fi greu de invins. Nivelurile combină deplasarea cu momente în care trebuie să calculezi sărituri, să urmărești pericolele din jur și să înțelegi cum funcționează fiecare mecanică. Dacă îți plac jocurile în care înveți treptat regulile unui nivel și le aplici în secvențe tot mai solicitante, urmărește felul în care sunt construite provocările și libertatea de a experimenta.",
+    "description": "Crash Bandicoot revine într-un platformer de acțiune, înfruntând creaturi și folosind puterile titanilor capturați.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "DuckDuckGo image search",
     "image_source_page": "https://www.covercentury.com/index.php?p=ps2&l=c&f=crash_of_the_titans_d.jpg",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Crash poate folosi puterile titanilor pentru a depasi adversari care altfel ar fi greu de invins. Jocul este potrivit pentru cineva care preferă să descopere singur o soluție în loc să urmeze indicații pas cu pas. Micile reușite contează la fel de mult ca finalul.",
+    "seo_meta_description": "Crash of the Titans | Jocuri PS2: Crash Bandicoot revine într-un platformer de acțiune, înfruntând creaturi și folosind puterile titanilor capturați."
   },
   {
     "id": "ps2-new-fantastic-four-rise-of-the-silver-surfer",
@@ -95,13 +107,15 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Aventură cu cei patru supereroi Marvel, combinând luptele cu abilitățile lor speciale într-o poveste inspirată de film. Membrii Fantastic Four au puteri distincte, iar combinarea lor face parte din luptele impotriva amenintarilor Marvel. Povestea se desfășoară prin întâlniri, indicii și reacțiile personajelor. Fii atent la dialoguri și la detalii, deoarece ele dau sens evenimentelor dincolo de acțiunea imediată. Dacă preferi experiențe în care povestea contează mai mult decât scorul, urmărește personajele și întrebările pe care le ridică universul jocului. Ritmul este construit în jurul descoperirii poveștii și al contextului în care se află personajele. Explorarea și dialogurile pot conta mai mult decât confruntările rapide.",
+    "description": "Aventură cu cei patru supereroi Marvel, combinând luptele cu abilitățile lor speciale într-o poveste inspirată de film.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "DuckDuckGo image search",
     "image_source_page": "http://www.thecoverproject.net/view.php?game_id=7055",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Membrii Fantastic Four au puteri distincte, iar combinarea lor face parte din luptele impotriva amenintarilor Marvel. Când mecanicile sunt învățate, confruntările pot deveni un mic spectacol improvizat. Contează însă să fii atent la spațiu și la ritm.",
+    "seo_meta_description": "Fantastic Four: Rise of the Silver Surfer | Jocuri PS2: Aventură cu cei patru supereroi Marvel, combinând luptele cu abilitățile lor speciale într-o poveste"
   },
   {
     "id": "ps2-new-the-incredible-hulk",
@@ -110,13 +124,15 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Controlezi forța lui Hulk într-un joc de acțiune cu distrugeri spectaculoase și confruntări în mediul urban. Hulk foloseste forta brutala in medii urbane, iar distrugerea mediului schimba ritmul confruntarilor. Experiența alternează descoperirea mediilor cu secvențe în care reacția și alegerea momentului de acțiune sunt importante. Accentul rămâne pe ceea ce faci efectiv în joc. Potrivit pentru cei atrași de aventuri dinamice, personaje memorabile și schimbarea frecventă a situațiilor. Tema și decorurile sunt cele care dau jocului identitate. Acțiunea nu înseamnă doar lupte: traseele, provocările și întâlnirile cu personaje diferite contribuie la ritmul aventurii. Observarea mediului poate deschide noi abordări.",
+    "description": "Controlezi forța lui Hulk într-un joc de acțiune cu distrugeri spectaculoase și confruntări în mediul urban.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "Libretro online box art",
     "image_source_page": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Hulk foloseste forta brutala in medii urbane, iar distrugerea mediului schimba ritmul confruntarilor. Farmecul vine din alternanța dintre momentele spectaculoase și perioadele în care descoperi lumea. Este potrivit dacă vrei să faci mai mult decât să urmărești o poveste.",
+    "seo_meta_description": "The Incredible Hulk | Jocuri PS2: Controlezi forța lui Hulk într-un joc de acțiune cu distrugeri spectaculoase și confruntări în mediul urban."
   },
   {
     "id": "ps2-new-wrc-3",
@@ -125,10 +141,12 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Raliuri inspirate de Campionatul Mondial WRC, cu trasee variate și condus concentrat pe controlul mașinii. Traseele de raliu cer adaptarea vitezei la suprafata si la succesiunea virajelor, nu numai acceleratie pe liniile drepte. Pentru a progresa, contează mai mult decât viteza maximă: controlul la frânare, intrarea în curbe și atenția la particularitățile circuitului fac diferența. Pentru pasionații de curse, merită comparate tipul de vehicul, traseele și accentul pus pe competiție sau pe explorare. Aceste detalii schimbă considerabil senzația de condus.",
+    "description": "Raliuri inspirate de Campionatul Mondial WRC, cu trasee variate și condus concentrat pe controlul mașinii.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Traseele de raliu cer adaptarea vitezei la suprafata si la succesiunea virajelor, nu numai acceleratie pe liniile drepte. Atmosfera curselor prinde viață când începi să observi particularitățile fiecărui circuit. Alegerea stilului potrivit poate transforma un tur modest într-unul reușit.",
+    "seo_meta_description": "WRC 3 | Jocuri PS2: Raliuri inspirate de Campionatul Mondial WRC, cu trasee variate și condus concentrat pe controlul mașinii."
   },
   {
     "id": "ps2-new-ratchet-clank",
@@ -137,12 +155,14 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Platformer de aventură SF cu Ratchet și robotul Clank, arme inventive, explorare și lupte contra inamicilor galactici. Ratchet si Clank folosesc dispozitive si arme neobisnuite, iar misiunile combina platformingul cu acțiunea SF. Farmecul unui platformer vine din alternanța dintre explorare și precizie, nu doar din viteza cu care ajungi la capătul unui nivel. Obstacolele dau ritm aventurii. Dacă îți plac jocurile în care înveți treptat regulile unui nivel și le aplici în secvențe tot mai solicitante, urmărește felul în care sunt construite provocările și libertatea de a experimenta.",
+    "description": "Platformer de aventură SF cu Ratchet și robotul Clank, arme inventive, explorare și lupte contra inamicilor galactici.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "Individually researched image",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Ratchet si Clank folosesc dispozitive si arme neobisnuite, iar misiunile combina platformingul cu acțiunea SF. Atractiv este contrastul dintre decorurile prietenoase și secvențele în care reflexele chiar sunt puse la lucru. Când găsești ritmul corect, avansarea devine foarte satisfăcătoare.",
+    "seo_meta_description": "Ratchet & Clank | Jocuri PS2: Platformer de aventură SF cu Ratchet și robotul Clank, arme inventive, explorare și lupte contra inamicilor galactici."
   },
   {
     "id": "ps2-new-road-trip-adventure",
@@ -151,13 +171,15 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Aventură auto neobișnuită în care explorezi o lume deschisă, întâlnești alte vehicule și participi la curse. Explorezi drumuri si localitati intr-o lume populata de vehicule, cu curse si interactiuni intre masini. În centru stau traseele, alegerea momentului pentru accelerare și modul în care reacționează vehiculul. Fiecare viraj poate schimba rezultatul unei curse sau al unei provocări. Pentru pasionații de curse, merită comparate tipul de vehicul, traseele și accentul pus pe competiție sau pe explorare. Aceste detalii schimbă considerabil senzația de condus.",
+    "description": "Aventură auto neobișnuită în care explorezi o lume deschisă, întâlnești alte vehicule și participi la curse.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "Libretro online box art",
     "image_source_page": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Explorezi drumuri si localitati intr-o lume populata de vehicule, cu curse si interactiuni intre masini. Farmecul vine din alternanța dintre momentele spectaculoase și perioadele în care descoperi lumea. Este potrivit dacă vrei să faci mai mult decât să urmărești o poveste.",
+    "seo_meta_description": "Road Trip Adventure | Jocuri PS2: Aventură auto neobișnuită în care explorezi o lume deschisă, întâlnești alte vehicule și participi la curse."
   },
   {
     "id": "ps2-new-fifa-street",
@@ -166,13 +188,15 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Fotbal stradal în stil arcade, cu driblinguri spectaculoase și meciuri rapide, diferite de fotbalul pe stadion. Driblingurile si executiile spectaculoase sunt mai importante decat tacticile rigide de pe un stadion clasic. Meciurile pun în joc pasele, poziționarea, recuperarea mingii și alegerea momentului potrivit pentru șut. Tactica poate fi la fel de importantă ca reacția la fazele rapide. Este relevant pentru cei care apreciază construirea fazelor de joc, schimbarea tacticilor și competițiile sportive, nu doar rezultatul afișat la finalul meciului. Când construiești o fază, contează spațiile dintre jucători, ritmul paselor și organizarea apărării. Experiența se bazează pe citirea adversarului și adaptarea jocului.",
+    "description": "Fotbal stradal în stil arcade, cu driblinguri spectaculoase și meciuri rapide, diferite de fotbalul pe stadion.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "Libretro online box art",
     "image_source_page": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Driblingurile si executiile spectaculoase sunt mai importante decat tacticile rigide de pe un stadion clasic. Când o fază se construiește din câteva pase bine alese, satisfacția depășește un șut norocos. Jocul răsplătește observația și schimbările de ritm.",
+    "seo_meta_description": "FIFA Street | Jocuri PS2: Fotbal stradal în stil arcade, cu driblinguri spectaculoase și meciuri rapide, diferite de fotbalul pe stadion."
   },
   {
     "id": "ps2-new-torino-2006",
@@ -181,13 +205,15 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Competiții inspirate de Jocurile Olimpice de iarnă de la Torino, cu discipline sportive pe zăpadă și gheață. Disciplinele de iarna testeaza abilitati diferite, de la precizia miscarilor pana la alegerea ritmului potrivit competitiei. Pe parcurs, povestea și momentele intense se completează cu explorarea decorurilor. Merită să urmărești cum fiecare confruntare sau obstacol schimbă ritmul aventurii. Potrivit pentru cei atrași de aventuri dinamice, personaje memorabile și schimbarea frecventă a situațiilor. Tema și decorurile sunt cele care dau jocului identitate. Experiența alternează descoperirea mediilor cu secvențe în care reacția și alegerea momentului de acțiune sunt importante. Accentul rămâne pe ceea ce faci efectiv în joc.",
+    "description": "Competiții inspirate de Jocurile Olimpice de iarnă de la Torino, cu discipline sportive pe zăpadă și gheață.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "Libretro online box art",
     "image_source_page": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Disciplinele de iarna testeaza abilitati diferite, de la precizia miscarilor pana la alegerea ritmului potrivit competitiei. Farmecul vine din alternanța dintre momentele spectaculoase și perioadele în care descoperi lumea. Este potrivit dacă vrei să faci mai mult decât să urmărești o poveste.",
+    "seo_meta_description": "Torino 2006 | Jocuri PS2: Competiții inspirate de Jocurile Olimpice de iarnă de la Torino, cu discipline sportive pe zăpadă și gheață."
   },
   {
     "id": "ps2-new-tony-hawk-s-project-8",
@@ -196,10 +222,12 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Skateboarding arcade cu trucuri, provocări și progres către echipa exclusivistă Project 8 a lui Tony Hawk. Progresul vine din executarea combinatiilor de trick-uri si indeplinirea provocarilor de skateboarding. Pentru a progresa, contează mai mult decât viteza maximă: controlul la frânare, intrarea în curbe și atenția la particularitățile circuitului fac diferența. Pentru pasionații de curse, merită comparate tipul de vehicul, traseele și accentul pus pe competiție sau pe explorare. Aceste detalii schimbă considerabil senzația de condus. Este o experiență pentru cei care preferă să își perfecționeze traseele și să compare stiluri de pilotaj. Cursa se construiește din decizii rapide, nu doar din accelerație.",
+    "description": "Skateboarding arcade cu trucuri, provocări și progres către echipa exclusivistă Project 8 a lui Tony Hawk.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Progresul vine din executarea combinatiilor de trick-uri si indeplinirea provocarilor de skateboarding. Într-o competiție strânsă, alegerea momentului pentru depășire dă mai multă emoție decât accelerația pe linie dreaptă. Controlul este partea care răsplătește exercițiul.",
+    "seo_meta_description": "Tony Hawk’s Project 8 | Jocuri PS2: Skateboarding arcade cu trucuri, provocări și progres către echipa exclusivistă Project 8 a lui Tony Hawk."
   },
   {
     "id": "ps2-new-the-simpsons-game",
@@ -208,12 +236,14 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Homer, Bart, Lisa și Marge intră într-o aventură parodică, plină de glume, puzzle-uri și abilități inspirate de serial. Homer, Bart, Lisa si Marge au abilitati diferite, iar misiunile parodiaza filme si jocuri populare. Experiența alternează descoperirea mediilor cu secvențe în care reacția și alegerea momentului de acțiune sunt importante. Accentul rămâne pe ceea ce faci efectiv în joc. Potrivit pentru cei atrași de aventuri dinamice, personaje memorabile și schimbarea frecventă a situațiilor. Tema și decorurile sunt cele care dau jocului identitate.",
+    "description": "Homer, Bart, Lisa și Marge intră într-o aventură parodică, plină de glume, puzzle-uri și abilități inspirate de serial.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "Libretro online box art",
     "image_source_page": "https://thumbnails.libretro.com/Sony%20-%20PlayStation%202/Named_Boxarts/",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Homer, Bart, Lisa si Marge au abilitati diferite, iar misiunile parodiaza filme si jocuri populare. Interesant este felul în care diferite situații îți cer altă abordare. O aventură dinamică își păstrează farmecul prin surprize, nu doar prin intensitate.",
+    "seo_meta_description": "The Simpsons Game | Jocuri PS2: Homer, Bart, Lisa și Marge intră într-o aventură parodică, plină de glume, puzzle-uri și abilități inspirate de serial."
   }
 ]

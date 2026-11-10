@@ -188,6 +188,7 @@ def product_html(cat,lang,product,ro_item,related):
     # Keep catalog descriptions as-is; no generated/fake technical specifications.
     # Unique metadata even where source descriptions are generic placeholders.
     meta=f'{product["title"]} | {catname}: {desc}'
+    if product.get('seo_meta_description'): meta=compact(product['seo_meta_description'])
     img=product_image(product.get('image'))
     product_schema={'@type':'Product','name':product['title'],'sku':str(ro_item['id']),'url':SITE+'/'+path,'description':desc,
                     'image':[img],'category':catname}
@@ -202,8 +203,17 @@ def product_html(cat,lang,product,ro_item,related):
     whatsapp='https://wa.me/37378890580?text='+quote(wmsg,safe='')
     instagram='https://www.instagram.com/PlaySpotStore/'
     from_catalog=t['new'] if product.get('new_arrival')=='yes' else 'PlaySpotStore'
+    # V42_EDITORIAL_PRODUCT: editorial commentary, not a verified customer review.
+    impression=compact(product.get('seo_editorial_review'))
+    heading=('Impresie editorială de gameplay' if lang=='ro' else 'Редакционные впечатления об игре')
+    if cat in ('accessories','consoles'):
+        heading=('La ce să fii atent' if lang=='ro' else 'На что обратить внимание')
+    review_html=(f'<section class="p42-editorial" aria-label="{esc(heading)}">'
+                 f'<h2>{esc(heading)}</h2><p>{esc(impression)}</p></section>') if impression else ''
     page=head(title,meta,path,alt,lang,img,schema,ogtype="product")
     page=page.replace('</head>', '<link rel="stylesheet" href="/playspot-v40.css?v=20261110-v40">\n</head>', 1)
+    if impression:
+        page=page.replace('</head>', '<link rel="stylesheet" href="/playspot-v42.css?v=20261110-v42">\n</head>', 1)
     return f'''{page}<body>{nav(cat,lang)}
 <main class="seo-wrap">{crumb(cat,lang,product['title'])}
 <article class="seo-detail"><div class="seo-detail-image"><img src="{esc(img)}" alt="{esc(product['title'])}" width="550" height="650" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='/media/play-spot-logo-v4.webp'"></div>
@@ -213,6 +223,7 @@ def product_html(cat,lang,product,ro_item,related):
 <div><dt>{"Платформа / категория" if lang == "ru" else "Platforma / categoria"}</dt><dd>{esc(catname)}</dd></div>
 <div><dt>{"Код в каталоге" if lang == "ru" else "Cod in catalog"}</dt><dd>{esc(str(ro_item['id']))}</dd></div>
 </dl>
+{review_html}
 <div class="seo-pricebox"><span>{esc(t['price'])}</span><strong>{esc(price_text)}</strong>
 <p>{esc(t['confirm'])}</p></div>
 <div class="seo-ctas"><a class="seo-cta-primary" href="{esc(whatsapp)}" target="_blank" rel="noopener noreferrer">{esc(t['whatsapp'])}</a>

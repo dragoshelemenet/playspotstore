@@ -1,0 +1,28 @@
+/* V42: calm editorial gameplay notes. Real product descriptions, not customer ratings. */
+.seo-detail-info .p42-editorial{
+  margin:15px 0 18px;
+  padding:15px 18px;
+  border-left:3px solid rgba(83,245,177,.73);
+  border-radius:0 11px 11px 0;
+  background:linear-gradient(112deg,rgba(53,181,140,.105),rgba(36,88,110,.055));
+  color:#ddeee8;
+}
+.seo-detail-info .p42-editorial h2{
+  margin:0 0 9px!important;
+  color:#9af4c7!important;
+  font-size:clamp(14px,1.15vw,16px)!important;
+  line-height:1.4;
+  font-weight:750;
+  letter-spacing:0;
+}
+.seo-detail-info .p42-editorial p{
+  margin:0;
+  font-size:clamp(14px,1.1vw,16px);
+  line-height:1.72;
+  color:#d9e9e5;
+  text-wrap:pretty;
+}
+@media(max-width:600px){
+ .seo-detail-info .p42-editorial{padding:13px 15px;margin:13px 0 17px;}
+ .seo-detail-info .p42-editorial p{font-size:14px;line-height:1.65;}
+}

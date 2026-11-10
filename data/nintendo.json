@@ -6,12 +6,14 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Aventură atmosferică de groază cu doi copii care încearcă să scape dintr-o lume bizară, plină de pericole și puzzle-uri. Low si Alone traverseaza lumea Nowhere, iar puzzle-urile si situatiile periculoase pun accent pe observarea decorului si colaborare. Tensiunea vine din explorarea unor spații nesigure, din sunete și din nesiguranța legată de ce urmează. Atenția la indicii și la traseele de retragere poate fi esențială. Este o alegere pentru cei atrași de mister, narațiuni tensionate și explorarea atentă a unor locuri neobișnuite. Atmosfera este o parte centrală a experienței.",
+    "description": "Aventură atmosferică de groază cu doi copii care încearcă să scape dintr-o lume bizară, plină de pericole și puzzle-uri.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "Individually researched image",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Low si Alone traverseaza lumea Nowhere, iar puzzle-urile si situatiile periculoase pun accent pe observarea decorului si colaborare. Frica vine mai ales din lucrurile pe care jocul nu le explică imediat. Decorurile enorme, personajele fragile și puzzle-urile tensionate creează o atmosferă mai apăsătoare decât ar sugera un simplu platformer.",
+    "seo_meta_description": "Little Nightmares III | Jocuri Nintendo: Aventură atmosferică de groază cu doi copii care încearcă să scape dintr-o lume bizară, plină de pericole și"
   },
   {
     "id": "nintendo-new-sonic-racing-crossworlds",
@@ -20,12 +22,14 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Curse arcade cu Sonic și prietenii săi, trasee spectaculoase și competiții de viteză în universul Sega. Cursele reunesc personaje din seria Sonic, obiecte pentru atac sau aparare si circuite unde schimbarile de traseu aduc situatii neasteptate. Este o experiență pentru cei care preferă să își perfecționeze traseele și să compare stiluri de pilotaj. Cursa se construiește din decizii rapide, nu doar din accelerație. Pentru pasionații de curse, merită comparate tipul de vehicul, traseele și accentul pus pe competiție sau pe explorare. Aceste detalii schimbă considerabil senzația de condus.",
+    "description": "Curse arcade cu Sonic și prietenii săi, trasee spectaculoase și competiții de viteză în universul Sega.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "Individually researched image",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Cursele reunesc personaje din seria Sonic, obiecte pentru atac sau aparare si circuite unde schimbarile de traseu aduc situatii neasteptate. Cursele au farmec când un traseu familiar se schimbă brusc și trebuie să reacționezi din mers. Obiectele și răsturnările de situație fac experiența mai jucăușă decât o simulare auto tradițională.",
+    "seo_meta_description": "Sonic Racing: CrossWorlds | Jocuri Nintendo: Curse arcade cu Sonic și prietenii săi, trasee spectaculoase și competiții de viteză în universul Sega."
   },
   {
     "id": "nintendo-new-hyrule-warriors-age-of-imprisonment",
@@ -34,10 +38,12 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Acțiune de tip musou în universul Zelda, cu bătălii contra grupurilor mari de inamici și eroi din Hyrule. Universul Hyrule este prezentat prin confruntari la scara mare, in care trebuie sa controlezi campul de lupta si sa schimbi ritmul atacurilor. Pe parcurs, povestea și momentele intense se completează cu explorarea decorurilor. Merită să urmărești cum fiecare confruntare sau obstacol schimbă ritmul aventurii. Potrivit pentru cei atrași de aventuri dinamice, personaje memorabile și schimbarea frecventă a situațiilor. Tema și decorurile sunt cele care dau jocului identitate.",
+    "description": "Acțiune de tip musou în universul Zelda, cu bătălii contra grupurilor mari de inamici și eroi din Hyrule.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Universul Hyrule este prezentat prin confruntari la scara mare, in care trebuie sa controlezi campul de lupta si sa schimbi ritmul atacurilor. Spectacolul apare când o confruntare aparent imposibilă se transformă într-un șir de atacuri care eliberează câmpul de luptă. Ritmul musou pune accent pe putere și amploare, nu pe luptele lente, unu la unu.",
+    "seo_meta_description": "Hyrule Warriors: Age of Imprisonment | Jocuri Nintendo: Acțiune de tip musou în universul Zelda, cu bătălii contra grupurilor mari de inamici și eroi din"
   },
   {
     "id": "nintendo-new-street-fighter-6",
@@ -46,13 +52,15 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Fighting game cu personaje clasice și noi luptători, combo-uri și confruntări bazate pe timing și strategie. Sistemele de control si mecanicile Drive ofera modalitati diferite de abordare a duelurilor, de la presiune ofensiva la aparare calculata. Acțiunea se decide prin timing, poziționare și înțelegerea mișcărilor personajelor. Nu este suficient să ataci continuu: blocajele și reacțiile rapide contează mult. Dacă preferi competițiile în care înveți stiluri diferite de luptă și reacționezi la tactica rivalului, urmărește personajele și ritmul duelurilor. Fiecare luptă devine un exercițiu de anticipare. Observarea adversarului, alegerea tehnicilor și controlul ritmului sunt mai importante decât apăsarea repetată a butoanelor.",
+    "description": "Fighting game cu personaje clasice și noi luptători, combo-uri și confruntări bazate pe timing și strategie.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "Steam official cover artwork",
     "image_source_page": "https://store.steampowered.com/app/2154900/",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Sistemele de control si mecanicile Drive ofera modalitati diferite de abordare a duelurilor, de la presiune ofensiva la aparare calculata. Partea cea mai interesantă este duelul dintre risc și răbdare: o decizie bună cu Drive Gauge poate întoarce runda, iar o greșeală se plătește imediat. World Tour și Battle Hub oferă și pauze de la competiția directă.",
+    "seo_meta_description": "Street Fighter 6 | Jocuri Nintendo: Fighting game cu personaje clasice și noi luptători, combo-uri și confruntări bazate pe timing și strategie."
   },
   {
     "id": "nintendo-new-two-point-museum",
@@ -61,12 +69,14 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Simulator amuzant de administrare a unui muzeu, cu expoziții, vizitatori și organizarea colecțiilor. Construiesti sali de expozitie, organizezi expeditiile pentru noi exponate si urmaresti nevoile vizitatorilor si ale personalului muzeului. În loc să urmărești doar reflexele rapide, trebuie să organizezi activitățile și să vezi consecințele deciziilor. Este un tip de joc care răsplătește atenția la detalii. Acest tip de joc atrage persoanele care preferă procedurile, gestionarea și progresul măsurat prin sarcini rezolvate. Subiectul simulatorului contează mult pentru experiența oferită. Satisfacția vine din planificarea acțiunilor și din înțelegerea regulilor sistemului pe care îl controlezi. Rezultatele bune apar prin observație, ajustări și organizare atentă.",
+    "description": "Simulator amuzant de administrare a unui muzeu, cu expoziții, vizitatori și organizarea colecțiilor.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "Individually researched image",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Construiesti sali de expozitie, organizezi expeditiile pentru noi exponate si urmaresti nevoile vizitatorilor si ale personalului muzeului. Cea mai satisfăcătoare parte este să vezi cum un muzeu haotic începe să funcționeze după câteva decizii inspirate. Umorul ușor absurd face gestionarea expozițiilor mai puțin rigidă decât într-un simulator serios.",
+    "seo_meta_description": "Two Point Museum | Jocuri Nintendo: Simulator amuzant de administrare a unui muzeu, cu expoziții, vizitatori și organizarea colecțiilor."
   },
   {
     "id": "nintendo-new-raidou-remastered-the-mystery-of-the-soulless-army",
@@ -75,12 +85,14 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "RPG de acțiune cu detectivul supranatural Raidou Kuzunoha, în Japonia epocii Taishō, într-o ediție remasterizată. Povestea combina investigatiile din Tokyo cu confruntari supranaturale si demoni care pot participa la rezolvarea unor situatii. Explorarea, dialogurile și confruntările oferă ritm unei aventuri în care merită să fii atent la lumea din jur. Dezvoltarea personajului și modul de abordare a misiunilor pot influența experiența. Dacă alegi un RPG pentru univers, personaje și modul de progres, merită să urmărești în special tema aventurii și libertatea de a explora, nu doar luptele.",
+    "description": "RPG de acțiune cu detectivul supranatural Raidou Kuzunoha, în Japonia epocii Taishō, într-o ediție remasterizată.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "Individually researched image",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Povestea combina investigatiile din Tokyo cu confruntari supranaturale si demoni care pot participa la rezolvarea unor situatii. Este genul de aventură în care ocolurile contează. O conversație, o încăpere ascunsă sau un personaj neașteptat pot rămâne în minte mai mult decât o luptă.",
+    "seo_meta_description": "RAIDOU Remastered: The Mystery of the Soulless Army | Jocuri Nintendo: RPG de acțiune cu detectivul supranatural Raidou Kuzunoha, în Japonia epocii Taishō"
   },
   {
     "id": "nintendo-new-super-mario-maker-2",
@@ -89,12 +101,14 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Creează și joacă niveluri Super Mario cu instrumente de construcție, obstacole și idei ale comunității. Modul Poveste include peste 100 de niveluri create de Nintendo, iar Course World permite explorarea creatiilor comunitatii cu abonament Nintendo Switch Online. Nivelurile combină deplasarea cu momente în care trebuie să calculezi sărituri, să urmărești pericolele din jur și să înțelegi cum funcționează fiecare mecanică. Dacă îți plac jocurile în care înveți treptat regulile unui nivel și le aplici în secvențe tot mai solicitante, urmărește felul în care sunt construite provocările și libertatea de a experimenta.",
+    "description": "Creează și joacă niveluri Super Mario cu instrumente de construcție, obstacole și idei ale comunității.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "Individually researched image",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Modul Poveste include peste 100 de niveluri create de Nintendo, iar Course World permite explorarea creatiilor comunitatii cu abonament Nintendo Switch Online. Farmecul vine din momentul în care o idee simplă se transformă într-un nivel surprinzător de greu sau amuzant. Creația și încercarea nivelurilor altor jucători oferă două moduri foarte diferite de a te bucura de Mario.",
+    "seo_meta_description": "Super Mario Maker 2 | Jocuri Nintendo: Creează și joacă niveluri Super Mario cu instrumente de construcție, obstacole și idei ale comunității."
   },
   {
     "id": "nintendo-new-kirby-star-allies",
@@ -103,12 +117,14 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Platformer colorat cu Kirby, care poate recruta aliați și combina abilitățile pentru a depăși nivelurile. Kirby poate transforma adversarii in prieteni si poate combina abilitatile lor pentru a rezolva obstacole si a avansa prin niveluri. Nivelurile combină deplasarea cu momente în care trebuie să calculezi sărituri, să urmărești pericolele din jur și să înțelegi cum funcționează fiecare mecanică. Dacă îți plac jocurile în care înveți treptat regulile unui nivel și le aplici în secvențe tot mai solicitante, urmărește felul în care sunt construite provocările și libertatea de a experimenta.",
+    "description": "Platformer colorat cu Kirby, care poate recruta aliați și combina abilitățile pentru a depăși nivelurile.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "Individually researched image",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Kirby poate transforma adversarii in prieteni si poate combina abilitatile lor pentru a rezolva obstacole si a avansa prin niveluri. Tonul este relaxat și colorat, dar combinațiile dintre puterile aliaților dau nivelurilor mai multă varietate decât sugerează aspectul simpatic. E genul de aventură care pune prietenia și creativitatea înaintea competiției.",
+    "seo_meta_description": "Kirby Star Allies | Jocuri Nintendo: Platformer colorat cu Kirby, care poate recruta aliați și combina abilitățile pentru a depăși nivelurile."
   },
   {
     "id": "nintendo-new-cronos-the-new-dawn",
@@ -117,11 +133,13 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Horror SF de supraviețuire într-o lume distorsionată de catastrofă, cu explorare și confruntări tensionate. Misterul calatoriei si supravietuirea se combina intr-un univers SF tulburator, in care explorarea poate fi la fel de tensionata ca lupta. Suspansul se construiește prin ritm, medii neliniștitoare și descoperirea treptată a poveștii. În astfel de experiențe, curiozitatea și prudența se află permanent în conflict. Este o alegere pentru cei atrași de mister, narațiuni tensionate și explorarea atentă a unor locuri neobișnuite. Atmosfera este o parte centrală a experienței.",
+    "description": "Horror SF de supraviețuire într-o lume distorsionată de catastrofă, cu explorare și confruntări tensionate.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
     "image_source": "Individually researched image",
-    "seo_copy_version": "v41"
+    "seo_copy_version": "v42",
+    "seo_editorial_review": "Misterul calatoriei si supravietuirea se combina intr-un univers SF tulburator, in care explorarea poate fi la fel de tensionata ca lupta. Misterul și senzația că resursele pot deveni insuficiente sunt mai importante decât un șir neîntrerupt de împușcături. Este un tip de horror SF care funcționează cel mai bine când explorezi cu prudență.",
+    "seo_meta_description": "Cronos: The New Dawn | Jocuri Nintendo: Horror SF de supraviețuire într-o lume distorsionată de catastrofă, cu explorare și confruntări tensionate."
   }
 ]
