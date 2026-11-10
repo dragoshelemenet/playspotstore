@@ -6,11 +6,12 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "RPG open-world în Night City, cu mercenarul V, augmentări cibernetice și alegeri într-un viitor distopic.",
+    "description": "RPG open-world în Night City, cu mercenarul V, augmentări cibernetice și alegeri într-un viitor distopic. Night City este impartit in districte cu propriul caracter, iar construirea personajului V schimba stilul de confruntare si explorare. Experiența nu se rezumă la o succesiune de lupte: misiunile, explorarea și progresul eroului se completează. Merită să urmărești atât povestea, cât și mecanicile de joc. Dacă alegi un RPG pentru univers, personaje și modul de progres, merită să urmărești în special tema aventurii și libertatea de a explora, nu doar luptele.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
-    "image_source": "Individually researched image"
+    "image_source": "Individually researched image",
+    "seo_copy_version": "v41"
   },
   {
     "id": "xbox-new-mortal-kombat-1",
@@ -19,11 +20,12 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "Fighting game brutal cu universul Mortal Kombat reinventat, dueluri spectaculoase și personaje emblematice.",
+    "description": "Fighting game brutal cu universul Mortal Kombat reinventat, dueluri spectaculoase și personaje emblematice. Universul repornit al lui Liu Kang aduce eroi clasici intr-o alta cronologie, cu dueluri si sisteme de asistenta. Duelurile cer controlul distanței, atenție la atacurile adversarului și alegerea momentelor pentru apărare sau contraatac. Exersarea combinațiilor schimbă felul în care se desfășoară o confruntare. Dacă preferi competițiile în care înveți stiluri diferite de luptă și reacționezi la tactica rivalului, urmărește personajele și ritmul duelurilor. Acțiunea se decide prin timing, poziționare și înțelegerea mișcărilor personajelor. Nu este suficient să ataci continuu: blocajele și reacțiile rapide contează mult.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
-    "image_source": "Individually researched image"
+    "image_source": "Individually researched image",
+    "seo_copy_version": "v41"
   },
   {
     "id": "xbox-new-dragon-s-dogma-2",
@@ -32,10 +34,11 @@
     "price": "Concretizează prin contact",
     "promo": "no",
     "new_arrival": "yes",
-    "description": "RPG fantasy în care eroul Arisen explorează o lume cu monștri și călătorește alături de însoțitori numiți Pawns.",
+    "description": "RPG fantasy în care eroul Arisen explorează o lume cu monștri și călătorește alături de însoțitori numiți Pawns. Sistemul Pawn aduce insotitori controlati de AI, utili in calatorie si in luptele cu creaturi mult mai mari decat eroul. Un RPG combină descoperirea locurilor și a poveștilor cu alegeri despre cum abordezi obstacolele. Personajele, conflictele și sistemele de luptă formează împreună nucleul aventurii. Dacă alegi un RPG pentru univers, personaje și modul de progres, merită să urmărești în special tema aventurii și libertatea de a explora, nu doar luptele.",
     "link": "https://www.instagram.com/PlaySpotStore",
     "availability": "confirm_by_contact",
     "fallback_image": "media/play-spot-logo-v4.webp",
-    "image_source": "Individually researched image"
+    "image_source": "Individually researched image",
+    "seo_copy_version": "v41"
   }
 ]
