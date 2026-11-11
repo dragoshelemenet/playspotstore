@@ -452,6 +452,9 @@ def generate(root,check=False):
     # P48_STATIC_SEO_MENU_ONLY: keep only the HTML SEO navigation after rebuild.
     addon48 = root / 'playspot-v48' / 'cleanup.py'
     if addon48.is_file(): subprocess.run([sys.executable, str(addon48), '--root', str(root)], check=True)
+    # P50_SEO_QUALITY_HOOK: retain human-readable metadata and image alt after catalog regeneration.
+    addon50 = root / 'playspot-v50' / 'quality.py'
+    if addon50.is_file(): subprocess.run([sys.executable, '-B', str(addon50), '--root', str(root)], check=True)
     print(f'✅ Generated {total*2} product pages, {len(CATEGORIES)*2} category pages, 2 homepages; sitemap URLs: {len(urls)}')
     print('✅ Fixed canonical domain, crawlable category links, RO/RU hreflang, Product JSON-LD, robots and sitemap')
     print('✅ All prices and product details are read from data/*.json; no fake review, stock or rating')
