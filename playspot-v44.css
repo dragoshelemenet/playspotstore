@@ -1,0 +1,23 @@
+/* V44: restrained, responsive Moldova delivery text. No overlays on the hero. */
+.p44-fulfilment{margin:22px 0;padding:17px 20px;border:1px solid rgba(125,135,160,.28);border-radius:15px;background:rgba(125,135,160,.055);color:inherit}
+.p44-fulfilment p{line-height:1.7;margin:0 0 10px;font-size:14px}
+.p44-fulfilment p:last-child{margin-bottom:0}
+.p44-fulfilment a{font-size:14px;color:inherit;text-decoration:underline;text-underline-offset:3px}
+.p44-fulfilment a:hover{text-decoration-thickness:2px}
+.p44-fulfilment h2{font-size:clamp(18px,2.2vw,23px);line-height:1.28;margin:0 0 13px;font-weight:700}
+.p44-home{max-width:1150px;margin:32px auto;padding:24px 26px}
+.p44-home a{display:inline-block;margin-top:5px}
+.p44-category{margin:16px auto 28px;max-width:1120px}
+.p44-product{margin:14px 0 18px;padding:14px 16px}
+.p44-product p{font-size:13px}
+@media(max-width:640px){.p44-fulfilment{padding:14px 15px;margin:16px 0}.p44-home{margin:23px 12px}.p44-fulfilment p{font-size:13px}}
+
+/* One useful canonical bilingual fulfilment guide, not city-specific duplicate pages. */
+.p44-guide{max-width:960px;margin:0 auto;padding:32px 22px 70px;font-family:inherit;line-height:1.72}
+.p44-guide-nav{font-size:14px;margin-bottom:24px}
+.p44-guide h1{font-size:clamp(27px,4vw,43px);line-height:1.15;margin:0 0 18px}
+.p44-guide h2{font-size:clamp(19px,2.5vw,24px);margin:30px 0 7px}
+.p44-guide .p44-lead{font-size:17px;line-height:1.7;margin:0 0 20px}
+.p44-guide section{border-top:1px solid rgba(125,135,160,.2);padding-top:4px}
+.p44-guide .p44-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 20px;padding-left:20px}
+.p44-guide a{text-underline-offset:3px;color:inherit}

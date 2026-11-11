@@ -12,7 +12,7 @@ CATS=('ps2','ps4','ps5','nintendo','xbox','consoles','accessories')
 
 def run(root):
     count=sum(len(json.loads((root/'data'/f'{cat}.json').read_text(encoding='utf-8'))) for cat in CATS)
-    expected=count*2+len(CATS)*2+2
+    expected=count*2+len(CATS)*2+4  # P44: two original local-service guide URLs
     urls=ET.parse(root/'sitemap.xml').findall('.//s:url',NS)
     assert len(urls)==expected,f'Expected {expected} URLs, found {len(urls)}'
     got=set()

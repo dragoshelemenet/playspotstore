@@ -63,12 +63,17 @@ def build_page(root,urls,lang):
         raise ValueError('Could not find language homepage in XML')
     records={cat:[] for cat in CATS}
     categories={cat:None for cat in CATS}
+    # P44_GUIDE_SITEMAP: allow one useful service page per language.
+    guide = ('ru/videoigry-kishinev-moldova.html' if ru else 'jocuri-video-chisinau-moldova.html')
+    guide_link = None
     count=1
     for path in urls:
         is_russian = (path == 'ru.html' or path.startswith('ru/'))
         if is_russian != ru:
             continue
         if path==home: continue
+        if path==guide:
+            guide_link=path;count+=1;continue
         if path.startswith(pref+'categorii/'):
             cat=path.removeprefix(pref+'categorii/').removesuffix('.html')
             if cat not in categories: raise ValueError('Unknown category: '+cat)
@@ -108,6 +113,8 @@ def build_page(root,urls,lang):
 <header><h2 id="cat-title-{esc(cat)}"><a href="/{esc(categories[cat])}">{esc(NAMES[lang][cat])}</a></h2><span>{len(records[cat])} {label_product}</span></header>
 <ul class="link-grid">{items}</ul></section>''')
 
+    guide_heading=('Как купить игры в Молдове' if ru else 'Cum cumperi jocuri în Moldova')
+    guide_html=(f'<section class="site-group"><header><h2><a href="/{guide_link}">{esc(guide_heading)}</a></h2></header></section>' if guide_link else '')
     page=f'''<!doctype html>
 <html lang="{lang}">
 <head>
@@ -127,6 +134,7 @@ def build_page(root,urls,lang):
 <div class="site-meta"><span><strong>{total_urls}</strong> {esc(labels_count)}</span><span><strong>{total_prod}</strong> {label_product}</span><a href="/sitemap.xml">{label_xml}</a></div>
 <h2>{label_categories}</h2><nav class="toc" aria-label="{label_categories}">{toc}</nav>
 <section class="site-group" id="site-home"><header><h2><a href="{home_url}">{label_home} · PlaySpotStore</a></h2></header></section>
+{guide_html}
 {''.join(sections)}
 </main><footer class="site-foot"><a href="{home_url}">PlaySpotStore</a><a href="/sitemap.xml">sitemap.xml</a></footer>
 </body></html>'''
