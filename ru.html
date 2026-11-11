@@ -167,7 +167,6 @@
     }
 
 
-
     /* Header & Navigation */
     header {
       width: 100%;
@@ -1576,7 +1575,6 @@
 <!-- P44 MOLDOVA FULFILMENT END -->
 
 
-
 <!-- PlaySpot V3: verified-stock request, user photographs, and their VR2 footage -->
 <section class="p3-collection" id="produse-noi"><div>
   <div class="p3-collection-heading"><div><span class="p3-label">Уточняйте цену и наличие</span><h2>Новые поступления</h2><p>Реальные фотографии товаров. Уточняйте наличие и состояние перед заказом.</p></div></div>
@@ -1751,21 +1749,6 @@
   <div class="featured-products" id="new-products"></div>
 </section>
 
-<!-- PS4/PS5 Modals -->
-<div id="modal-ps4" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-ps4-title">
-  <div class="modal-content">
-    <button class="close" aria-label="Close modal">&times;</button>
-    <h2 id="modal-ps4-title">Игры PS4</h2>
-    <div class="modal-products" id="modal-products-ps4"></div>
-  </div>
-</div>
-<div id="modal-ps5" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-ps5-title">
-  <div class="modal-content">
-    <button class="close" aria-label="Close modal">&times;</button>
-    <h2 id="modal-ps5-title">Игры PS5</h2>
-    <div class="modal-products" id="modal-products-ps5"></div>
-  </div>
-</div>
 
 <!-- Product Detail Modal -->
 <div id="product-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="product-modal-title">
@@ -1775,21 +1758,6 @@
   </div>
 </div>
 
-<!-- Console & Accessories Modals -->
-<div id="modal-console" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-console-title">
-  <div class="modal-content">
-    <button class="close" aria-label="Close modal">&times;</button>
-    <h2 id="modal-console-title">Консоли</h2>
-    <div class="modal-products" id="modal-products-console"></div>
-  </div>
-</div>
-<div id="modal-accessories" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-accessories-title">
-  <div class="modal-content">
-    <button class="close" aria-label="Close modal">&times;</button>
-    <h2 id="modal-accessories-title">Аксессуары</h2>
-    <div class="modal-products" id="modal-products-accessories"></div>
-  </div>
-</div>
 
 <!-- Example "Recent" sections -->
 <section class="console-section" id="console-section">
@@ -1978,78 +1946,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-/* ========== DYNAMIC CATEGORIES (OPTIONAL) ========== */
-fetch("data/categories_ru.json")
-  .then(r => r.ok ? r.json() : [])
-  .then(cats => {
-    cats.forEach(cat => {
-      if (mainMenu.querySelector('[data-category-id="' + cat.id + '"], [href="/categorii/' + (cat.id === 'console' ? 'consoles' : cat.id) + '.html"]')) return;
-      const li = document.createElement("li");
-      const a = document.createElement("a");
-      a.textContent = cat.name;
-      // This ID might be "console", "consoles", etc.
-      a.setAttribute("data-category-id", cat.id);
-      a.href = "#";
-      li.appendChild(a);
-      mainMenu.appendChild(li);
-    });
-    addMenuEvents();
-  })
-  .catch(err => console.error(err));
-
-function addMenuEvents() {
-  document.querySelectorAll("#main-menu a[data-category-id]").forEach(lnk => {
-    lnk.addEventListener("click", e => {
-      e.preventDefault();
-      const cid = lnk.getAttribute("data-category-id");
-      openCategoryModal(cid);
-      mainMenu.classList.remove("active");
-      hamburger.classList.remove("active");
-      hamburger.setAttribute('aria-expanded', 'false');
-    });
-  });
-}
-
-/* ========== openCategoryModal ========== */
-function openCategoryModal(id) {
-  // Close any open modals before opening a new one
-  // Commented out to allow multiple modals (category + product)
-  // closeAllModals();
-
-  switch (id) {
-    case "ps4":
-      fetchProducts("ps4", "modal-products-ps4");
-      showModal("modal-ps4");
-      break;
-    case "ps5":
-      fetchProducts("ps5", "modal-products-ps5");
-      showModal("modal-ps5");
-      break;
-    case "console":
-      fetchProducts("console", "modal-products-console");
-      showModal("modal-console");
-      break;
-    case "accessories":
-      fetchProducts("accessories", "modal-products-accessories");
-      showModal("modal-accessories");
-      break;
-    default:
-      console.warn(`Unknown category ID: ${id}`);
-      break;
-  }
-}
-
-function showModal(modalID) {
-  const mod = document.getElementById(modalID);
-  if (mod) {
-    mod.classList.add("active");
-    mod.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = "hidden";
-    // Focus trapping
-    trapFocus(mod);
-  }
-}
-
 function closeAllModals() {
   document.querySelectorAll(".modal.active").forEach(modal => {
     modal.classList.remove("active");
@@ -2077,84 +1973,6 @@ window.addEventListener("click", e => {
     document.body.style.overflow = "auto";
   }
 });
-
-/* ========== Focus Trap for Modals ========== */
-function trapFocus(modal) {
-  const focusableElements = modal.querySelectorAll('a[href], button:not([disabled]), textarea, input, select, [tabindex="0"]');
-  if (focusableElements.length === 0) return;
-
-  const firstElement = focusableElements[0];
-  const lastElement = focusableElements[focusableElements.length -1];
-
-  function handleFocus(e) {
-    const isTabPressed = (e.key === 'Tab' || e.keyCode === 9);
-    if (!isTabPressed) return;
-
-    if (e.shiftKey) { // shift + tab
-      if (document.activeElement === firstElement) {
-        e.preventDefault();
-        lastElement.focus();
-      }
-    } else { // tab
-      if (document.activeElement === lastElement) {
-        e.preventDefault();
-        firstElement.focus();
-      }
-    }
-  }
-
-  modal.addEventListener('keydown', handleFocus);
-
-  firstElement.focus();
-
-  // Remove event listener when modal is closed
-  const observer = new MutationObserver(() => {
-    if (!modal.classList.contains("active")) {
-      modal.removeEventListener('keydown', handleFocus);
-      observer.disconnect();
-    }
-  });
-
-  observer.observe(modal, { attributes: true, attributeFilter: ['class'] });
-}
-
-/* ========== fetchProducts ========== */
-function fetchProducts(cat, containerID) {
-  let file = "";
-  switch (cat) {
-    case "ps4":         file = "data/ps4_ru.json";         break;
-    case "ps5":         file = "data/ps5_ru.json";         break;
-    case "console":     file = "data/consoles_ru.json";    break;
-    case "accessories": file = "data/accessories_ru.json"; break;
-    default: return;
-  }
-
-  fetch(file)
-    .then(r => r.ok ? r.json() : [])
-    .then(data => {
-      const container = document.getElementById(containerID);
-      if (!container) return;
-      container.innerHTML = "Загрузка...";
-
-      // Simulate small delay to show "Loading..."
-      setTimeout(() => {
-        container.innerHTML = "";
-        // Show up to 60 items in reverse order if you want newest first
-        data.slice(-60).reverse().forEach(item => {
-          container.appendChild(createProductCard(item, cat));
-        });
-        initLazyLoad();
-      }, 400);
-    })
-    .catch(err => {
-      console.error(`Error fetching ${cat} products:`, err);
-      const container = document.getElementById(containerID);
-      if (container) {
-        container.innerHTML = "<p>Ошибка при загрузке продуктов.</p>";
-      }
-    });
-}
-
 
 function p29ProductHref(game,cat) {
   const map=window.p29ProductSlugs || {};
