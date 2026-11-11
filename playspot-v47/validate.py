@@ -9,6 +9,11 @@ NS={'s':'http://www.sitemaps.org/schemas/sitemap/0.9','x':'http://www.w3.org/199
 CATS=('ps2','ps4','ps5','nintendo','xbox','consoles','accessories')
 
 def validate(root:Path):
+    # P49_VALIDATOR_COMPAT: use the current canonical slug validator after V49.
+    if (root/'playspot-v49/slug-index.json').is_file():
+        import runpy
+        runpy.run_path(str(root/'playspot-v49/validate.py'))['validate'](root)
+        return
     import restore
     root=root.resolve();mapping=restore.readmap(root)
     gen=(root/'playspot-v29/generate.py').read_text(encoding='utf-8')

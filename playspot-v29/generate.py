@@ -57,9 +57,31 @@ def slugify(value):
     raw=unicodedata.normalize('NFKD',str(value)).encode('ascii','ignore').decode('ascii').lower()
     return re.sub(r'-+','-',re.sub(r'[^a-z0-9]+','-',raw)).strip('-') or 'produs'
 def safe_id(value): return re.sub(r'[^a-z0-9]+','-',str(value).lower()).strip('-') or 'item'
+# P49_CLEAN_PRODUCT_URL: one stable human-readable slug per product ID.
+# The mapping survives future catalog regenerations and product title changes.
+from functools import lru_cache as _p49_lru_cache
+@_p49_lru_cache(maxsize=1)
+def _p49_saved_slugs():
+    root=Path(__file__).resolve().parent.parent
+    path=root/'playspot-v49'/'slug-index.json'
+    if not path.is_file():raise FileNotFoundError('Missing V49 slug index: '+str(path))
+    return json.loads(path.read_text(encoding='utf-8'))
+
+def p49_slug(cat,item):
+    mapping=_p49_saved_slugs()[cat]
+    pid=str(item['id'])
+    if pid in mapping:return mapping[pid]
+    # Safe fallback for future NEW inventory. Do not rename existing pages.
+    import hashlib as _hashlib
+    base=slugify(item['title'])
+    candidate=base+'.html'
+    if candidate in mapping.values():
+        candidate=base+'-'+_hashlib.sha1(pid.encode('utf-8')).hexdigest()[:7]+'.html'
+    return candidate
+
 def page_path(cat, item, lang):
     # Use title from Romanian catalog for stable bilingual slugs.
-    productslug=f"{slugify(item['title'])}-{safe_id(item['id'])}.html"
+    productslug=p49_slug(cat,item)
     prefix='ru/' if lang=='ru' else ''
     folder='console' if cat=='consoles' else cat
     return f"{prefix}produse/{folder}/{productslug}"
@@ -346,7 +368,7 @@ def generate(root,check=False):
         assert len(set(str(x['id']) for x in ro))==len(ro),f'Duplicate IDs in {cat}'
         assert all(x.get('title') for x in ro),f'Missing titles in {cat}'
         itemsru=[ruid[str(p['id'])] for p in ro]
-        slugmap['console' if cat=='consoles' else cat]={str(item['id']):f"{slugify(item['title'])}-{safe_id(item['id'])}.html" for item in ro}
+        slugmap['console' if cat=='consoles' else cat]={str(item['id']):p49_slug(cat,item) for item in ro}
         if len(set(slugmap['console' if cat=='consoles' else cat].values()))!=len(ro):raise ValueError(f'Colliding slugs in {cat}')
         collections[cat]=(ro,itemsru)
         total+=len(ro)
