@@ -218,7 +218,7 @@ def product_html(cat,lang,product,ro_item,related):
 <main class="seo-wrap">{crumb(cat,lang,product['title'])}
 <article class="seo-detail"><div class="seo-detail-image"><img src="{esc(img)}" alt="{esc(product['title'])}" width="550" height="650" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='/media/play-spot-logo-v4.webp'"></div>
 <div class="seo-detail-info"><p class="seo-eyebrow">{esc(from_catalog)} · {esc(catname)}</p><h1>{esc(product['title'])}</h1>
-<p class="seo-detail-description">{esc(desc)}</p>
+<p class="seo-detail-description">{esc(compact(product.get("seo_local_description")) or desc)}</p>
 <dl class="p40-product-facts" aria-label="{"Информация о товаре" if lang == "ru" else "Informatii despre produs"}">
 <div><dt>{"Платформа / категория" if lang == "ru" else "Platforma / categoria"}</dt><dd>{esc(catname)}</dd></div>
 <div><dt>{"Код в каталоге" if lang == "ru" else "Cod in catalog"}</dt><dd>{esc(str(ro_item['id']))}</dd></div>
@@ -427,12 +427,6 @@ def generate(root,check=False):
     # P44_MOLDOVA_SEO_HOOK: restore local titles and delivery info after catalog rebuild.
     addon44 = root / 'playspot-v44' / 'patch.py'
     if addon44.is_file(): subprocess.run([sys.executable, str(addon44), '--root', str(root)], check=True)
-    # P45_GEO_URL_HOOK: migrate existing RO/RU URLs and preserve legacy redirects.
-    addon45 = root / 'playspot-v45' / 'migrate.py'
-    if addon45.is_file(): subprocess.run([sys.executable, str(addon45), '--root', str(root)], check=True)
-    # P46_NATURAL_MIX_HOOK: preserve stable editorial variants after V45 migration.
-    mix46 = root / 'playspot-v46' / 'mix.py'
-    if mix46.is_file(): subprocess.run([sys.executable, str(mix46), '--root', str(root)], check=True)
     print(f'✅ Generated {total*2} product pages, {len(CATEGORIES)*2} category pages, 2 homepages; sitemap URLs: {len(urls)}')
     print('✅ Fixed canonical domain, crawlable category links, RO/RU hreflang, Product JSON-LD, robots and sitemap')
     print('✅ All prices and product details are read from data/*.json; no fake review, stock or rating')

@@ -44,13 +44,7 @@ def verify(root:Path)->None:
  for cat in CATS:
   for lang in ('ro','ru'):
    base=root/('ru' if lang=='ru' else '')
-   cp=base/'categorii'/f'{cat}.html'
-   # P45_GEO_VALIDATOR: prefer relocated canonical pages when V45 is installed.
-   if (root/'playspot-v45/url-map.json').is_file():
-    import json as _json
-    _map=_json.loads((root/'playspot-v45/url-map.json').read_text(encoding='utf-8'))
-    cp=root/_map.get(cp.relative_to(root).as_posix(),cp.relative_to(root).as_posix())
-   s=cp.read_text(encoding='utf-8')
+   cp=base/'categorii'/f'{cat}.html';s=cp.read_text(encoding='utf-8')
    title,desc=metadata(s,cp)
    assert 'p37-integrated' in s and 'P36 CATEGORY FILTER START' in s,(cp,'V37 filter changed')
    assert ('Chișinău' in title if lang=='ro' else 'Кишинёве' in title),cp
@@ -60,9 +54,6 @@ def verify(root:Path)->None:
    products={str(p['id']):p for p in cat_data}
    directory=base/'produse'/('console' if cat=='consoles' else cat)
    pages=list(directory.glob('*.html'))
-   if (root/'playspot-v45/url-map.json').is_file():
-    _suffix='-kishinev-moldova.html' if lang=='ru' else '-chisinau-moldova.html'
-    pages=[page for page in pages if page.name.endswith(_suffix)]
    assert len(pages)==len(products),(directory,len(pages),len(products))
    for path in pages:
     s=path.read_text(encoding='utf-8');title,desc=metadata(s,path)

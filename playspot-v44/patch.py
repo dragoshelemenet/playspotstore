@@ -210,8 +210,6 @@ def landing_html(root:Path,lang:str)->str:
    pid=str(item['id'])
    matched=[]
    for page in folder.glob('*.html'):
-    # P45_SKIP_MIGRATED_GUIDE: the existing new geo URL is the same SKU.
-    if page.name.endswith(('-chisinau-moldova.html','-kishinev-moldova.html')):continue
     if f'"sku":"{pid}"' in page.read_text(encoding='utf-8'):
      matched.append(page)
    if len(matched)!=1:raise ValueError('Cannot locate a unique page for '+pid)
@@ -305,8 +303,6 @@ def plan(root:Path)->tuple[dict[Path,str],dict]:
    directory=root/base/'produse'/('console' if cat=='consoles' else cat)
    pages={}
    for path in directory.glob('*.html'):
-    # P45_SKIP_MIGRATED_PRODUCTS: V29 regenerates old routes, V45 redirects them.
-    if path.name.endswith(('-chisinau-moldova.html','-kishinev-moldova.html')):continue
     source=path.read_text(encoding='utf-8')
     m=re.search(r'"sku"\s*:\s*"([^"]+)"',source)
     if not m:raise ValueError(f'No SKU found in {path}')
