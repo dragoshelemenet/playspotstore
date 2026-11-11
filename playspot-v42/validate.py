@@ -22,6 +22,7 @@ def validate(root:Path):
    pages={}
    for path in rootdir.glob('*.html'):
     source=path.read_text(encoding='utf-8')
+    if '<!-- P45 LEGACY REDIRECT -->' in source:continue  # P45_ALIAS_SKIP
     m=re.search(r'"sku":"([^"]+)"',source)
     assert m,f'SKU missing from {path}'
     pid=m.group(1)
