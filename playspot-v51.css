@@ -1,0 +1,232 @@
+/* V51: desktop-first repair for PlaySpotStore navigation and hero density.
+   A fine-pointer desktop keeps visible navigation even at normal browser zoom.
+   Touch tablets retain the original V25 menu. No global zoom/transform is used. */
+
+@media (min-width:951px) and (pointer:fine) and (hover:hover) and (not (any-pointer:coarse)) {
+  :root { --header-height:78px!important; }
+
+  body header {
+    box-sizing:border-box!important;
+    width:100%!important;
+    height:78px!important;
+    min-height:78px!important;
+    max-height:78px!important;
+    display:flex!important;
+    flex-direction:row!important;
+    flex-wrap:nowrap!important;
+    align-items:center!important;
+    align-content:center!important;
+    justify-content:space-between!important;
+    gap:clamp(9px,.9vw,17px)!important;
+    padding:0 clamp(12px,1.6vw,28px)!important;
+  }
+
+  body header .logo {
+    box-sizing:border-box!important;
+    position:relative!important;
+    flex:0 0 clamp(58px,5vw,78px)!important;
+    width:clamp(58px,5vw,78px)!important;
+    min-width:0!important;
+    max-width:78px!important;
+    height:70px!important;
+    margin:0!important;
+    padding:0!important;
+    align-items:center!important;
+  }
+  body header .logo img.brand-logo {
+    width:clamp(58px,5vw,74px)!important;
+    min-width:0!important;
+    max-width:74px!important;
+    height:clamp(58px,5vw,74px)!important;
+    max-height:74px!important;
+    object-fit:contain!important;
+  }
+
+  /* Spin is a real flex item, never absolutely positioned over Contact. */
+  body header .p22-header-spin {
+    box-sizing:border-box!important;
+    display:flex!important;
+    position:static!important;
+    inset:auto!important;
+    transform:none!important;
+    flex:0 0 clamp(126px,11vw,192px)!important;
+    width:clamp(126px,11vw,192px)!important;
+    min-width:0!important;
+    max-width:192px!important;
+    height:55px!important;
+    max-height:55px!important;
+    /* Keep the familiar ~21.6vw Spin placement when the screen has space. */
+    margin:0 0 0 clamp(0px,calc(21.6vw - 120px),300px)!important;
+    padding:0!important;
+  }
+  body header .p22-header-spin img {
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    max-width:100%!important;
+    max-height:55px!important;
+    object-fit:contain!important;
+  }
+
+  body header nav {
+    display:flex!important;
+    position:relative!important;
+    flex:1 1 auto!important;
+    width:auto!important;
+    min-width:0!important;
+    margin:0 0 0 auto!important;
+    padding:0!important;
+    justify-content:flex-end!important;
+    align-items:center!important;
+    gap:clamp(7px,.85vw,17px)!important;
+  }
+  body header nav ul#main-menu {
+    box-sizing:border-box!important;
+    display:flex!important;
+    position:static!important;
+    order:0!important;
+    flex:0 1 auto!important;
+    width:auto!important;
+    min-width:0!important;
+    max-width:none!important;
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    margin:0!important;
+    padding:0!important;
+    gap:clamp(6px,.7vw,13px)!important;
+    flex-direction:row!important;
+    flex-wrap:nowrap!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    transform:none!important;
+    overflow:visible!important;
+    opacity:1!important;
+    visibility:visible!important;
+    background:none!important;
+    box-shadow:none!important;
+    border:0!important;
+  }
+  body header nav ul#main-menu > li {flex:0 0 auto!important;width:auto!important;}
+  body header nav ul#main-menu > li.mobile-search-bar,
+  body header nav ul#main-menu > li.p23-mobile-only {display:none!important;}
+  body header nav ul#main-menu > li > a {
+    display:block!important;
+    padding:10px 0!important;
+    font-size:clamp(10px,.79vw,13px)!important;
+    line-height:1.25!important;
+    letter-spacing:0!important;
+    white-space:nowrap!important;
+    text-align:left!important;
+  }
+
+  body header nav .desktop-search-bar {
+    box-sizing:border-box!important;
+    position:relative!important;
+    display:block!important;
+    flex:0 1 clamp(124px,12vw,200px)!important;
+    width:clamp(124px,12vw,200px)!important;
+    min-width:118px!important;
+    max-width:200px!important;
+    inset:auto!important;
+    margin:0!important;
+  }
+  body header nav .desktop-search-bar input {
+    box-sizing:border-box!important;
+    width:100%!important;
+    min-width:0!important;
+    min-height:38px!important;
+    height:39px!important;
+    font-size:12px!important;
+  }
+  body header .hamburger {display:none!important;}
+
+  /* Same compact six-category desktop presentation visible at 80% zoom. */
+  body .hero {
+    margin-top:78px!important;
+    min-height:calc(100svh - 78px)!important;
+  }
+  body .hero .hero-art {
+    width:min(100%,945px)!important;
+    max-width:100%!important;
+    height:clamp(248px,32vh,332px)!important;
+    margin:0 auto!important;
+  }
+  body .hero .hero-copy {margin:0 auto 17px!important;}
+  body .hero .hero-copy h1 {
+    font-size:clamp(32px,3vw,46px)!important;
+    line-height:1.12!important;
+    margin:0 0 9px!important;
+  }
+  body .hero .hero-copy p {
+    font-size:clamp(12px,.95vw,15px)!important;
+    line-height:1.55!important;
+  }
+  body .hero .category-deck {
+    display:grid!important;
+    width:min(96%,1460px)!important;
+    max-width:1460px!important;
+    grid-template-columns:repeat(6,minmax(0,1fr))!important;
+    gap:clamp(9px,1.1vw,18px)!important;
+    margin:0 auto 8px!important;
+  }
+  body .hero .category-tile {
+    height:clamp(143px,12vw,190px)!important;
+    min-width:0!important;
+  }
+  body .hero .category-tile img {
+    height:clamp(88px,7.8vw,132px)!important;
+    max-width:100%!important;
+    object-fit:contain!important;
+  }
+  body .hero .category-tile span {
+    font-size:clamp(12px,1vw,16px)!important;
+  }
+}
+
+/* Smaller real desktop windows retain all navigation links in a dedicated row. */
+@media (min-width:951px) and (max-width:1179px) and (pointer:fine) and (hover:hover) and (not (any-pointer:coarse)) {
+  :root { --header-height:108px!important; }
+  body header {
+    height:108px!important;
+    min-height:108px!important;
+    max-height:108px!important;
+    display:flex!important;
+    flex-wrap:wrap!important;
+    padding:5px 18px 7px!important;
+  }
+  body header .logo {position:absolute!important;left:18px!important;top:4px!important;height:59px!important;}
+  body header .logo img.brand-logo {width:56px!important;height:56px!important;}
+  body header .p22-header-spin {
+    position:absolute!important;
+    left:50%!important;
+    top:7px!important;
+    transform:translateX(-50%)!important;
+    height:49px!important;
+    max-height:49px!important;
+    width:164px!important;
+    max-width:164px!important;
+    margin:0!important;
+  }
+  body header nav {display:contents!important;}
+  body header nav ul#main-menu {
+    position:absolute!important;
+    top:66px!important;
+    left:16px!important;
+    right:16px!important;
+    width:calc(100% - 32px)!important;
+    height:36px!important;
+    justify-content:center!important;
+    gap:clamp(12px,2vw,27px)!important;
+  }
+  body header nav .desktop-search-bar {
+    position:absolute!important;
+    right:18px!important;
+    top:15px!important;
+    width:195px!important;
+    max-width:195px!important;
+  }
+  body .hero {margin-top:108px!important;min-height:calc(100svh - 108px)!important;}
+}
+
+/* The <=950px mobile design and coarse-pointer tablet rules are intentionally untouched. */
