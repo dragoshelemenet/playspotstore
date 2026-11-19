@@ -2804,3 +2804,18 @@ body .product-card.p54-has-new .sale-sticker.p54-money-sale {
   left: 8px !important;
   right: auto !important;
 }
+
+/* Footer Website & SEO Credit (www.wsod.cloud) */
+.p54-wsod-credit {
+  color: #5effc8 !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(94, 255, 200, 0.35) !important;
+  transition: color 0.2s ease, border-color 0.2s ease, text-shadow 0.2s ease !important;
+}
+.p54-wsod-credit:hover,
+.p54-wsod-credit:focus-visible {
+  color: #ffffff !important;
+  border-bottom-color: #5effc8 !important;
+  text-shadow: 0 0 10px rgba(94, 255, 200, 0.55) !important;
+}

@@ -227,9 +227,29 @@
     }
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initProductDetail);
-  } else {
+  function initFooterCredit() {
+    const seoFooter = document.querySelector('.seo-footer-inner');
+    if (seoFooter && !seoFooter.querySelector('.p54-wsod-credit')) {
+      const isRu = document.documentElement.lang?.startsWith('ru');
+      const sep = document.createElement('span');
+      sep.textContent = '·';
+      const wrap = document.createElement('span');
+      wrap.innerHTML = isRu
+        ? 'Сайт и SEO: <a href="https://www.wsod.cloud" target="_blank" rel="noopener" class="p54-wsod-credit">www.wsod.cloud</a>'
+        : 'Website &amp; SEO de <a href="https://www.wsod.cloud" target="_blank" rel="noopener" class="p54-wsod-credit">www.wsod.cloud</a>';
+      seoFooter.appendChild(sep);
+      seoFooter.appendChild(wrap);
+    }
+  }
+
+  const runAll = () => {
     initProductDetail();
+    initFooterCredit();
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', runAll);
+  } else {
+    runAll();
   }
 })();
