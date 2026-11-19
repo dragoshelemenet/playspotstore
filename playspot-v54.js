@@ -282,6 +282,10 @@
 
   const upgradeSaleStickers = () => {
     document.querySelectorAll('.product-card .sale-sticker').forEach((el) => {
+      const card = el.closest('.product-card');
+      if (card && card.querySelector('.new-sticker')) {
+        card.classList.add('p54-has-new');
+      }
       if (el.dataset.p54SaleReady === '1') return;
       el.dataset.p54SaleReady = '1';
       el.classList.add('p54-money-sale');

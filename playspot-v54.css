@@ -2766,3 +2766,32 @@ body .how-to-order::before {
   box-shadow: 0 0 16px rgba(52, 255, 184, 0.15) !important;
   pointer-events: none !important;
 }
+
+/* ==========================================================================
+   12. CLICKABLE GTA VI HERO LINK & SALE / NEW BADGE NON-OVERLAP
+   ========================================================================== */
+.p54-gta-link {
+  display: inline-block;
+  text-decoration: none !important;
+  cursor: pointer;
+  position: relative;
+  z-index: 6;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), filter 0.25s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.p54-gta-link:hover,
+.p54-gta-link:focus-visible {
+  transform: scale(1.045);
+  filter: brightness(1.12);
+  outline: none;
+}
+.p54-gta-link:active {
+  transform: scale(0.98);
+}
+
+/* Keep 🤑 SALE badge on the LEFT when card also has "Produs nou" (.new-sticker) on the right */
+body .product-card:has(.new-sticker) .sale-sticker.p54-money-sale,
+body .product-card.p54-has-new .sale-sticker.p54-money-sale {
+  left: 8px !important;
+  right: auto !important;
+}
