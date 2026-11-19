@@ -2031,7 +2031,8 @@ body .p26-visitor-counter .p26-number {
 body .product-card .sale-sticker.p54-money-sale {
   position: absolute !important;
   top: 8px !important;
-  right: 8px !important;
+  left: 8px !important;
+  right: auto !important;
   z-index: 6 !important;
   display: inline-flex !important;
   align-items: center !important;
@@ -2770,14 +2771,22 @@ body .how-to-order::before {
 /* ==========================================================================
    12. CLICKABLE GTA VI HERO LINK & SALE / NEW BADGE NON-OVERLAP
    ========================================================================== */
+.p54-branding {
+  z-index: 8 !important;
+}
 .p54-gta-link {
-  display: inline-block;
+  display: inline-block !important;
   text-decoration: none !important;
-  cursor: pointer;
-  position: relative;
-  z-index: 6;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 9 !important;
   transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), filter 0.25s ease;
   -webkit-tap-highlight-color: transparent;
+}
+.p54-gta-link img {
+  pointer-events: auto !important;
+  cursor: pointer !important;
 }
 .p54-gta-link:hover,
 .p54-gta-link:focus-visible {
