@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Как поменять NAT Type 3 на NAT Type 2 на PS5 и PS4 (2026): порты, UPnP и низкий пинг | PlaySpotStore</title>
+<meta name="description" content="Полный технический гайд по переходу с NAT Type 3 на NAT Type 2 на PS5/PS4: статический IP, UPnP, порты TCP/UDP (включая 3074 для CoD/EA FC), Double NAT и CGNAT у провайдера.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://playspotstore.online/ru/ghiduri/nat-type-3-na-nat-type-2-ps5-ps4-porty-ping.html">
+<link rel="alternate" hreflang="ro" href="https://playspotstore.online/ghiduri/nat-type-3-in-nat-type-2-ps5-ps4-port-forwarding-ping-mic.html">
+<link rel="alternate" hreflang="ru" href="https://playspotstore.online/ru/ghiduri/nat-type-3-na-nat-type-2-ps5-ps4-porty-ping.html">
+<link rel="alternate" hreflang="x-default" href="https://playspotstore.online/ghiduri/nat-type-3-in-nat-type-2-ps5-ps4-port-forwarding-ping-mic.html">
+<link rel="icon" type="image/webp" href="/media/play-spot-logo-v4.webp">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_MD">
+<meta property="og:site_name" content="PlaySpotStore">
+<meta property="og:title" content="Как поменять NAT Type 3 на NAT Type 2 на PS5 и PS4 (2026): порты, UPnP и низкий пинг | PlaySpotStore">
+<meta property="og:description" content="Полный технический гайд по переходу с NAT Type 3 на NAT Type 2 на PS5/PS4: статический IP, UPnP, порты TCP/UDP (включая 3074 для CoD/EA FC), Double NAT и CGNAT у провайдера.">
+<meta property="og:url" content="https://playspotstore.online/ru/ghiduri/nat-type-3-na-nat-type-2-ps5-ps4-porty-ping.html">
+<meta property="og:image" content="https://lcdn.altex.ro/media/catalog/product/t/e/tekken_8_launch_edition_ps5_2d_coperta_4a5e3b30.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/seo/site.css?v=20261123-pasf">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"Как сменить NAT Type 3 на NAT Type 2 на PS5 и PS4: порты TCP/UDP, UPnP и стабильный пинг","url":"https://playspotstore.online/ru/ghiduri/nat-type-3-na-nat-type-2-ps5-ps4-porty-ping.html","description":"Полный технический гайд по переходу с NAT Type 3 на NAT Type 2 на PS5/PS4: статический IP, UPnP, порты TCP/UDP (включая 3074 для CoD/EA FC), Double NAT и CGNAT у провайдера.","inLanguage":"ru","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://playspotstore.online/ru/produse/ps5/tekken-8.html","name":"Tekken 8"},{"@type":"ListItem","position":2,"url":"https://playspotstore.online/ru/produse/ps5/call-of-duty-black-ops-7.html","name":"Call of Duty: Black Ops 7"},{"@type":"ListItem","position":3,"url":"https://playspotstore.online/ru/produse/ps5/call-of-duty-black-ops-6.html","name":"Call of Duty: Black Ops 6"},{"@type":"ListItem","position":4,"url":"https://playspotstore.online/ru/produse/ps5/call-of-duty-modern-warfare-iii.html","name":"Call of Duty: Modern Warfare III"},{"@type":"ListItem","position":5,"url":"https://playspotstore.online/ru/produse/ps5/call-of-duty-modern-warfare-ii.html","name":"Call of Duty: Modern Warfare II"},{"@type":"ListItem","position":6,"url":"https://playspotstore.online/ru/produse/ps5/call-of-duty-vanguard.html","name":"Call of Duty: Vanguard"},{"@type":"ListItem","position":7,"url":"https://playspotstore.online/ru/produse/ps5/battlefield-6.html","name":"Battlefield 6"},{"@type":"ListItem","position":8,"url":"https://playspotstore.online/ru/produse/ps5/battlefield-2042.html","name":"Battlefield 2042"}]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://playspotstore.online/ru.html"},{"@type":"ListItem","position":2,"name":"Гиды и подборки","item":"https://playspotstore.online/ru/videoigry-kishinev-moldova.html"},{"@type":"ListItem","position":3,"name":"Как сменить NAT Type 3 на NAT Type 2 на PS5 и PS4: порты TCP/UDP, UPnP и стабильный пинг","item":"https://playspotstore.online/ru/ghiduri/nat-type-3-na-nat-type-2-ps5-ps4-porty-ping.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Обязательно ли добиваться NAT Type 1 на PS5?","acceptedAnswer":{"@type":"Answer","text":"Нет. NAT Type 2 обеспечивает полную совместимость с голосовым чатом и серверами онлайн-игр, при этом консоль остаётся за базовой защитой домашнего роутера."}},{"@type":"Question","name":"Помогает ли кабель LAN вместо Wi-Fi в EA FC и Call of Duty?","acceptedAnswer":{"@type":"Answer","text":"Да — кабель Ethernet убирает помехи соседних Wi-Fi сетей, снижает джиттер и потерю пакетов гораздо сильнее, чем увеличение тарифа скорости интернета."}}]}]}</script>
+</head>
+<body>
+<header class="seo-header"><div class="seo-header-inner">
+<a class="seo-brand" href="/ru.html" aria-label="PlaySpotStore"><img src="/media/play-spot-logo-v4.webp" alt="PlaySpotStore" width="54" height="54"><b>PlaySpotStore</b></a>
+<nav class="seo-main-nav" aria-label="Категории"><a href="/ru/categorii/ps2.html">Игры PS2</a><a href="/ru/categorii/ps4.html">Игры PS4</a><a href="/ru/categorii/ps5.html">Игры PS5</a><a href="/ru/categorii/nintendo.html">Игры Nintendo</a><a href="/ru/categorii/xbox.html">Игры Xbox</a><a href="/ru/categorii/consoles.html">Игровые консоли</a><a href="/ru/categorii/accessories.html">Игровые аксессуары</a></nav>
+<a class="seo-header-contact" href="/ghiduri/nat-type-3-in-nat-type-2-ps5-ps4-port-forwarding-ping-mic.html" hreflang="ro">Română</a>
+</div></header>
+<main class="seo-wrap">
+<nav class="seo-breadcrumb" aria-label="Навигация"><a href="/ru.html">Главная</a> <span class="sep">›</span> <a href="/ru/categorii/ps5.html">Каталог</a> <span class="sep">›</span> <span aria-current="page">Сменить NAT Type 3 на NAT Type 2 PS5 / PS4</span></nav>
+
+<section class="seo-category-hero">
+  <p class="seo-eyebrow">СЕТЕВОЙ ГАЙД · PS5 И PS4 ОНЛАЙН</p>
+  <h1>Как сменить NAT Type 3 на NAT Type 2 на PS5 и PS4: порты TCP/UDP, UPnP и стабильный пинг</h1>
+  <p>При типе соединения NAT Type 3 на PlayStation 5 или PS4 часто не работает голосовой чат в тусовке, дольше ищутся матчи в Call of Duty и EA FC и появляются обрывы. Разбираем пошагово, как получить правильный NAT Type 2.</p>
+  <div class="seo-ctas" style="margin-bottom:0">
+    <a class="seo-cta-primary" href="/ru/categorii/ps5.html">Открыть всю категорию →</a>
+    <a class="seo-cta-secondary" href="https://wa.me/37378890580" target="_blank" rel="noopener noreferrer">Уточнить наличие в WhatsApp</a>
+  </div>
+</section>
+
+<div class="ps-guide-notice">Примечание: PlaySpotStore — информационный каталог / веб-проект в разработке. Ориентировочные цены, состояние экземпляра (новый или б/у) и наличие подтверждаются индивидуально при обращении.</div>
+
+<section class="seo-list" aria-label="Подборка из каталога">
+  <div class="seo-list-head"><h2>Рекомендуемые позиции из каталога</h2><span>8 позиций</span></div>
+  <div class="seo-grid">
+    <article class="seo-product-card"><a href="/ru/produse/ps5/tekken-8.html" aria-label="Tekken 8">
+<div class="seo-product-art"><img loading="lazy" decoding="async" src="https://lcdn.altex.ro/media/catalog/product/t/e/tekken_8_launch_edition_ps5_2d_coperta_4a5e3b30.jpg" alt="Изображение игры Tekken 8 для PS5"></div>
+<div class="seo-product-body"><h3>Tekken 8</h3><p class="seo-product-price">800 MDL</p>
+<span class="seo-product-details">Подробнее <span aria-hidden="true">→</span></span></div></a></article>
+<article class="seo-product-card"><a href="/ru/produse/ps5/call-of-duty-black-ops-7.html" aria-label="Call of Duty: Black Ops 7">
+<div class="seo-product-art"><img loading="lazy" decoding="async" src="https://shop.gadgetufa.ru/images/upload/66193-igra-call-of-duty-black-ops-7-dlya-ps5_thumb512.jpg" alt="Изображение игры Call of Duty: Black Ops 7 для PS5"></div>
+<div class="seo-product-body"><h3>Call of Duty: Black Ops 7</h3><p class="seo-product-price">Уточняйте при обращении</p>
+<span class="seo-product-details">Подробнее <span aria-hidden="true">→</span></span></div></a></article>
+<article class="seo-product-card"><a href="/ru/produse/ps5/call-of-duty-black-ops-6.html" aria-label="Call of Duty: Black Ops 6">
+<div class="seo-product-art"><img loading="lazy" decoding="async" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3159170/header.jpg" alt="Изображение игры Call of Duty: Black Ops 6 для PS5"></div>
+<div class="seo-product-body"><h3>Call of Duty: Black Ops 6</h3><p class="seo-product-price">Уточняйте при обращении</p>
+<span class="seo-product-details">Подробнее <span aria-hidden="true">→</span></span></div></a></article>
+<article class="seo-product-card"><a href="/ru/produse/ps5/call-of-duty-modern-warfare-iii.html" aria-label="Call of Duty: Modern Warfare III">
+<div class="seo-product-art"><img loading="lazy" decoding="async" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2775840/header.jpg" alt="Изображение игры Call of Duty: Modern Warfare III для PS5"></div>
+<div class="seo-product-body"><h3>Call of Duty: Modern Warfare III</h3><p class="seo-product-price">Уточняйте при обращении</p>
+<span class="seo-product-details">Подробнее <span aria-hidden="true">→</span></span></div></a></article>
+<article class="seo-product-card"><a href="/ru/produse/ps5/call-of-duty-modern-warfare-ii.html" aria-label="Call of Duty: Modern Warfare II">
+<div class="seo-product-art"><img loading="lazy" decoding="async" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2459970/header.jpg" alt="Изображение игры Call of Duty: Modern Warfare II для PS5"></div>
+<div class="seo-product-body"><h3>Call of Duty: Modern Warfare II</h3><p class="seo-product-price">Уточняйте при обращении</p>
+<span class="seo-product-details">Подробнее <span aria-hidden="true">→</span></span></div></a></article>
+<article class="seo-product-card"><a href="/ru/produse/ps5/call-of-duty-vanguard.html" aria-label="Call of Duty: Vanguard">
+<div class="seo-product-art"><img loading="lazy" decoding="async" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1985820/library_600x900.jpg" alt="Изображение игры Call of Duty: Vanguard для PS5"></div>
+<div class="seo-product-body"><h3>Call of Duty: Vanguard</h3><p class="seo-product-price">Уточняйте при обращении</p>
+<span class="seo-product-details">Подробнее <span aria-hidden="true">→</span></span></div></a></article>
+<article class="seo-product-card"><a href="/ru/produse/ps5/battlefield-6.html" aria-label="Battlefield 6">
+<div class="seo-product-art"><img loading="lazy" decoding="async" src="https://image.api.playstation.com/vulcan/ap/rnd/202507/2917/3bcfe09c4fbb3890f6c45a5cf9464570e36f2b08770187a2.png" alt="Изображение игры Battlefield 6 для PS5"></div>
+<div class="seo-product-body"><h3>Battlefield 6</h3><p class="seo-product-price">Уточняйте при обращении</p>
+<span class="seo-product-details">Подробнее <span aria-hidden="true">→</span></span></div></a></article>
+<article class="seo-product-card"><a href="/ru/produse/ps5/battlefield-2042.html" aria-label="Battlefield 2042">
+<div class="seo-product-art"><img loading="lazy" decoding="async" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1517290/library_600x900.jpg" alt="Изображение игры Battlefield 2042 для PS5"></div>
+<div class="seo-product-body"><h3>Battlefield 2042</h3><p class="seo-product-price">Уточняйте при обращении</p>
+<span class="seo-product-details">Подробнее <span aria-hidden="true">→</span></span></div></a></article>
+  </div>
+</section>
+
+<div class="ps-guide-article">
+  <section class="ps-guide-card"><h2>1. Чем отличаются NAT Type 1, 2 и 3 (почему нужен именно NAT Type 2)</h2><p>NAT Type 1 означает прямое подключение без роутера. NAT Type 2 — оптимальный и безопасный стандарт при работе через домашний роутер: открыт голосовой чат, стабильный подбор матчей и сохраняется защита сети. NAT Type 3 (строгий) блокирует входящие порты и мешает совместной игре.</p></section>
+<section class="ps-guide-card"><h2>2. Статический IP консоли, UPnP и точные порты PSN / CoD / EA FC</h2><p>Узнайте IPv4 и MAC-адрес консоли в Настройки → Сеть → Статус соединения. В настройках роутера закрепите за консолью статический IP (DHCP Reservation) и включите UPnP. Если NAT Type 3 остался, настройте проброс портов (Port Forwarding) на IP консоли: TCP 80, 443, 3478, 3479, 3480, 1935 и UDP 3478, 3479, 3074. После сохранения полностью перезагрузите роутер и консоль.</p></section>
+<section class="ps-guide-card"><h2>3. Если порты не помогли: Double NAT и серый IP (CGNAT) у провайдера</h2><p>Если ваш Wi-Fi роутер подключён за оптическим терминалом провайдера, возникает Double NAT — переведите терминал в режим моста (Bridge Mode). Если же провайдер выдаёт «серый» IP за CGNAT, никакие настройки роутера не откроют порты: нужно запросить у провайдера выделенный белый IPv4. Для минимального пинга и отсутствия потери пакетов подключайте PS5/PS4 кабелем Ethernet напрямую к роутеру.</p></section>
+  <section class="ps-guide-card">
+    <h2>Частые вопросы</h2>
+    <div class="ps-guide-faq-item"><h3>Обязательно ли добиваться NAT Type 1 на PS5?</h3><p>Нет. NAT Type 2 обеспечивает полную совместимость с голосовым чатом и серверами онлайн-игр, при этом консоль остаётся за базовой защитой домашнего роутера.</p></div>
+<div class="ps-guide-faq-item"><h3>Помогает ли кабель LAN вместо Wi-Fi в EA FC и Call of Duty?</h3><p>Да — кабель Ethernet убирает помехи соседних Wi-Fi сетей, снижает джиттер и потерю пакетов гораздо сильнее, чем увеличение тарифа скорости интернета.</p></div>
+  </section>
+</div>
+
+<!-- PLAYSPOT-PASF-START -->
+<section class="ps-pasf-box" aria-label="Люди также ищут · People also search for">
+  <h2 class="ps-pasf-title">Люди также ищут · People also search for</h2>
+  <div class="ps-pasf-grid">
+    <a class="ps-pasf-pill" href="/ru/ghiduri/perenos-dannyh-sohraneniy-ps4-na-ps5-lan-usb.html"><span>Перенос данных <strong>с PS4 на PS5 (LAN / USB)</strong></span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16.2" y2="16.2"/></svg></a>
+<a class="ps-pasf-pill" href="/ru/ghiduri/nastroyka-tv-4k-120hz-hdmi-2-1-vrr-hdr-ps5.html"><span>Настройка PS5 <strong>4K 120 Гц, VRR и HDR</strong></span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16.2" y2="16.2"/></svg></a>
+<a class="ps-pasf-pill" href="/ru/ghiduri/kak-podklyuchit-dualsense-ps5-k-pk-windows-11-steam.html"><span>Подключить <strong>DualSense к ПК (Windows 11)</strong></span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16.2" y2="16.2"/></svg></a>
+<a class="ps-pasf-pill" href="/ru/ghiduri/ps5-slim-vs-ps5-pro-otlichiya-pssr-2tb-diskovod-2026.html"><span>Сравнение <strong>PS5 Slim vs PS5 Pro</strong></span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16.2" y2="16.2"/></svg></a>
+<a class="ps-pasf-pill" href="/ru/ghiduri/chistka-ps5-ps4-ot-pyli-peregrev-uhod-doma.html"><span>Чистка от пыли <strong>PS5 и PS4 дома</strong></span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16.2" y2="16.2"/></svg></a>
+<a class="ps-pasf-pill" href="/ru/ghiduri/playstation-vr2-na-pk-adapter-steamvr-komnata-gid.html"><span>PlayStation VR2 <strong>PS5 и ПК (SteamVR)</strong></span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16.2" y2="16.2"/></svg></a>
+<a class="ps-pasf-pill" href="/ru/ghiduri/nintendo-switch-oled-vs-lite-vs-switch-2-microsd-express.html"><span>Nintendo Switch <strong>OLED vs Lite vs Switch 2</strong></span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16.2" y2="16.2"/></svg></a>
+<a class="ps-pasf-pill" href="/ru/ghiduri/stoit-li-brat-ps4-pro-v-2026-vs-ps5-moldova.html"><span>PS4 Pro в 2026: <strong>стоит ли брать vs PS5?</strong></span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="20" y1="20" x2="16.2" y2="16.2"/></svg></a>
+  </div>
+</section>
+<!-- PLAYSPOT-PASF-END -->
+
+<section class="seo-more"><h2>Все категории каталога</h2><div class="seo-chip-row"><a href="/ru/categorii/ps2.html">Игры PS2</a><a href="/ru/categorii/ps4.html">Игры PS4</a><a href="/ru/categorii/ps5.html">Игры PS5</a><a href="/ru/categorii/nintendo.html">Игры Nintendo</a><a href="/ru/categorii/xbox.html">Игры Xbox</a><a href="/ru/categorii/consoles.html">Игровые консоли</a><a href="/ru/categorii/accessories.html">Игровые аксессуары</a></div></section>
+</main>
+<footer class="seo-footer"><div class="seo-footer-inner">
+<a href="/ru.html">PlaySpotStore</a> <span>·</span> <a href="/ru.html#contact">Контакты</a>
+<span>·</span> <a href="/ru/sitemap.html">Карта сайта</a>
+<span>·</span> <a href="/ru/termeni.html">Условия и возврат</a>
+<span>·</span> <a href="/ru/confidentialitate.html">Конфиденциальность</a>
+<span>·</span> <span>Website dev: <a href="https://www.wsod.cloud" target="_blank" rel="noopener">wsod.cloud</a></span>
+</div></footer>
+</body></html>
