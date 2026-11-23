@@ -856,9 +856,13 @@ body .p54-info-popover a:hover {
   color: #ffffff !important;
 }
 body .p54-catalog-delivery-note {
-  margin: 18px 0 0 !important;
-  font: 450 13px/1.55 Inter, Arial, sans-serif !important;
-  color: rgba(208, 236, 229, 0.78) !important;
+  margin: 28px 0 4px !important;
+  padding: 14px 18px !important;
+  border-radius: 14px !important;
+  background: rgba(10, 30, 38, 0.52) !important;
+  border: 1px solid rgba(132, 255, 222, 0.16) !important;
+  font: 450 13.5px/1.6 Inter, Arial, sans-serif !important;
+  color: rgba(214, 240, 233, 0.86) !important;
   letter-spacing: 0.01em;
 }
 body .p54-catalog-delivery-note a {
