@@ -2098,10 +2098,10 @@ document.addEventListener("click", (e) => {
 function openGame(id, cat) {
   let file = "";
   switch (cat) {
-    case "ps4":         file = "data/ps4.json?v=20261123c";         break;
-    case "ps5":         file = "data/ps5.json?v=20261123c";         break;
-    case "console":     file = "data/consoles.json?v=20261123c";    break;
-    case "accessories": file = "data/accessories.json?v=20261123c"; break;
+    case "ps4":         file = "data/ps4.json?v=20261123d";         break;
+    case "ps5":         file = "data/ps5.json?v=20261123d";         break;
+    case "console":     file = "data/consoles.json?v=20261123d";    break;
+    case "accessories": file = "data/accessories.json?v=20261123d"; break;
     default: return;
   }
 
@@ -2252,7 +2252,7 @@ if (timerEl) {
 }
 
 /* ========== Testimonials ========== */
-fetch("data/testimonials.json?v=20261123c")
+fetch("data/testimonials.json?v=20261123d")
   .then(r => r.ok ? r.json() : [])
   .then(data => {
     const slideshow = document.getElementById("testimonials-slideshow");
@@ -2411,13 +2411,13 @@ if (mobileSearchInput && mobileSuggestions) {
 
 function fetchSearchResults(query) {
   return Promise.all([
-    fetch("data/ps4.json?v=20261123c").then(r=>r.ok?r.json():[]).catch(()=>[]),
-    fetch("data/ps5.json?v=20261123c").then(r=>r.ok?r.json():[]).catch(()=>[]),
-    fetch("data/consoles.json?v=20261123c").then(r=>r.ok?r.json():[]).catch(()=>[]),
-    fetch("data/accessories.json?v=20261123c").then(r=>r.ok?r.json():[]).catch(()=>[]),
-    fetch("data/ps2.json?v=20261123c").then(r=>r.ok?r.json():[]).catch(()=>[]),
-    fetch("data/nintendo.json?v=20261123c").then(r=>r.ok?r.json():[]).catch(()=>[]),
-    fetch("data/xbox.json?v=20261123c").then(r=>r.ok?r.json():[]).catch(()=>[])
+    fetch("data/ps4.json?v=20261123d").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/ps5.json?v=20261123d").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/consoles.json?v=20261123d").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/accessories.json?v=20261123d").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/ps2.json?v=20261123d").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/nintendo.json?v=20261123d").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/xbox.json?v=20261123d").then(r=>r.ok?r.json():[]).catch(()=>[])
   ]).then(groups=>groups.flat().filter(item=>item.title && item.title.toLowerCase().includes(query))).catch(()=>[]);
 }
 
@@ -2527,7 +2527,7 @@ function initGallery() {
 
 /* ========== fetchConsoles & fetchAccessories (Optional) ========== */
 function fetchConsoles() {
-  fetch("data/consoles.json?v=20261123c")
+  fetch("data/consoles.json?v=20261123d")
     .then(r => r.ok ? r.json() : [])
     .then(data => {
       const container = document.getElementById("console-products");
@@ -2548,7 +2548,7 @@ function fetchConsoles() {
 }
 
 function fetchAccessories() {
-  fetch("data/accessories.json?v=20261123c")
+  fetch("data/accessories.json?v=20261123d")
     .then(r => r.ok ? r.json() : [])
     .then(data => {
       const container = document.getElementById("accessories-products");
@@ -2571,8 +2571,8 @@ function fetchAccessories() {
 /* ========== fetchPromos & fetchNew ========== */
 function fetchPromos() {
   Promise.all([
-    fetch("data/ps4.json?v=20261123c").then(r => r.ok ? r.json() : []).catch(() => []),
-    fetch("data/ps5.json?v=20261123c").then(r => r.ok ? r.json() : []).catch(() => []),
+    fetch("data/ps4.json?v=20261123d").then(r => r.ok ? r.json() : []).catch(() => []),
+    fetch("data/ps5.json?v=20261123d").then(r => r.ok ? r.json() : []).catch(() => []),
   ]).then(([ps4, ps5]) => {
     const promos = [
       ...ps4.filter(item => item.promo && item.promo.toLowerCase() === "yes"),
@@ -2597,8 +2597,8 @@ function fetchPromos() {
 
 function fetchNew() {
   Promise.all([
-    fetch("data/ps4.json?v=20261123c").then(r => r.ok ? r.json() : []).catch(() => []),
-    fetch("data/ps5.json?v=20261123c").then(r => r.ok ? r.json() : []).catch(() => []),
+    fetch("data/ps4.json?v=20261123d").then(r => r.ok ? r.json() : []).catch(() => []),
+    fetch("data/ps5.json?v=20261123d").then(r => r.ok ? r.json() : []).catch(() => []),
   ]).then(([ps4, ps5]) => {
     const arrivals = [
       ...ps4.filter(i => i.new_arrival && i.new_arrival.toLowerCase() === "yes"),
@@ -2677,7 +2677,7 @@ document.getElementById('hamburger')?.addEventListener('keydown',event=>{
   const originalOpenGame = window.openGame;
   window.openGame = function(id,cat){
     if(!categories.includes(cat)) return originalOpenGame(id,cat);
-    fetch('data/'+cat+suffix+'.json?v=20261123c').then(r=>r.ok?r.json():[]).then(data=>{
+    fetch('data/'+cat+suffix+'.json?v=20261123d').then(r=>r.ok?r.json():[]).then(data=>{
       const game=data.find(item=>String(item.id)===String(id));
       if(game) window.showGameModal(game);
     }).catch(console.error);
@@ -2702,7 +2702,7 @@ document.getElementById('hamburger')?.addEventListener('keydown',event=>{
     modal.addEventListener('click',event=>{if(event.target===modal)closePlatform(modal);});
     modal.addEventListener('keydown',event=>{if(event.key==='Escape')closePlatform(modal);});
     document.body.style.overflow='hidden';close.focus();
-    fetch('data/'+platform+suffix+'.json?v=20261123c').then(r=>r.ok?r.json():[]).then(items=>{
+    fetch('data/'+platform+suffix+'.json?v=20261123d').then(r=>r.ok?r.json():[]).then(items=>{
       if(!items.length){products.textContent=isRu?'Сейчас нет товаров в каталоге.':'Momentan nu sunt produse în catalog.';return;}
       items.forEach(item=>products.appendChild(createProductCard(item,platform)));
       initLazyLoad();
