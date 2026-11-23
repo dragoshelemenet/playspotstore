@@ -855,17 +855,17 @@ body .p54-info-popover a {
 body .p54-info-popover a:hover {
   color: #ffffff !important;
 }
-body .p54-catalog-delivery-note {
-  margin: 28px 0 4px !important;
-  padding: 14px 18px !important;
+body .p29-seo-wrap > p.p54-catalog-delivery-note {
+  margin: 30px 0 6px !important;
+  padding: 15px 20px !important;
   border-radius: 14px !important;
-  background: rgba(10, 30, 38, 0.52) !important;
-  border: 1px solid rgba(132, 255, 222, 0.16) !important;
+  background: rgba(10, 30, 38, 0.56) !important;
+  border: 1px solid rgba(132, 255, 222, 0.18) !important;
   font: 450 13.5px/1.6 Inter, Arial, sans-serif !important;
-  color: rgba(214, 240, 233, 0.86) !important;
+  color: rgba(214, 240, 233, 0.88) !important;
   letter-spacing: 0.01em;
 }
-body .p54-catalog-delivery-note a {
+body .p29-seo-wrap > p.p54-catalog-delivery-note a {
   color: #84ffd6 !important;
   font-weight: 650;
   text-decoration: underline;
@@ -873,7 +873,7 @@ body .p54-catalog-delivery-note a {
   margin-left: 4px;
   white-space: nowrap;
 }
-body .p54-catalog-delivery-note a:hover {
+body .p29-seo-wrap > p.p54-catalog-delivery-note a:hover {
   color: #ffffff !important;
 }
 
