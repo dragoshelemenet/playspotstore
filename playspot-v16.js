@@ -9,12 +9,12 @@
   const cycleMs = 30 * 24 * 60 * 60 * 1000;
   const words = isRu ? {
     label: 'До обновления', unit: 'д', hide: 'Свернуть предложение', show: 'Открыть предложение',
-    button: '-10% · Крути!',
-    prize: 'Каждый выигранный код действителен 30 дней с момента выигрыша.'
+    button: '-10% · Купон',
+    prize: 'Каждый купон действителен 30 дней с даты получения.'
   } : {
-    label: 'Expiră în', unit: 'z', hide: 'Minimizează oferta', show: 'Arată oferta',
-    button: 'Spin -10%',
-    prize: 'Fiecare cod câștigat este valabil 30 de zile de la rotire.'
+    label: 'Valabil', unit: 'z', hide: 'Minimizează bara', show: 'Arată cuponul',
+    button: 'Cupon -10%',
+    prize: 'Fiecare cupon generat este valabil 30 de zile de la generare.'
   };
   const formatDate = ms => new Intl.DateTimeFormat(isRu ? 'ru-RU' : 'ro-RO', {
     timeZone: 'Europe/Chisinau', day: 'numeric', month: 'long', year: 'numeric'
@@ -53,13 +53,9 @@
   try { minimized(sessionStorage.getItem('playspotstore-v15-spin-minimized') === '1'); }
   catch { minimized(false); }
   function update() {
-    const data = currentCycle();
-    // Never show hours; day count resets to 30 at the next cycle.
-    countdown.textContent = isRu ? 'ОГРАНИЧЕННАЯ АКЦИЯ' : 'OFERTĂ LIMITATĂ';
-    const endDate = formatDate(data.end);
+    countdown.textContent = isRu ? 'АКЦИЯ -10%' : 'PROMOȚIE -10%';
     countdown.removeAttribute('title');
     countdown.setAttribute('aria-label', countdown.textContent);
-    // The 30-day date is shown on each individual prize, not as a campaign notice.
   }
   update();
   window.setInterval(update, 60_000);

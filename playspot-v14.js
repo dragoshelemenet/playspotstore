@@ -6,33 +6,33 @@
   window.__p14SpinMounted = true;
   const ru = (document.documentElement.lang || '').toLowerCase().startsWith('ru');
   const t = ru ? {
-    cta:'КРУТИ И ПОЛУЧИ -10%', mini:'3 попытки каждый день', wheelTitle:'Крути и выигрывай!',
-    intro:'3 попытки в день · Каждое вращение даёт скидку 10% на случайную игру',
-    spin:'КРУТИТЬ', loading:'Загружаем каталог игр…', wait:'Колесо вращается…',
-    left:'Осталось сегодня:', win:'ТВОЙ ПРИЗ · СКИДКА 10%', claim:'Отправить в WhatsApp',
-    save:'Сохранить подтверждение PNG', history:'Мои призы сегодня', none:'У тебя пока нет выигрышей сегодня',
-    close:'Закрыть колесо', error:'Не удалось загрузить весь каталог. Проверь интернет и попробуй ещё раз.',
+    cta:'КУПОН -10%', mini:'До 3 купонов в день', wheelTitle:'Купон на скидку -10%',
+    intro:'До 3 попыток в день · Каждое вращение генерирует купон -10% на случайную игру',
+    spin:'ПОЛУЧИТЬ КУПОН', loading:'Загружаем каталог игр…', wait:'Выбираем игру…',
+    left:'Осталось сегодня:', win:'ТВОЙ КУПОН · СКИДКА 10%', claim:'Отправить в WhatsApp',
+    save:'Сохранить подтверждение PNG', history:'Мои купоны сегодня', none:'У тебя пока нет купонов сегодня',
+    close:'Закрыть', error:'Не удалось загрузить весь каталог. Проверь интернет и попробуй ещё раз.',
     retry:'Повторить', complete:'Все 3 попытки сегодня использованы. Приходи завтра!',
-    rule:'Скидка действует только на выпавшую игру и подтверждается после проверки наличия и итоговой цены. Для подтверждения отправь PNG в WhatsApp.',
+    rule:'Скидка действует 30 дней только на выбранную игру и подтверждается после проверки наличия и итоговой цены. <a href="/ru/termeni.html#promotie" style="color:#53e7ff;text-decoration:underline">Правила акции</a>.',
     snap:'Сохрани PNG, затем прикрепи его к сообщению WhatsApp. Скриншот сам не отправляется.',
-    message:(p)=>`Здравствуйте! Мне выпала скидка 10% на игру «${p.title}» (${p.platform}). Код подтверждения: ${p.code}. Дата: ${p.date}. Хочу подтвердить наличие и цену. Я прикреплю PNG с призом.`,
+    message:(p)=>`Здравствуйте! Я получил купон -10% на игру «${p.title}» (${p.platform}). Код подтверждения: ${p.code}. Дата: ${p.date}. Хочу подтвердить наличие и цену. Я прикреплю PNG с купоном.`,
     downloaded:'PNG с подтверждением сохранён. Прикрепи его в WhatsApp.', noImage:'Нет обложки',
-    receiptTitle:'МОЙ ПРИЗ PLAYSPOTSTORE', receiptDate:'Дата', receiptCode:'Код', receiptFooter:'Покажи это изображение магазину в WhatsApp', receiptCondition:'10% скидка · наличие и окончательная цена уточняются',
-    today:'Сегодня', plays:'попыток', spinLabel:'Испытай удачу'
+    receiptTitle:'КУПОН PLAYSPOTSTORE -10%', receiptDate:'Дата', receiptCode:'Код', receiptFooter:'Покажи это изображение магазину в WhatsApp', receiptCondition:'10% скидка · наличие и окончательная цена уточняются',
+    today:'Сегодня', plays:'попыток', spinLabel:'Получить купон -10%'
   } : {
-    cta:'ROTEȘTE & CÂȘTIGĂ -10%', mini:'3 rotiri în fiecare zi', wheelTitle:'Rotește și câștigă!',
-    intro:'3 rotiri pe zi · La fiecare rotire primești 10% reducere la un joc aleatoriu',
-    spin:'ROTEȘTE', loading:'Încărcăm toate jocurile…', wait:'Roata se învârte…',
-    left:'Rotiri rămase azi:', win:'PREMIUL TĂU · 10% REDUCERE', claim:'Revendică pe WhatsApp',
-    save:'Salvează dovada PNG', history:'Premiile tale de azi', none:'N-ai premii obținute astăzi',
-    close:'Închide roata', error:'Nu am putut încărca tot catalogul. Verifică internetul și încearcă din nou.',
-    retry:'Încearcă din nou', complete:'Ai folosit toate cele 3 rotiri azi. Revino mâine!',
-    rule:'Reducerea este pentru jocul extras și se confirmă în limita stocului, la prețul final agreat prin contact. Pentru verificare, trimite dovada PNG pe WhatsApp.',
+    cta:'CUPON -10%', mini:'Până la 3 cupoane/zi', wheelTitle:'Generează cupon -10%',
+    intro:'Până la 3 încercări pe zi · Fiecare rotire generează un cupon -10% la un joc aleatoriu',
+    spin:'GENEREAZĂ CUPON', loading:'Încărcăm toate jocurile…', wait:'Alegem un joc…',
+    left:'Încercări rămase azi:', win:'CUPONUL TĂU · -10% REDUCERE', claim:'Confirmă pe WhatsApp',
+    save:'Salvează dovada PNG', history:'Cupoanele tale de azi', none:'Nu ai cupoane generate astăzi',
+    close:'Închide', error:'Nu am putut încărca tot catalogul. Verifică internetul și încearcă din nou.',
+    retry:'Încearcă din nou', complete:'Ai folosit toate cele 3 încercări azi. Revino mâine!',
+    rule:'Reducerea este valabilă 30 de zile pentru jocul extras și se confirmă în limita stocului, la prețul final agreat prin WhatsApp. <a href="/termeni.html#promotie" style="color:#53e7ff;text-decoration:underline">Regulamentul campaniei</a>.',
     snap:'Salvează dovada PNG, apoi atașeaz-o în conversația WhatsApp. Imaginea nu se trimite automat.',
-    message:(p)=>`Salut! Am câștigat 10% reducere la ${p.title} (${p.platform}). Cod de referință: ${p.code}. Data: ${p.date}. Vreau să confirm disponibilitatea și prețul final. Atașez dovada PNG a rotirii.`,
+    message:(p)=>`Salut! Am generat cuponul de -10% la ${p.title} (${p.platform}). Cod de referință: ${p.code}. Data: ${p.date}. Vreau să confirm disponibilitatea și prețul final. Atașez dovada PNG.`,
     downloaded:'Dovada PNG a fost salvată. Atașeaz-o pe WhatsApp.', noImage:'Copertă indisponibilă',
-    receiptTitle:'PREMIUL MEU PLAYSPOTSTORE', receiptDate:'Data', receiptCode:'Cod', receiptFooter:'Trimite această imagine pe WhatsApp', receiptCondition:'10% reducere · prețul final și stocul se confirmă',
-    today:'Astăzi', plays:'rotiri', spinLabel:'Încearcă-ți norocul'
+    receiptTitle:'CUPON PLAYSPOTSTORE -10%', receiptDate:'Data', receiptCode:'Cod', receiptFooter:'Trimite această imagine pe WhatsApp', receiptCondition:'10% reducere · prețul final și stocul se confirmă',
+    today:'Astăzi', plays:'încercări', spinLabel:'Generează cupon -10%'
   };
   const maxSpins = 3;
   const catalogPaths = [
@@ -82,7 +82,7 @@
   const backdrop=document.createElement('div');backdrop.id='p14-spin-overlay';backdrop.hidden=true;
   backdrop.innerHTML=`<section class="p14-panel" role="dialog" aria-modal="true" aria-labelledby="p14-title" tabindex="-1">
     <button class="p14-close" type="button" aria-label="${t.close}" title="${t.close}">×</button>
-    <div class="p14-eyebrow">PLAYSPOTSTORE <span>•</span> <strong>SPIN & WIN</strong></div>
+    <div class="p14-eyebrow">PLAYSPOTSTORE <span>•</span> <strong>CUPON -10%</strong></div>
     <h2 id="p14-title">${t.wheelTitle}</h2>
     <p class="p14-subtitle">${t.intro}</p>
     <div class="p14-progress"><span>${t.left}</span><strong class="p14-left">3 / 3</strong></div>
