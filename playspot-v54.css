@@ -835,6 +835,43 @@ body .p54-info-popover p {
   font: 450 13.5px/1.55 Inter, Arial, sans-serif !important;
   color: #e2faf4 !important;
 }
+body .p54-info-popover .p54-popover-title {
+  display: block;
+  margin: 0 0 7px !important;
+  font: 750 13.5px/1.35 Inter, Arial, sans-serif !important;
+  color: #88ffdb !important;
+}
+body .p54-info-popover p + p {
+  margin-top: 8px !important;
+}
+body .p54-info-popover a {
+  display: inline-block;
+  margin-top: 10px;
+  font: 700 13px/1.3 Inter, Arial, sans-serif !important;
+  color: #79ffce !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+body .p54-info-popover a:hover {
+  color: #ffffff !important;
+}
+body .p54-catalog-delivery-note {
+  margin: 18px 0 0 !important;
+  font: 450 13px/1.55 Inter, Arial, sans-serif !important;
+  color: rgba(208, 236, 229, 0.78) !important;
+  letter-spacing: 0.01em;
+}
+body .p54-catalog-delivery-note a {
+  color: #84ffd6 !important;
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-left: 4px;
+  white-space: nowrap;
+}
+body .p54-catalog-delivery-note a:hover {
+  color: #ffffff !important;
+}
 
 body .p29-seo-links a {
   position: relative;

@@ -164,3 +164,21 @@
     runAll();
   }
 })();
+
+/* PLAYSPOT-DELIVERY-TIP-JS-START */
+(function(){
+  var tips = document.querySelectorAll('details.seo-delivery-tip');
+  if (!tips.length) return;
+  var fine = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  tips.forEach(function(tip){
+    if (fine) {
+      var timer = 0;
+      tip.addEventListener('pointerenter', function(){ if (timer) { clearTimeout(timer); timer = 0; } tip.setAttribute('open', ''); });
+      tip.addEventListener('pointerleave', function(){ timer = setTimeout(function(){ tip.removeAttribute('open'); }, 180); });
+    }
+  });
+  document.addEventListener('click', function(e){
+    tips.forEach(function(tip){ if (tip.open && !tip.contains(e.target)) tip.removeAttribute('open'); });
+  });
+})();
+/* PLAYSPOT-DELIVERY-TIP-JS-END */
