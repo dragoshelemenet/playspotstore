@@ -695,7 +695,7 @@
   {
     "id": "ps4-new-minecraft",
     "title": "Minecraft",
-    "image": "media/covers/ps4-minecraft.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1672970/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -710,7 +710,7 @@
   {
     "id": "ps4-new-surf-s-up",
     "title": "Surf’s Up",
-    "image": "media/covers/ps4-surf-s-up.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3454830/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -977,7 +977,7 @@
   {
     "id": "ps4-new-crayola-scoot",
     "title": "Crayola Scoot",
-    "image": "media/covers/ps4-crayola-scoot.webp",
+    "image": "https://pnpdistribution.com/i/CRAYOLA-SCOOT-P4.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -992,7 +992,7 @@
   {
     "id": "ps4-new-fimbul",
     "title": "Fimbul",
-    "image": "media/covers/ps4-fimbul.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2688440/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1007,7 +1007,7 @@
   {
     "id": "ps4-new-monopoly-family-fun-pack",
     "title": "Monopoly Family Fun Pack",
-    "image": "media/covers/ps4-monopoly-family-fun-pack.webp",
+    "image": "https://images.artandgungame.com/products/ps4-games/monopoly-family-fun-pack-ps4.webp",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1040,7 +1040,7 @@
   {
     "id": "ps4-new-robinson-the-journey-ps-vr",
     "title": "Robinson: The Journey (PS VR)",
-    "image": "media/covers/ps4-robinson-the-journey-ps-vr.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/579820/header.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1073,7 +1073,7 @@
   {
     "id": "ps4-new-arashi-castles-of-sin-ps-vr",
     "title": "Arashi: Castles of Sin (PS VR)",
-    "image": "media/covers/ps4-arashi-castles-of-sin-ps-vr.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2434420/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1106,7 +1106,7 @@
   {
     "id": "ps4-new-tiny-tina-s-wonderlands",
     "title": "Tiny Tina’s Wonderlands",
-    "image": "media/covers/ps4-tiny-tina-s-wonderlands.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1286680/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1121,7 +1121,7 @@
   {
     "id": "ps4-new-borderlands-the-handsome-collection",
     "title": "Borderlands: The Handsome Collection",
-    "image": "media/covers/ps4-borderlands-the-handsome-collection.webp",
+    "image": "https://conceptentertainment.se/wp-content/uploads/2026/01/PS4-Borderlands-The-Handsome-Collection-680x680.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1172,7 +1172,7 @@
   {
     "id": "ps4-new-for-honor",
     "title": "For Honor",
-    "image": "media/covers/ps4-for-honor.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304390/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1205,7 +1205,7 @@
   {
     "id": "ps4-new-ea-sports-ufc-4",
     "title": "EA Sports UFC 4",
-    "image": "media/covers/ps4-ea-sports-ufc-4.webp",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202309/0421/418704276d35ce02e8cb532c6ca3826cf866ad2ec66c0b17.png",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1220,7 +1220,7 @@
   {
     "id": "ps4-new-ea-sports-ufc-3",
     "title": "EA Sports UFC 3",
-    "image": "media/covers/ps4-ea-sports-ufc-3.webp",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202309/0421/418704276d35ce02e8cb532c6ca3826cf866ad2ec66c0b17.png",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1253,7 +1253,7 @@
   {
     "id": "ps4-new-the-yakuza-remastered-collection",
     "title": "The Yakuza Remastered Collection",
-    "image": "media/covers/ps4-the-yakuza-remastered-collection.webp",
+    "image": "https://static2.thegamerimages.com/wordpress/wp-content/uploads/2019/08/Yakuza-Remastered-Collection.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1304,7 +1304,7 @@
   {
     "id": "ps4-new-need-for-speed-payback",
     "title": "Need for Speed Payback",
-    "image": "media/covers/ps4-need-for-speed-payback.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1262580/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1319,7 +1319,7 @@
   {
     "id": "ps4-new-need-for-speed-rivals",
     "title": "Need for Speed Rivals",
-    "image": "media/covers/ps4-need-for-speed-rivals.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1262600/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1334,7 +1334,7 @@
   {
     "id": "ps4-new-fifa-20",
     "title": "FIFA 20",
-    "image": "media/covers/ps4-fifa-20.webp",
+    "image": "https://dvdcover.com/wp-content/uploads/2023/07/2023-07-23_64bda0bf8e32e_FIFA20PS4_300dpi-700x409.png",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1349,7 +1349,7 @@
   {
     "id": "ps4-new-fifa-19",
     "title": "FIFA 19",
-    "image": "media/covers/ps4-fifa-19.webp",
+    "image": "https://m.media-amazon.com/images/I/61yTvx2s+fL._SL1000_.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1364,7 +1364,7 @@
   {
     "id": "ps4-new-fifa-17",
     "title": "FIFA 17",
-    "image": "media/covers/ps4-fifa-17.webp",
+    "image": "https://www.consolex.com.tr/Content/images/2025/10/14/m/2el-fifa-17-ps4-oyun-c65a6a17.webp",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1379,7 +1379,7 @@
   {
     "id": "ps4-new-fifa-16",
     "title": "FIFA 16",
-    "image": "media/covers/ps4-fifa-16.webp",
+    "image": "https://cdn.mobygames.com/covers/18202308-fifa-16-playstation-4-front-cover.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1412,7 +1412,7 @@
   {
     "id": "ps4-new-rise-of-the-tomb-raider",
     "title": "Rise of the Tomb Raider",
-    "image": "media/covers/ps4-rise-of-the-tomb-raider.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/391220/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1463,7 +1463,7 @@
   {
     "id": "ps4-new-call-of-duty-advanced-warfare",
     "title": "Call of Duty: Advanced Warfare",
-    "image": "media/covers/ps4-call-of-duty-advanced-warfare.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/209650/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1496,7 +1496,7 @@
   {
     "id": "ps4-new-god-of-war-iii-remastered",
     "title": "God of War III Remastered",
-    "image": "media/covers/ps4-god-of-war-iii-remastered.webp",
+    "image": "https://www.chiclestore.com/wp-content/uploads/2024/08/GOD-OF-WAR-REMASTERIZAADO.png",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1511,7 +1511,7 @@
   {
     "id": "ps4-new-god-of-war-2018",
     "title": "God of War (2018)",
-    "image": "media/covers/ps4-god-of-war-2018.webp",
+    "image": "https://m.media-amazon.com/images/I/81zMghI0tFL.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1526,7 +1526,7 @@
   {
     "id": "ps4-new-star-wars-battlefront-ii",
     "title": "Star Wars Battlefront II",
-    "image": "media/covers/ps4-star-wars-battlefront-ii.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1237950/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1541,7 +1541,7 @@
   {
     "id": "ps4-new-star-wars-battlefront",
     "title": "Star Wars Battlefront",
-    "image": "media/covers/ps4-star-wars-battlefront.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1237950/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1574,7 +1574,7 @@
   {
     "id": "ps4-new-assassin-s-creed-valhalla",
     "title": "Assassin’s Creed Valhalla",
-    "image": "media/covers/ps4-assassin-s-creed-valhalla.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2208920/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1589,7 +1589,7 @@
   {
     "id": "ps4-new-assassin-s-creed-chronicles",
     "title": "Assassin’s Creed Chronicles",
-    "image": "media/covers/ps4-assassin-s-creed-chronicles.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/359600/header.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1676,7 +1676,7 @@
   {
     "id": "ps4-new-shaq-fu-a-legend-reborn",
     "title": "Shaq Fu: A Legend Reborn",
-    "image": "media/covers/ps4-shaq-fu-a-legend-reborn.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/496040/header.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1691,7 +1691,7 @@
   {
     "id": "ps4-new-control",
     "title": "Control",
-    "image": "media/covers/ps4-control.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/870780/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1706,7 +1706,7 @@
   {
     "id": "ps4-new-battlefield-4",
     "title": "Battlefield 4",
-    "image": "media/covers/ps4-battlefield-4.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1238860/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1775,7 +1775,7 @@
   {
     "id": "ps4-new-mirror-s-edge-catalyst",
     "title": "Mirror’s Edge Catalyst",
-    "image": "media/covers/ps4-mirror-s-edge-catalyst.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1233570/library_600x900.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
@@ -1808,7 +1808,7 @@
   {
     "id": "ps4-new-destiny-2-forsaken",
     "title": "Destiny 2: Forsaken",
-    "image": "media/covers/ps4-destiny-2-forsaken.webp",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1090150/header.jpg",
     "price": "Уточняйте при обращении",
     "promo": "no",
     "new_arrival": "yes",
