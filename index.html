@@ -2,6 +2,7 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
+  <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Title and Description -->
@@ -1918,7 +1919,7 @@
         <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3.5 11V5a1.5 1.5 0 0 1 1.5-1.5h6L21 13.5l-7.5 7.5L3.5 11Z"/><circle cx="8" cy="8" r="1.3"/></svg>
       </button>
     </div>
-    <p style="margin:10px 0 0;font-size:11.5px;opacity:.62;line-height:1.45">Imaginile și coperțile sunt preluate din surse publice online cu rol exclusiv ilustrativ și informativ (pot fi eliminate la cerere). PlayStation, PS5, PS4, Xbox, Nintendo, GTA VI și mărcile asociate aparțin deținătorilor lor; PlaySpotStore este un catalog independent, neafiliat cu acești producători. Dezvoltatorul tehnic web (wsod.cloud) nu operează magazinul și este exonerat de orice răspundere privind conținutul sau activitatea comercială. <a href="/termeni.html#limitare-dezvoltator-web" style="color:inherit;text-decoration:underline">Limitarea maximă a răspunderii</a> · <a href="/termeni.html#pegi" style="color:inherit;text-decoration:underline">PEGI</a> · <a href="https://consumator.gov.md/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline">ISSPPC</a></p>
+    <p style="margin:10px 0 0;font-size:11.5px;opacity:.62;line-height:1.45">Proiect web în dezvoltare cu rol exclusiv de catalog informativ. Imaginile și coperțile sunt preluate din surse publice online cu rol ilustrativ (pot fi eliminate la cerere). PlayStation, PS5, PS4, Xbox, Nintendo, GTA VI și mărcile asociate aparțin deținătorilor lor; PlaySpotStore este neafiliat cu acești producători. Dezvoltatorul tehnic web (wsod.cloud) este exonerat de orice răspundere privind conținutul. <a href="/termeni.html#limitare-dezvoltator-web" style="color:inherit;text-decoration:underline">Termeni &amp; Limitarea răspunderii</a> · <a href="/termeni.html#pegi" style="color:inherit;text-decoration:underline">PEGI</a></p>
   </div>
 </footer>
 
@@ -2036,6 +2037,7 @@ function createProductCard(game, cat) {
   link.tabIndex = 0;
 
   const img = document.createElement("img");
+  img.referrerPolicy = "no-referrer";
   img.alt = game.title || "Game Image";
   // Lazy loading
   img.classList.add("lazy");
@@ -2096,10 +2098,10 @@ document.addEventListener("click", (e) => {
 function openGame(id, cat) {
   let file = "";
   switch (cat) {
-    case "ps4":         file = "data/ps4.json";         break;
-    case "ps5":         file = "data/ps5.json";         break;
-    case "console":     file = "data/consoles.json";    break;
-    case "accessories": file = "data/accessories.json"; break;
+    case "ps4":         file = "data/ps4.json?v=20261123c";         break;
+    case "ps5":         file = "data/ps5.json?v=20261123c";         break;
+    case "console":     file = "data/consoles.json?v=20261123c";    break;
+    case "accessories": file = "data/accessories.json?v=20261123c"; break;
     default: return;
   }
 
@@ -2250,7 +2252,7 @@ if (timerEl) {
 }
 
 /* ========== Testimonials ========== */
-fetch("data/testimonials.json")
+fetch("data/testimonials.json?v=20261123c")
   .then(r => r.ok ? r.json() : [])
   .then(data => {
     const slideshow = document.getElementById("testimonials-slideshow");
@@ -2409,13 +2411,13 @@ if (mobileSearchInput && mobileSuggestions) {
 
 function fetchSearchResults(query) {
   return Promise.all([
-    fetch("data/ps4.json").then(r=>r.ok?r.json():[]).catch(()=>[]),
-    fetch("data/ps5.json").then(r=>r.ok?r.json():[]).catch(()=>[]),
-    fetch("data/consoles.json").then(r=>r.ok?r.json():[]).catch(()=>[]),
-    fetch("data/accessories.json").then(r=>r.ok?r.json():[]).catch(()=>[]),
-    fetch("data/ps2.json").then(r=>r.ok?r.json():[]).catch(()=>[]),
-    fetch("data/nintendo.json").then(r=>r.ok?r.json():[]).catch(()=>[]),
-    fetch("data/xbox.json").then(r=>r.ok?r.json():[]).catch(()=>[])
+    fetch("data/ps4.json?v=20261123c").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/ps5.json?v=20261123c").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/consoles.json?v=20261123c").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/accessories.json?v=20261123c").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/ps2.json?v=20261123c").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/nintendo.json?v=20261123c").then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch("data/xbox.json?v=20261123c").then(r=>r.ok?r.json():[]).catch(()=>[])
   ]).then(groups=>groups.flat().filter(item=>item.title && item.title.toLowerCase().includes(query))).catch(()=>[]);
 }
 
@@ -2525,7 +2527,7 @@ function initGallery() {
 
 /* ========== fetchConsoles & fetchAccessories (Optional) ========== */
 function fetchConsoles() {
-  fetch("data/consoles.json")
+  fetch("data/consoles.json?v=20261123c")
     .then(r => r.ok ? r.json() : [])
     .then(data => {
       const container = document.getElementById("console-products");
@@ -2546,7 +2548,7 @@ function fetchConsoles() {
 }
 
 function fetchAccessories() {
-  fetch("data/accessories.json")
+  fetch("data/accessories.json?v=20261123c")
     .then(r => r.ok ? r.json() : [])
     .then(data => {
       const container = document.getElementById("accessories-products");
@@ -2569,8 +2571,8 @@ function fetchAccessories() {
 /* ========== fetchPromos & fetchNew ========== */
 function fetchPromos() {
   Promise.all([
-    fetch("data/ps4.json").then(r => r.ok ? r.json() : []).catch(() => []),
-    fetch("data/ps5.json").then(r => r.ok ? r.json() : []).catch(() => []),
+    fetch("data/ps4.json?v=20261123c").then(r => r.ok ? r.json() : []).catch(() => []),
+    fetch("data/ps5.json?v=20261123c").then(r => r.ok ? r.json() : []).catch(() => []),
   ]).then(([ps4, ps5]) => {
     const promos = [
       ...ps4.filter(item => item.promo && item.promo.toLowerCase() === "yes"),
@@ -2595,8 +2597,8 @@ function fetchPromos() {
 
 function fetchNew() {
   Promise.all([
-    fetch("data/ps4.json").then(r => r.ok ? r.json() : []).catch(() => []),
-    fetch("data/ps5.json").then(r => r.ok ? r.json() : []).catch(() => []),
+    fetch("data/ps4.json?v=20261123c").then(r => r.ok ? r.json() : []).catch(() => []),
+    fetch("data/ps5.json?v=20261123c").then(r => r.ok ? r.json() : []).catch(() => []),
   ]).then(([ps4, ps5]) => {
     const arrivals = [
       ...ps4.filter(i => i.new_arrival && i.new_arrival.toLowerCase() === "yes"),
@@ -2675,7 +2677,7 @@ document.getElementById('hamburger')?.addEventListener('keydown',event=>{
   const originalOpenGame = window.openGame;
   window.openGame = function(id,cat){
     if(!categories.includes(cat)) return originalOpenGame(id,cat);
-    fetch('data/'+cat+suffix+'.json').then(r=>r.ok?r.json():[]).then(data=>{
+    fetch('data/'+cat+suffix+'.json?v=20261123c').then(r=>r.ok?r.json():[]).then(data=>{
       const game=data.find(item=>String(item.id)===String(id));
       if(game) window.showGameModal(game);
     }).catch(console.error);
@@ -2700,7 +2702,7 @@ document.getElementById('hamburger')?.addEventListener('keydown',event=>{
     modal.addEventListener('click',event=>{if(event.target===modal)closePlatform(modal);});
     modal.addEventListener('keydown',event=>{if(event.key==='Escape')closePlatform(modal);});
     document.body.style.overflow='hidden';close.focus();
-    fetch('data/'+platform+suffix+'.json').then(r=>r.ok?r.json():[]).then(items=>{
+    fetch('data/'+platform+suffix+'.json?v=20261123c').then(r=>r.ok?r.json():[]).then(items=>{
       if(!items.length){products.textContent=isRu?'Сейчас нет товаров в каталоге.':'Momentan nu sunt produse în catalog.';return;}
       items.forEach(item=>products.appendChild(createProductCard(item,platform)));
       initLazyLoad();

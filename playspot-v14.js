@@ -36,8 +36,8 @@
   };
   const maxSpins = 3;
   const catalogPaths = [
-    ['PS4','data/ps4.json'],['PS5','data/ps5.json'],['PS2','data/ps2.json'],
-    ['Nintendo','data/nintendo.json'],['Xbox','data/xbox.json']
+    ['PS4','data/ps4.json?v=20261123c'],['PS5','data/ps5.json?v=20261123c'],['PS2','data/ps2.json?v=20261123c'],
+    ['Nintendo','data/nintendo.json?v=20261123c'],['Xbox','data/xbox.json?v=20261123c']
   ];
   const keyPrefix = 'playspotstore-wheel-v14-';
   let volatileState = null;
