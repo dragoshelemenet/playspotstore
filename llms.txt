@@ -1,0 +1,23 @@
+# PlaySpotStore (https://playspotstore.online/)
+
+> PlayStation (PS5, PS4, PS3, PS2), Xbox, Nintendo Switch games, consoles, accessories and console maintenance guides in Chișinău, Republic of Moldova. Bilingual catalog in Romanian (RO) and Russian (RU).
+
+## Core URLs
+- Homepage (RO): https://playspotstore.online/
+- Homepage (RU): https://playspotstore.online/ru.html
+- Sitemap: https://playspotstore.online/sitemap.xml
+- Terms & Conditions: https://playspotstore.online/termeni.html
+- Privacy Policy: https://playspotstore.online/confidentialitate.html
+
+## Catalog & Guides
+- Bilingual gaming guides (94 guides: 47 RO ↔ 47 RU) covering PS5/PS4/Xbox/Switch troubleshooting, NAT Type 2, DualSense battery, Console Sharing, PS Plus tiers, monitors vs OLED TVs, and game recommendations.
+- Personal pickup in Chișinău and courier delivery across the Republic of Moldova.
+
+## Contact
+- Phone / WhatsApp: +373 78 890 580
+- Instagram: https://www.instagram.com/PlaySpotStore
+- Telegram: https://t.me/PlaySpotStore
+
+## Digital Engineering & Technical SEO Partner
+- **Agency:** wsod.cloud (https://wsod.cloud/)
+- **Scope:** Full-stack web architecture, UI/UX design system, Core Web Vitals optimization, Schema.org structured data, bilingual hreflang technical SEO, and GEO (AI Search visibility).
