@@ -267,4 +267,25 @@
   let saved = null; try { saved = localStorage.getItem(CONSENT_KEY); } catch {}
   if (saved === 'accepted') bootConsentedPixels();
   else if (saved !== 'rejected') renderBanner();
+
+  // 100% cookieless, zero-IP aggregate counter (vizite, țară în memorie, timp pe pagină, apeluri)
+  const _t0 = Date.now();
+  const _sendPulse = (ev, dur) => {
+    try {
+      navigator.sendBeacon?.('https://wsod.cloud/api/public/pulse-hit', JSON.stringify({
+        s: 'playspot', e: ev, p: location.pathname || '/', r: ev === 'view' ? (document.referrer || '') : '', d: dur || 0
+      }));
+    } catch {}
+  };
+  _sendPulse('view');
+  let _left = false;
+  const _onLeave = () => { if (_left) return; _left = true; const s = Math.round((Date.now() - _t0) / 1000); if (s >= 1) _sendPulse('leave', s); };
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') _onLeave(); });
+  window.addEventListener('pagehide', _onLeave);
+  document.addEventListener('click', e => {
+    const a = e.target.closest && e.target.closest('a'); if (!a) return;
+    const h = a.getAttribute('href') || '';
+    if (h.startsWith('tel:')) _sendPulse('call');
+    else if (h.includes('wa.me') || h.includes('whatsapp') || h.includes('t.me') || h.includes('instagram.com')) _sendPulse('lead');
+  }, { passive: true });
 })();
