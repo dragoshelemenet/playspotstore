@@ -1,0 +1,17 @@
+{
+  "name": "PlaySpotStore — Jocuri PS5, PS4, Xbox, Nintendo & Console în Moldova",
+  "short_name": "PlaySpotStore",
+  "description": "Jocuri noi și second-hand PS5, PS4, PS2, Xbox, Nintendo Switch, console și accesorii în Chișinău și Moldova.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0d14",
+  "theme_color": "#0b0d14",
+  "lang": "ro-MD",
+  "icons": [
+    {
+      "src": "/media/play-spot-logo-v4.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}

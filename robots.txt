@@ -1,4 +1,33 @@
 User-agent: *
 Allow: /
+Disallow: /playspot-v*/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /playspot-v*/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /playspot-v*/
+
+User-agent: Yandex
+Allow: /
+Disallow: /playspot-v*/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /playspot-v*/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /playspot-v*/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /playspot-v*/
+
+User-agent: Applebot
+Allow: /
+Disallow: /playspot-v*/
 
 Sitemap: https://playspotstore.online/sitemap.xml
