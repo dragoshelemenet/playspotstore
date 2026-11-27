@@ -57,13 +57,20 @@
     </section>
 
     <section>
-      <h2>3. Cookies și stocare locală în browser</h2>
-      <p>Website-ul <strong>nu folosește cookies de publicitate, pixeli de tracking (Meta Pixel / TikTok Pixel) sau profilare comportamentală</strong>. Folosim exclusiv stocare locală strict tehnică în browserul tău:</p>
+      <h2>3. Cookies, stocare locală și consimțământ prealabil (Opt-In)</h2>
+      <p>În mod implicit (până la acordul tău explicit), orice modul de analiză statistică sau măsurare a reclamelor (<strong>Google Consent Mode v2 / Google Analytics 4 / Meta Pixel</strong>) este <strong>blocat (<code>denied</code>)</strong>. Folosim două categorii clar separate:</p>
       <ul>
-        <li><code>playspotstore-wheel-v14-*</code> — reține local limita zilnică de 3 generări și lista cupoanelor tale din ziua curentă.</li>
-        <li><code>playspotstore-v15-spin-minimized</code> — reține dacă ai minimizat bara promoțională în sesiunea curentă.</li>
+        <li><strong>Stocare tehnică strict necesară (activă fără urmărire publicitară):</strong>
+          <code>playspot_cookie_consent_v2</code> (reține opțiunea ta „accepted” sau „rejected” pentru bara de cookies),
+          <code>playspotstore-wheel-v14-*</code> (limita zilnică locală pentru roata promoțională) și
+          <code>playspotstore-v15-spin-minimized</code> (starea barei promoționale în sesiune).</li>
+        <li><strong>Cookies opționale de statistică și publicitate (activate EXCLUSIV dacă apeși „Acceptă”):</strong>
+          <code>_ga</code> (Google Analytics 4 — statistici anonime de vizitare, max. 13–24 luni),
+          <code>_gcl_au</code> (Google Ads — măsurarea conversiilor, 90 zile) și
+          <code>_fbp</code> / <code>_fbc</code> (Meta Pixel — măsurarea eficienței reclamelor pe Facebook/Instagram și atribuirea comenzilor sau apelurilor inițiate, 90 zile).</li>
       </ul>
-      <p>Poți șterge oricând aceste date din setările browserului tău.</p>
+      <p>Dacă alegi <strong>„Doar Necesare”</strong>, niciun cookie de marketing nu este setat. Îți poți modifica sau retrage oricând consimțământul apăsând butonul de mai jos (care șterge instant cookie-urile opționale și redeschide bara de opțiuni):</p>
+      <p><button type="button" onclick="try{localStorage.removeItem('playspot_cookie_consent_v2');['_fbp','_fbc','_ga','_gid','_gat','_gcl_au','_ttp'].forEach(function(n){document.cookie=n+'=; Max-Age=0; path=/; SameSite=Lax';});alert('Opțiunea Cookies a fost resetată și cookie-urile opționale au fost șterse.');location.href='/';}catch(e){}" style="padding:9px 18px;border-radius:999px;border:1px solid #53e7ff;background:rgba(83,231,255,0.14);color:#fff;font-weight:700;cursor:pointer">🍪 Modifică / Retrage Consimțământul Cookies</button></p>
     </section>
 
     <section>

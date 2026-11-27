@@ -57,13 +57,20 @@
     </section>
 
     <section>
-      <h2>3. Cookies и локальное хранилище браузера</h2>
-      <p>Сайт <strong>не использует рекламные cookies, пиксели отслеживания (Meta Pixel / TikTok Pixel) или профилирование</strong>. Используется только техническое локальное хранилище браузера:</p>
+      <h2>3. Cookies, локальное хранилище и предварительное согласие (Opt-In)</h2>
+      <p>По умолчанию (до вашего явного согласия) все модули статистики и оценки рекламы (<strong>Google Consent Mode v2 / Google Analytics 4 / Meta Pixel</strong>) <strong>заблокированы (<code>denied</code>)</strong>. Мы разделяем хранение на две категории:</p>
       <ul>
-        <li><code>playspotstore-wheel-v14-*</code> — сохраняет дневной лимит (3 попытки) и список полученных сегодня купонов.</li>
-        <li><code>playspotstore-v15-spin-minimized</code> — сохраняет состояние свёрнутой панели акции в текущей сессии.</li>
+        <li><strong>Технически необходимое локальное хранилище (без рекламного отслеживания):</strong>
+          <code>playspot_cookie_consent_v2</code> (сохраняет ваш выбор «accepted» или «rejected»),
+          <code>playspotstore-wheel-v14-*</code> (дневной лимит колеса бонусов) и
+          <code>playspotstore-v15-spin-minimized</code> (состояние панели акции).</li>
+        <li><strong>Опциональные аналитические и рекламные cookies (активируются ТОЛЬКО при нажатии «Принять»):</strong>
+          <code>_ga</code> (Google Analytics 4 — анонимная статистика посещений, до 13–24 мес.),
+          <code>_gcl_au</code> (Google Ads — оценка конверсий, 90 дней) и
+          <code>_fbp</code> / <code>_fbc</code> (Meta Pixel — оценка эффективности рекламы в Facebook/Instagram и учёт обращений, 90 дней).</li>
       </ul>
-      <p>Вы можете удалить эти данные в любой момент в настройках браузера.</p>
+      <p>При выборе <strong>«Только необходимые»</strong> маркетинговые cookies не устанавливаются. Вы можете изменить или отозвать согласие в любой момент:</p>
+      <p><button type="button" onclick="try{localStorage.removeItem('playspot_cookie_consent_v2');['_fbp','_fbc','_ga','_gid','_gat','_gcl_au','_ttp'].forEach(function(n){document.cookie=n+'=; Max-Age=0; path=/; SameSite=Lax';});alert('Настройки Cookies сброшены, опциональные файлы cookie удалены.');location.href='/ru.html';}catch(e){}" style="padding:9px 18px;border-radius:999px;border:1px solid #53e7ff;background:rgba(83,231,255,0.14);color:#fff;font-weight:700;cursor:pointer">🍪 Изменить / Отозвать согласие на Cookies</button></p>
     </section>
 
     <section>
