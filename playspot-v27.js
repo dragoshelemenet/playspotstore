@@ -182,3 +182,89 @@
   });
 })();
 /* PLAYSPOT-DELIVERY-TIP-JS-END */
+
+
+/* ============================================================================
+ * WSOD COOKIE CONSENT (LEGEA 133/2011 RM & GDPR) + GOOGLE CONSENT MODE V2 + META PIXEL
+ * Implicit (până la „Acceptă”): 0 cookies de marketing, ad_storage = denied.
+ * ============================================================================ */
+(() => {
+  const CONSENT_KEY = 'playspot_cookie_consent_v2';
+  const isRu = document.documentElement.lang?.toLowerCase().startsWith('ru');
+  const CFG = Object.assign({ metaPixelId: '', ga4Id: '', googleAdsId: '' }, window.WSOD_PIXEL_CONFIG || {});
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ window.dataLayer.push(arguments); }
+  window.gtag = window.gtag || gtag;
+  window.gtag('consent', 'default', {
+    ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+    analytics_storage: 'denied', functionality_storage: 'granted', security_storage: 'granted', wait_for_update: 500
+  });
+  function clearMarketingCookies() {
+    ['_fbp', '_fbc', '_ga', '_gid', '_gat', '_gcl_au', '_ttp'].forEach(name => {
+      document.cookie = `${name}=; Max-Age=0; path=/; SameSite=Lax`;
+      document.cookie = `${name}=; Max-Age=0; path=/; domain=${location.hostname}; SameSite=Lax`;
+    });
+  }
+  let pixelsBooted = false;
+  function bootConsentedPixels() {
+    if (pixelsBooted) return;
+    pixelsBooted = true;
+    window.gtag('consent', 'update', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' });
+    const gId = CFG.ga4Id || CFG.googleAdsId;
+    if (gId) {
+      const s = document.createElement('script'); s.async = true;
+      s.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(gId)}`;
+      document.head.appendChild(s);
+      window.gtag('js', new Date());
+      if (CFG.ga4Id) window.gtag('config', CFG.ga4Id, { anonymize_ip: true });
+      if (CFG.googleAdsId) window.gtag('config', CFG.googleAdsId);
+    }
+    if (CFG.metaPixelId) {
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      window.fbq('consent', 'grant');
+      window.fbq('init', CFG.metaPixelId);
+      window.fbq('track', 'PageView');
+    }
+  }
+  document.addEventListener('click', e => {
+    try { if (localStorage.getItem(CONSENT_KEY) !== 'accepted') return; } catch { return; }
+    const a = e.target.closest && e.target.closest('a'); if (!a) return;
+    const href = a.getAttribute('href') || '';
+    const eid = 'gb_' + Date.now() + '_' + Math.random().toString(36).slice(2, 7);
+    if (href.startsWith('tel:')) {
+      window.gtag?.('event', 'contact_phone', { event_id: eid, page_path: location.pathname });
+      window.fbq?.('track', 'Contact', { channel: 'phone', page_path: location.pathname }, { eventID: eid });
+    } else if (href.includes('maps.app.goo.gl') || href.includes('google.com/maps')) {
+      window.gtag?.('event', 'find_location', { event_id: eid, page_path: location.pathname });
+      window.fbq?.('track', 'FindLocation', { page_path: location.pathname }, { eventID: eid });
+    } else if (href.includes('instagram.com') || href.includes('wa.me')) {
+      window.gtag?.('event', 'contact_social', { event_id: eid, page_path: location.pathname });
+      window.fbq?.('track', 'Lead', { channel: 'social', page_path: location.pathname }, { eventID: eid });
+    }
+  }, { passive: true });
+  function renderBanner() {
+    document.getElementById('wsod-cookie-bar')?.remove();
+    const bar = document.createElement('aside');
+    bar.id = 'wsod-cookie-bar';
+    bar.setAttribute('role', 'region');
+    bar.setAttribute('aria-label', isRu ? 'Настройки cookie' : 'Preferințe cookies');
+    bar.style.cssText = 'position:fixed;bottom:14px;left:14px;right:14px;max-width:520px;z-index:9999;padding:13px 16px;border-radius:14px;background:rgba(22,20,18,0.95);color:#f7f6f2;border:1px solid rgba(255,255,255,0.16);box-shadow:0 12px 32px rgba(0,0,0,0.38);font-family:Inter,system-ui,sans-serif;font-size:12.5px;line-height:1.45;backdrop-filter:blur(12px)';
+    bar.innerHTML = `<div style="display:flex;flex-direction:column;gap:10px"><div><strong style="color:#10ffeb">${isRu ? 'Cookies и конфиденциальность:' : 'Cookies & Confidențialitate:'}</strong> ${isRu ? 'Мы используем технически необходимые файлы cookie и, только с вашего согласия, статистику и оценку рекламы (Google / Meta).' : 'Folosim cookies strict necesare funcționării site-ului și, doar cu acordul tău, statistici și măsurarea reclamelor (Google / Meta).'}</div><div style="display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap"><button type="button" data-consent="rejected" style="padding:6px 13px;border-radius:999px;border:1px solid rgba(255,255,255,0.25);background:transparent;color:#f7f6f2;font-size:12px;font-weight:600;cursor:pointer">${isRu ? 'Только необходимые' : 'Doar Necesare'}</button><button type="button" data-consent="accepted" style="padding:6px 15px;border-radius:999px;border:1px solid #10ffeb;background:#10ffeb;color:#161412;font-size:12px;font-weight:700;cursor:pointer">${isRu ? 'Принять' : 'Acceptă'}</button></div></div>`;
+    bar.addEventListener('click', ev => {
+      const btn = ev.target.closest('button[data-consent]'); if (!btn) return;
+      const choice = btn.dataset.consent;
+      try { localStorage.setItem(CONSENT_KEY, choice); } catch {}
+      bar.remove();
+      if (choice === 'accepted') bootConsentedPixels(); else clearMarketingCookies();
+    });
+    document.body.appendChild(bar);
+  }
+  window.openWsodCookieSettings = renderBanner;
+  let saved = null; try { saved = localStorage.getItem(CONSENT_KEY); } catch {}
+  if (saved === 'accepted') bootConsentedPixels();
+  else if (saved !== 'rejected') renderBanner();
+})();
