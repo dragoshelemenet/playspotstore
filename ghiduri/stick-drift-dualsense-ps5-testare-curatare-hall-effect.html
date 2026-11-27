@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="/seo/site.css?v=20261123-pasf">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"Stick Drift la controllerul DualSense (PS5): cum îl testezi, soluții temporare și rezolvare definitivă","url":"https://playspotstore.online/ghiduri/stick-drift-dualsense-ps5-testare-curatare-hall-effect.html","description":"Camera sau personajul se mișcă singur pe PS5? Află cum testezi exact Stick Drift pe DualSense, ce poți încerca acasă fără riscuri și când merită Hall Effect / TMR sau un controller nou.","inLanguage":"ro","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://playspotstore.online/produse/accessories/red-dualshock-4-controller-ps4.html","name":"Red DualShock 4 Controller (PS4)"},{"@type":"ListItem","position":2,"url":"https://playspotstore.online/produse/accessories/white-dualshock-4-controller-ps4.html","name":"White DualShock 4 Controller (PS4)"},{"@type":"ListItem","position":3,"url":"https://playspotstore.online/produse/accessories/black-dualshock-4-controller-ps4.html","name":"Black DualShock 4 Controller (PS4)"},{"@type":"ListItem","position":4,"url":"https://playspotstore.online/produse/accessories/white-dualsense-controller-ps5.html","name":"White DualSense Controller (PS5)"},{"@type":"ListItem","position":5,"url":"https://playspotstore.online/produse/accessories/razer-tournament-edition-controller.html","name":"Razer Tournament Edition Controller"},{"@type":"ListItem","position":6,"url":"https://playspotstore.online/produse/accessories/sony-playstation-vr-aim-controller.html","name":"Sony PlayStation VR Aim Controller"},{"@type":"ListItem","position":7,"url":"https://playspotstore.online/produse/accessories/dualsense-limited-edition-helldivers-2.html","name":"DualSense Limited Edition (Helldivers 2)"},{"@type":"ListItem","position":8,"url":"https://playspotstore.online/produse/accessories/dualsense-limited-edition-ghost-of-tsushima.html","name":"DualSense Limited Edition (Ghost of Tsushima)"}]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Acasă","item":"https://playspotstore.online/"},{"@type":"ListItem","position":2,"name":"Ghiduri & Căutări","item":"https://playspotstore.online/jocuri-video-chisinau-moldova.html"},{"@type":"ListItem","position":3,"name":"Stick Drift la controllerul DualSense (PS5): cum îl testezi, soluții temporare și rezolvare definitivă","item":"https://playspotstore.online/ghiduri/stick-drift-dualsense-ps5-testare-curatare-hall-effect.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ce sunt stick-urile magnetice Hall Effect / TMR?","acceptedAnswer":{"@type":"Answer","text":"Sunt module analogice moderne care măsoară mișcarea prin câmp magnetic fără contact fizic pe carbon — deci nu se mai uzează mecanic și elimină cauza clasică a stick drift-ului."}}]}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://playspotstore.online/ghiduri/stick-drift-dualsense-ps5-testare-curatare-hall-effect.html#speakable","url":"https://playspotstore.online/ghiduri/stick-drift-dualsense-ps5-testare-curatare-hall-effect.html","inLanguage":"ro-MD","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1",".seo-detail-description",".guide-toc-sxo"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Tester Live Stick Drift Controller DualSense PS5 & DualShock 4","url":"https://playspotstore.online/ghiduri/stick-drift-dualsense-ps5-testare-curatare-hall-effect.html#live-gamepad-tester","applicationCategory":"UtilitiesApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"MDL"}}</script>
 </head>
 <body>
 <header class="seo-header"><div class="seo-header-inner">
@@ -85,6 +86,34 @@
 </section>
 
 <div class="ps-guide-article">
+<section id="live-gamepad-tester" class="ps-guide-card" style="border:1px solid rgba(16,185,129,0.4);background:rgba(15,23,42,0.75);padding:20px;border-radius:14px;margin:20px 0">
+  <h2 id="sec-gp-tester" style="margin-top:0">Tester Live în Browser: Verifică Stick Drift pe DualSense / DualShock 4 (USB / Bluetooth)</h2>
+  <p style="margin-bottom:14px">Conectează controllerul la PC sau telefon prin cablu USB-C / Bluetooth și apasă orice buton. Valorile X/Y în repaus trebuie să stea cât mai aproape de 0.00 (sub ±0.06):</p>
+  <div id="gp-status" style="padding:14px;border-radius:10px;background:rgba(255,255,255,0.06);font-family:monospace;line-height:1.6">🎮 Conectează controllerul DualSense / DualShock 4 și apasă un buton pentru a porni citirea senzorilor în timp real...</div>
+</section>
+<script>
+(function(){
+  var st=document.getElementById("gp-status");
+  if(!st||!navigator.getGamepads)return;
+  var isRu=false;
+  function loop(){
+    var pads=navigator.getGamepads?navigator.getGamepads():[];
+    var gp=null;
+    for(var i=0;i<pads.length;i++){if(pads[i]){gp=pads[i];break;}}
+    if(gp){
+      var lx=(gp.axes[0]||0).toFixed(3),ly=(gp.axes[1]||0).toFixed(3),rx=(gp.axes[2]||0).toFixed(3),ry=(gp.axes[3]||0).toFixed(3);
+      var maxDrift=Math.max(Math.abs(gp.axes[0]||0),Math.abs(gp.axes[1]||0),Math.abs(gp.axes[2]||0),Math.abs(gp.axes[3]||0));
+      var badge=maxDrift>0.12
+        ?(isRu?"<span style='color:#f87171'>⚠️ Обнаружен заметный дрифт (>0.12) при отпущенных стиках</span>":"<span style='color:#f87171'>⚠️ Abatere vizibilă (>0.12) dacă stick-urile sunt lăsate libere</span>")
+        :(isRu?"<span style='color:#4ade80'>✅ Отличная центровка в покое (норма ≤ 0.08)</span>":"<span style='color:#4ade80'>✅ Centrare excelentă în repaus (normal ≤ 0.08)</span>");
+      st.innerHTML="<strong>"+gp.id+"</strong><br>Left Stick (L3): X = <strong>"+lx+"</strong> | Y = <strong>"+ly+"</strong><br>Right Stick (R3): X = <strong>"+rx+"</strong> | Y = <strong>"+ry+"</strong><br>"+badge;
+    }
+    requestAnimationFrame(loop);
+  }
+  window.addEventListener("gamepadconnected",function(){requestAnimationFrame(loop);});
+  requestAnimationFrame(loop);
+})();
+</script>
   <section class="ps-guide-card"><h2 id="sec-2">1. Diagnosticare rapidă, resetare hardware și ajustare Deadzone</h2><p>Conectează controllerul la PC pe un tester WebHID sau verifică-l în meniul unui joc FPS/acțiune cu deadzone mic. Încearcă întâi resetarea hardware: introdu o agrafă în orificiul mic din spatele DualSense (lângă logo-ul Sony) timp de 5 secunde, apoi reconectează-l prin cablu USB-C. În multe jocuri (Call of Duty, Apex, Fortnite, EA FC) poți mări setarea „Stick Deadzone” de la 0.03 spre 0.08–0.10 pentru a ignora abaterile ușoare.</p></section>
 <section class="ps-guide-card"><h2 id="sec-3">2. Ce să NU faci acasă vs. soluția permanentă (Hall Effect / TMR sau controller nou)</h2><p>Nu pulveriza niciodată spray-uri uleioase (WD-40 clasic) în stick-uri — atrag praf și distrug definitiv senzorii! Pentru o curățare ușoară se folosește doar aer comprimat sau o picătură minimă de alcool izopropilic 99% lăsat să se evapore complet. Când pista de carbon este uzată mecanic, soluțiile definitive sunt înlocuirea modulelor cu senzori magnetici (Hall Effect / TMR fără frecare) în service sau achiziția unui controller DualSense nou.</p></section>
   <section class="ps-guide-card">

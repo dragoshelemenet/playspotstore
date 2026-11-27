@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="/seo/site.css?v=20261123-pasf">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"Идеи подарков геймерам в Кишинёве — диски и лимитированные геймпады","url":"https://playspotstore.online/ru/ghiduri/podarki-geymeram-kishinev-moldova.html","description":"Не знаете, какую игру или геймпад подарить геймеру в Кишинёве? Практический гид по платформам и подборка хитов и аксессуаров из каталога.","inLanguage":"ru","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://playspotstore.online/ru/produse/ps5/ea-sports-fc-26.html","name":"EA Sports FC 26"},{"@type":"ListItem","position":2,"url":"https://playspotstore.online/ru/produse/ps5/god-of-war-ragnarok.html","name":"God of War Ragnarök"},{"@type":"ListItem","position":3,"url":"https://playspotstore.online/ru/produse/ps5/black-myth-wukong.html","name":"Black Myth: Wukong"},{"@type":"ListItem","position":4,"url":"https://playspotstore.online/ru/produse/ps5/marvels-spider-man-2.html","name":"Marvel’s Spider-Man 2"},{"@type":"ListItem","position":5,"url":"https://playspotstore.online/ru/produse/ps5/marvels-spider-man-miles-morales.html","name":"Marvel’s Spider-Man: Miles Morales"},{"@type":"ListItem","position":6,"url":"https://playspotstore.online/ru/produse/ps5/the-last-of-us-part-i.html","name":"The Last of Us Part I"},{"@type":"ListItem","position":7,"url":"https://playspotstore.online/ru/produse/ps5/the-last-of-us-part-ii-remastered.html","name":"The Last of Us Part II Remastered"},{"@type":"ListItem","position":8,"url":"https://playspotstore.online/ru/produse/ps5/hogwarts-legacy.html","name":"Hogwarts Legacy"}]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://playspotstore.online/ru.html"},{"@type":"ListItem","position":2,"name":"Гиды и подборки","item":"https://playspotstore.online/ru/videoigry-kishinev-moldova.html"},{"@type":"ListItem","position":3,"name":"Идеи подарков геймерам в Кишинёве — диски и лимитированные геймпады","item":"https://playspotstore.online/ru/ghiduri/podarki-geymeram-kishinev-moldova.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Поможете подобрать игру в подарок в WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Да — напишите нам, какая консоль у получателя и возраст (с учётом рейтинга PEGI), и мы подскажем подходящие варианты из каталога."}}]}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://playspotstore.online/ru/ghiduri/podarki-geymeram-kishinev-moldova.html#speakable","url":"https://playspotstore.online/ru/ghiduri/podarki-geymeram-kishinev-moldova.html","inLanguage":"ru-MD","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1",".seo-detail-description",".guide-toc-sxo"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Подбор подарка геймеру в Кишинёве (PS5, PS4, Nintendo Switch)","url":"https://playspotstore.online/ru/ghiduri/podarki-geymeram-kishinev-moldova.html#gift-finder-tool","applicationCategory":"UtilitiesApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"MDL"}}</script>
 </head>
 <body>
 <header class="seo-header"><div class="seo-header-inner">
@@ -85,6 +86,64 @@
 </section>
 
 <div class="ps-guide-article">
+<section id="gift-finder-tool" class="ps-guide-card" style="border:1px solid rgba(244,63,94,0.4);background:rgba(15,23,42,0.75);padding:20px;border-radius:14px;margin:20px 0">
+  <h2 id="sec-gift-tool" style="margin-top:0">Интерактивный подбор подарка геймеру за 15 секунд</h2>
+  <p style="margin-bottom:14px">Выберите консоль получателя и жанр, чтобы получить беспроигрышные идеи подарков из каталога PlaySpotStore:</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+    <label style="display:flex;flex-direction:column;gap:6px;font-size:0.9rem">
+      <strong>1. Какая консоль у получателя?</strong>
+      <select id="gf-con" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.22);background:#0f172a;color:#fff">
+        <option value="ps5">PlayStation 5 (cu disc / с дисководом)</option>
+        <option value="ps4">PlayStation 4 / PS4 Pro</option>
+        <option value="switch">Nintendo Switch / OLED / Lite</option>
+        <option value="unsure">Nu știu exact / Не знаю точно (Universal PS5/PS4)</option>
+      </select>
+    </label>
+    <label style="display:flex;flex-direction:column;gap:6px;font-size:0.9rem">
+      <strong>2. Что больше нравится?</strong>
+      <select id="gf-vibe" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.22);background:#0f172a;color:#fff">
+        <option value="action">Aventură &amp; Poveste Open-World (God of War, Spider-Man, GTA)</option>
+        <option value="sport">Fotbal, UFC, Lupte &amp; Joc în 2 pe canapea</option>
+        <option value="gear">Accesoriu / Controller nou (Cadou 100% sigur)</option>
+      </select>
+    </label>
+  </div>
+  <div id="gf-out" style="margin-top:14px;padding:14px;border-radius:10px;background:rgba(255,255,255,0.06);line-height:1.6"></div>
+</section>
+<script>
+(function(){
+  var cEl=document.getElementById("gf-con"),vEl=document.getElementById("gf-vibe"),out=document.getElementById("gf-out");
+  if(!cEl||!vEl||!out)return;
+  var isRu=true;
+  function run(){
+    var c=cEl.value,v=vEl.value;
+    if(v==="gear"||c==="unsure"){
+      out.innerHTML=isRu
+        ?"<strong>🎁 Топ-3 универсальных подарка (подходят даже если вы не знаете, какие игры уже есть):</strong><ul style='margin:6px 0 0 18px'><li><a href='/ru/produse/accessories/dualsense-midnight-black.html'>Геймпад DualSense Midnight Black (PS5)</a> или лимитированные версии <a href='/ru/produse/accessories/dualsense-limited-edition-helldivers-2.html'>Helldivers 2</a> / <a href='/ru/produse/accessories/dualsense-limited-edition-ghost-of-tsushima.html'>Ghost of Tsushima</a></li><li><a href='/ru/produse/accessories/red-dualshock-4-controller-ps4.html'>Красный или Белый геймпад DualShock 4 (для PS4 — 750 MDL)</a></li><li><a href='/ru/produse/accessories/playstation-vr2-controllere-si-accesorii.html'>Шлем виртуальной реальности PlayStation VR2</a></li></ul>"
+        :"<strong>🎁 Top 3 cadouri universale (100% sigure chiar dacă nu știi ce jocuri are deja acasă):</strong><ul style='margin:6px 0 0 18px'><li><a href='/produse/accessories/dualsense-midnight-black.html'>Controller DualSense Midnight Black (PS5)</a> sau edițiile limitate <a href='/produse/accessories/dualsense-limited-edition-helldivers-2.html'>Helldivers 2</a> / <a href='/produse/accessories/dualsense-limited-edition-ghost-of-tsushima.html'>Ghost of Tsushima</a></li><li><a href='/produse/accessories/red-dualshock-4-controller-ps4.html'>Controller Red / White DualShock 4 (pentru PS4 — 750 MDL)</a></li><li><a href='/produse/accessories/playstation-vr2-controllere-si-accesorii.html'>Cască Realitate Virtuală PlayStation VR2</a></li></ul>";
+    } else if(c==="switch"){
+      out.innerHTML=isRu
+        ?"<strong>🎁 Лучшие картриджи в подарок на Nintendo Switch:</strong><ul style='margin:6px 0 0 18px'><li><a href='/ru/produse/nintendo/super-mario-maker-2.html'>Super Mario Maker 2</a> &amp; <a href='/ru/produse/nintendo/kirby-star-allies.html'>Kirby Star Allies</a> (для семьи и детей)</li><li><a href='/ru/produse/nintendo/hyrule-warriors-age-of-imprisonment.html'>Hyrule Warriors: Age of Imprisonment</a></li><li><a href='/ru/produse/nintendo/sonic-racing-crossworlds.html'>Sonic Racing: CrossWorlds</a> &amp; <a href='/ru/produse/nintendo/street-fighter-6.html'>Street Fighter 6</a></li></ul>"
+        :"<strong>🎁 Cele mai apreciate carduri fizice cadou pentru Nintendo Switch:</strong><ul style='margin:6px 0 0 18px'><li><a href='/produse/nintendo/super-mario-maker-2.html'>Super Mario Maker 2</a> &amp; <a href='/produse/nintendo/kirby-star-allies.html'>Kirby Star Allies</a> (excelente pentru familie și copii)</li><li><a href='/produse/nintendo/hyrule-warriors-age-of-imprisonment.html'>Hyrule Warriors: Age of Imprisonment</a></li><li><a href='/produse/nintendo/sonic-racing-crossworlds.html'>Sonic Racing: CrossWorlds</a> &amp; <a href='/produse/nintendo/street-fighter-6.html'>Street Fighter 6</a></li></ul>";
+    } else if(c==="ps5"&&v==="sport"){
+      out.innerHTML=isRu
+        ?"<strong>🎁 Топ подарков на PS5 для футбола, файтингов и игры вдвоём:</strong><ul style='margin:6px 0 0 18px'><li><a href='/ru/produse/ps5/ea-sports-fc-26.html'>EA Sports FC 26</a> или <a href='/ru/produse/ps5/ea-sports-fc-25.html'>EA Sports FC 25</a></li><li><a href='/ru/produse/ps5/ea-sports-ufc-5.html'>EA Sports UFC 5 (600 MDL)</a>, <a href='/ru/produse/ps5/mortal-kombat-1.html'>Mortal Kombat 1</a> или <a href='/ru/produse/ps5/tekken-8.html'>Tekken 8 (650 MDL)</a></li><li>Второй геймпад <a href='/ru/produse/accessories/white-dualsense-controller-ps5.html'>DualSense PS5</a> для матчей на одном ТВ</li></ul>"
+        :"<strong>🎁 Top cadouri PS5 pentru fotbal, lupte și seri cu prietenii în 2 jucători:</strong><ul style='margin:6px 0 0 18px'><li><a href='/produse/ps5/ea-sports-fc-26.html'>EA Sports FC 26</a> sau <a href='/produse/ps5/ea-sports-fc-25.html'>EA Sports FC 25</a></li><li><a href='/produse/ps5/ea-sports-ufc-5.html'>EA Sports UFC 5 (600 MDL)</a>, <a href='/produse/ps5/mortal-kombat-1.html'>Mortal Kombat 1</a> sau <a href='/produse/ps5/tekken-8.html'>Tekken 8 (650 MDL)</a></li><li>Al doilea controller <a href='/produse/accessories/white-dualsense-controller-ps5.html'>DualSense PS5</a> pentru meciuri pe același TV</li></ul>";
+    } else if(c==="ps4"){
+      out.innerHTML=isRu
+        ?"<strong>🎁 Хиты на дисках PS4 в подарок (работают и на PS4, и на PS5):</strong><ul style='margin:6px 0 0 18px'><li><a href='/ru/produse/ps4/god-of-war-hits.html'>God of War Hits (350 MDL)</a> и <a href='/ru/produse/ps4/the-last-of-us-part-ii.html'>The Last of Us Part II (600 MDL)</a></li><li><a href='/ru/produse/ps4/grand-theft-auto-v.html'>Grand Theft Auto V (400 MDL)</a> и <a href='/ru/produse/ps4/detroit-become-human.html'>Detroit: Become Human (400 MDL)</a></li><li><a href='/ru/produse/ps4/mortal-kombat-11.html'>Mortal Kombat 11 (450 MDL)</a> или <a href='/ru/produse/ps4/ea-sports-ufc-4.html'>EA Sports UFC 4 (550 MDL)</a></li></ul>"
+        :"<strong>🎁 Hituri pe disc PS4 ideale pentru cadou (merg atât pe PS4, cât și pe PS5):</strong><ul style='margin:6px 0 0 18px'><li><a href='/produse/ps4/god-of-war-hits.html'>God of War Hits (350 MDL)</a> și <a href='/produse/ps4/the-last-of-us-part-ii.html'>The Last of Us Part II (600 MDL)</a></li><li><a href='/produse/ps4/grand-theft-auto-v.html'>Grand Theft Auto V (400 MDL)</a> și <a href='/produse/ps4/detroit-become-human.html'>Detroit: Become Human (400 MDL)</a></li><li><a href='/produse/ps4/mortal-kombat-11.html'>Mortal Kombat 11 (450 MDL)</a> sau <a href='/produse/ps4/ea-sports-ufc-4.html'>EA Sports UFC 4 (550 MDL)</a></li></ul>";
+    } else {
+      out.innerHTML=isRu
+        ?"<strong>🎁 Главные сюжетные блокбастеры на дисках PS5 в подарок:</strong><ul style='margin:6px 0 0 18px'><li><a href='/ru/produse/ps5/god-of-war-ragnarok.html'>God of War Ragnarök</a> и <a href='/ru/produse/ps5/marvels-spider-man-2.html'>Marvel’s Spider-Man 2</a></li><li><a href='/ru/produse/ps5/ghost-of-tsushima-directors-cut.html'>Ghost of Tsushima Director’s Cut</a> и <a href='/ru/produse/ps5/black-myth-wukong.html'>Black Myth: Wukong</a></li><li><a href='/ru/produse/ps5/hogwarts-legacy.html'>Hogwarts Legacy</a> или <a href='/ru/produse/ps5/the-last-of-us-part-i.html'>The Last of Us Part I</a></li></ul>"
+        :"<strong>🎁 Cele mai spectaculoase jocuri story &amp; open-world pe disc PS5 pentru cadou:</strong><ul style='margin:6px 0 0 18px'><li><a href='/produse/ps5/god-of-war-ragnarok.html'>God of War Ragnarök</a> și <a href='/produse/ps5/marvels-spider-man-2.html'>Marvel’s Spider-Man 2</a></li><li><a href='/produse/ps5/ghost-of-tsushima-directors-cut.html'>Ghost of Tsushima Director’s Cut</a> și <a href='/produse/ps5/black-myth-wukong.html'>Black Myth: Wukong</a></li><li><a href='/produse/ps5/hogwarts-legacy.html'>Hogwarts Legacy</a> sau <a href='/produse/ps5/the-last-of-us-part-i.html'>The Last of Us Part I</a></li></ul>";
+    }
+  }
+  cEl.addEventListener("change",run);
+  vEl.addEventListener("change",run);
+  run();
+})();
+</script>
   <section class="ps-guide-card"><h2 id="sec-2">Что уточнить перед выбором подарка</h2><p>Узнайте точную консоль (PS5 с дисководом, PS4, Nintendo Switch или Xbox Series X) и любимый жанр. Беспроигрышный вариант для владельца PS5 — дополнительный геймпад DualSense.</p></section>
   <section class="ps-guide-card">
     <h2 id="sec-3">Частые вопросы</h2>

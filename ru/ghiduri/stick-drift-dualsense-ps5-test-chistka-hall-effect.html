@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="/seo/site.css?v=20261123-pasf">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"Дрифт стиков (Stick Drift) на DualSense PS5: диагностика, временные меры и решение","url":"https://playspotstore.online/ru/ghiduri/stick-drift-dualsense-ps5-test-chistka-hall-effect.html","description":"Персонаж или камера двигаются сами на PS5? Как протестировать дрифт стиков DualSense, настроить Deadzone, выполнить сброс и когда нужны стики Hall Effect / TMR.","inLanguage":"ru","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://playspotstore.online/ru/produse/accessories/red-dualshock-4-controller-ps4.html","name":"Красный контроллер DualShock 4 (PS4)"},{"@type":"ListItem","position":2,"url":"https://playspotstore.online/ru/produse/accessories/white-dualshock-4-controller-ps4.html","name":"Белый контроллер DualShock 4 (PS4)"},{"@type":"ListItem","position":3,"url":"https://playspotstore.online/ru/produse/accessories/black-dualshock-4-controller-ps4.html","name":"Черный контроллер DualShock 4 (PS4)"},{"@type":"ListItem","position":4,"url":"https://playspotstore.online/ru/produse/accessories/white-dualsense-controller-ps5.html","name":"Белый контроллер DualSense (PS5)"},{"@type":"ListItem","position":5,"url":"https://playspotstore.online/ru/produse/accessories/dualsense-limited-edition-helldivers-2.html","name":"DualSense Limited Edition (Helldivers 2)"},{"@type":"ListItem","position":6,"url":"https://playspotstore.online/ru/produse/accessories/dualsense-limited-edition-ghost-of-tsushima.html","name":"DualSense Limited Edition (Ghost of Tsushima)"},{"@type":"ListItem","position":7,"url":"https://playspotstore.online/ru/produse/accessories/dualsense-midnight-black.html","name":"DualSense Midnight Black"},{"@type":"ListItem","position":8,"url":"https://playspotstore.online/ru/produse/accessories/playstation-vr2-controllere-si-accesorii.html","name":"PlayStation VR2 + controllere și accesorii"}]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://playspotstore.online/ru.html"},{"@type":"ListItem","position":2,"name":"Гиды и подборки","item":"https://playspotstore.online/ru/videoigry-kishinev-moldova.html"},{"@type":"ListItem","position":3,"name":"Дрифт стиков (Stick Drift) на DualSense PS5: диагностика, временные меры и решение","item":"https://playspotstore.online/ru/ghiduri/stick-drift-dualsense-ps5-test-chistka-hall-effect.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Чем хороши стики Hall Effect / TMR?","acceptedAnswer":{"@type":"Answer","text":"Они работают на магнитных датчиках без трения графитовых дорожек, благодаря чему дрифт от механического износа практически исключён."}}]}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://playspotstore.online/ru/ghiduri/stick-drift-dualsense-ps5-test-chistka-hall-effect.html#speakable","url":"https://playspotstore.online/ru/ghiduri/stick-drift-dualsense-ps5-test-chistka-hall-effect.html","inLanguage":"ru-MD","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1",".seo-detail-description",".guide-toc-sxo"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Онлайн-тестер дрифта стиков DualSense PS5 и DualShock 4","url":"https://playspotstore.online/ru/ghiduri/stick-drift-dualsense-ps5-test-chistka-hall-effect.html#live-gamepad-tester","applicationCategory":"UtilitiesApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"MDL"}}</script>
 </head>
 <body>
 <header class="seo-header"><div class="seo-header-inner">
@@ -85,6 +86,34 @@
 </section>
 
 <div class="ps-guide-article">
+<section id="live-gamepad-tester" class="ps-guide-card" style="border:1px solid rgba(16,185,129,0.4);background:rgba(15,23,42,0.75);padding:20px;border-radius:14px;margin:20px 0">
+  <h2 id="sec-gp-tester" style="margin-top:0">Онлайн-тестер геймпада в браузере: Проверка Stick Drift на DualSense и DualShock 4</h2>
+  <p style="margin-bottom:14px">Подключите геймпад к ПК или смартфону по USB-C / Bluetooth и нажмите любую кнопку. В покое координаты X/Y должны быть близки к 0.00 (в пределах ±0.06):</p>
+  <div id="gp-status" style="padding:14px;border-radius:10px;background:rgba(255,255,255,0.06);font-family:monospace;line-height:1.6">🎮 Подключите геймпад DualSense / DualShock 4 и нажмите любую кнопку для запуска теста осей в реальном времени...</div>
+</section>
+<script>
+(function(){
+  var st=document.getElementById("gp-status");
+  if(!st||!navigator.getGamepads)return;
+  var isRu=true;
+  function loop(){
+    var pads=navigator.getGamepads?navigator.getGamepads():[];
+    var gp=null;
+    for(var i=0;i<pads.length;i++){if(pads[i]){gp=pads[i];break;}}
+    if(gp){
+      var lx=(gp.axes[0]||0).toFixed(3),ly=(gp.axes[1]||0).toFixed(3),rx=(gp.axes[2]||0).toFixed(3),ry=(gp.axes[3]||0).toFixed(3);
+      var maxDrift=Math.max(Math.abs(gp.axes[0]||0),Math.abs(gp.axes[1]||0),Math.abs(gp.axes[2]||0),Math.abs(gp.axes[3]||0));
+      var badge=maxDrift>0.12
+        ?(isRu?"<span style='color:#f87171'>⚠️ Обнаружен заметный дрифт (>0.12) при отпущенных стиках</span>":"<span style='color:#f87171'>⚠️ Abatere vizibilă (>0.12) dacă stick-urile sunt lăsate libere</span>")
+        :(isRu?"<span style='color:#4ade80'>✅ Отличная центровка в покое (норма ≤ 0.08)</span>":"<span style='color:#4ade80'>✅ Centrare excelentă în repaus (normal ≤ 0.08)</span>");
+      st.innerHTML="<strong>"+gp.id+"</strong><br>Left Stick (L3): X = <strong>"+lx+"</strong> | Y = <strong>"+ly+"</strong><br>Right Stick (R3): X = <strong>"+rx+"</strong> | Y = <strong>"+ry+"</strong><br>"+badge;
+    }
+    requestAnimationFrame(loop);
+  }
+  window.addEventListener("gamepadconnected",function(){requestAnimationFrame(loop);});
+  requestAnimationFrame(loop);
+})();
+</script>
   <section class="ps-guide-card"><h2 id="sec-2">1. Сброс DualSense и настройка мёртвой зоны (Deadzone)</h2><p>Зажмите скрепкой скрытую кнопку сброса на задней панели DualSense на 5 секунд, затем подключите геймпад кабелем USB-C к PS5. При лёгком дрифте в настройках игр помогает увеличение Deadzone с 0.03 до 0.08–0.10.</p></section>
 <section class="ps-guide-card"><h2 id="sec-3">2. Чего избегать и как решить проблему навсегда</h2><p>Никогда не брызгайте масляные смазки внутрь стиков. При физическом износе потенциометров надёжным решением является замена модулей в сервисе на магнитные датчики (Hall Effect / TMR) либо покупка нового DualSense.</p></section>
   <section class="ps-guide-card">
